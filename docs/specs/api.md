@@ -15,11 +15,11 @@ Popular examples of implementations for this API includes videogame system emula
 
 When you choose to use the libretro API, your program gets turned into a single library file (called a ‘libretro core’). A frontend that supports the libretro API can then load that library file and run the app. The frontend’s responsibility is to provide all the implementation-specific details, such as video/audio/input drivers. The libretro core’s responsibility is solely to provide the main program. You therefore don’t have to worry about writing different video drivers for Direct3D, OpenGL or worrying about catering to all possible input APIs/sound APIs/supporting all known joypads/etc. This is none of your concern at the libretro core implementation level.
 
-Any project that is ported to work with this API can be made to run on ANY libretro frontend. You maintain a single codebase that only deals with the main program, and you then target one single API (libretro) in order to port your program over to multiple platforms at once.
+Any project that is ported to work with this API will, by default, run on ANY libretro frontend (unless you use rare extensions). You maintain a single codebase that only deals with the main program, and you then target one single API (libretro) in order to port your program over to multiple platforms at once.
 
 Other projects benefit from the ever-expanding libretro core software library by implementing the libretro API inside their own projects. To this end, project such as XBMC have already begun writing a libretro driver based on the RetroArch reference libretro frontend.
 
-RetroArch is the official reference frontend, and it is available on nearly all modern-day platforms. It is meant to be fast, simple, yet powerful.
+RetroArch is the official reference frontend, and it is available on nearly all modern-day platforms. It is meant to be fast, simple[citation needed], yet powerful.
 
 Other platform-specific frontends are also available.
 
@@ -29,12 +29,13 @@ While the most common use case for libretro has been console emulation, it is eq
 
 ###Libretro GL
 
-Aside from retro-style games and emulators that depend on software rendering and where you’d typically need nothing more than the ability to render to a framebuffer, the Libretro API also allows you to target OpenGL. This subset of GL functionality (that we call libretro GL) allows you to create libretro ports that use OpenGL as part of their internal rendering. There are two subsets that can be targeted – either OpenGL 2.0 or OpenGL ES 2.0.
+Aside from retro-style games and emulators that depend on software rendering and where you’d typically need nothing more than the ability to render to a framebuffer, the Libretro API also allows you to target OpenGL. This allows you to create libretro ports that use OpenGL as part of their internal rendering. You can target any modern OpenGL version, as well as OpenGL ES.
 
 From a portability perspective, we highly recommend that you try to target both so that your libretro GL port will work on both mobile and desktop computers.
 
 ##Concepts
 ###RetroPad
+(this space intentionally[citation needed] left blank)
 
 ###Advantages
 
