@@ -1,8 +1,20 @@
 site_name: LibRetro wiki
 pages:
-    - Home: index.md
-    - Specifications:
+   - Home: index.md
+   - Specifications:
       - 'API': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
-    - About: about.md
+   - About: about.md
+extra:
+  logo: 'images/invader.png'
+  version: '0.0.0.0.1'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  i18n:
+    prev: 'Previous'
+    next: 'Next'
+  palette:
+    primary: 'indigo'
+    accent: 'light blue'
 theme: 'material'
