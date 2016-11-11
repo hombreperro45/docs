@@ -1,4 +1,4 @@
-#LibRetro API
+#Libretro API
 
 The Libretro API is a lightweight C-based Application Programming Interface.
 
