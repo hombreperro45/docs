@@ -1,5 +1,8 @@
 site_name: LibRetro wiki
 pages:
     - Home: index.md
+    - Specifications:
+      - 'API': 'specs/api.md'
+      - 'Shaders': 'specs/shader.md'
     - About: about.md
-theme: readthedocs
+theme: 'material'
