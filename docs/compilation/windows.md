@@ -44,7 +44,7 @@ For 64-bit builds:
 
 Once these packages are installed close MSYS2 shell and open MinGW-w32 shell or MinGW-w64 shell depending on the platform you want to build for.
 
-## Building RetroArch
+## Building
 
 Clone RetroArch's repository from [GitHub](https://github.com/libretro/RetroArch)  and fetch it's submodules
 
@@ -69,11 +69,12 @@ For development purposes you might want to run a debug build instead. In such ca
 
 After a few minutes you should be able to find retroarch.exe under that directory. To start the newly compiled retroarch run `./retroarch`
 
+## Packaging
+
 You might not be able to start your own build outside that environment. You might want to try to get all the required DLLs by using the following script:
 
     for i in $(seq 3); do for bin in $(ldd *exe *dll | grep -i mingw | cut -d\  -f 3); do cp -vu "$bin" . ; done; done
 
-Your mileage may vary. The program we use to find the dependencies seems to be failing lately. Another alternative is to add the toolchain's bin directory to your 
-PATH. For 32-bit MinGW add `c:\path\to\msys2\minw32\bin` and for 64-bit MinGW add `c:\path\to\msys2\minw64\bin`.
+Your mileage may vary. The program we use to find the dependencies **(ld)** seems to be failing lately. Another alternative is to add the toolchain's bin directory to your **PATH**. For 32-bit MinGW add `c:\path\to\msys2\mingw32\bin` and for 64-bit MinGW add `c:\path\to\msys2\mingw64\bin`.
 
 If you really want to get the required libraries for distribution or for personal use on other devices and LDD doesn't work for you, then you can try [Dependency Walker](http://www.dependencywalker.com/). 
