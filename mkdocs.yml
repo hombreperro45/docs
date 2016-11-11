@@ -1,4 +1,4 @@
-site_name: LibRetro Docs
+site_name: Libretro Docs
 pages:
    - About: index.md
    - Specifications:
