@@ -14,7 +14,10 @@ Close MSYS2 shell and start it again, and:
 
     pacman --noconfirm -Su
 
-Restart MSYS2 once again. In some cases you may find out that the shell starting scripts don't work. You may need to update your shortcuts to the following targets:
+Restart MSYS2 once again. In some cases you may find out that the shell starting scripts don't work. 
+
+!!! Note
+    In some cases you may need to update your shortcuts to reflect changes in MSYS2's subsystem. If the shell no longer works properly you need to update your shortcuts as follows:.
 
     MSYS2_ROOT\msys2_shell.cmd -mingw32
     MSYS2_ROOT\msys2_shell.cmd -mingw64
