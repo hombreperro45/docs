@@ -4,6 +4,7 @@ pages:
    - Specifications:
       - 'API': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
+      - 'Overlays': 'specs/overlay.md'
    - Help: help.md
 extra:
   logo: 'images/invader.png'
