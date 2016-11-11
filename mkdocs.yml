@@ -1,13 +1,13 @@
-site_name: LibRetro wiki
+site_name: LibRetro Docs
 pages:
-   - Home: index.md
+   - About: index.md
    - Specifications:
       - 'API': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
-   - About: about.md
+   - Help: help.md
 extra:
   logo: 'images/invader.png'
-  version: '0.0.0.0.1'
+  version: '0.0.1'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
@@ -18,3 +18,5 @@ extra:
     primary: 'indigo'
     accent: 'light blue'
 theme: 'material'
+markdown_extensions:
+  - admonition
