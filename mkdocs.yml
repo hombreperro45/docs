@@ -5,7 +5,7 @@ pages:
       - 'API': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
-   - Compilation:
+   - Compilation & Development:
       - 'Windows': 'compilation/windows.md'
    - Help: help.md
 extra:
