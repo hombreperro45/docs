@@ -23,7 +23,7 @@ To update RetroArch it's enough to download the current dated **2017-XX-XX_Retro
 
 At first you will be greeted by this screen:
 
-![Screenshot](images/tutorials/windows/first_run.png)
+![Screenshot](images/windows/first_run.png)
 
 
 ## Glossary
