@@ -1,6 +1,6 @@
 # Windows Compilation / Development Guide
 
-## Environment setup
+## Environment configuration
 
 We recommend MinGW-W64 from MSYS2. You can download MSYS2 installer from [here](http://msys2.github.io/)
 
@@ -48,7 +48,7 @@ For 64-bit builds:
 
 Once these packages are installed close MSYS2 shell and open MinGW-w32 shell or MinGW-w64 shell depending on the platform you want to build for.
 
-## RetroArch
+## RetroArch Compilation
 ### Building RetroArch
 
 Clone RetroArch's repository from [GitHub](https://github.com/libretro/RetroArch)  and fetch it's submodules
@@ -56,6 +56,12 @@ Clone RetroArch's repository from [GitHub](https://github.com/libretro/RetroArch
     git clone https://github.com/libretro/RetroArch.git retroarch
     cd retroarch
     git submodule update --init
+
+For subsequent builds you only need to pull the changes from the repo and update submodules
+
+    cd retroarch
+    git pull
+    git submodule update
 
 This will create a local copy of the RetroArch's source tree into `%MSYS2%/home/%USERNAME%/.` To update your local copy from the repository run git pull and git 
 submodule update
@@ -124,7 +130,7 @@ You can also strip the debug symbols of the build product to save some space.
 
     strip -s retroarch.exe
 
-## Cores
+## Core Compilation
 
 ### Fetching Cores
 
