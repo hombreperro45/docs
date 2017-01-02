@@ -5,8 +5,10 @@ pages:
       - 'API': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
-   - Compilation & Development:
+   - Develop:
       - 'Windows': 'compilation/windows.md'
+   - Tutorials:
+      - 'Windows': 'tutorials/windows.md'
    - Help: help.md
 extra:
   logo: 'images/invader.png'
