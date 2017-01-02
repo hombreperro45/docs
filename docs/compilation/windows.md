@@ -48,7 +48,8 @@ For 64-bit builds:
 
 Once these packages are installed close MSYS2 shell and open MinGW-w32 shell or MinGW-w64 shell depending on the platform you want to build for.
 
-## Building RetroArch
+## RetroArch
+### Building RetroArch
 
 Clone RetroArch's repository from [GitHub](https://github.com/libretro/RetroArch)  and fetch it's submodules
 
@@ -73,7 +74,7 @@ For development purposes you might want to run a debug build instead. In such ca
 
 After a few minutes you should be able to find retroarch.exe under that directory. To start the newly compiled retroarch run `./retroarch`
 
-## Packaging RetroArch
+### Packaging RetroArch
 
 You might not be able to start your own build outside that environment. You might want to try to get all the required DLLs by using the following script:
 
@@ -81,7 +82,7 @@ You might not be able to start your own build outside that environment. You migh
 
 If you really want to get the required libraries for distribution or for personal use on other devices and LDD doesn't work for you, then you can try [Dependency Walker](http://www.dependencywalker.com/). 
 
-## Additional Tips:
+### Additional Tips:
 
 If you're building frequently you may want to add CCACHE to the mix to speed up the build process: 
 
@@ -122,3 +123,13 @@ With CCACHE:
 You can also strip the debug symbols of the build product to save some space.
 
     strip -s retroarch.exe
+
+## Cores
+
+### Fetching Cores
+
+todo...
+
+### Building Cores
+
+todo...
