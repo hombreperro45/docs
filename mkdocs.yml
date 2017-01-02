@@ -10,7 +10,7 @@ pages:
    - Help: help.md
 extra:
   logo: 'images/invader.png'
-  version: '0.0.1'
+  version: '0.0.2'
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
