@@ -2,7 +2,7 @@ site_name: Libretro Docs
 pages:
    - About: index.md
    - Specifications:
-      - 'API': 'specs/api.md'
+      - 'Libretro': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
    - Develop:
