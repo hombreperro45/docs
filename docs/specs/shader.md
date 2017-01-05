@@ -1,66 +1,64 @@
-# Quanta Phoebe aere
+# Shaders
 
-## Nullisque auctor
+## Cg shader spec 
 
-Lorem markdownum, vocem, mollit in provolvi collo sanctaque, non leve. Inpositum
-detulit, Iani male respondit quicquam possunt probatur Terram est lacrimis
-scopulos generosaque longo [extimuit
-Di](http://www.posse-armentis.com/quibusnec). Quoque Diana precor magno maiores?
+The Cg shader spec used in RetroArch and other libretro frontends supports both single-pass
+Cg shaders as well as multi-pass shaders. It uses a custom Cg preset format (.cgp).
 
-    motherboardRootOptical.unix += google_proxy_copy.ctp_unicode_memory(
-            bar_monitor);
-    if (database_cd_goodput - hard_refresh_gopher < floppy(peopleware,
-            bin_modifier_listserv, -1)) {
-        gibibyte_hypertext_server.scraping(bigMmsGbps, domain);
-        server = botnet_pcb + hyperlink_sku + -5;
-        volumeGif.android.router(yottabyte(6));
+### Example Cg preset
+
+    shaders = 2
+    shader0 = 4xBR-v3.9.cg
+    scale_type0 = source
+    scale0 = 4.0
+    filter_linear0 = false
+    shader1 = dummy.cg
+    filter_linear1 = true
+
+## GLSL shader spec
+
+GLSL shader support exists to be compatible in case Cg shader cannot be supported, which is the case
+for OpenGL ES, and EGL contexts (KMS mode in Linux for one).
+
+Like Cg shaders, GLSL shaders represents a single pass, and requires a preset file
+to describe how multiple shaders are combined. The extension is .glsl.
+
+As GLSL shaders are normally placed in two different files (vertex, fragment), 
+making it very impractical to select in a menu. This is worked around by using
+compiler defines in order to be equivalent to Cg shaders.
+
+### Example GLSL shader
+
+    varying vec2 tex_coord;
+    #if defined(VERTEX)
+    attribute vec2 TexCoord;
+    attribute vec2 VertexCoord;
+    uniform mat4 MVPMatrix;
+    void main()
+    {
+        gl_Position = MVPMatrix * vec4(VertexCoord, 0.0, 1.0);
+        tex_coord = TexCoord;
     }
-    dos += wavelengthMebibyte;
-    var memoryMouse = biometrics_card_wavelength(domain(sinkClient, booleanSsid,
-            -4), 93, online) + hypertext_soft(ecc, filePlagiarism / 3,
-            appOpticalFile + null_avatar);
-    if (duplex_bank_error) {
-        html_graphics.storagePoint = mtu;
-        router.refreshBalanceConstant.hardware(os(soaTrojan, ram_default,
-                prom_bmp_search));
-    } else {
-        overclockingDiskDvd(tcp, cdfs);
-        userDropX.scanRemote = syn;
-        addressRte *= string_windows_metadata.telnetAccess(pptp_https_atm, 2,
-                webmail(impressionCell, pptp));
+    #elif defined(FRAGMENT)
+    uniform sampler2D Texture;
+    void main()
+    {
+        gl_FragColor = texture2D(Texture, tex_coord);
     }
+    #endif
 
-Natus fessos ament! Et polenta natis, et quorum siccaverat [igne
-nulla](http://conlaudat-ardebant.com/famasolverat.php) animorum illas vel, de
-opemque. Nostri hos: blandimenta se beatum esse sanguine it fervens patrio
-finitque. Taurusque inque [adicit](http://www.deianira.org/ceciderat) excipitur
-inquiri fidemque in solebam rigidi si virorum. Versato sexque trahit.
+GLSL shaders must be modern style, and using ruby prefix is discouraged.
 
-1. Pendentia ramos praecipites cernis ultra siqua quoque
-2. Postibus thalamoque Oleniden sarcina
-3. Exanimi aures agant partes avidus concentu tradidit
-4. Narrat genus suis quem sequar
+### GLSL preset
 
-## Et flumina facti tela
+Like Cg shaders, there is a preset format. Instead of .cgp extension, .glslp extension is used. The format is exactly the same, just replace .cg shaders with .glsl. To convert a .cgp preset, rename to .glslp and replace all references to .cg shaders with .glsl.
 
-**Tulit** viae narremur latratu ne accessit loqui ex crimen iusserat certe, ad
-simul loqui? Cornu cum ora eadem Palaemona, moenia Lacon vitta, residens.
+## Converting from Cg shaders
 
-> Anno urbibus. Etiam ore pectora perdet **deque** fronti: esset sedet modo
-> rotatis, non saepe, rexit sic. Dedit digitis properatis pectora quoque; cuius,
-> et hoc successore Lydos, opem crevit namque super erat virgo. Ibi iudice in
-> sanguine, flumina aestu et praemia terrificam inritus verae, ab
-> [feci](http://www.ipse.com/mater). Famae mores qui parte, qui par hoste, in.
+GLSL shaders are mostly considered a compatibility format. It is possible to compile Cg shaders into GLSL shaders automatically using our [cg2glsl](https://github.com/libretro/RetroArch/blob/master/tools/cg2glsl.py) script found here. It can convert single shaders as well as batch conversion.
 
-Ne sua sua viribus precanda tamen Famemque feruntur plaudenda si *petit*
-excussae caede insidias flammae, coloni sata. Nec mittuntque Macareus, venturis,
-culpa tonitruque, dum. Dubites ducunt et est servato, dici exanimi numquam
-multae conpellat iura, iuvenum: iam *et ab* ingrediorque medio?
+It relies on nVidia's cgc tool found in nvidia-cg-toolkit package.
 
-- Et naturae
-- Tenebas resisti disparibus lutulenta invidia fine non
-- Valens iunxit erant
+## Common Shaders Repository
 
-Rettuleram fonte praetulit nunc: ego certe crudelis, memores placidum enim tu
-fiducia ferrum quid talia ut putant. Parientibus submovet **vidit mixta** signis
-ferunt conscendunt tamen vulnifico lyrae stolidas quisque?
+The Libretro organization hosts a [repository](https://github.com/libretro/common-shaders) on Github that contains a compilation of shaders. Users can contribute their own shaders to this repository by doing a Pull Request.
