@@ -7,6 +7,7 @@ Libretro is an API that exposes generic audio/video/input callbacks. A frontend 
 While RetroArch is the reference frontend for libretro, several other projects have used the libretro interface to include support for emulators and/or game engines. libretro is completely open and free for anyone to use.
 
 
+
 # Implementing the API
 
 The libretro API consists of several functions outlined in libretro.h, found in the RetroArch source package. 
@@ -17,6 +18,8 @@ frontend. Implementations are designed to be single-instance, so global state is
 call these functions in wrong order, undefined behavior occurs.
 
 The API header is compatible with C99 and C++. From C99, the bool type and <stdint.h> are used.
+
+The latest version of this file can be found [here](https://github.com/libretro/RetroArch/blob/master/libretro-common/include/libretro.h).
 
 The program flow of a frontend using the libretro API can be expressed as follows:
 
