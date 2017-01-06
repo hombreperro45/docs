@@ -43,7 +43,7 @@ Unread is the first frame at which not all players' data has been read, which
 can be slightly ahead of other since it can't always immediately act upon new
 data.
 
-In general, other ¿ unread and other ¿ self. In all likelihood, unread ¿ self,
+In general, other <= unread and other <= self. In all likelihood, unread <= self,
 but it is both possible and supported for the remote host to get ahead of the
 local host.
 
@@ -97,7 +97,7 @@ count is only incremented after the latter, so there is a period of time during
 which we've actually read self_frame_count+1 frames of local input.
 
 Clients may come and go, and may start or stop playing even as they're
-connected. A client that is not playing is said to be ¿spectating¿: It receives
+connected. A client that is not playing is said to be 'spectatingn: It receives
 all the same data but sends none. A client may switch from spectating to
 playing by sending the appropriate request, at which point it is allotted a
 player number (see the SPECTATE, PLAY and MODE commands below).
