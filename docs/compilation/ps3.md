@@ -18,7 +18,7 @@ For subsequent builds you only need to pull the changes from the repo
     cd retroarch
     git pull
 
-This will create a local copy of the RetroArch's source tree into `%MSYS2%/home/%USERNAME%/.` To update your local copy from the repository run git pull
+To update your local copy from the repository run git pull
 
 ### Building RetroArch separately
 
