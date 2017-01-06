@@ -42,19 +42,19 @@ After a few seconds/minutes you should be able to find a retroarch_ps3.elf and r
 
 Instead of building each core one by one, you can build all cores as a batch task. Run from the main 'retroarch' directory:
 
-  cd dist-scripts
+    cd dist-scripts
 
 !!! Note
     Make sure that all the libretro cores that you want to compile are inside the 'dist-scripts' directory.
 
 Once inside this directory, what you need to input now as the parameter depends what kind of PlayStation3 you want to build for. If it's for DEX (debug) PS3s, run :
 
-  ./dist-cores.sh  dex-ps3
+    ./dist-cores.sh  dex-ps3
 
 
 If building for 3.55 CFW PS3s and/or higher, run
 
-  ./dist-cores.sh cex-ps3
+    ./dist-cores.sh cex-ps3
 
 This process will also automate the packaging process for you.
 
@@ -62,17 +62,17 @@ This process will also automate the packaging process for you.
 
 You can add 'pkg' as a parameter in order to make a PKG file (a PlayStation3 packaging file format). For example:
 
-   make -f Makefile.ps3 pkg
+    make -f Makefile.ps3 pkg
 
 This creates an NPDRM package. This can be installed on a debug PlayStation3.
 
 To make a non-NPDRM package that can be installed on a jailbroken/CFW PlayStation3 (PSgroove/PS3 3.55 CFW/etc.), run 
 
-   make -f Makefile.ps3 pkg-signed
+    make -f Makefile.ps3 pkg-signed
 
 If you're using Kmeaw 3.55 firmware, the package needs to be signed. Run 
 
-   make -f Makefile.ps3 pkg-signed-cfw
+    make -f Makefile.ps3 pkg-signed-cfw
 
 ### Additional Tips:
 
@@ -82,12 +82,12 @@ If you're using Kmeaw 3.55 firmware, the package needs to be signed. Run
 
 The easiest way to fetch all the cores is to use libretro-super. Run
 
-   ./libretro-fetch.sh
+    ./libretro-fetch.sh
 
 ### Building Cores
 
 The easiest way to build all the cores for PlayStation3 is to use libretro-super. Run
 
-   ./libretro-build-ps3.sh
+    ./libretro-build-ps3.sh
 
 Once finished, you can find the libretro cores inside 'dist/ps3'.
