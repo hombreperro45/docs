@@ -51,19 +51,23 @@ Once these packages are installed close MSYS2 shell and open MinGW-w32 shell or 
 ## RetroArch Compilation
 ### Building RetroArch
 
-Clone RetroArch's repository from [GitHub](https://github.com/libretro/RetroArch)
+The first step is to obtain RetroArch's source tree.
+You can clone the repository directly from [GitHub](https://github.com/libretro/RetroArch)
 
     git clone https://github.com/libretro/RetroArch.git retroarch
-    cd retroarch
 
-For subsequent builds you only need to pull the changes from the repo
+For Windows builds you are going to need to fetch submodules too.
+
+    cd retroarch
+    git submodule update --init
+
+For subsequent builds you will need to pull the changes from the repo
 
     cd retroarch
     git pull
+    git submodule update
 
-This will create a local copy of the RetroArch's source tree into `%MSYS2%/home/%USERNAME%/.` To update your local copy from the repository run git pull
-
-To compile RetroArch run:
+To compile RetroArch run the following commands inside RetroArch's source tree:
 
     ./configure
     make clean
@@ -87,7 +91,7 @@ If you really want to get the required libraries for distribution or for persona
 
 ### Additional Tips:
 
-If you're building frequently you may want to add CCACHE to the mix to speed up the build process: 
+If you're building frequently you may want to add **ccache** to the mix to speed up the build process: 
 
 For 32-bit builds:
 
@@ -109,15 +113,15 @@ For 64-bit builds:
 
 You can add the corresponding line to your ~/.bashrc to avoid having to type that every time you start your working environment.
 
-From our own buildbot, the times with and without CCACHE are the following:
+From our own buildbot, the times with and without **ccache** are the following:
 
-Without CCACHE:
+Without **ccache**:
 
     real    2m7.645s
     user    0m2.585s
     sys     0m11.527s
 
-With CCACHE:
+With **ccache**:
 
     real    0m25.466s
     user    0m2.902s
@@ -131,18 +135,36 @@ You can also strip the debug symbols of the build product to save some space.
 
 ### Fetching Cores
 
-The easiest way to fetch all the cores is to use libretro-super. Run
+Most cores can be built by invoking make inside the core's source tree.
+You can find the core on libretro's [GitHUB organization](https://github.com/libretro/). 
+
+We have an all-in-one tool to fetch and compile cores which you can use to streamline the process.
+You can obtain the tool by using these commands:
+
+    git clone https://github.com/libretro/libretro-super.git
+    cd libretro-super
+
+Then you can fetch one or all the cores by using **libretro-fetch.sh**
+
+- Fetch all cores:
 
     ./libretro-fetch.sh
 
+    Fetch one core:
+
+    ./libretro-fetch.sh $corename
+
+!!! Note
+     Replace $corename with the name of the core you want to fetch, for example gambatte
+
 ### Building Cores
 
-The easiest way to build all the cores is to use libretro-super. Run
+The easiest way to build all the cores is to use **libretro-build.sh** from within libretro-super's source tree:
 
     ./libretro-build.sh
 
-In case you only want to build one and/or more cores instead of all, you can specify the cores you want to build after the first command in no particular order. E.g.:
+In case you only want to build one and/or more cores instead of all, you can specify the cores you want to build after the first command in no particular order:
 
     ./libretro-build.sh snes9x2010 fceumm
 
-Once finished, you can find the libretro cores inside `dist/windows`.
+Once compilation has finished, you can find the libretro cores inside `dist/windows`.
