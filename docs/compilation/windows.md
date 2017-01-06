@@ -113,7 +113,7 @@ For 64-bit builds:
 
     export PATH=/mingw64/lib/ccache/bin/:$PATH
 
-You can add the corresponding line to your ~/.bashrc to avoid having to type that every time you start your working environment.
+You can add the corresponding line to your *~/.bashrc* to avoid having to type that every time you start your working environment.
 
 From our own buildbot, the times with and without **ccache** are the following:
 
@@ -148,11 +148,11 @@ You can obtain the tool by using these commands:
 
 Then you can fetch one or all the cores by using **libretro-fetch.sh**
 
-- Fetch all cores:
+Fetch all cores:
 
     ./libretro-fetch.sh
 
-    Fetch one core:
+Fetch one core:
 
     ./libretro-fetch.sh $corename
 
