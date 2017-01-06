@@ -33,7 +33,7 @@ The menu is designed with gamepad navigation in mind but it does have keyboard s
 
 Manu                        ||In-game      ||
 ------------- | ------------ |------------- | ------------ 
-Key           | Action       |Key           | Action       
+**Key**       | **Action**   |**Key**       |**Action**
 ![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Up.png)    | Move cursor up                  |![](images/controls/Keyboard_Mouse/Keyboard_Black_F1.png)    | Menu toggle
 ![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Down.png)  | Move cursor down                |![](images/controls/Keyboard_Mouse/Keyboard_Black_F2.png)    | Save state
 ![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Left.png)  | Move cursor left                |![](images/controls/Keyboard_Mouse/Keyboard_Black_F4.png)    | Load state
