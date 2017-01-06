@@ -2,7 +2,7 @@ site_name: Libretro Docs
 pages:
    - About: index.md
    - Technical:
-      - 'Netplay': 'specs/netplay.md'
+      - 'Netplay': 'tech/netplay.md'
    - Specifications:
       - 'Libretro': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
