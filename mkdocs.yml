@@ -8,6 +8,8 @@ pages:
       - 'Libretro': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
+   - Core Library:
+      - '2048': 'library/2048.md'
    - Develop:
       - 'Windows': 'compilation/windows.md'
       - 'Nintendo 3DS': 'compilation/3ds.md'
