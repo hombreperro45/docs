@@ -90,4 +90,8 @@ The easiest way to build all the cores for PlayStation3 is to use libretro-super
 
     ./libretro-build-ps3.sh
 
+In case you only want to build one and/or more cores instead of all, you can specify the cores you want to build after the first command in no particular order. E.g.:
+
+    ./libretro-build-ps3.sh snes9x2010 fceumm
+
 Once finished, you can find the libretro cores inside 'dist/ps3'.
