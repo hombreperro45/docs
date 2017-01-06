@@ -1,12 +1,10 @@
-#Libretro API
+# Libretro API
 
 The Libretro API is a lightweight C-based Application Programming Interface.
 
 Libretro is an API that exposes generic audio/video/input callbacks. A frontend for libretro (such as RetroArch) handles video output, audio output, input and application lifecycle. A libretro core written in portable C or C++ can run seamlessly on many platforms with very little/no porting effort.
 
 While RetroArch is the reference frontend for libretro, several other projects have used the libretro interface to include support for emulators and/or game engines. libretro is completely open and free for anyone to use.
-
-
 
 # Implementing the API
 
