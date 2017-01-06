@@ -25,9 +25,6 @@ To update your local copy from the repository run git pull
 First, you need to compile 'Salamander'. To compile Salamander (for PlayStation3) run:
 
     make -f Makefile.ps3.salamander
-    ./configure
-    make clean
-    make -j4
 
 Second, to compile RetroArch (for PlayStation3) run:
 
