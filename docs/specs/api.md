@@ -15,7 +15,7 @@ static library (.a/.lib) that exports all the functions outlined in libretro.h. 
 frontend. Implementations are designed to be single-instance, so global state is allowed. Should the frontend 
 call these functions in wrong order, undefined behavior occurs.
 
-The API header is compatible with C99 and C++. From C99, the bool type and <stdint.h> are used.
+The API header is compatible with C99 and C++. From C99, the bool type and `<stdint.h>` are used.
 
 The latest version of this file can be found [here](https://github.com/libretro/RetroArch/blob/master/libretro-common/include/libretro.h).
 
