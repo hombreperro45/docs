@@ -10,6 +10,7 @@ pages:
       - 'Overlays': 'specs/overlay.md'
    - Develop:
       - 'Windows': 'compilation/windows.md'
+      - 'PlayStation3': 'compilation/ps3.md'
    - Tutorials:
       - 'Windows': 'guides/windows.md'
    - Help: help.md
