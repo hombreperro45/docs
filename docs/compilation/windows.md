@@ -79,7 +79,9 @@ For development purposes you might want to run a debug build instead. In such ca
     make clean
     make DEBUG=1 GL_DEBUG=1 -j4
 
-After a few minutes you should be able to find retroarch.exe under that directory. To start the newly compiled retroarch run `./retroarch`
+After a few minutes you should be able to find retroarch.exe under that directory. To start the newly compiled retroarch you can use: 
+
+   ./retroarch
 
 ### Packaging RetroArch
 
