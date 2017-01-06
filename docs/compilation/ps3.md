@@ -60,7 +60,7 @@ This process will also automate the packaging process for you.
 
 ### Packaging RetroArch
 
-You can add 'pkg' as a parameter in order to make a PKG file (a PlayStation3 packaging file format). For example:
+You can add `pkg` as a parameter in order to make a PKG file (a PlayStation3 packaging file format). For example:
 
     make -f Makefile.ps3 pkg
 
@@ -94,4 +94,4 @@ In case you only want to build one and/or more cores instead of all, you can spe
 
     ./libretro-build-ps3.sh snes9x2010 fceumm
 
-Once finished, you can find the libretro cores inside 'dist/ps3'.
+Once finished, you can find the libretro cores inside directory `dist/ps3`.
