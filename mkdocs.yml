@@ -13,6 +13,7 @@ pages:
       - 'Nintendo Wii': 'compilation/wii.md'
       - 'Nintendo Wii U': 'compilation/wiiu.md'
       - 'PlayStation3': 'compilation/ps3.md'
+      - 'PlayStation Portable': 'compilation/psp.md'
       - 'PlayStation Vita/TV': 'compilation/psvita.md'
    - Tutorials:
       - 'Windows': 'guides/windows.md'
