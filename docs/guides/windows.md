@@ -46,16 +46,16 @@ Key           | Action       |Key           | Action
 ![](images/controls/Keyboard_Mouse/Keyboard_Black_Shift.png)       | Help                            |![](images/controls/Keyboard_Mouse/Keyboard_Black_Plus.png)  | Volume Up
 ![](images/controls/Keyboard_Mouse/Keyboard_Black_Space.png)       | Reset to default                |![](images/controls/Keyboard_Mouse/Keyboard_Black_Minus.png) | Volume Down
 ![](images/controls/Keyboard_Mouse/Keyboard_Black_Slash.png)       | Search                          |![](images/controls/Keyboard_Mouse/Keyboard_Black_Space.png) | Fast forward toggle
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Esc.png)         | Exit RetroArch                  |![](images/controls/Keyboard_Mouse/Keyboard_Black_l.png)     | Fast forward hold
-                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_r.png)     | Rewind
-                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_o.png)     | Movie record
-                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_p.png)     | Pause
-                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_k.png)     | Frame advance
-                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_h.png)     | Reset
-                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_m.png)     | Next shader
-                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_n.png)     | Previous shader
-                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_i.png)     | Netplay toggle play/spectate
-                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_e.png)     | Slow motion
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Esc.png)         | Exit RetroArch                  |![](images/controls/Keyboard_Mouse/Keyboard_Black_L.png)     | Fast forward hold
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_R.png)     | Rewind
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_O.png)     | Movie record
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_P.png)     | Pause
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_K.png)     | Frame advance
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_H.png)     | Reset
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_M.png)     | Next shader
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_N.png)     | Previous shader
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_I.png)     | Netplay toggle play/spectate
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_E.png)     | Slow motion
                                                                    
                                                                    
 
