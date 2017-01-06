@@ -1,12 +1,5 @@
 site_name: Libretro Docs
 pages:
-   - Technical:
-      - RetroArch:
-         - 'Netplay': 'tech/netplay.md'
-   - Specifications:
-      - 'Libretro': 'specs/api.md'
-      - 'Shaders': 'specs/shader.md'
-      - 'Overlays': 'specs/overlay.md'
    - Core Library:
       - '2048': 'library/2048.md'
    - Develop:
@@ -21,7 +14,14 @@ pages:
       - Linux:
          - 'Ubuntu': 'compilation/ubuntu.md'
       - 'Windows': 'compilation/windows.md'
-   - Tutorials:
+   - Specifications:
+      - 'Libretro': 'specs/api.md'
+      - 'Shaders': 'specs/shader.md'
+      - 'Overlays': 'specs/overlay.md'
+   - Technical:
+      - RetroArch:
+         - 'Netplay': 'tech/netplay.md'
+   - User Guides:
       - 'Windows': 'guides/windows.md'
    - Help: help.md
 extra:
