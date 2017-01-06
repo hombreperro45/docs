@@ -31,55 +31,35 @@ This is one of three production ready menu drivers. It is called XMB and it trie
 
 The menu is designed with gamepad navigation in mind but it does have keyboard support. The keyboard controls are:
 
-##### Menu Navigation & Hotkeys:
+Manu                        ||In-game      ||
+------------- | ------------ |------------- | ------------ 
+Key           | Action       |Key           | Action       
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Up.png)    | Move cursor up                  |![](images/controls/Keyboard_Mouse/Keyboard_Black_F1.png)    | Menu toggle
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Down.png)  | Move cursor down                |![](images/controls/Keyboard_Mouse/Keyboard_Black_F2.png)    | Save state
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Left.png)  | Move cursor left                |![](images/controls/Keyboard_Mouse/Keyboard_Black_F4.png)    | Load state
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Right.png) | Move cursor right               |![](images/controls/Keyboard_Mouse/Keyboard_Black_F7.png)    | Increase current state slot
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Page_Down.png)   | Scroll one page down            |![](images/controls/Keyboard_Mouse/Keyboard_Black_F6.png)    | Decrease current state slot
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Page_Up.png)     | Scroll one page up              |![](images/controls/Keyboard_Mouse/Keyboard_Black_F8.png)    | Take screenshot
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Page_Down.png)   | Scroll one page down            |![](images/controls/Keyboard_Mouse/Keyboard_Black_F9.png)    | Mute
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Enter.png)       | Select                          |![](images/controls/Keyboard_Mouse/Keyboard_Black_F12.png)   | Show on-screen keyboard
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Backspace.png)   | Return to the previous screen   |![](images/controls/Keyboard_Mouse/Keyboard_Black_F11.png)   | Grab mouse
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Shift.png)       | Help                            |![](images/controls/Keyboard_Mouse/Keyboard_Black_Plus.png)  | Volume Up
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Space.png)       | Reset to default                |![](images/controls/Keyboard_Mouse/Keyboard_Black_Minus.png) | Volume Down
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Slash.png)       | Search                          |![](images/controls/Keyboard_Mouse/Keyboard_Black_Space.png) | Fast forward toggle
+![](images/controls/Keyboard_Mouse/Keyboard_Black_Esc.png)         | Exit RetroArch                  |![](images/controls/Keyboard_Mouse/Keyboard_Black_l.png)     | Fast forward hold
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_r.png)     | Rewind
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_o.png)     | Movie record
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_p.png)     | Pause
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_k.png)     | Frame advance
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_h.png)     | Reset
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_m.png)     | Next shader
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_n.png)     | Previous shader
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_i.png)     | Netplay toggle play/spectate
+                                                                   |                                 |![](images/controls/Keyboard_Mouse/Keyboard_Black_e.png)     | Slow motion
+                                                                   
+                                                                   
 
-Key           | Action
-------------- | ------------
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Up.png)    | Move cursor up
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Down.png)  | Move cursor down
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Left.png)  | Move cursor left
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Arrow_Right.png) | Move cursor right
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Page_Down.png)   | Scroll one page down
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Page_Up.png)     | Scroll one page up
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Page_Down.png)   | Scroll one page down
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Enter.png)       | Select
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Backspace.png)   | Return to the previous screen
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Shift.png)       | Help
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Space.png)       | Reset to default
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Slash.png)       | Search
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Esc.png)         | Exit RetroArch
-
-##### In-Game
-
-Key           | Action
-------------- | ------------
-![](images/controls/Keyboard_Mouse/Keyboard_Black_F1.png)    | Menu toggle
-![](images/controls/Keyboard_Mouse/Keyboard_Black_F2.png)    | Save state
-![](images/controls/Keyboard_Mouse/Keyboard_Black_F4.png)    | Load state
-![](images/controls/Keyboard_Mouse/Keyboard_Black_F7.png)    | Increase current state slot
-![](images/controls/Keyboard_Mouse/Keyboard_Black_F6.png)    | Decrease current state slot
-![](images/controls/Keyboard_Mouse/Keyboard_Black_F8.png)    | Take screenshot
-![](images/controls/Keyboard_Mouse/Keyboard_Black_F9.png)    | Mute
-![](images/controls/Keyboard_Mouse/Keyboard_Black_F12.png)   | Show on-screen keyboard
-![](images/controls/Keyboard_Mouse/Keyboard_Black_F11.png)   | Grab mouse
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Plus.png)  | Volume Up
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Minus.png) | Volume Down
-![](images/controls/Keyboard_Mouse/Keyboard_Black_Space.png) | Fast forward toggle
-![](images/controls/Keyboard_Mouse/Keyboard_Black_l.png)     | Fast forward hold
-![](images/controls/Keyboard_Mouse/Keyboard_Black_r.png)     | Rewind
-![](images/controls/Keyboard_Mouse/Keyboard_Black_o.png)     | Movie record
-![](images/controls/Keyboard_Mouse/Keyboard_Black_p.png)     | Pause
-![](images/controls/Keyboard_Mouse/Keyboard_Black_k.png)     | Frame advance
-![](images/controls/Keyboard_Mouse/Keyboard_Black_h.png)     | Reset
-![](images/controls/Keyboard_Mouse/Keyboard_Black_m.png)     | Next shader
-![](images/controls/Keyboard_Mouse/Keyboard_Black_n.png)     | Previous shader
-![](images/controls/Keyboard_Mouse/Keyboard_Black_i.png)     | Netplay toggle play/spectate
-![](images/controls/Keyboard_Mouse/Keyboard_Black_e.png)     | Slow motion
-
-
-
-
-## Glossary
+# Glossary
 
 - Frontend — a frontend in libretro's context is a program designed to run libretro cores such as Kodi's RetroPlayer, RetroArch, Phoenix, Minir
 - Core — a core is a program that has been ported to the libretro API and runs inside a libretro frontend
