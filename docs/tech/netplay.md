@@ -1,7 +1,7 @@
 # Netplay
 
-This is RetroArch's Netplay code. RetroArch Netplay allows a second player to
-be connected via the Internet, rather than local at the same computer.
+RetroArch Netplay allows a second player (and/or more) to be connected via the Internet, 
+rather than local at the same computer.
 
 ## Explanation
 
