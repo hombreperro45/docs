@@ -11,6 +11,7 @@ pages:
    - Develop:
       - 'Windows': 'compilation/windows.md'
       - 'PlayStation3': 'compilation/ps3.md'
+      - 'PlayStation Vita/TV': 'compilation/psvita.md'
    - Tutorials:
       - 'Windows': 'guides/windows.md'
    - Help: help.md
