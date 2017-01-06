@@ -1,6 +1,5 @@
 site_name: Libretro Docs
 pages:
-   - About: index.md
    - Technical:
       - RetroArch:
          - 'Netplay': 'tech/netplay.md'
@@ -11,13 +10,17 @@ pages:
    - Core Library:
       - '2048': 'library/2048.md'
    - Develop:
+      - Nintendo:
+         - 'Nintendo 3DS': 'compilation/3ds.md'
+         - 'Nintendo Wii': 'compilation/wii.md'
+         - 'Nintendo Wii U': 'compilation/wiiu.md'
+      - Sony:
+         - 'PlayStation3': 'compilation/ps3.md'
+         - 'PlayStation Portable': 'compilation/psp.md'
+         - 'PlayStation Vita/TV': 'compilation/psvita.md'
+      - Linux:
+         - 'Ubuntu:' 'compilation/ubuntu.md'
       - 'Windows': 'compilation/windows.md'
-      - 'Nintendo 3DS': 'compilation/3ds.md'
-      - 'Nintendo Wii': 'compilation/wii.md'
-      - 'Nintendo Wii U': 'compilation/wiiu.md'
-      - 'PlayStation3': 'compilation/ps3.md'
-      - 'PlayStation Portable': 'compilation/psp.md'
-      - 'PlayStation Vita/TV': 'compilation/psvita.md'
    - Tutorials:
       - 'Windows': 'guides/windows.md'
    - Help: help.md
