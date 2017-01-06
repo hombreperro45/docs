@@ -1,5 +1,6 @@
 site_name: Libretro Docs
 pages:
+   - About: 'index.md'
    - Core Library:
       - '2048': 'library/2048.md'
    - Develop:
