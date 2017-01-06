@@ -131,8 +131,18 @@ You can also strip the debug symbols of the build product to save some space.
 
 ### Fetching Cores
 
-todo...
+The easiest way to fetch all the cores is to use libretro-super. Run
+
+    ./libretro-fetch.sh
 
 ### Building Cores
 
-todo...
+The easiest way to build all the cores is to use libretro-super. Run
+
+    ./libretro-build.sh
+
+In case you only want to build one and/or more cores instead of all, you can specify the cores you want to build after the first command in no particular order. E.g.:
+
+    ./libretro-build.sh snes9x2010 fceumm
+
+Once finished, you can find the libretro cores inside 'dist/windows'.

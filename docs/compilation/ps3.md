@@ -86,7 +86,7 @@ The easiest way to fetch all the cores is to use libretro-super. Run
 
 ### Building Cores
 
-The easiest way to build all the cores for PlayStation3 is to use libretro-super. Run
+The easiest way to build all the cores (for PlayStation3) is to use libretro-super. Run
 
     ./libretro-build-ps3.sh
 
