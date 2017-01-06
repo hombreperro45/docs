@@ -10,6 +10,7 @@ pages:
       - 'Overlays': 'specs/overlay.md'
    - Develop:
       - 'Windows': 'compilation/windows.md'
+      - 'Nintendo 3DS': 'compilation/3ds.md'
       - 'Nintendo Wii': 'compilation/wii.md'
       - 'Nintendo Wii U': 'compilation/wiiu.md'
       - 'PlayStation3': 'compilation/ps3.md'
