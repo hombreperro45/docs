@@ -22,16 +22,16 @@ To update your local copy from the repository run git pull
 
 ### Building RetroArch separately
 
-First, you need to compile 'Salamander'. To compile Salamander (for PlayStation3) run:
+First, you need to compile 'Salamander'. To compile Salamander (for Wii) run:
 
     make -f Makefile.wii.salamander
 
-Second, to compile RetroArch (for PlayStation3) run:
+Second, to compile RetroArch (for Wii) run:
 
     make -f Makefile.griffin platform=wii
 
 !!! Note
-    RetroArch on PlayStation Wii is statically linked. With statically linked RetroArch, each executable is a separate libretro core instead of the core being separately loaded from a single executable. A pre-existing libretro library needs to be present in the root directory in order to link RetroArch Wii. This file needs to be called 'libretro_wii.a'.
+    RetroArch on Wii is statically linked. With statically linked RetroArch, each executable is a separate libretro core instead of the core being separately loaded from a single executable. A pre-existing libretro library needs to be present in the root directory in order to link RetroArch Wii. This file needs to be called 'libretro_wii.a'.
 
 After a few seconds/minutes you should be able to find a retroarch_wii.elf and retroarch_wii.dol file under that directory.
 
@@ -65,7 +65,7 @@ The easiest way to fetch all the cores is to use libretro-super. Run
 
 ### Building Cores
 
-The easiest way to build all the cores (for PlayStation3) is to use libretro-super. Run
+The easiest way to build all the cores (for Wii) is to use libretro-super. Run
 
     ./libretro-build-wii.sh
 
