@@ -145,4 +145,4 @@ In case you only want to build one and/or more cores instead of all, you can spe
 
     ./libretro-build.sh snes9x2010 fceumm
 
-Once finished, you can find the libretro cores inside 'dist/windows'.
+Once finished, you can find the libretro cores inside `dist/windows`.
