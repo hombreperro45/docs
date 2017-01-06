@@ -10,6 +10,7 @@ pages:
       - 'Overlays': 'specs/overlay.md'
    - Develop:
       - 'Windows': 'compilation/windows.md'
+      - 'Nintendo Wii': 'compilation/wii.md'
       - 'PlayStation3': 'compilation/ps3.md'
       - 'PlayStation Vita/TV': 'compilation/psvita.md'
    - Tutorials:
