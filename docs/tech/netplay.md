@@ -134,24 +134,24 @@ payload size, both in network byte order, followed by a payload. The command
 identifiers are listed in netplay.h. The commands are described below. Unless
 specified otherwise, all payload values are in network byte order.
 
-Command: ACK
-Payload: None
-Description:
+    Command: ACK
+    Payload: None
+    Description:
     Acknowledgement. Not used.
 
-Command: NAK
-Payload: None
-Description:
+    Command: NAK
+    Payload: None
+    Description:
     Negative Acknowledgement. If received, the connection is terminated. Sent
     whenever a command is malformed or otherwise not understood.
 
-Command: DISCONNECT
-Payload: None
-Description:
+    Command: DISCONNECT
+    Payload: None
+    Description:
     Gracefully disconnect. Not used.
 
-Command: INPUT
-Payload:
+    Command: INPUT
+    Payload:
     {
        frame number: uint32
        is server data: 1 bit
@@ -160,55 +160,55 @@ Payload:
        analog 1 input: uint32
        analog 2 input: uint32
     }
-Description:
+    Description:
     Input state for each frame. Netplay must send an INPUT command for every
     frame in order to function at all. Client's player value is ignored. Server
     indicates which frames are its own input data because INPUT is a
     synchronization point: No synchronization events from the given frame may
     arrive after the server's input for the frame.
 
-Command: NOINPUT
-Payload:
+    Command: NOINPUT
+    Payload:
     {
        frame number: uint32
     }
-Description:
+    Description:
     Sent by the server to indicate a frame has passed when the server is not
     otherwise sending data.
 
-Command: NICK
-Payload:
+    Command: NICK
+    Payload:
     {
        nickname: char[32]
     }
-Description:
+    Description:
     Send nickname. Mandatory handshake command.
 
-Command: PASSWORD
-Payload:
+    Command: PASSWORD
+    Payload:
     {
        password hash: char[64]
     }
-Description:
+    Description:
     Send hashed password to server. Mandatory handshake command for clients if
     the server demands a password.
 
-Command: INFO
-Payload
+    Command: INFO
+    Payload
     {
        core name: char[32]
        core version: char[32]
        content CRC: uint32
     }
-Description:
+    Description:
     Send core/content info. Mandatory handshake command. Sent by server first,
     then by client, and must match. Server may send INFO with no payload, in
     which case the client sends its own info and expects the server to load the
     appropriate core and content then send a new INFO command. If mutual
     agreement cannot be achieved, the correct solution is to simply disconnect.
 
-Command: SYNC
-Payload:
+    Command: SYNC
+    Payload:
     {
        frame number: uint32
        paused?: 1 bit
@@ -218,7 +218,7 @@ Payload:
        client nick: char[32]
        sram: variable
     }
-Description:
+    Description:
     Initial state synchronization. Mandatory handshake command from server to
     client only. Connected players is a bitmap with the lowest bit being player
     0. Flip frame is 0 if players aren't flipped. Controller devices are the
@@ -226,20 +226,20 @@ Description:
     Client is forced to have a different nick if multiple clients have the same
     nick.
 
-Command: SPECTATE
-Payload: None
-Description:
+    Command: SPECTATE
+    Payload: None
+    Description:
     Request to enter spectate mode. The client should immediately consider
     itself to be in spectator mode and send no further input.
 
-Command: PLAY
-Payload: None
-Description:
+    Command: PLAY
+    Payload: None
+    Description:
     Request to enter player mode. The client must wait for a MODE command
     before sending input.
 
-Command: MODE
-Payload:
+    Command: MODE
+    Payload:
     {
        frame number: uint32
        reserved: 14 bits
@@ -247,7 +247,7 @@ Payload:
        you: 1 bit
        player number: uint16
     }
-Description:
+    Description:
     Inform of a connection mode change (possibly of the receiving client). Only
     server-to-client. Frame number is the first frame in which player data is
     expected, or the first frame in which player data is not expected. In the
@@ -256,67 +256,67 @@ Description:
     players the frame number must be later than the last frame of the relevant
     player's input that has been transmitted.
 
-Command: MODE_REFUSED
-Payload:
+    Command: MODE_REFUSED
+    Payload:
     {
        reason: uint32
     }
-Description:
+    Description:
     Inform a client that its request to change modes has been refused.
 
-Command: CRC
-Payload:
+    Command: CRC
+    Payload:
     {
        frame number: uint32
        hash: uint32
     }
-Description:
+    Description:
     Informs the peer of the correct CRC hash for the specified frame. If the
     receiver's hash doesn't match, they should send a REQUEST_SAVESTATE
     command.
 
-Command: REQUEST_SAVESTATE
-Payload: None
-Description:
+    Command: REQUEST_SAVESTATE
+    Payload: None
+    Description:
     Requests that the peer send a savestate.
 
-Command: LOAD_SAVESTATE
-Payload:
+    Command: LOAD_SAVESTATE
+    Payload:
     {
        frame number: uint32
        uncompressed size: uint32
        serialized save state: blob (variable size)
     }
-Description:
+    Description:
     Cause the other side to load a savestate, notionally one which the sending
     side has also loaded. If both sides support zlib compression, the
     serialized state is zlib compressed. Otherwise it is uncompressed.
 
-Command: PAUSE
-Payload:
+    Command: PAUSE
+    Payload:
     {
        nickname: char[32]
     }
-Description:
+    Description:
     Indicates that the core is paused. The receiving peer should also pause.
     The server should pass it on, using the known correct name rather than the
     provided name.
 
-Command: RESUME
-Payload: None
-Description:
+    Command: RESUME
+    Payload: None
+    Description:
     Indicates that the core is no longer paused.
 
-Command: STALL
-Payload:
+    Command: STALL
+    Payload:
     {
        frames: uint32
     }
-Description:
+    Description:
     Request that a client stall for the given number of frames.
 
-Command: CHEATS
-Unused
+    Command: CHEATS
+    Unused
 
     Command: FLIP_PLAYERS
     Payload:
