@@ -30,7 +30,9 @@ pages:
       - RetroArch:
          - 'Netplay': 'tech/netplay.md'
    - User Guides:
-      - 'Windows': 'guides/windows.md'
+      - RetroArch:
+         - Getting Started:
+           - 'Windows': 'guides/windows.md'
    - Help: help.md
 extra:
   logo: 'images/invader.png'
