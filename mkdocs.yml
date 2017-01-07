@@ -11,6 +11,7 @@ pages:
             - 'iOS': 'compilation/ios.md'
          - Nintendo:
             - 'Nintendo 3DS': 'compilation/3ds.md'
+            - 'Nintendo GameCube': 'compilation/gamecube.md'
             - 'Nintendo Wii': 'compilation/wii.md'
             - 'Nintendo Wii U': 'compilation/wiiu.md'
          - Sony:
