@@ -14,6 +14,7 @@ pages:
          - 'PlayStation Vita/TV': 'compilation/psvita.md'
       - Microsoft:
          - 'Xbox': 'compilation/xbox.md'
+         - 'Xbox 360': 'compilation/xbox360.md'
       - Linux:
          - 'Ubuntu': 'compilation/ubuntu.md'
       - 'Windows': 'compilation/windows.md'
