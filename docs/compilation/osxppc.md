@@ -1,18 +1,12 @@
-# macOS/OSX Compilation / Development Guide
+# OSX PowerPC Compilation / Development Guide
 
-This compilation guide will teach you how to build RetroArch for macOS/OSX. 
+This compilation guide will teach you how to build RetroArch for OSX PowerPC.
 
 The following versions of the operating system are supported:
 
-- OSX 10.6    (Snow Leopard)
-- OSX 10.7    (Tiger)
-- OSX 10.8    (Mountain Lion)
-- OSX 10.9    (Mavericks)
-- OSX 10.10   (Yosemite)
-- OSX 10.11   (El Capitan)
-- macOS 10.12 (Sierra)
+- OSX 10.5    (Leopard)
 
-RetroArch can work on both 32bit and 64bit Intel processor-powered Macs.
+RetroArch can work on both 32bit and 64bit PowerPC processor-powered Macs.
 
 ## Environment configuration
 
@@ -41,21 +35,21 @@ To update your local copy from the repository run git pull
 
 #### Using the graphical interface
 
-Open Xcode. Open the following project file `pkg/apple/RetroArch.xcodeproj` in the Xcode IDE and build (**&#8984;-B**) and run (**&#8984;-R**) it there. Or you can use the command line....
+Open Xcode. Open the following project file `pkg/apple/RetroArch_PPC.xcodeproj` in the Xcode IDE and build (**&#8984;-B**) and run (**&#8984;-R**) it there. Or you can use the command line....
 
 #### Using the command line
 
 To build a debug build :
 
     # Build
-    xcodebuild -target RetroArch -configuration Debug -project pkg/apple/RetroArch.xcodeproj
+    xcodebuild -target RetroArch -configuration Debug -project pkg/apple/RetroArch_PPC.xcodeproj
     # Run
     open ./pkg/apple/build/Debug/RetroArch.app/
 
 To build a release build :
 
     # Build
-    xcodebuild -target RetroArch -configuration Release -project pkg/apple/RetroArch.xcodeproj
+    xcodebuild -target RetroArch -configuration Release -project pkg/apple/RetroArch_PPC.xcodeproj
     # Run
     open ./pkg/apple/build/Release/RetroArch.app/
 
@@ -74,7 +68,7 @@ The easiest way to fetch all the cores is to use libretro-super. Run
 
 ### Building Cores
 
-The easiest way to build all the cores (for iOS) is to use libretro-super. 
+The easiest way to build all the cores (for OSX PowerPC) is to use libretro-super. 
 
 To build all cores for OSX, run
 

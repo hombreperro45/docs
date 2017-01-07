@@ -5,8 +5,9 @@ pages:
       - '2048': 'library/2048.md'
    - Develop:
       - Apple:
+         - 'OSX PowerPC': 'compilation/osxppc.md'
+         - 'OSX/macOS': 'compilation/osx.md'
          - 'iOS': 'compilation/ios.md'
-         - 'macOS/OSX': 'compilation/osx.md'
       - Nintendo:
          - 'Nintendo 3DS': 'compilation/3ds.md'
          - 'Nintendo Wii': 'compilation/wii.md'
