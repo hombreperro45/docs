@@ -4,24 +4,25 @@ pages:
    - Core Library:
       - '2048': 'library/2048.md'
    - Develop:
-      - Apple:
-         - 'OSX PowerPC': 'compilation/osxppc.md'
-         - 'OSX/macOS': 'compilation/osx.md'
-         - 'iOS': 'compilation/ios.md'
-      - Nintendo:
-         - 'Nintendo 3DS': 'compilation/3ds.md'
-         - 'Nintendo Wii': 'compilation/wii.md'
-         - 'Nintendo Wii U': 'compilation/wiiu.md'
-      - Sony:
-         - 'PlayStation3': 'compilation/ps3.md'
-         - 'PlayStation Portable': 'compilation/psp.md'
-         - 'PlayStation Vita/TV': 'compilation/psvita.md'
-      - Microsoft:
-         - 'Xbox': 'compilation/xbox.md'
-         - 'Xbox 360': 'compilation/xbox360.md'
-      - Linux:
-         - 'Ubuntu': 'compilation/ubuntu.md'
-      - 'Windows': 'compilation/windows.md'
+      - Building RetroArch:
+         - Apple:
+            - 'OSX PowerPC': 'compilation/osxppc.md'
+            - 'OSX/macOS': 'compilation/osx.md'
+            - 'iOS': 'compilation/ios.md'
+         - Nintendo:
+            - 'Nintendo 3DS': 'compilation/3ds.md'
+            - 'Nintendo Wii': 'compilation/wii.md'
+            - 'Nintendo Wii U': 'compilation/wiiu.md'
+         - Sony:
+            - 'PlayStation3': 'compilation/ps3.md'
+            - 'PlayStation Portable': 'compilation/psp.md'
+            - 'PlayStation Vita/TV': 'compilation/psvita.md'
+         - Microsoft:
+            - 'Xbox': 'compilation/xbox.md'
+            - 'Xbox 360': 'compilation/xbox360.md'
+         - Linux:
+            - 'Ubuntu': 'compilation/ubuntu.md'
+         - 'Windows': 'compilation/windows.md'
    - Specifications:
       - 'Libretro': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
