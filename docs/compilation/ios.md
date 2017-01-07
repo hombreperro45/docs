@@ -35,26 +35,49 @@ To update your local copy from the repository run git pull
 
 #### Using the graphical interface
 
-Open Xcode. Open the following project file `pkg/apple/RetroArch.xcodeproj` in the Xcode IDE and build (**&#8984;-B**) and run (**&#8984;-R**) it there. Or you can use the command line....
+##### For iOS 6 to 8
+
+Open Xcode. Open the following project file `pkg/apple/RetroArch_iOS.xcodeproj` in the Xcode IDE and build (**&#8984;-B**) and run (**&#8984;-R**) it there. Or you can use the command line....
+
+#### For iOS 10 and up
+
+Open Xcode. Open the following project file `pkg/apple/RetroArch_iOS10.xcodeproj` in the Xcode IDE and build (**&#8984;-B**) and run (**&#8984;-R**) it there. Or you can use the command line....
 
 #### Using the command line
+
+##### For iOS 6 to 8
 
 To build a debug build :
 
     # Build
-    xcodebuild -target RetroArch -configuration Debug -project pkg/apple/RetroArch.xcodeproj
+    xcodebuild -target RetroArch -configuration Debug -project pkg/apple/RetroArch_iOS.xcodeproj
     # Run
     open ./pkg/apple/build/Debug/RetroArch.app/
 
 To build a release build :
 
     # Build
-    xcodebuild -target RetroArch -configuration Release -project pkg/apple/RetroArch.xcodeproj
+    xcodebuild -target RetroArch -configuration Release -project pkg/apple/RetroArch_iOS.xcodeproj
+    # Run
+    open ./pkg/apple/build/Release/RetroArch.app/
+
+##### For iOS 10 and up
+
+To build a debug build :
+
+    # Build
+    xcodebuild -target RetroArch -configuration Debug -project pkg/apple/RetroArch_iOS10.xcodeproj
+    # Run
+    open ./pkg/apple/build/Debug/RetroArch.app/
+
+To build a release build :
+
+    # Build
+    xcodebuild -target RetroArch -configuration Release -project pkg/apple/RetroArch_iOS10.xcodeproj
     # Run
     open ./pkg/apple/build/Release/RetroArch.app/
 
 ### Packaging RetroArch
-
 
 ### Additional Tips:
 
