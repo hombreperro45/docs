@@ -28,7 +28,7 @@ To update your local copy from the repository run git pull
 
 ### Building RetroArch separately
 
-Open Visual Studio 2003. Open the following solution file `pkg/msvc/RetroArch-Xbox360.sln`.
+Open Visual Studio 2010. Open the following solution file `pkg/msvc/RetroArch-Xbox360.sln`.
 
 Select the 'project 'RetroArch Salamander'. build it by pressing F5. 
 
