@@ -21,8 +21,6 @@ The following software needs to be installed:
 - XCode
 - (Optional) NVIDIA Cg Toolkit
 
-The 
-
 ## RetroArch Compilation
 
 ### Fetching RetroArch
