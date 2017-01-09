@@ -56,16 +56,10 @@ You can clone the repository directly from [GitHub](https://github.com/libretro/
 
     git clone https://github.com/libretro/RetroArch.git retroarch
 
-For Windows builds you are going to need to fetch submodules too.
-
-    cd retroarch
-    git submodule update --init
-
 For subsequent builds you will need to pull the changes from the repo
 
     cd retroarch
     git pull
-    git submodule update
 
 To compile RetroArch run the following commands inside RetroArch's source tree:
 
