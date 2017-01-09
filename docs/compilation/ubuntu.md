@@ -30,16 +30,10 @@ You can get RetroArch's dependenencies by running the following command:
 !!! Note
     Depending on your configuration you may need to uncomment the *deb-src* repositories in */etc/apt/sources.list*, */etc/apt/sources.list.d/libretro-ubuntu-testing-$version.list* and then run **apt-get update** before running **apt-get build-dep**
 
-For Vulkan-enabled builds you are going to need to fetch submodules too.
-
-    $ cd retroarch
-    $ git submodule update --init
-
 For subsequent builds you will need to pull the changes from the repo
 
     $ cd retroarch
     $ git pull
-    $ git submodule update
 
 To compile RetroArch run the following commands inside RetroArch's source tree:
 
