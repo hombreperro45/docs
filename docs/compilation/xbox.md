@@ -1,8 +1,5 @@
 # Microsoft Xbox Compilation / Development Guide
 
-!!! warning "Xbox version does not currently compile with latest sources"
-    The port will be updated and fixed at a later point in time.
-
 ## Environment configuration
 
 The following software needs to be installed:
