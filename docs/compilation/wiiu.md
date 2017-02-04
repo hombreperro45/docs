@@ -2,7 +2,7 @@
 
 ## Environment configuration
 
-You need the homebrew Nintendo Wii U SDK and Devkitpro PPC toolchain installed. 
+You need the DevkitPPC(r29) toolchain installed and the DEVKITPRO and DEVKITPPC environment variables set to the respective folders.
 
 ## RetroArch Compilation
 
@@ -29,7 +29,7 @@ To compile RetroArch (for Wii U) run:
 !!! Note
     RetroArch on Wii U is statically linked. With statically linked RetroArch, each executable is a separate libretro core instead of the core being separately loaded from a single executable. A pre-existing libretro library needs to be present in the root directory in order to link RetroArch Wii U. This file needs to be called 'libretro_wiiu.a'.
 
-After a few seconds/minutes you should be able to find a retroarch_wiiu.elf and retroarch_wiiu.dol file under that directory.
+After a few seconds/minutes you should be able to find a retroarch_wiiu.elf and retroarch_wiiu.rpx file under that directory.
 
 ### Building RetroArch in bulk
 
@@ -38,13 +38,13 @@ Instead of building each core one by one, you can build all cores as a batch tas
     cd dist-scripts
 
 !!! Note
-    Make sure that all the libretro cores that you want to compile are inside the 'dist-scripts' directory.
+    Make sure that all the libretro cores that you want to compile are inside the 'dist-scripts' directory. you can also copy the [info files](https://github.com/libretro/libretro-super/tree/master/dist/info) and [icons](https://github.com/libretro/retroarch-assets/tree/master/pkg/wiiu) in the same directory to have them added to the package, and to generate the meta.xml files.
 
 Once inside this directory, run :
 
-    ./dist-cores.sh wiiu
+    ./wiiu-cores.sh
 
-This process will also automate the packaging process for you.
+This process will also automate the packaging process for you. the output will be in `pkg/wiiu`.
 
 ### Packaging RetroArch
 
