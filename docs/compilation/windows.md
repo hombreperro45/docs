@@ -1,4 +1,8 @@
-# Windows Compilation / Development Guide
+# Windows (Vista and later) Compilation / Development Guide
+
+!!! Note
+    The MinGW toolchain no longer supports targetting Windows XP and programs will fail to start with it.
+    Please see one of the MSVC guides for how to target older Windows versions with Visual Studio.
 
 ## Environment configuration
 
