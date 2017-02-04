@@ -21,9 +21,10 @@ pages:
          - Microsoft:
             - 'Xbox': 'compilation/xbox.md'
             - 'Xbox 360': 'compilation/xbox360.md'
+            - 'Windows': 'compilation/windows.md'
          - Linux:
             - 'Ubuntu': 'compilation/ubuntu.md'
-         - 'Windows': 'compilation/windows.md'
+         - 'DOS': 'compilation/dos.md'
    - Specifications:
       - 'Libretro': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
