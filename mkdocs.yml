@@ -3,8 +3,7 @@ pages:
    - About: 'index.md'
    - Core Library:
       - '2048': 'library/2048.md'
-   - Develop:
-      - Building RetroArch and Cores:
+   - Build RetroArch & Cores:
          - Apple:
             - 'OSX/PowerPC': 'compilation/osxppc.md'
             - 'OSX/macOS': 'compilation/osx.md'
