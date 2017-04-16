@@ -53,15 +53,20 @@ You can then start RetroArch by running:
     $ ./retroarch
 
 !!! tip
-    If you're building frequently you may want to add **ccache** to the mix to speed up the build process
+    If you're building frequently you may want to add **ccache** to the mix to speed up the build process. 
+    Install ccache via apt and the prepend the ccache symlink directory to your build environment path as shown below. 
+    
+    For further instructions check the [documentation](https://ccache.samba.org/manual.html#_run_modes)
+
+Install ccache
 
     # apt-get install ccache
 
-Then you have to prepend ccache's directories to your build environment. You can do so by doing this:
+Configure paths:
 
     $ export PATH=/usr/lib/ccache/bin/:$PATH
 
-You can add that line to your *~/.bashrc* to avoid having to type that every time you start your working environment.
+You can add that last line to your *~/.bashrc* to avoid having to type that every time you start your working environment.
 
 ## Core Compilation
 
