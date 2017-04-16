@@ -52,9 +52,8 @@ You can then start RetroArch by running:
 
     $ ./retroarch
 
-### Additional Tips:
-
-If you're building frequently you may want to add **ccache** to the mix to speed up the build process: 
+!!! tip
+    If you're building frequently you may want to add **ccache** to the mix to speed up the build process
 
     # apt-get install ccache
 
