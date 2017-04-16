@@ -21,6 +21,7 @@ You will need **git** and a few build tools at least to proceed which you can in
 ### Building RetroArch
 
 The first step is to obtain RetroArch's source tree.
+
     $ git clone https://github.com/libretro/RetroArch.git retroarch
 
 You can get RetroArch's dependenencies by running the following command:
@@ -84,10 +85,10 @@ Fetch all cores:
 
 Fetch one core:
 
-    ./libretro-fetch.sh $corename
+    ./libretro-fetch.sh ~~corename~~
 
 !!! Note
-     Replace $corename with the name of the core you want to fetch, for example gambatte
+     Replace ~~corename~~ with the name of the core you want to fetch, for example gambatte
 
 ### Building Cores
 
