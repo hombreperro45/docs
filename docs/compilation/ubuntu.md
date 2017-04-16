@@ -109,7 +109,7 @@ Once compilation has finished, you can find the libretro cores inside *dist/unix
 
 #### Manual Fetching and Compilation
 
-Get the core's source tree. As an example we'll use fceumm (https://github.com/libretro/libretro-fceumm/)
+Get the core's source tree. As an example we'll use [fceumm](https://github.com/libretro/libretro-fceumm/)
 
     $ git clone https://github.com/libretro/libretro-fceumm.git
 
