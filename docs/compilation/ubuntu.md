@@ -85,12 +85,14 @@ Fetch all cores:
 
 Fetch one core:
 
-    ./libretro-fetch.sh ~~corename~~
+    ./libretro-fetch.sh *corename*
 
 !!! Note
-     Replace ~~corename~~ with the name of the core you want to fetch, for example gambatte
+     Replace *corename* with the name of the core you want to fetch, for example gambatte
 
 ### Building Cores
+
+#### LibRetro Super
 
 The easiest way to build all the cores is to use **libretro-build.sh** from within libretro-super's source tree:
 
@@ -101,3 +103,16 @@ In case you only want to build one and/or more cores instead of all, you can spe
     ./libretro-build.sh snes9x2010 fceumm
 
 Once compilation has finished, you can find the libretro cores inside `dist/unix`.
+
+#### Manual Compilation
+
+Get the core's source tree. As an example we'll use fceumm (https://github.com/libretro/libretro-fceumm/)
+
+    $ git clone https://github.com/libretro/libretro-fceumm.git
+
+Then compile the core: 
+
+    $ cd libretro-fceumm
+    $ make -f Makefile.libretro
+    
+Most cores will build with these instructions. You might need to browse to a subdirectory in some cases.
