@@ -73,7 +73,7 @@ Configure paths:
 
 ### Fetching Cores
 
-You can find the core on libretro's [GitHUB organization](https://github.com/libretro/). 
+You can find the cores on libretro's [GitHUB organization](https://github.com/libretro/). 
 
 We have an all-in-one tool to fetch and compile cores which you can use to streamline the process.
 You can obtain the tool by using these commands:
