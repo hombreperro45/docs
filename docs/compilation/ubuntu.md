@@ -66,13 +66,13 @@ Configure paths:
 
     $ export PATH=/usr/lib/ccache/bin/:$PATH
 
-You can add that last line to your *~/.bashrc* to avoid having to type that every time you start your working environment.
+!!! tip
+    You can add that last line to your *~/.bashrc* to avoid having to type that every time you start your working environment.
 
 ## Core Compilation
 
 ### Fetching Cores
 
-Most cores can be built by invoking make inside the core's source tree.
 You can find the core on libretro's [GitHUB organization](https://github.com/libretro/). 
 
 We have an all-in-one tool to fetch and compile cores which you can use to streamline the process.
@@ -108,7 +108,7 @@ In case you only want to build one and/or more cores instead of all, you can spe
 
 Once compilation has finished, you can find the libretro cores inside `dist/unix`.
 
-#### Manual Compilation
+#### Manual Fetching and Compilation
 
 Get the core's source tree. As an example we'll use fceumm (https://github.com/libretro/libretro-fceumm/)
 
