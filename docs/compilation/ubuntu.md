@@ -58,7 +58,7 @@ You can then start RetroArch by running:
     
     For further instructions check the [documentation](https://ccache.samba.org/manual.html#_run_modes)
 
-Install ccache
+Install **ccache**:
 
     # apt-get install ccache
 
@@ -68,7 +68,6 @@ Configure paths:
 
 !!! tip
     You can add that last line to your *~/.bashrc* to avoid having to type that every time you start your working environment.
-
 ## Core Compilation
 
 ### Fetching Cores
@@ -78,18 +77,18 @@ You can find the cores on libretro's [GitHUB organization](https://github.com/li
 We have an all-in-one tool to fetch and compile cores which you can use to streamline the process.
 You can obtain the tool by using these commands:
 
-    git clone https://github.com/libretro/libretro-super.git
-    cd libretro-super
+    $ git clone https://github.com/libretro/libretro-super.git
+    $ cd libretro-super
 
 Then you can fetch one or all the cores by using **libretro-fetch.sh**
 
 Fetch all cores:
 
-    ./libretro-fetch.sh
+    $ ./libretro-fetch.sh
 
 Fetch one core:
 
-    ./libretro-fetch.sh *corename*
+    $ ./libretro-fetch.sh *corename*
 
 !!! Note
      Replace *corename* with the name of the core you want to fetch, for example gambatte
@@ -100,13 +99,13 @@ Fetch one core:
 
 The easiest way to build all the cores is to use **libretro-build.sh** from within libretro-super's source tree:
 
-    ./libretro-build.sh
+    $ ./libretro-build.sh
 
 In case you only want to build one and/or more cores instead of all, you can specify the cores you want to build after the first command in no particular order:
 
-    ./libretro-build.sh snes9x2010 fceumm
+    $ ./libretro-build.sh snes9x2010 fceumm
 
-Once compilation has finished, you can find the libretro cores inside `dist/unix`.
+Once compilation has finished, you can find the libretro cores inside *dist/unix*.
 
 #### Manual Fetching and Compilation
 
@@ -118,5 +117,9 @@ Then compile the core:
 
     $ cd libretro-fceumm
     $ make -f Makefile.libretro
+
+Optionally strip the build product:
+
+    $ strip fceumm_libretro.so
     
 Most cores will build with these instructions. You might need to browse to a subdirectory in some cases.
