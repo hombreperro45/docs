@@ -54,4 +54,4 @@ extra:
 theme: 'material'
 markdown_extensions:
   - admonition
-  - codehilite
+  - codehilite(linenums=true)
