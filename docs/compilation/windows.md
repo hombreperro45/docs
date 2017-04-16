@@ -46,7 +46,7 @@ For 32-bit builds:
     pacman -U mingw-w64-i686-nvidia-cg-toolkit-3.1-2-any.pkg.tar.xz
 
 For 64-bit builds:
-u
+
     wget http://sourceforge.net/projects/msys2/files/REPOS/MINGW_GCC_4_9/x86_64/mingw-w64-x86_64-nvidia-cg-toolkit-3.1-2-any.pkg.tar.xz/download -O mingw-w64-x86_64-nvidia-cg-toolkit-3.1-2-any.pkg.tar.xz
     pacman -U mingw-w64-x86_64-nvidia-cg-toolkit-3.1-2-any.pkg.tar.xz
 
@@ -107,7 +107,7 @@ Configure paths for 32-bit builds:
 
     export PATH=/mingw32/lib/ccache/bin/:$PATH
 
-Configure paths for 64-bit builds
+Configure paths for 64-bit builds:
 
     export PATH=/mingw64/lib/ccache/bin/:$PATH
 
@@ -127,7 +127,6 @@ With **ccache**:
     real    0m25.466s
     user    0m2.902s
     sys     0m9.952s
-
 
 !!! tip
     You can also strip the debug symbols of the build product to save some space.
@@ -185,5 +184,9 @@ Then compile the core:
 
     $ cd libretro-fceumm
     $ make -f Makefile.libretro
+
+Optionally strip the build product:
+
+    $ strip fceumm_libretro.so
     
 Most cores will build with these instructions. You might need to browse to a subdirectory in some cases.
