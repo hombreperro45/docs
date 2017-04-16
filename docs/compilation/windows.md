@@ -187,6 +187,6 @@ Then compile the core:
 
 Optionally strip the build product:
 
-    $ strip fceumm_libretro.so
+    $ strip fceumm_libretro.dll
     
 Most cores will build with these instructions. You might need to browse to a subdirectory in some cases.
