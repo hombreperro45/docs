@@ -4,11 +4,20 @@ pages:
    - Core Library:
       - '2048': 'library/2048.md'
    - Develop:
-      - Building RetroArch:
+      - Building RetroArch and Cores:
          - Apple:
-            - 'OSX PowerPC': 'compilation/osxppc.md'
+            - 'OSX/PowerPC': 'compilation/osxppc.md'
             - 'OSX/macOS': 'compilation/osx.md'
             - 'iOS': 'compilation/ios.md'
+         - Linux:
+            - 'Ubuntu': 'compilation/ubuntu.md'         
+         - Microsoft:
+            - 'DOS': 'compilation/dos.md'
+            - 'Windows 98/2000 (msvc)': 'compilation/windows98.md'
+            - 'Windows XP and later (msvc)': 'compilation/windowsXP.md'
+            - 'Windows Vista and later (msys2)': 'compilation/windows.md'
+            - 'Xbox': 'compilation/xbox.md'
+            - 'Xbox 360': 'compilation/xbox360.md'
          - Nintendo:
             - 'Nintendo 3DS': 'compilation/3ds.md'
             - 'Nintendo GameCube': 'compilation/gamecube.md'
@@ -18,15 +27,6 @@ pages:
             - 'PlayStation3': 'compilation/ps3.md'
             - 'PlayStation Portable': 'compilation/psp.md'
             - 'PlayStation Vita/TV': 'compilation/psvita.md'
-         - Microsoft:
-            - 'Xbox': 'compilation/xbox.md'
-            - 'Xbox 360': 'compilation/xbox360.md'
-            - 'Windows Vista and later (msys2)': 'compilation/windows.md'
-            - 'Windows XP and later (msvc)': 'compilation/windowsXP.md'
-            - 'Windows 98/2000 (msvc)': 'compilation/windows98.md'
-         - Linux:
-            - 'Ubuntu': 'compilation/ubuntu.md'
-         - 'DOS': 'compilation/dos.md'
    - Specifications:
       - 'Libretro': 'specs/api.md'
       - 'Shaders': 'specs/shader.md'
