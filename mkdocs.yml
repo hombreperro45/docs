@@ -12,9 +12,9 @@ pages:
             - 'Ubuntu': 'compilation/ubuntu.md'         
          - Microsoft:
             - 'DOS': 'compilation/dos.md'
-            - 'Windows 98/2000 (msvc)': 'compilation/windows98.md'
-            - 'Windows XP and later (msvc)': 'compilation/windowsXP.md'
-            - 'Windows Vista and later (msys2)': 'compilation/windows.md'
+            - 'Windows 98/2000 (MSVC)': 'compilation/windows98.md'
+            - 'Windows XP and later (MSVC)': 'compilation/windowsXP.md'
+            - 'Windows Vista and later (MSYS2)': 'compilation/windows.md'
             - 'Xbox': 'compilation/xbox.md'
             - 'Xbox 360': 'compilation/xbox360.md'
          - Nintendo:
