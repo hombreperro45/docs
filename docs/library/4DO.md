@@ -1,5 +1,7 @@
 # 3DO (4DO)
 
+![3do_Banner](https://cloud.githubusercontent.com/assets/10035308/12186059/8d7ec76a-b55c-11e5-9231-b0c561de271c.png)
+
 ## Background
 
 4DO is an open-source, low-level emulator for the 3DO Game Console based on the FreeDO source code.
@@ -22,9 +24,13 @@ iso|cue
 
 These are libretro features, not frontend or standalone emulator features.
 
-| Saves | Save states | Rewind | Netplay | RetroAchievements | Cheats | Controllers API | Rumble | Sensors | Camera | Location | Subsystem API |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|  yes  |     yes     |   yes  |   yes   |         no        |   no   |        no       |   no   |    no   |   no   |    no    |       no      |
+| Saves | Save states | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |     yes     |   yes  |   yes   |         no        |   no   |
+
+| Controllers API | Rumble | Sensors | Camera | Location | Subsystem API |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|        no       |   no   |    no   |   no   |    no    |       no      |
 
 ## Options
 
@@ -35,7 +41,10 @@ These are libretro features, not frontend or standalone emulator features.
 ## Controllers
 
 The core supports one controller setting:
+
 * Joypad: Controller
+
+![3do_joypad_diagram](https://cloud.githubusercontent.com/assets/10035308/16599643/7f450bd6-42c0-11e6-84d7-9cc0944e7b01.png)
 
 |                      [RetroPad](RetroPad)                      |   3do Joypad   |
 |:--------------------------------------------------------------:|:--------------:|
@@ -55,9 +64,7 @@ The core supports one controller setting:
 |        ![RetroPad_X](images/RetroPad/Retro_X_Round.png)        |                |
 |        ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)        |        A       |
 
-![3do_joypad_diagram](https://cloud.githubusercontent.com/assets/10035308/16599643/7f450bd6-42c0-11e6-84d7-9cc0944e7b01.png)
-
 ## External Links
 
-* Official Website: [http://www.fourdo.com/](http://www.fourdo.com/) 
-* Libretro Repository: [https://github.com/libretro/4do-libretro](https://github.com/libretro/4do-libretro)
+* [Official Website](http://www.fourdo.com/) 
+* [Libretro Repository](https://github.com/libretro/4do-libretro)
