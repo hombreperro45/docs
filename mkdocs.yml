@@ -3,6 +3,7 @@ pages:
    - About: 'index.md'
    - Core Library:
       - '2048': 'library/2048.md'
+      - '3DO (4DO)': 'library/4DO.md'
    - Build RetroArch & Cores:
          - Apple:
             - 'OSX/PowerPC': 'compilation/osxppc.md'
