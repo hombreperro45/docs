@@ -4,13 +4,14 @@ pages:
    - Core Library:
       - '2048': 'library/2048.md'
       - '3DO (4DO)': 'library/4DO.md'
+      - 'Sega Saturn (Yabause)': 'library/Yabause.md'
    - Build RetroArch & Cores:
          - Apple:
             - 'OSX/PowerPC': 'compilation/osxppc.md'
             - 'OSX/macOS': 'compilation/osx.md'
             - 'iOS': 'compilation/ios.md'
          - Linux:
-            - 'Ubuntu': 'compilation/ubuntu.md'         
+            - 'Ubuntu': 'compilation/ubuntu.md'
          - Microsoft:
             - 'DOS': 'compilation/dos.md'
             - 'Windows 98/2000 (MSVC)': 'compilation/windows98.md'
