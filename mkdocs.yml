@@ -5,6 +5,7 @@ pages:
       - '2048': 'library/2048.md'
       - '3DO (4DO)': 'library/4DO.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
+      - 'Atari Jaguar (Virtual Jaguar)': 'library/Virtual_Jaguar.md'
    - Build RetroArch & Cores:
          - Apple:
             - 'OSX/PowerPC': 'compilation/osxppc.md'
