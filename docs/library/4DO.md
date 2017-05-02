@@ -64,7 +64,23 @@ The core supports one controller setting:
 |        ![RetroPad_X](images/RetroPad/Retro_X_Round.png)        |                |
 |        ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)        |        A       |
 
+## Compatibility
+* Not Platform Specific
+
+| Game                                  | Issue                          |
+|---------------------------------------|--------------------------------|
+|**Advanced Dungeons & Dragons - Deathkeep**| Random softlocks (music related?). |
+|**Alone in the Dark**|Unreadable text within books. Audio glitches. |
+|**DinoPark Tycoon**| 	Graphics glitches. |
+|**Eye of Typhoon, The**| 	Runs too fast. |
+|**Horde, The**| 	Graphics glitches. Minor graphical inaccuracy in bird's eye map. |
+|**Primal Rage**|Primal Rage|
+|**Psychic Detective**|Psychic Detective|
+|**Psychic Detective**|Psychic Detective|
+|**Tetsujin Return**| 	Graphics glitches. Missing graphics for obstacles in the driving scenes. |
+
+
 ## External Links
 
-* [Official Website](http://www.fourdo.com/) 
+* [Official Website](http://www.fourdo.com/)
 * [Libretro Repository](https://github.com/libretro/4do-libretro)
