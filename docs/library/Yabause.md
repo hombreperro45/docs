@@ -1,6 +1,6 @@
 # Sega Saturn (Yabause)
 
-![Yabause_Banner](images/Banners/Yabause_Banner.png)
+![Yabause_Banner](images/Banners/Yabause_banner.png)
 
 ## Background
 
@@ -45,7 +45,7 @@ The core supports controller setting:
 
 * Joypad: Controller
 
-![Saturn_joypad_diagram]()
+![Saturn_joypad_diagram](images\Controllers\Yabause_joypad.png)
 
 |                      [RetroPad](RetroPad)                      |   Saturn Joypad   |
 |:--------------------------------------------------------------:|:--------------:|

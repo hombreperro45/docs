@@ -1,6 +1,6 @@
 # Atari Jaguar (Virtual Jaguar)
 
-![Virtual-Jaguar_Banner](images/Banners/Virtual-Jaguar_Banner.png)
+![Virtual-Jaguar_Banner](images/Banners/Virtual-Jaguar_banner.png)
 
 ## Background
 
@@ -44,7 +44,7 @@ The core supports controller setting:
 
 * Joypad: Controller
 
-![Atari_Jaguar_joypad_diagram](images\Controllers\Atari_Jaguar.png)
+![Atari_Jaguar_joypad_diagram](images\Controllers\Virtual-Jaguar_joypad.png)
 
 |                      [RetroPad](RetroPad)                      |   Saturn Joypad   |
 |:--------------------------------------------------------------:|:--------------:|
@@ -69,4 +69,4 @@ The core supports controller setting:
 * [Official Website](https://icculus.org/virtualjaguar/)
 * [Official GitHub Repository](http://shamusworld.gotdns.org/git/virtualjaguar)
 * [Libretro Repository](https://github.com/libretro/virtualjaguar-libretro)
-* Unofficial GitHub Mirror -  https://github.com/mirror/virtualjaguar
+* [Unofficial GitHub Mirror](https://github.com/mirror/virtualjaguar)
