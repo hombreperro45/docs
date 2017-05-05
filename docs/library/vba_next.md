@@ -1,6 +1,6 @@
 # Game Boy Advance (VBA Next)
 
-![Game Boy Advance_banner](images\Banners\Game-Boy-Advance_banner.png)
+![Game Boy Advance_banner](images/Banners/Game-Boy-Advance_banner.png)
 
 ## Background
 VBA-Next is a Game Boy Advance emulator based on [VBA-M](https://wiki.libretro.com/index.php?title=VBA-M) 2011 with backported patches for performance and compatibility improvements.
@@ -35,7 +35,7 @@ These are libretro features, not frontend or standalone emulator features.
 TThe VBA Next core supports one controller setting:
 
 * Joypad: Controller
-![Game Boy Advance_joypad_diagram](images\Controllers\Game-Boy-Advance_joypad.png)
+![Game Boy Advance_joypad_diagram](images/Controllers/Game-Boy-Advance_joypad.png)
 
 | [RetroPad](RetroPad)                                           | Joypad |
 |----------------------------------------------------------------|--------|
@@ -69,7 +69,7 @@ TThe VBA Next core supports one controller setting:
 |**Koro Koro Puzzle Happy Panechu!**    |	The tilt sensor is not emulated|
 |**Moto GP**                            | Black screen, loud screeching noise|
 |**Phantasy Star Collection**           | Digital Eclipse logo sound effect is missing. Phantasy Star 1 flickers |
-|**SSX 3**                              |  	Graphics glitches. Seems pitch-related. See [Image](images\Compatibility\VBA-Next_SSX-3.png)  |
+|**SSX 3**                              |  	Graphics glitches. Seems pitch-related. See [Image](images/Compatibility/VBA-Next_SSX-3.png)  |
 |**Super Mario Advance 2: Super Mario World (Europe)** |The program crashes during the final fight, when Bowser approaches (zoom mode 7)  |
 |**WarioWare: Twisted!**                |  	The tilt sensor is not emulated   |
 |**Yoshi’s Universal Gravitation**      |   The tilt sensor is not emulated   |
