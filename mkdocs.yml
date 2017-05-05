@@ -7,6 +7,7 @@ pages:
       - 'Atari 2600 (Stella)': 'library/Stella.md'
       - 'Atari Jaguar (Virtual Jaguar)': 'library/Virtual_Jaguar.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
+      - 'Vectrex (vecx)': 'library/vecx.md'
    - Build RetroArch & Cores:
          - Apple:
             - 'OSX/PowerPC': 'compilation/osxppc.md'

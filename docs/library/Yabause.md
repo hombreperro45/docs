@@ -1,6 +1,6 @@
 # Sega Saturn (Yabause)
 
-![Yabause_Banner](images/Banners/Yabause_banner.png)
+![Yabause_Banner](images/Banners/Yabause_Banner.png)
 
 ## Background
 
