@@ -8,9 +8,11 @@ mGBA is a new emulator for running Game Boy Advance games. It aims to be faster 
 MPLv2.0
 ## Extensions
 gb|gbc|gba
+
 ## BIOS
 
 mGBA optionally supports using the following BIOS image file for operation:
+
 |   Filename    |    Description       |              md5sum              |
 |:-------------:|:--------------------:|:--------------------------------:|
 |gba_bios.bin   |Game Boy Advance BIOS | a860e8c0b6d573d191e4ec7db1b1e4f6 |
