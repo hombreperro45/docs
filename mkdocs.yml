@@ -6,6 +6,8 @@ pages:
       - '3DO (4DO)': 'library/4DO.md'
       - 'Atari 2600 (Stella)': 'library/Stella.md'
       - 'Atari Jaguar (Virtual Jaguar)': 'library/Virtual_Jaguar.md'
+      - 'Game Boy Advance (mGBA)': 'library/mgba.md'
+      - 'Game Boy Advance (VBA-M)': 'library/vbam.md'
       - 'Game Boy Advance (VBA Next)': 'library/vba_next.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
       - 'Vectrex (vecx)': 'library/vecx.md'
