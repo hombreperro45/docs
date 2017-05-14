@@ -7,15 +7,23 @@
 Meteor is a Nintendo Gameboy Advance emulator.
 
 ## License
+
 GPLv3
+
 ## Extensions
+
 gba
+
 ## BIOS
+
 Meteor does not support using BIOS image files.
+
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
+
 | Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
 |-------|------|--------|--------|---------|-------------------|--------|-------------|
 | yes   |   -  |  yes   |   yes  |   no    |        -          |   no   |      no     |
@@ -25,10 +33,13 @@ These are libretro features, not frontend or standalone emulator features.
 |   no   |   no    |   no   |    no    |    no     |
 
 ## Options
+
 This core does not feature core options.
+
 ## Controllers
 
 The Meteor core supports one controller setting:
+
 * Joypad: Controller
 ![Game Boy Advance_joypad_diagram](images/Controllers/Game-Boy-Advance_joypad.png)
 
