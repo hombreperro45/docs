@@ -43,7 +43,15 @@ These are libretro features, not frontend or standalone emulator features.
 The mGBA core supports one controller setting:
 
 * Joypad: Controller
-![Game Boy Advance_joypad_diagram]()
+![Game Boy Advance_joypad_diagram](images/Controllers/Game-Boy-Advance_joypad.png)
+
+Note: This core supports additional buttons for:-
+Turbo L (L2)
+Darken Solar Sensor (L3)
+Turbo R (R2)
+Brighten Solar Sensor (R3)
+Turbo A (X)
+Turbo B (Y)
 
 | [RetroPad](RetroPad)                                           | Joypad |
 |----------------------------------------------------------------|--------|
