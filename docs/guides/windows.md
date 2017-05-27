@@ -27,7 +27,7 @@ At first you will be greeted by this screen:
 
 This is one of three production ready menu drivers. It is called XMB and it tries to follow PS3 XMB menu layout as closely as possible.
 
-#### Controls
+#### Navigation
 
 The menu is designed with gamepad navigation in mind but it does have keyboard support. The keyboard controls are:
 
@@ -59,7 +59,38 @@ Manu                        ||In-game      ||
                                                                    
                                                                    
 
-# Glossary
+# Gamepad Configuration
+
+By default, XINPUT controllers should work out of the box. If the controller can be autoconfigured the OSD will inform you of the autoconfiguration event:
+
+![Screenshot](images/windows/autoconf_notification.png)
+
+If the controller is not autoconfigured you might need to map the controller manually with the following procedure:
+
+- Navigate to **Settings**
+- Navigate to **Input**
+- Navigate to **Input User 1 Binds**
+- Select **User 1 Bind All**
+- Press the buttons as required
+
+# Directory Configuration
+
+Configuring directories is an important aspect to get the best RetroArch experience possible.
+To configure the directories follow these steps:
+
+- Navigate to **Settings**
+- Navigate to **Directories**
+- Select the directory you want to changed
+- Navigate to the desired location
+
+The most important directories you should always configure are:
+
+- System Directory
+- Savefile Directory
+- Savestate Directory
+- Browser Directory
+
+## Glossary
 
 - Frontend — a frontend in libretro's context is a program designed to run libretro cores such as Kodi's RetroPlayer, RetroArch, Phoenix, Minir
 - Core — a core is a program that has been ported to the libretro API and runs inside a libretro frontend
