@@ -1,7 +1,5 @@
 # 3DO (4DO)
 
-![3do_Banner](https://cloud.githubusercontent.com/assets/10035308/12186059/8d7ec76a-b55c-11e5-9231-b0c561de271c.png)
-
 ## Background
 
 4DO is an open-source, low-level emulator for the 3DO Game Console based on the FreeDO source code.

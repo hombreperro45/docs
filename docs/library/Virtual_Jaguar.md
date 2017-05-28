@@ -1,6 +1,5 @@
 # Atari Jaguar (Virtual Jaguar)
 
-![Virtual-Jaguar_Banner](images/Banners/Virtual-Jaguar_Banner.png)
 
 ## Background
 
