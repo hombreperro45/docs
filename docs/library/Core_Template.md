@@ -55,3 +55,4 @@ The core supports controller setting:
 
 * [Official Website](http://link)  
 * [Libretro Repository](http://link)
+* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)

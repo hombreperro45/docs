@@ -1,6 +1,5 @@
 # Game Boy Advance (Meteor)
 
-![Game Boy Advance_banner](images/Banners/Game-Boy-Advance_banner.png)
 
 ## Background
 

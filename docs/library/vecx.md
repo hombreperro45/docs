@@ -1,6 +1,5 @@
 # Vectrex (vecx)
 
-![vecx_banner](images\Banners\vecx_banner.png)
 
 ## Background
 vecx is an emulator for the vector-display based Vectrex video game console.

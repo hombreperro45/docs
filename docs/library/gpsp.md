@@ -1,7 +1,5 @@
 # Game Boy Advance (gpSP)
 
-![Game Boy Advance_banner](images/Banners/Game-Boy-Advance_banner.png)
-
 ## Background
 
 gpSP is a Game Boy Advance emulator based on notaz' fork of gpSP with additional codebase improvements.

@@ -1,6 +1,5 @@
 # Game Boy Advance (mGBA)
 
-![Game Boy Advance_banner](images/Banners/Game-Boy-Advance_banner.png)
 
 ## Background
 mGBA is a new emulator for running Game Boy Advance games. It aims to be faster and more accurate than many existing Game Boy Advance emulators, as well as adding features that other emulators lack.
@@ -73,7 +72,7 @@ Turbo B (Y)
 
 ## Compatibility
 
-Please file bugs on the [bug tracker](https://endrift.com/mgba/bugs/) instead of having some secondary source of "bugs".
+Please file bugs on the [bug tracker](https://endrift.com/mgba/bugs/).
 
 ## External Links
 

@@ -1,6 +1,5 @@
 # Atari 2600 (Stella)
 
-![Atari2600_Banner](https://cloud.githubusercontent.com/assets/10035308/12189478/572ad3d8-b57b-11e5-96c3-34e61cc960e3.png)
 
 ## Background
 
@@ -63,5 +62,5 @@ The core supports one controller setting:
 ## External Links
 
 * [Official Website](http://stella.sourceforge.net/)
-* [Official SourceForge Repository](http://sourceforge.net/projects/stella/) 
+* [Official SourceForge Repository](http://sourceforge.net/projects/stella/)
 * [Libretro Repository](https://github.com/libretro/stella-libretro)
