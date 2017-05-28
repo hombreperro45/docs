@@ -91,7 +91,7 @@ To configure the directories follow these steps:
 - Select the directory you want to changed
 - Navigate to the desired location
 
-You should always configure are:
+You should always configure the following paths:
 
 - System Directory
 - Savefile Directory
