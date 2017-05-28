@@ -8,6 +8,7 @@ There are several files you can download in these folders. For a new installatio
 Extract **RetroArch.7z** in a folder that doesn't require administrator permissions such as *C:\Users\yourusername\RetroArch*. Don't install to *Program Files* or your Windows folder.
 
 This distribution method has several advantages:
+
 - It's portable
 - It's self-contained
 - It doesn't need users to guess random locations for configurations files
