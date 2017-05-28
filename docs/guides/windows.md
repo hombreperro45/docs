@@ -8,6 +8,7 @@ There are several files you can download in these folders. For a new installatio
 Extract **RetroArch.7z** in a folder that doesn't require administrator permissions such as *C:\Users\yourusername\RetroArch*. Don't install to *Program Files* or your Windows folder.
 
 This distribution method has several advantages:
+
 - It's portable
 - It's self-contained
 - It doesn't need users to guess random locations for configurations files
@@ -15,7 +16,7 @@ This distribution method has several advantages:
 
 ## Updating RetroArch
 
-If you were running a stable release prior to 1.4.0. you will need to update the system libraries. You can do so by downloading the full **RetroArch.7z** package or grabbing **redist.7z** from the aforementioned locations.
+If you were running a stable release prior to 1.4.0. you will need to update the system libraries. You can do so by downloading the full **RetroArch.7z** package or grabbing **redist.7z** from the download locations.
 To update RetroArch it's enough to download the current dated **2017-XX-XX_RetroArch.7z** and extract it on-top of your existing installation.
 
 ## Using RetroArch
@@ -27,7 +28,7 @@ At first you will be greeted by this screen:
 
 This is one of three production ready menu drivers. It is called XMB and it tries to follow PS3 XMB menu layout as closely as possible.
 
-#### Controls
+### Navigation
 
 The menu is designed with gamepad navigation in mind but it does have keyboard support. The keyboard controls are:
 
@@ -59,14 +60,73 @@ Manu                        ||In-game      ||
                                                                    
                                                                    
 
-# Glossary
+### Gamepad Configuration
 
-- Frontend — a frontend in libretro's context is a program designed to run libretro cores such as Kodi's RetroPlayer, RetroArch, Phoenix, Minir
-- Core — a core is a program that has been ported to the libretro API and runs inside a libretro frontend
-- Content — content can be a game, an image, a video, an audio file that is executed by a core. In most cases contents are the ROMs of an emulated platform
-- RetroPad — retropad is RetroArch’s input abstraction controller, it’s the interface between the physical controller and the core inputs
-- Save files — save files are saves that are made from within a game, usually cross platform and should work across emulators in most cases
-- Save states — save states are snapshots of the content menory at a particular moment, these are not always cross platform and most certainly won’t work on a different emulator that the one used to create them
-- System files — additional files that might or not be part of the romset that might be needed to get some content to work (usually referred to by the BIOS term)
-- Autoconf profile — a configuration file that has button definitions for a particular gamepad
+By default, XINPUT controllers should work out of the box. If the controller can be autoconfigured the OSD will inform you of the autoconfiguration event:
+
+![Screenshot](images/windows/autoconf_notification.png)
+
+If the controller is not autoconfigured you might need to map the controller manually with the following procedure:
+
+![Screenshot](images/windows/autoconf.gif)
+
+- Navigate to **Settings**
+- Navigate to **Input**
+- Navigate to **Input User 1 Binds**
+- Select **User 1 Bind All**
+- Press the buttons as required
+
+!!! tip
+    If you have several different controller types you may want to use the **User 1 Save Autoconfig** and ** User 1 Bind Default All** options after binding in order to achieve hotplug-like functionality
+
+### Directory Configuration
+
+![Screenshot](images/windows/settings_directory.png)
+
+Configuring directories is an important aspect to get the best RetroArch experience possible.
+To configure the directories follow these steps:
+
+- Navigate to **Settings**
+- Navigate to **Directories**
+- Select the directory you want to changed
+- Navigate to the desired location
+
+You should always configure the following paths:
+
+- System Directory
+- Savefile Directory
+- Savestate Directory
+- Browser Directory
+
+## Glossary
+
+#### frontend
+A frontend is a program designed to run libretro cores such as Kodi's RetroPlayer, RetroArch, Phoenix, Minir
+
+#### core
+A core is a program that has been ported to the libretro API and runs inside a libretro frontend
+
+#### content
+
+Content can be a game, an image, a video, an audio file that is executed by a core. In most cases contents are the ROMs of an emulated platform
+
+#### retropad
+
+RetroPad is libretro’s input abstraction controller, it’s the interface between the physical controller and the core inputs
+
+#### save files
+
+Save files are saves that are made from within a game, usually cross platform and should work across emulators in most cases
+
+#### save states
+
+Save states are snapshots of the content menory at a particular moment, these are not always cross platform and most certainly won’t work on a different emulator that the one used to create them
+
+#### system files
+
+Additional files that might or not be part of the romset that might be needed to get some content to work (usually referred to by the BIOS term)
+
+#### autoconf profile
+
+A configuration file that has button definitions for a particular gamepad
 
