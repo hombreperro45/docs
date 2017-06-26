@@ -47,6 +47,7 @@ pages:
       - RetroArch:
          - Getting Started:
            - 'Windows': 'guides/windows.md'
+         - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
    - Help: help.md
 extra:
   logo: 'images/invader.png'
