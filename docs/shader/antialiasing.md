@@ -4,15 +4,19 @@
 
 ## Preview Image
 * aa-shader-4.0
+
 ![aa-shader-4.0](images/antialiasing/aa-shader-4.0.png)
 
 * advanced-aa
+
 ![advanced-aa](images/antialiasing/advanced-aa.png)
 
 * fxaa
+
 ![fxaa](images/antialiasing/fxaa.png)
 
 * smaa
+
 ![smaa](images/antialiasing/smaa.png)
 
 ## Comments
