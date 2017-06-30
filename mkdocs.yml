@@ -43,6 +43,10 @@ pages:
    - Technical:
       - RetroArch:
          - 'Netplay': 'tech/netplay.md'
+   - Shader Previews:
+      - 'introduction': 'shader/introduction.md'
+      - '3dfx': 'shader/3dfx.md'
+      - 'antialiasing': 'shader/antialiasing.md'
    - User Guides:
       - RetroArch:
          - Getting Started:
