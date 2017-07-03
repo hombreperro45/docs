@@ -44,9 +44,16 @@ pages:
       - RetroArch:
          - 'Netplay': 'tech/netplay.md'
    - Shader Previews:
-      - 'introduction': 'shader/introduction.md'
+      - 'Introduction': 'shader/introduction.md'
       - '3dfx': 'shader/3dfx.md'
       - 'antialiasing': 'shader/antialiasing.md'
+      - 'border': 'shader/border.md'
+      - 'cgp': 'shader/cgp.md'
+      - 'crt': 'shader/crt.md'
+      - 'cubic': 'shader/cubic.md'
+      - 'ddt': 'shader/ddt.md'
+      - 'dithering': 'shader/dithering.md'
+      - 'eagle': 'shader/eagle.md'
    - User Guides:
       - RetroArch:
          - Getting Started:
