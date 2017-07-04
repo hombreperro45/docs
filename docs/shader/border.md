@@ -1,6 +1,7 @@
 # border
 
-## Background
+## Description
+Shaders that include a border to fill the empty space left when rendering a non widescreen viewport on a widescreen display.
 
 ## Preview Image
 * bigblur-crt
