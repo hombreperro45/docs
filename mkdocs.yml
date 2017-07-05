@@ -55,7 +55,7 @@ pages:
       - 'dithering': 'shader/dithering.md'
       - 'eagle': 'shader/eagle.md'
       - 'handheld': 'shader/handheld.md'
-      - 'handheld-border': 'shader/hadheld-border.md'
+      - 'handheld-border': 'shader/handheld-border.md'
    - User Guides:
       - RetroArch:
          - Getting Started:
