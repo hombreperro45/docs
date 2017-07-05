@@ -2,10 +2,10 @@
 
 ## Essential information
 
-When problems arise during the operation of RetroArch, it can be helpful for the developers and other volunteers to have certain standard information in order to find a solution. When requesting help with a Lakka issue, please try to include:
+When problems arise during the operation of RetroArch, it can be helpful for the developers and other volunteers to have certain standard information in order to find a solution. When requesting help with a RetroArch issue, please try to include:
 
 1. A description of the problem
-2. The hardware that you are using
+2. The hardware and operating system that you are using
 3. RetroArch log files recorded when the problem occurs (if possible) along with any other logs that are relevant
 4. The name of the libretro core used and its version
 5. The version of RetroArch you are using
