@@ -56,7 +56,15 @@ pages:
       - 'dithering': 'shader/dithering.md'
       - 'eagle': 'shader/eagle.md'
       - 'handheld': 'shader/handheld.md'
-      - 'handheld-border': 'shader/hadheld-border.md'
+      - 'handheld-border': 'shader/handheld-border.md'
+      - 'hqx': 'shader/hqx.md'
+      - 'linear': 'shader/linear.md'
+      - 'motinoblur': 'shader/motionblur.md'
+      - 'mudlord': 'shader/mudlord.md'
+      - 'nedi': 'shader/nedi.md'
+      - 'nnedi3': 'shader/nnedi3.md'
+      - 'ntsc': 'shader/ntsc.md'
+      - 'presets': 'shader/presets.md'
    - User Guides:
       - RetroArch:
          - Getting Started:
