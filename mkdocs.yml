@@ -4,7 +4,7 @@ pages:
    - Core Library:
       - '2048': 'library/2048.md'
       - '3DO (4DO)': 'library/4DO.md'
-      - 'Arcade (MAME 2003)': 'library/MAME2003.md'
+      - 'Arcade (MAME 2003)': 'library/MAME 2003.md'
       - 'Atari 2600 (Stella)': 'library/Stella.md'
       - 'Atari Jaguar (Virtual Jaguar)': 'library/Virtual_Jaguar.md'
       - 'Game Boy Advance (gpSP)': 'library/gpsp.md'
