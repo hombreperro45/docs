@@ -1,9 +1,9 @@
-# Title
+# linear
 
 ## Background
 
 ## Preview Image
-![Preset Name](images/folder/shader_preview.png)
+![linear-gamma-correct](images/linear/linear-gamma-correct.png)
 
 ## Comments
 
@@ -12,5 +12,3 @@
 * [Slang Shaders](https://github.com/libretro/slang-shaders)
 * [GLSL Shaders](https://github.com/libretro/glsl-shaders)  
 * [CG Shaders](https://github.com/libretro/common-shaders)
-
- 
