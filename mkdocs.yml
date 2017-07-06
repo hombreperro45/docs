@@ -59,7 +59,7 @@ pages:
       - 'handheld-border': 'shader/handheld-border.md'
       - 'hqx': 'shader/hqx.md'
       - 'linear': 'shader/linear.md'
-      - 'motinoblur': 'shader/motionblur.md'
+      - 'motionblur': 'shader/motionblur.md'
       - 'mudlord': 'shader/mudlord.md'
       - 'nedi': 'shader/nedi.md'
       - 'nnedi3': 'shader/nnedi3.md'
