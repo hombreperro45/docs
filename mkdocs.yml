@@ -65,6 +65,18 @@ pages:
       - 'nnedi3': 'shader/nnedi3.md'
       - 'ntsc': 'shader/ntsc.md'
       - 'presets': 'shader/presets.md'
+      - 'retro': 'shader/retro.md'
+      - 'sabr': 'shader/sabr.md'
+      - 'scalefx-OLD-shaders': 'shader/scalefx-OLD-shaders.md'
+      - 'scalefx': 'shader/scalefx.md'
+      - 'scalehq': 'shader/scalehq.md'
+      - 'scalenx': 'shader/scalenx.md'
+      - 'sharpen': 'shader/sharpen.md'
+      - 'windowed': 'shader/windowed.md'
+      - 'xbr': 'shader/xbr.md'
+      - 'xbrz': 'shader/xbrz.md'
+      - 'xsal': 'shader/xsal.md'
+      - 'xsoft': 'shader/xsoft.md'
    - User Guides:
       - RetroArch:
          - Getting Started:
