@@ -1,6 +1,7 @@
 # handheld
 
-## Background
+## Description
+Collection of handheld specific shaders
 
 ## Preview Image
 * dot
