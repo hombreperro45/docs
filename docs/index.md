@@ -1,6 +1,6 @@
 ![RetroArch_Banner](images/RetroArch_Banner.png)
 
-## Welcome to the RetroArch Documentation!
+## Welcome to RetroArch Documentation Center!
 
 RetroArch is a frontend for emulators, game engines and media players.
 
