@@ -1,9 +1,24 @@
-# Title
+# windowed
 
 ## Background
 
 ## Preview Image
-![Preset Name](images/folder/shader_preview.png)
+
+* jinc2-sharp
+
+![jinc2-sharp](images/windowed/jinc2-sharp.png)
+
+* jinc2-sharper
+
+![jinc2-sharper](images/windowed/jinc2-sharper.png)
+
+* jinc2
+
+![jinc2](images/windowed/jinc2.png)
+
+* lanczos16
+
+![lanczos16](images/windowed/lanczos16.png)
 
 ## Comments
 
