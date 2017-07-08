@@ -42,4 +42,5 @@ To be written
 
 ## Creating Log files in Android
 
-To be written
+Gathering log files in Android requires a third-party app that can interface with the `logcat` system. Many free apps are available via Android's "Play Store" system.
+
