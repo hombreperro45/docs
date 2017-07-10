@@ -7,6 +7,7 @@ pages:
       - 'Arcade (MAME 2003)': 'library/mame2003.md'
       - 'Atari 2600 (Stella)': 'library/Stella.md'
       - 'Atari Jaguar (Virtual Jaguar)': 'library/virtualjaguar.md'
+      - 'Game Boy /Game Boy Color (Gambatte)': 'library/gambatte.md'
       - 'Game Boy Advance (gpSP)': 'library/gpsp.md'
       - 'Game Boy Advance (Meteor)': 'library/meteor.md'
       - 'Game Boy Advance (mGBA)': 'library/mgba.md'
