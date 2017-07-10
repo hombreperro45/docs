@@ -1,4 +1,4 @@
-#Game Boy / Game Boy Color (Gambatte)
+# Game Boy / Game Boy Color (Gambatte)
 
 ## Background
 
