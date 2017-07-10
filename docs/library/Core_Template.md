@@ -21,6 +21,13 @@ These are libretro features, not frontend or standalone emulator features.
 |    -   |    -    |    -   |     -    |     -     |
 
 ## Options
+|   Core Option   |         Description         | Options (Default Bolded) | Requires Restart |
+|:---------------:|:---------------------------:|:------------------------:|:----------------:|
+|        -        |              -              |             -            |         -        |
+
+--If no options use--
+
+This core does not feature core options.
 
 ## Controllers
 
