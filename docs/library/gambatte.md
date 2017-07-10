@@ -1,4 +1,4 @@
-# Gambatte
+#Game Boy / Game Boy Color (Gambatte)
 
 ## Background
 
@@ -14,7 +14,7 @@ gb|gbc|dmg
 
 ## BIOS
 
-Gambatte does not support using BIOS image files. 
+Gambatte does not support using BIOS image files.
 
 ## Feature Support
 These are libretro features, not frontend or standalone emulator features.
@@ -30,7 +30,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded: 
+This core has a few options that can be tweaked from the core options menu. The default setting is bolded:
 
 - **GB Colorization** (**disabled**/auto/internal/custom): Colorizes Game Boy games.
 - **Internal Palette** (**GBC - Blue**/GBC - Brown/GBC - Dark Blue/GBC - Dark Brown/GBC - Dark Green/GBC - Grayscale/GBC - Green/GBC - Inverted/GBC - Orange/GBC - Pastel Mix/GBC - Red/GBC - Yellow/Special 1/Special 2/Special 3): Select which internal color palette is going to be used.
@@ -71,6 +71,17 @@ The core supports controller setting:
 | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
 | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
 
+## Compatibility
+
+| Game                                  | Issue                          |
+|---------------------------------------|--------------------------------|
+|**Command Master**                     |Crashes on start. Unemulated MBC7 mapper. |
+|**Game Boy Camera**|Crashes on start. Unemulated Pocket Camera mapper. |
+|**Game de Hakken!! Tamagotchi - Osutchi to Mesutchi** |Crashes on start. Unemulated TAMA5 mapper. |
+|**Kirby Tilt 'n' Tumble** |Crashes on start. Unemulated MBC7 mapper. |
+|**Net de Get: Mini-Game @ 100**| 	Crashes on start. Unemulated MBC6 mapper. |
+|**Pocket Family GB2**|Crashes on start. Unemulated HuC3 mapper. |
+|**Robopon: Sun/Star/Moon Version**|Crashes on start. Unemulated HuC3 mapper. |
 
 ## External Links
 
