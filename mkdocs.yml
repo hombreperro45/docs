@@ -6,6 +6,7 @@ pages:
       - '3DO (4DO)': 'library/4DO.md'
       - 'Arcade (MAME 2003)': 'library/mame2003.md'
       - 'Atari 2600 (Stella)': 'library/Stella.md'
+      - 'Atari 7800 (ProSystem)': 'library/prosystem.md'
       - 'Atari Jaguar (Virtual Jaguar)': 'library/virtualjaguar.md'
       - 'Game Boy /Game Boy Color (Gambatte)': 'library/gambatte.md'
       - 'Game Boy Advance (gpSP)': 'library/gpsp.md'
