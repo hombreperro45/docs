@@ -64,7 +64,10 @@ Supported combinations
 
 ## Compatibility
 
-untested
+| Game                                  | Issue                          |
+|---------------------------------------|--------------------------------|
+|**RoadBlasters**                       |Graphics glitches. Minor flickering and glitches after starting a race.|
+
 ## External Links
 
 * [Official Website](http://mednafen.sourceforge.net/)  

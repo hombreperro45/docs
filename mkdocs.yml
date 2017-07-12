@@ -8,6 +8,7 @@ pages:
       - 'Atari 2600 (Stella)': 'library/Stella.md'
       - 'Atari Jaguar (Virtual Jaguar)': 'library/virtualjaguar.md'
       - 'Atari Lynx (Beetle Handy)': 'library/mednafen_lynx.md'
+      - 'Atari Lynx (Handy)': 'library/handy.md'
       - 'Game Boy /Game Boy Color (Gambatte)': 'library/gambatte.md'
       - 'Game Boy / Game Boy Color (TBG Dual)': 'library/tgbdual.md'
       - 'Game Boy Advance (gpSP)': 'library/gpsp.md'
