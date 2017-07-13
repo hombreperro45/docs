@@ -1,15 +1,14 @@
-# Title
+# Game Boy/Game Boy Color (SameBoy)
 
 ## Background
+SameBoy is an accuracy-focused Game Boy/Game Boy Color emulator in the vein of Gambatte, which now has a libretro core. |Author:- LIJI32
 
 ## License
-
+MIT
 ## Extensions
-
+gb|gbc
 ## BIOS
-|   Filename    |    Description     |              md5sum              |
-|:-------------:|:------------------:|:--------------------------------:|
-|               |                    |                                  |
+
 ## Feature Support
 These are libretro features, not frontend or standalone emulator features.
 
@@ -23,24 +22,21 @@ These are libretro features, not frontend or standalone emulator features.
 |    -   |    -    |    -   |     -    |     -     |
 
 ## Options
-|   Core Option   |         Description         | Options (Default Bolded) | Requires Restart |
-|:---------------:|:---------------------------:|:------------------------:|:----------------:|
-|        -        |              -              |             -            |         -        |
-
---If no options use--
 
 This core does not feature core options.
 
 ## Controllers
 
+![Game Boy Diagram](images/Controllers/Game-Boy_joypad.png)
+
 The core supports controller setting:
-* Joypad: Controller
+* Joypad: Game Boy Controller
 
 | [RetroPad](RetroPad)                                           | Joypad |
 |----------------------------------------------------------------|--------|
 | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |        |
 | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |        |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |        |
+| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | dpad   |
 | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |        |
 | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
 | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
@@ -56,12 +52,11 @@ The core supports controller setting:
 
 ## Compatibility
 
-| Game                                  | Issue                          |
-|---------------------------------------|--------------------------------|
-|**Gamename**                           |                                |
+untested
 
 ## External Links
 
-* [Official Website](http://link)  
-* [Libretro Repository](http://link)
+* [Official Website](https://sameboy.github.io/)
+* [Official Repository](https://github.com/LIJI32/SameBoy)  
+* [Libretro Repository TBC](http://link)
 * [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
