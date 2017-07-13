@@ -1,4 +1,4 @@
-# Game Boy/Game Boy Color (sameboy)
+# Game Boy/Game Boy Color (SameBoy)
 
 ## Background
 SameBoy is an accuracy-focused Game Boy/Game Boy Color emulator in the vein of Gambatte, which now has a libretro core. |Author:- LIJI32
