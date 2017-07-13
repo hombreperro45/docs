@@ -1,15 +1,15 @@
-# Title
+# Game Boy Advance (Beetle GBA)
 
 ## Background
-
+Standalone port of Mednafen GBA to libretro, itself a fork of VBA-M, itself a fork of Visual Boy Advance. |Authors:- Forgotten|Mednafen Team
 ## License
-
+GPLv2
 ## Extensions
-
+gba|agb|bin
 ## BIOS
 |   Filename    |    Description     |              md5sum              |
 |:-------------:|:------------------:|:--------------------------------:|
-|               |                    |                                  |
+|gba_bios.bin   |Game Boy Advance BIOS|a860e8c0b6d573d191e4ec7db1b1e4f6 |
 ## Feature Support
 These are libretro features, not frontend or standalone emulator features.
 
@@ -23,15 +23,10 @@ These are libretro features, not frontend or standalone emulator features.
 |    -   |    -    |    -   |     -    |     -     |
 
 ## Options
-|   Core Option   |         Description         | Options (Default Bolded) | Requires Restart |
-|:---------------:|:---------------------------:|:------------------------:|:----------------:|
-|        -        |              -              |             -            |         -        |
-
---If no options use--
-
-This core does not feature core options.
-
+TBC
 ## Controllers
+
+![Game Boy Advance_joypad_diagram](images/Controllers/Game-Boy-Advance_joypad.png)
 
 The core supports controller setting:
 * Joypad: Controller
@@ -56,12 +51,10 @@ The core supports controller setting:
 
 ## Compatibility
 
-| Game                                  | Issue                          |
-|---------------------------------------|--------------------------------|
-|**Gamename**                           |                                |
+TBC
 
 ## External Links
 
-* [Official Website](http://link)  
-* [Libretro Repository](http://link)
+* [Official Website](http://mednafen.sourceforge.net/)  
+* [Libretro Repository](https://github.com/libretro/beetle-gba-libretro)
 * [Report Issues Here](http://github.com/libretro/libretro-meta/issues)

@@ -1,46 +1,42 @@
-# Title
+# Game Boy/Game Boy Color (Emux)
 
 ## Background
+Emux is a cross-platform emulator project with a goal of emulating multiple kinds of machines related to gaming, such as consoles or arcades. Its philosophy is very much inspired by the Linux kernel (hence the name), which brilliantly manages to support multiple machines while keeping drivers entirely platform-independent. Emux is designed in the same way, keeping a code base of CPUs and controllers separate from machines. |Author:- Sebastien Ronsse
 
 ## License
-
+GPLv2
 ## Extensions
-
+gb|bin|rom
 ## BIOS
-|   Filename    |    Description     |              md5sum              |
-|:-------------:|:------------------:|:--------------------------------:|
-|               |                    |                                  |
+Emux does not support using BIOS image files.
 ## Feature Support
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
 | Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
 |-------|------|--------|--------|---------|-------------------|--------|-------------|
-|   -   |   -  |    -   |    -   |    -    |         -         |    -   |      -      |
+| yes   |   -  |    -   |    -   |    -    |         -         |    -   |      -      |
 
 | Rumble | Sensors | Camera | Location | Subsystem |
 |--------|---------|--------|----------|-----------|
 |    -   |    -    |    -   |     -    |     -     |
 
 ## Options
-|   Core Option   |         Description         | Options (Default Bolded) | Requires Restart |
-|:---------------:|:---------------------------:|:------------------------:|:----------------:|
-|        -        |              -              |             -            |         -        |
-
---If no options use--
 
 This core does not feature core options.
 
 ## Controllers
 
+![Game Boy Diagram](images/Controllers/Game-Boy_joypad.png)
+
 The core supports controller setting:
-* Joypad: Controller
+* Joypad: Game Boy Controller
 
 | [RetroPad](RetroPad)                                           | Joypad |
 |----------------------------------------------------------------|--------|
 | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |        |
 | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |        |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |        |
+| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | dpad   |
 | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |        |
 | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
 | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
@@ -56,12 +52,10 @@ The core supports controller setting:
 
 ## Compatibility
 
-| Game                                  | Issue                          |
-|---------------------------------------|--------------------------------|
-|**Gamename**                           |                                |
+untested
 
 ## External Links
 
-* [Official Website](http://link)  
-* [Libretro Repository](http://link)
+* [Official Repository](https://github.com/sronsse/emux)  
+* [Libretro Repository](https://github.com/libretro/emux)
 * [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
