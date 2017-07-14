@@ -11,7 +11,7 @@ pages:
       - 'Atari Lynx (Beetle Handy)': 'library/mednafen_lynx.md'
       - 'Atari Lynx (Handy)': 'library/handy.md'
       - 'Atari ST/STE/TT/Falcon (Hatari)': 'library/hatari.md'
-      - 'Game Boy / Game Boy Color (Emux)': 'library/emux.md'
+      - 'Game Boy / Game Boy Color (Emux)': 'library/emux_gb.md'
       - 'Game Boy / Game Boy Color (Gambatte)': 'library/gambatte.md'
       - 'Game Boy / Game Boy Color (TBG Dual)': 'library/tgbdual.md'
       - 'Game Boy / Game Boy Color (SameBoy)': 'library/sameboy.md'
