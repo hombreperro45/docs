@@ -10,6 +10,7 @@ gba|agb|bin
 |   Filename    |    Description     |              md5sum              |
 |:-------------:|:------------------:|:--------------------------------:|
 |gba_bios.bin   |Game Boy Advance BIOS|a860e8c0b6d573d191e4ec7db1b1e4f6 |
+
 ## Feature Support
 These are libretro features, not frontend or standalone emulator features.
 
