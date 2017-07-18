@@ -103,7 +103,7 @@ If you really want to get the required libraries for distribution or for persona
 
 !!! tip
     If you're building frequently you may want to add **ccache** to the mix to speed up the build process. 
-    Install ccache via apt and the prepend the ccache symlink directory to your build environment path as shown below. 
+    Install ccache via the package manager and the prepend the ccache symlink directory to your build environment path as shown below. 
     
     For further instructions check the [documentation](https://ccache.samba.org/manual.html#_run_modes)
 
