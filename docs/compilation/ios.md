@@ -162,3 +162,15 @@ To build a release build :
 - Use a desktop tool like "iFunBox" or "iExplorer". You can use iTunes but note that it cannot access subdirectories. BIOS files go in `RetroArch/system`
 
 - You can also download content in Safari and "Open in.." and choose RetroArch. Currently there is a bug in that it will crash (the app delegate needs fixing), but it gets placed in the "Inbox" folder in RetroArch's Documents folder. You can choose "Load Content" and navigate to the "Inbox" directory.
+
+### Development
+
+#### Where do I start?
+
+The RetroArch codebase can be daunting, especially if you're used to iOS development in Objective C or Swift. Objective C is a subset of C so the syntax should look somewhat familiar to you.
+
+The first and main entrypoint you should look at is in `core/griffin/griffin.c`. This is where all the code is included, with compiler flags used to bring in code specific to the platform. For iOS, you should pay attention to the compiler flags like `__APPLE__`, `TARGET_OS_IPHONE`, `HAVE_COCOATOUCH`.
+
+Note that you can Cmd-click into the `#include` paths to peer into the source code. You can also Cmd-Shift-O and type in the source file as well. And, breakpoints work as well!
+
+The iOS specific code is in `core/griffin/griffin_objc.m`. Here you'll find the include to `./ui/drivers/ui_cocoatouch.m`, which contains the application delegate - the main entry point for the iOS application lifecycle. From there everything should look familiar to you as an iOS developer, and you should be able to hook in any iOS specific objective c code. Although you can use Objective C data structures and code, you'll probably be having to use C data structures since you'll have to call methods in C to hook back into RetroArch, and they will expect C data structures. The great thing is you can mix C code with Objective C, as long as you do the necessary conversions to the data structures that RetroArch expects.
