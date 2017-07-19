@@ -149,5 +149,16 @@ To build a release build :
 
 ### Packaging RetroArch
 
+### Additional Tips:
 
+#### Cores
 
+- When you run RetroArch and try to run a game, and see the message "Failed to load libretro core", that means the core is not code signed. See the above "Code Signing the Cores" section on making sure your cores are signed. You can manually check the code signature on a file by doing: `codesign -dvv mednafen_psx_libretro_ios.dylib`. The Authority entry has your certificate - make sure it's your dev or adhoc distribution certificate.
+
+- To see if your core is valid and usable in RetroArch, you can also try Load Core and selecting the core. If you see the core name appear at the top (in the GUI menu), then it is properly codesigned and loaded. If you still see "No Core", then your core is not codesigned and cannot be used.
+
+#### Getting your ROMs/content/BIOS in RetroArch
+
+- Use a desktop tool like "iFunBox" or "iExplorer". You can use iTunes but note that it cannot access subdirectories. BIOS files go in `RetroArch/system`
+
+- You can also download content in Safari and "Open in.." and choose RetroArch. Currently there is a bug in that it will crash (the app delegate needs fixing), but it gets placed in the "Inbox" folder in RetroArch's Documents folder. You can choose "Load Content" and navigate to the "Inbox" directory.
