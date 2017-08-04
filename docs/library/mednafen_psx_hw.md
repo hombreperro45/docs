@@ -2,7 +2,9 @@
 
 ## Background
 
-Enhanced port of standalone Mednafen PSX to libretro. |Authors:- Mednafen Team|Retroarch Team
+Enhanced port of standalone Mednafen PSX to libretro. 
+
+Authors: Mednafen Team | Retroarch Team
 
 ## License
 
@@ -14,7 +16,7 @@ cue|toc|m3u|ccd|exe|pbp
 
 ## BIOS
 
-Beetle-PSX requires the following BIOS image files for operation
+Beetle-PSX HW requires the following BIOS image files for operation
 
 |   Filename    |    Description     |              md5sum              |
 |:-------------:|:------------------:|:--------------------------------:|
@@ -29,11 +31,45 @@ These are libretro features, not frontend or standalone emulator features.
 ##### Features:
 | Saves | States | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
 |-------|--------|--------|---------|-------------------|--------|-------------|
-| yes   | yes    |  yes   |  yes    |         -         |  yes   |    yes      |
+| yes   | yes    |  yes   |  yes    |        no         |  yes   |    yes      |
 
 | Rumble | Sensors | Camera | Location | Subsystem |
 |--------|---------|--------|----------|-----------|
-|  yes   |    -    |  -     |    -     |     -     |
+|  yes   |    no   |  no    |    no    |    no     |
+
+## Running
+
+To run this core, the "system directory" must be defined if running in RetroArch. The PSX BIOS must be placed there, $sysdir/scph550{0,1,2} for Japanese, NA and EU regions respectively.
+
+Memory cards will be saved to "save directory", memory card slot 0 is saved using libretro's standard interface. The rest of memory cards are saved using Mednafen's standard mechanism. You might have to rename your old memory cards to gamename.srm. Alternatively you may just rename it from gamename.gamenamehash.0.mcr to gamename.gamenamehash.1.mcr and load them off the corresponding slot.
+
+## Loading ISOs
+
+Beetle differs from other PS1 emulators in that it needs a cue-sheets that points to an image file, usually an .iso/.bin file. If you have e.g. foo.iso, you should create a foo.cue, and fill this in:
+
+FILE "foo.iso" BINARY
+   TRACK 01 MODE1/2352
+      INDEX 01 00:00:00
+
+After that, you can load the foo.cue file as a ROM. Note that this is a dirty hack and will not work on all games. Ideally, make sure to use rips that have cue-sheets.
+
+If foo is a multiple-disk game, you should have .cue files for each one, e.g. foo (Disc 1).cue, foo (Disc 2).cue, foo (Disc 3).cue.To take advantage of Beetle's Disk Control feature for disk swapping, an index file should be made.
+
+Open a text file and enter your game's .cue files on it, like this:
+
+foo (Disc 1).cue
+foo (Disc 2).cue
+foo (Disc 3).cue
+
+Save as foo.m3u and use this file in place of each disk's individual cue sheet.
+
+## Condensing Games
+
+Alternatively to using cue sheets with .bin/.iso files, you can convert your games to .pbp (Playstation Portable update file) to reduce file sizes and neaten up your game folder. If converting a multiple-disk game, all disks should be added to the same .pbp file, rather than making a .m3u file for them.
+
+Most conversion tools will want a single .bin/.iso file for each disk. If your game uses multiple .bin files (tracks) per disk, you will have to mount the cue sheet to a virtual drive and re-burn the images onto a single track before conversion.
+
+Note that RetroArch does not currently have .pbp database due to variability in users' conversion methods. All .pbp games will have to be added to playlists manually.
 
 ## Options
 |   Core Option                     |         Description         | Options (Default Bolded)                   | Requires Restart |
@@ -59,9 +95,9 @@ These are libretro features, not frontend or standalone emulator features.
 |Last scanline                      | Sets the last scanline to be drawn on screen. | 210 - **239** | - |
 |Initial scanline PAL               | Sets the first scanline to be drawn on screen for PAL systems. | **0** - 40 | - |
 |Last scanline PAL                  | Sets the last scanline to be drawn on screen for PAL systems. | 260 - **287** | - |
-|Crop Overscan                      | - | Off/**On** | - |
-|Additional Cropping                | - | **Off**/1 px - 8 px | - |
-|Offset Cropped Image               | - | -4 px - -1 px /**Off**/ 1 px - 4 px | - |
+|Crop Overscan                      | Self-explanatory. | Off/**On** | - |
+|Additional Cropping                | Self-explanatory. | **Off**/1 px - 8 px | - |
+|Offset Cropped Image               | Self-explanatory. | -4 px - -1 px /**Off**/ 1 px - 4 px | - |
 |Analog self-calibration            | Monitors the max values reached by the input, using it as a calibration heuristic which then scales the analog coordinates sent to the emulator accordingly. For best results, rotate the sticks at max amplitude for the algorithm to get a good estimate of the scaling factor, otherwise it will adjust while playing | **Off**/On | - |
 |DualShock Analog button toggle     | Toggles the Analog button from DualShock controllers, if disabled analogs are always on, if enabled you can toggle their state by pressing and holding START+SELECT+L1+L2+R1+R2. | **Off**/On | - |
 |Port 1: Multitap enable            | Enables/Disables multitap functionality on port 1. | **Off**/On | - |
@@ -75,36 +111,46 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Controllers
 
-The core supports these controller setting:
-* Beetle PSX HW Joypad: PS1 Joypad
-* Beetle PSX HW Joypad: DualAnalog
-* Beetle PSX HW Joypad: DualShock
-* Beetle PSX HW Joypad: FlightStick
+This core supports four controllers: 
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | Circle |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | Cross  |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | D-Pad  |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | L      |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              | L2     |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   | L3     |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   | Left Analog Stick |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | R      |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   | R2     |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   | R3     |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) | Right Analog Stick |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | Select |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | Start  |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | Triangle |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | Square |
+![ps1_joypad_diagram](images/Controllers/ps1_joypad.png)
 
-* Analog Sticks only work when the device type is set to DualAnalog or DualShock. Also, the respective input device Controls setting must have Analog to Digital Type set to none.
+* PS1 Joypad: PlayStation Controller (SCPH-1080)
+
+
+* DualAnalog: PlayStation Dual Analog Controller(SCPH-1180)
+
+
+* DualShock: DualShock (SCPH-1200)
+
+
+* FlightStick: PlayStation Analog Joystick (SCPH-1110)
+
+
+| [RetroPad](RetroPad)                                           | PS1 Joypad                                               | DualAnalog                                                     | DualShock                                                      | FlightStick                                                    |
+|----------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|                                                                |                                                                |                                                          |                                                                |                                                                |                                                                |
+| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)     | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)           |
+| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)       | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)             |
+| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)         | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)               |
+| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![PS3_L1](images/Button Pack/PS3/PS3_L1.png)             | ![PS3_L1](images/Button Pack/PS3/PS3_L1.png)                   | ![PS3_L1](images/Button Pack/PS3/PS3_L1.png)                   | ![PS3_L1](images/Button Pack/PS3/PS3_L1.png)                   |
+| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              | ![PS3_L2](images/Button Pack/PS3/PS3_L2.png)             | ![PS3_L2](images/Button Pack/PS3/PS3_L2.png)                   | ![PS3_L2](images/Button Pack/PS3/PS3_L2.png)                   | ![PS3_L2](images/Button Pack/PS3/PS3_L2.png)                   |
+| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |                                                          |                                                                | ![PS3_L3](images/Button Pack/PS3/PS3_L3.png)                   |                                                                |
+| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |                                                          | ![PS3_Left_Stick](images/Button Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button Pack/PS3/PS3_Left_Stick.png)   |                                                        
+| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![PS3_R1](images/Button Pack/PS3/PS3_R1.png)             | ![PS3_R1](images/Button Pack/PS3/PS3_R1.png)                   | ![PS3_R1](images/Button Pack/PS3/PS3_R1.png)                   | ![PS3_R1](images/Button Pack/PS3/PS3_R1.png)                   |
+| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   | ![PS3_R2](images/Button Pack/PS3/PS3_R2.png)             | ![PS3_R2](images/Button Pack/PS3/PS3_R2.png)                   | ![PS3_R2](images/Button Pack/PS3/PS3_R2.png)                   | ![PS3_R2](images/Button Pack/PS3/PS3_R2.png)                   |
+| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |                                                          |                                                                | ![PS3_R3](images/Button Pack/PS3/PS3_R3.png)                   |                                                                |
+| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |                                                          | ![PS3_Right_Stick](images/Button Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button Pack/PS3/PS3_Right_Stick.png) |
+| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)     | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)           |
+| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)       | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             | [PS3_Start](images/Button Pack/PS3/PS3_Start.png)              |
+| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png) | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       |
+| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)     | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           |
+
+* The respective input device Controls setting must have Analog to Digital Type set to none for normal Analog operation.
 
 * Rumble only works when device type is set to Dualshock
 
 ## External Links
 
-* [Official Website](https://mednafen.github.io/)
 * [Libretro Repository](https://github.com/libretro/beetle-psx-libretro)
 * [Report Issues Here](https://github.com/libretro/beetle-psx-libretro/issues)
+* [Official Standalone Website](https://mednafen.github.io/)
