@@ -2,9 +2,13 @@
 
 ## Background
 
-Enhanced port of standalone Mednafen PSX to libretro. 
+Enhanced port of standalone Mednafen PSX to libretro.
 
-Authors: Mednafen Team | Retroarch Team
+Authors: Mednafen Team | RetroArch Team
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/blob/master/docs/library/mednafen_psx_hw.md). Changes are proposed using "Pull Requests."
 
 ## License
 
@@ -16,7 +20,7 @@ cue|toc|m3u|ccd|exe|pbp
 
 ## BIOS
 
-Beetle-PSX HW requires the following BIOS image files for operation
+Beetle PSX HW requires the following BIOS image files for operation.
 
 |   Filename    |    Description     |              md5sum              |
 |:-------------:|:------------------:|:--------------------------------:|
@@ -37,25 +41,23 @@ These are libretro features, not frontend or standalone emulator features.
 |--------|---------|--------|----------|-----------|
 |  yes   |    no   |  no    |    no    |    no     |
 
-## Running
+## Usage
 
-To run this core, the "system directory" must be defined if running in RetroArch. The PSX BIOS must be placed there, $sysdir/scph550{0,1,2} for Japanese, NA and EU regions respectively.
+To run this core, The PSX BIOS must be placed in RetroArch's system directory. There is a table above for reference.
 
-Memory cards will be saved to "save directory", memory card slot 0 is saved using libretro's standard interface. The rest of memory cards are saved using Mednafen's standard mechanism. You might have to rename your old memory cards to gamename.srm. Alternatively you may just rename it from gamename.gamenamehash.0.mcr to gamename.gamenamehash.1.mcr and load them off the corresponding slot.
+Beetle PSX HW differs from other PS1 emulators in that it needs a cue-sheet that points to an image file. A cue sheet, or cue file, is a metadata file which describes how the tracks of a CD or DVD are laid out. If you have e.g. foo.bin, you should create a text file and save it as foo.cue. Most PS1 games are single-track, so the following cue file contents will usually work.
 
-## Loading ISOs
-
-Beetle differs from other PS1 emulators in that it needs a cue-sheets that points to an image file, usually an .iso/.bin file. If you have e.g. foo.iso, you should create a foo.cue, and fill this in:
-
-FILE "foo.iso" BINARY
+FILE "foo.bin" BINARY
    TRACK 01 MODE1/2352
       INDEX 01 00:00:00
+	  
+Certain PS1 games are multi-track, so their .cue files might be more complicated. 	  
 
-After that, you can load the foo.cue file as a ROM. Note that this is a dirty hack and will not work on all games. Ideally, make sure to use rips that have cue-sheets.
+After that, you can load the foo.cue file as a ROM.
 
-If foo is a multiple-disk game, you should have .cue files for each one, e.g. foo (Disc 1).cue, foo (Disc 2).cue, foo (Disc 3).cue.To take advantage of Beetle's Disk Control feature for disk swapping, an index file should be made.
+If foo is a multiple-disk game, you should have .cue files for each one, e.g. foo (Disc 1).cue, foo (Disc 2).cue, foo (Disc 3).cue. To take advantage of Beetle PSW HW's Disk Control feature for disk swapping, an index file should be made. 
 
-Open a text file and enter your game's .cue files on it, like this:
+Create a text file and enter your game's .cue files on it, like this:
 
 foo (Disc 1).cue
 foo (Disc 2).cue
@@ -63,18 +65,30 @@ foo (Disc 3).cue
 
 Save as foo.m3u and use this file in place of each disk's individual cue sheet.
 
-## Condensing Games
+Alternatively to using cue sheets with .bin files, you can convert your games to .pbp (Playstation Portable update file) to reduce file sizes and neaten up your game folder. If converting a multiple-disk game, all disks should be added to the same .pbp file, rather than making a .m3u file for them.
 
-Alternatively to using cue sheets with .bin/.iso files, you can convert your games to .pbp (Playstation Portable update file) to reduce file sizes and neaten up your game folder. If converting a multiple-disk game, all disks should be added to the same .pbp file, rather than making a .m3u file for them.
-
-Most conversion tools will want a single .bin/.iso file for each disk. If your game uses multiple .bin files (tracks) per disk, you will have to mount the cue sheet to a virtual drive and re-burn the images onto a single track before conversion.
+Most conversion tools will want a single .bin file for each disk. If your game uses multiple .bin files (tracks) per disk, you will have to mount the cue sheet to a virtual drive and re-burn the images onto a single track before conversion.
 
 Note that RetroArch does not currently have .pbp database due to variability in users' conversion methods. All .pbp games will have to be added to playlists manually.
+
+Memcard slot 0 is saved using libretro's standard interface (gamename.srm). The rest of memory cards are saved using Mednafen's standard mechanism. (e.g. gamename.1.mcr) You might have to rename your old memory cards brought from other emulators to gamename.srm. 
+
+The game name in the save file name will match the cue or m3u or pbp file's name, like this.
+
+Cue File: CTR - Crash Team Racing (USA).cue 
+
+Memcard slot 0: CTR - Crash Team Racing (USA).srm
+
+Memcard slot 1: CTR - Crash Team Racing (USA).1.mcr
+
+Memory card behavoir can be altered with any of the following core options (Memcard 0 method, Enable memory card 1, Shared memcards). Core option descriptions can be found in the table below.
+
+Game specific core options can be created by saving a game-options file in the RetroArch Quick Menu controls interface.
 
 ## Options
 |   Core Option                     |         Description         | Options (Default Bolded)                   | Requires Restart |
 |:---------------------------------:|:---------------------------:|:------------------------------------------:|:----------------:|
-|Renderer                           | Renderer backend - The last two options will enable and/or speedup enhancements like upscaling and texture filtering. † | software/**vulkan**/opengl | yes |
+|Renderer                           | The last two options will enable and/or speedup enhancements like upscaling and texture filtering. The OpenGL and Vulkan renderers must be used with it's corresponding video driver, RetroArch's video driver can be changed in the RetroArch Driver settings. Also, Hardware Shared Context must be enabled in RetroArch's Core settings. | software/**vulkan**/opengl | yes |
 |Software framebuffer               | If off, the software renderer will skip some steps. Potential speedup. Causes bad graphics when doing framebuffer readbacks. | Off/**On** | - |
 |Adaptive smoothing                 | When upscaling, smooths out 2D elements while keeping 3D elements sharp. Vulkan renderer only at the moment. | Off/**On** | - |
 |Internal GPU Resolution            | Graphics upscaling. | **1x(native)**/2x/4x/8x/16x/32x | - |
@@ -90,14 +104,14 @@ Note that RetroArch does not currently have .pbp database due to variability in 
 |CPU Overclock                      | Gets rid of memory access latency and makes all GTE instructions have 1 cycle latency. | **Off**/On | - |
 |Skip BIOS                          | Self-explanatory. Some games have issues when enabled. | **Off**/On  | - |
 |Dithering pattern                  | If off, disables the dithering pattern the PSX applies to combat color banding. OpenGL only. Vulkan always disables the pattern. | **1x(native)**/internal resolution/Off | - |
-|Display internal FPS               | Shows the frame rate at which the emulated PSX is drawing at. Onscreen Notifications must be enabled in the Retroarch Onscreen Display Settings. | **Off**/On | - |
+|Display internal FPS               | Shows the frame rate at which the emulated PSX is drawing at. Onscreen Notifications must be enabled in the RetroArch Onscreen Display Settings. | **Off**/On | - |
 |Initial scanline                   | Sets the first scanline to be drawn on screen. | **0** - 40 | - |
 |Last scanline                      | Sets the last scanline to be drawn on screen. | 210 - **239** | - |
 |Initial scanline PAL               | Sets the first scanline to be drawn on screen for PAL systems. | **0** - 40 | - |
 |Last scanline PAL                  | Sets the last scanline to be drawn on screen for PAL systems. | 260 - **287** | - |
 |Crop Overscan                      | Self-explanatory. | Off/**On** | - |
 |Additional Cropping                | Self-explanatory. | **Off**/1 px - 8 px | - |
-|Offset Cropped Image               | Self-explanatory. | -4 px - -1 px /**Off**/ 1 px - 4 px | - |
+|Offset Cropped Image               | Self-explanatory. | **Off**/ -4 px - 4 px | - |
 |Analog self-calibration            | Monitors the max values reached by the input, using it as a calibration heuristic which then scales the analog coordinates sent to the emulator accordingly. For best results, rotate the sticks at max amplitude for the algorithm to get a good estimate of the scaling factor, otherwise it will adjust while playing | **Off**/On | - |
 |DualShock Analog button toggle     | Toggles the Analog button from DualShock controllers, if disabled analogs are always on, if enabled you can toggle their state by pressing and holding START+SELECT+L1+L2+R1+R2. | **Off**/On | - |
 |Port 1: Multitap enable            | Enables/Disables multitap functionality on port 1. | **Off**/On | - |
@@ -107,28 +121,23 @@ Note that RetroArch does not currently have .pbp database due to variability in 
 |Enable memory card 1               | Specifically enables memcard slot 1. Needed for game "Codename Tenka". | Off/**On** | - |
 |Shared memcards                    | Stores everything in the same savefile. 'Memcard 0 method' needs to be set to 'libretro'. | **Off**/On | yes |
 
-† The Software renderer can be used with any Video Driver. The opengl renderer must be used with the gl Video Driver and the vulkan renderer must be used with the vulkan Video Driver. Retroarch's Video Driver can be changed in the Retroarch Driver settings.
-
 ## Controllers
-
-This core supports four controllers: 
 
 ![ps1_joypad_diagram](images/Controllers/ps1_joypad.png)
 
-* PS1 Joypad: PlayStation Controller (SCPH-1080)
+This core supports four controllers: 
 
+* PS1 Joypad: PlayStation Controller (SCPH-1080)
 
 * DualAnalog: PlayStation Dual Analog Controller(SCPH-1180)
 
-
 * DualShock: DualShock (SCPH-1200)
-
 
 * FlightStick: PlayStation Analog Joystick (SCPH-1110)
 
 
 | [RetroPad](RetroPad)                                           | PS1 Joypad                                               | DualAnalog                                                     | DualShock                                                      | FlightStick                                                    |
-|----------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|                                                                |                                                                |                                                          |                                                                |                                                                |                                                                |
+|----------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
 | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)     | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)           |
 | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)       | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)             |
 | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)         | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)               |
@@ -145,12 +154,12 @@ This core supports four controllers:
 | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png) | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       |
 | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)     | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           |
 
-* The respective input device Controls setting must have Analog to Digital Type set to none for normal Analog operation.
+* For normal analog stick usage with the DualAnalog and DualShock device type, make sure the corresponding user's Analog to Digital Type is set to none.
 
-* Rumble only works when device type is set to Dualshock
+* Rumble only works when the corresponding user's device type is set to DualShock and the input driver being used has rumble function implementation (e.g. Xinput).
 
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/beetle-psx-libretro)
 * [Report Issues Here](https://github.com/libretro/beetle-psx-libretro/issues)
-* [Official Standalone Website](https://mednafen.github.io/)
+* [Official Website](https://mednafen.github.io/) 
