@@ -22,17 +22,18 @@ cue|toc|m3u|ccd|exe|pbp
 
 Beetle PSX HW requires the following BIOS image files for operation.
 
-|   Filename    |    Description     |              md5sum              |
-|:-------------:|:------------------:|:--------------------------------:|
-|scph5500.bin   |PS1 JP BIOS         |8dd7d5296a650fac7319bce665a6a53c  |
-|scph5501.bin   |PS1 US BIOS         |490f666e1afb15b7362b406ed1cea246  |
-|scph5502.bin   |PS1 EU BIOS         |32736f17079d0b2b7024407c39bd3050  |
-
+|   Filename  | Description |              md5sum             |
+|:-----------:|:-----------:|:-------------------------------:|
+|scph5500.bin |PS1 JP BIOS  |8dd7d5296a650fac7319bce665a6a53c |
+|scph5501.bin |PS1 US BIOS  |490f666e1afb15b7362b406ed1cea246 |
+|scph5502.bin |PS1 EU BIOS  |32736f17079d0b2b7024407c39bd3050 |
 
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
+
 | Saves | States | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
 |-------|--------|--------|---------|-------------------|--------|-------------|
 | yes   | yes    |  yes   |  yes    |        no         |  yes   |    yes      |
@@ -41,51 +42,94 @@ These are libretro features, not frontend or standalone emulator features.
 |--------|---------|--------|----------|-----------|
 |  yes   |    no   |  no    |    no    |    no     |
 
-## Usage
+## Running
 
-To run this core, The PSX BIOS must be placed in RetroArch's system directory. There is a table above for reference.
+To run this core, The PSX BIOS must be placed in RetroArch's system directory.
 
-Beetle PSX HW differs from other PS1 emulators in that it needs a cue-sheet that points to an image file. A cue sheet, or cue file, is a metadata file which describes how the tracks of a CD or DVD are laid out. If you have e.g. foo.bin, you should create a text file and save it as foo.cue. Most PS1 games are single-track, so the following cue file contents will usually work.
+## Loading content
 
-FILE "foo.bin" BINARY
-   TRACK 01 MODE1/2352
-      INDEX 01 00:00:00
-	  
-Certain PS1 games are multi-track, so their .cue files might be more complicated. 	  
+Beetle PSX HW needs a cue-sheet that points to an image file. A cue sheet, or cue file, is a metadata file which describes how the tracks of a CD or DVD are laid out.
 
-After that, you can load the foo.cue file as a ROM.
+If you have e.g. foo.bin, you should create a text file and save it as foo.cue. Most PS1 games are single-track, so the cue file contents should look like this:
 
-If foo is a multiple-disk game, you should have .cue files for each one, e.g. foo (Disc 1).cue, foo (Disc 2).cue, foo (Disc 3).cue. To take advantage of Beetle PSW HW's Disk Control feature for disk swapping, an index file should be made. 
+ FILE "foo.bin" BINARY
 
-Create a text file and enter your game's .cue files on it, like this:
+  TRACK 01 MODE1/2352
+
+   INDEX 01 00:00:00
+
+After that, you can load the foo.cue file in RetroArch with the Beetle PSX HW core.
+
+Note that certain PS1 games are multi-track, so their .cue files might be more complicated. 
+
+## Multiple-disk games
+
+If foo is a multiple-disk game, you should have .cue files for each one, e.g. foo (Disc 1).cue, foo (Disc 2).cue, foo (Disc 3).cue.
+
+To take advantage of Beetle PSW HW's Disk Control feature for disk swapping, an index file (a m3u file) should be made.
+
+Create a text file and save it as foo.m3u. Then enter your game's .cue files on it. The m3u file contents should look something like this:
 
 foo (Disc 1).cue
+
 foo (Disc 2).cue
+
 foo (Disc 3).cue
 
-Save as foo.m3u and use this file in place of each disk's individual cue sheet.
+After that, you can load the foo.m3u file in RetroArch with the Beetle PSX HW core.
 
-Alternatively to using cue sheets with .bin files, you can convert your games to .pbp (Playstation Portable update file) to reduce file sizes and neaten up your game folder. If converting a multiple-disk game, all disks should be added to the same .pbp file, rather than making a .m3u file for them.
+Adding multi-track games to playlists manually is recommended. (Add an entry in the playlist that points to foo.m3u)
+
+## Game compression
+
+Alternatively to using cue sheets with .bin files, you can convert your games to .pbp (Playstation Portable update file) to reduce file sizes and neaten up your game folder. A recommended .pbp convert tool is PSX2PSP.
+
+If converting a multiple-disk game, all disks should be added to the same .pbp file, rather than making a .m3u file for them.
 
 Most conversion tools will want a single .bin file for each disk. If your game uses multiple .bin files (tracks) per disk, you will have to mount the cue sheet to a virtual drive and re-burn the images onto a single track before conversion.
 
 Note that RetroArch does not currently have .pbp database due to variability in users' conversion methods. All .pbp games will have to be added to playlists manually.
 
-Memcard slot 0 is saved using libretro's standard interface (gamename.srm). The rest of memory cards are saved using Mednafen's standard mechanism. (e.g. gamename.1.mcr) You might have to rename your old memory cards brought from other emulators to gamename.srm. 
+## Saves
 
-The game name in the save file name will match the cue or m3u or pbp file's name, like this.
+Memcard slot 0 is saved using libretro's standard interface (gamename.srm). You might have to rename your old memory cards brought from other emulators to gamename.srm.
 
-Cue File: CTR - Crash Team Racing (USA).cue 
+The rest of memory cards are saved using Mednafen's standard mechanism. (e.g. gamename.1.mcr) . 
 
-Memcard slot 0: CTR - Crash Team Racing (USA).srm
+The game name in the Memcard filename will match the cue or m3u or pbp file's name, like this:
 
-Memcard slot 1: CTR - Crash Team Racing (USA).1.mcr
+* Loaded content: Breath of Fire III (USA).cue 
 
-Memory card behavoir can be altered with any of the following core options (Memcard 0 method, Enable memory card 1, Shared memcards). Core option descriptions can be found in the table below.
+* Memcard slot 0: Breath of Fire III (USA).srm
 
-Game specific core options can be created by saving a game-options file in the RetroArch Quick Menu controls interface.
+* Memcard slot 1: Breath of Fire III (USA).1.mcr
+
+Or
+
+* Final Fantasy VII (USA) (Disc 1).cue
+
+* Final Fantasy VII (USA) (Disc 2).cue
+
+* Final Fantasy VII (USA) (Disc 3).cue  
+
+* Loaded content: Final Fantasy VII (USA).m3u
+
+* Memcard slot 0: Final Fantasy VII (USA).srm
+
+* Memcard slot 1:Final Fantasy VII (USA).1.mcr
+
+Or
+
+* Loaded content: Wild Arms 2 (USA).pbp
+
+* Memcard slot 0: Wild Arms 2 (USA).srm
+
+* Memcard slot 1: Wild Arms 2 (USA).1.mcr
+
+Note that memory card behavior can be altered with any of the following core options (Memcard 0 method, Enable memory card 1, Shared memcards).
 
 ## Options
+
 |   Core Option                     |         Description         | Options (Default Bolded)                   | Requires Restart |
 |:---------------------------------:|:---------------------------:|:------------------------------------------:|:----------------:|
 |Renderer                           | The last two options will enable and/or speedup enhancements like upscaling and texture filtering. The OpenGL and Vulkan renderers must be used with it's corresponding video driver, RetroArch's video driver can be changed in the RetroArch Driver settings. Also, Hardware Shared Context must be enabled in RetroArch's Core settings. | software/**vulkan**/opengl | yes |
@@ -129,12 +173,15 @@ This core supports four controllers:
 
 * PS1 Joypad: PlayStation Controller (SCPH-1080)
 
-* DualAnalog: PlayStation Dual Analog Controller(SCPH-1180)
+* DualAnalog: PlayStation Dual Analog Controller (SCPH-1180)
 
 * DualShock: DualShock (SCPH-1200)
 
 * FlightStick: PlayStation Analog Joystick (SCPH-1110)
 
+For normal analog stick usage with the DualAnalog and DualShock device type, make sure the corresponding user's Analog to Digital Type is set to none.
+
+Rumble only works when the corresponding user's device type is set to DualShock and the input driver being used has rumble function implementation (e.g. Xinput).
 
 | [RetroPad](RetroPad)                                           | PS1 Joypad                                               | DualAnalog                                                     | DualShock                                                      | FlightStick                                                    |
 |----------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
@@ -150,13 +197,9 @@ This core supports four controllers:
 | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |                                                          |                                                                | ![PS3_R3](images/Button Pack/PS3/PS3_R3.png)                   |                                                                |
 | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |                                                          | ![PS3_Right_Stick](images/Button Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button Pack/PS3/PS3_Right_Stick.png) |
 | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)     | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)           |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)       | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             | [PS3_Start](images/Button Pack/PS3/PS3_Start.png)              |
+| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)       | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             |
 | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png) | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       |
 | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)     | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           |
-
-* For normal analog stick usage with the DualAnalog and DualShock device type, make sure the corresponding user's Analog to Digital Type is set to none.
-
-* Rumble only works when the corresponding user's device type is set to DualShock and the input driver being used has rumble function implementation (e.g. Xinput).
 
 ## External Links
 
