@@ -11,14 +11,18 @@ In order to propose improvements to this document, [visit it's corresponding sou
 ## Extensions
 
 ## BIOS
+
 |   Filename    |    Description     |              md5sum              |
 |:-------------:|:------------------:|:--------------------------------:|
 |               |                    |                                  |
+
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
+
+| Saves | Save | States | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
 |-------|------|--------|--------|---------|-------------------|--------|-------------|
 |   -   |   -  |    -   |    -   |    -    |         -         |    -   |      -      |
 
@@ -27,6 +31,7 @@ These are libretro features, not frontend or standalone emulator features.
 |    -   |    -    |    -   |     -    |     -     |
 
 ## Options
+
 |   Core Option   |         Description         | Options (Default Bolded) | Requires Restart |
 |:---------------:|:---------------------------:|:------------------------:|:----------------:|
 |        -        |              -              |             -            |         -        |
@@ -65,7 +70,7 @@ The core supports controller setting:
 |**Gamename**                           |                                |
 
 ## External Links
-
-* [Official Website](http://link)  
+ 
 * [Libretro Repository](http://link)
 * [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Official Website](http://link)  
