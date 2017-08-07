@@ -16,7 +16,7 @@ Prerequisites:
 
 [Internet Explorer 6 Service Pack 1](https://s3.amazonaws.com/bparker/IE6.0SP1-KB2722913-WINDOWS2000-X86-ENU.EXE) (required by VC2005)
 
-[DirectX SDK August 2006](https://download.microsoft.com/download/9/e/5/9e5bfc66-a621-4e0d-8bfe-6688058c3f00/dxsdk_aug2006.exe) (versions after this date may not work with Windows 98SE)
+[DirectX SDK February 2005](https://s3.amazonaws.com/bparker/dxsdk_feb2005.exe) (versions after this date will not install on Windows 2000)
 
 [Windows Server 2003 SP1 Platform SDK](https://www.microsoft.com/en-us/download/details.aspx?id=12261)
 
