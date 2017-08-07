@@ -52,11 +52,11 @@ Beetle PSX HW needs a cue-sheet that points to an image file. A cue sheet, or cu
 
 If you have e.g. foo.bin, you should create a text file and save it as foo.cue. Most PS1 games are single-track, so the cue file contents should look like this:
 
+```
  FILE "foo.bin" BINARY
-
   TRACK 01 MODE1/2352
-
    INDEX 01 00:00:00
+```
 
 After that, you can load the foo.cue file in RetroArch with the Beetle PSX HW core.
 
@@ -70,11 +70,11 @@ To take advantage of Beetle PSW HW's Disk Control feature for disk swapping, an 
 
 Create a text file and save it as foo.m3u. Then enter your game's .cue files on it. The m3u file contents should look something like this:
 
+```
 foo (Disc 1).cue
-
 foo (Disc 2).cue
-
 foo (Disc 3).cue
+```
 
 After that, you can load the foo.m3u file in RetroArch with the Beetle PSX HW core.
 
@@ -94,7 +94,7 @@ Note that RetroArch does not currently have .pbp database due to variability in 
 
 Memcard slot 0 is saved using libretro's standard interface (gamename.srm). You might have to rename your old memory cards brought from other emulators to gamename.srm.
 
-The rest of memory cards are saved using Mednafen's standard mechanism. (e.g. gamename.1.mcr) . 
+The rest of memory cards are saved using Mednafen's standard mechanism. (e.g. gamename.1.mcr). 
 
 The game name in the Memcard filename will match the cue or m3u or pbp file's name, like this:
 
@@ -104,13 +104,7 @@ The game name in the Memcard filename will match the cue or m3u or pbp file's na
 
 * Memcard slot 1: Breath of Fire III (USA).1.mcr
 
-Or
-
-* Final Fantasy VII (USA) (Disc 1).cue
-
-* Final Fantasy VII (USA) (Disc 2).cue
-
-* Final Fantasy VII (USA) (Disc 3).cue  
+or
 
 * Loaded content: Final Fantasy VII (USA).m3u
 
@@ -118,7 +112,7 @@ Or
 
 * Memcard slot 1:Final Fantasy VII (USA).1.mcr
 
-Or
+or
 
 * Loaded content: Wild Arms 2 (USA).pbp
 
@@ -181,25 +175,25 @@ This core supports four controllers:
 
 For normal analog stick usage with the DualAnalog and DualShock device type, make sure the corresponding user's Analog to Digital Type is set to none.
 
-Rumble only works when the corresponding user's device type is set to DualShock and the input driver being used has rumble function implementation (e.g. Xinput).
+Rumble only works when the corresponding user's device type is set to DualShock and the joypad input driver being used has rumble function implementation (e.g. Xinput).
 
 | [RetroPad](RetroPad)                                           | PS1 Joypad                                               | DualAnalog                                                     | DualShock                                                      | FlightStick                                                    |
 |----------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)     | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button Pack/PS3/PS3_Circle.png)           |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)       | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button Pack/PS3/PS3_Cross.png)             |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)         | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button Pack/PS3/PS3_Dpad.png)               |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![PS3_L1](images/Button Pack/PS3/PS3_L1.png)             | ![PS3_L1](images/Button Pack/PS3/PS3_L1.png)                   | ![PS3_L1](images/Button Pack/PS3/PS3_L1.png)                   | ![PS3_L1](images/Button Pack/PS3/PS3_L1.png)                   |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              | ![PS3_L2](images/Button Pack/PS3/PS3_L2.png)             | ![PS3_L2](images/Button Pack/PS3/PS3_L2.png)                   | ![PS3_L2](images/Button Pack/PS3/PS3_L2.png)                   | ![PS3_L2](images/Button Pack/PS3/PS3_L2.png)                   |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |                                                          |                                                                | ![PS3_L3](images/Button Pack/PS3/PS3_L3.png)                   |                                                                |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |                                                          | ![PS3_Left_Stick](images/Button Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button Pack/PS3/PS3_Left_Stick.png)   |                                                        
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![PS3_R1](images/Button Pack/PS3/PS3_R1.png)             | ![PS3_R1](images/Button Pack/PS3/PS3_R1.png)                   | ![PS3_R1](images/Button Pack/PS3/PS3_R1.png)                   | ![PS3_R1](images/Button Pack/PS3/PS3_R1.png)                   |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   | ![PS3_R2](images/Button Pack/PS3/PS3_R2.png)             | ![PS3_R2](images/Button Pack/PS3/PS3_R2.png)                   | ![PS3_R2](images/Button Pack/PS3/PS3_R2.png)                   | ![PS3_R2](images/Button Pack/PS3/PS3_R2.png)                   |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |                                                          |                                                                | ![PS3_R3](images/Button Pack/PS3/PS3_R3.png)                   |                                                                |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |                                                          | ![PS3_Right_Stick](images/Button Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button Pack/PS3/PS3_Right_Stick.png) |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)     | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button Pack/PS3/PS3_Select.png)           |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)       | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button Pack/PS3/PS3_Start.png)             |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png) | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button Pack/PS3/PS3_Triangle.png)       |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)     | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button Pack/PS3/PS3_Square.png)           |
+| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![PS3_Circle](images/Button_Pack/PS3/PS3_Circle.png)     | ![PS3_Circle](images/Button_Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button_Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button_Pack/PS3/PS3_Circle.png)           |
+| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)       | ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)             |
+| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![PS3_Dpad](images/Button_Pack/PS3/PS3_Dpad.png)         | ![PS3_Dpad](images/Button_Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button_Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button_Pack/PS3/PS3_Dpad.png)               |
+| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![PS3_L1](images/Button_Pack/PS3/PS3_L1.png)             | ![PS3_L1](images/Button_Pack/PS3/PS3_L1.png)                   | ![PS3_L1](images/Button_Pack/PS3/PS3_L1.png)                   | ![PS3_L1](images/Button_Pack/PS3/PS3_L1.png)                   |
+| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              | ![PS3_L2](images/Button_Pack/PS3/PS3_L2.png)             | ![PS3_L2](images/Button_Pack/PS3/PS3_L2.png)                   | ![PS3_L2](images/Button_Pack/PS3/PS3_L2.png)                   | ![PS3_L2](images/Button_Pack/PS3/PS3_L2.png)                   |
+| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |                                                          |                                                                | ![PS3_L3](images/Button_Pack/PS3/PS3_L3.png)                   |                                                                |
+| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |                                                          | ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   |                                                        
+| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![PS3_R1](images/Button_Pack/PS3/PS3_R1.png)             | ![PS3_R1](images/Button_Pack/PS3/PS3_R1.png)                   | ![PS3_R1](images/Button_Pack/PS3/PS3_R1.png)                   | ![PS3_R1](images/Button_Pack/PS3/PS3_R1.png)                   |
+| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   | ![PS3_R2](images/Button_Pack/PS3/PS3_R2.png)             | ![PS3_R2](images/Button_Pack/PS3/PS3_R2.png)                   | ![PS3_R2](images/Button_Pack/PS3/PS3_R2.png)                   | ![PS3_R2](images/Button_Pack/PS3/PS3_R2.png)                   |
+| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |                                                          |                                                                | ![PS3_R3](images/Button_Pack/PS3/PS3_R3.png)                   |                                                                |
+| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |                                                          | ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) |
+| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![PS3_Select](images/Button_Pack/PS3/PS3_Select.png)     | ![PS3_Select](images/Button_Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button_Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button_Pack/PS3/PS3_Select.png)           |
+| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![PS3_Start](images/Button_Pack/PS3/PS3_Start.png)       | ![PS3_Start](images/Button_Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button_Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button_Pack/PS3/PS3_Start.png)             |
+| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | ![PS3_Triangle](images/Button_Pack/PS3/PS3_Triangle.png) | ![PS3_Triangle](images/Button_Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button_Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button_Pack/PS3/PS3_Triangle.png)       |
+| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)     | ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)           |
 
 ## External Links
 
