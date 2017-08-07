@@ -2,6 +2,10 @@
 
 ## Background
 
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](**Link to Github document**). Changes are proposed using "Pull Requests."
+
 ## License
 
 ## Extensions
