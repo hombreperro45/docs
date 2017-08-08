@@ -4,7 +4,7 @@
 
 Enhanced port of standalone Mednafen PSX to libretro.
 
-Authors: Mednafen Team | RetroArch Team
+Authors: Mednafen Team
 
 ## Contribute to this documentation
 
@@ -60,7 +60,8 @@ If you have e.g. foo.bin, you should create a text file and save it as foo.cue. 
 
 After that, you can load the foo.cue file in RetroArch with the Beetle PSX HW core.
 
-Note that certain PS1 games are multi-track, so their .cue files might be more complicated. 
+!!! warning
+    Certain PS1 games are multi-track, so their .cue files might be more complicated. 
 
 ## Multiple-disk games
 
@@ -88,7 +89,8 @@ If converting a multiple-disk game, all disks should be added to the same .pbp f
 
 Most conversion tools will want a single .bin file for each disk. If your game uses multiple .bin files (tracks) per disk, you will have to mount the cue sheet to a virtual drive and re-burn the images onto a single track before conversion.
 
-Note that RetroArch does not currently have .pbp database due to variability in users' conversion methods. All .pbp games will have to be added to playlists manually.
+!!! note 
+    RetroArch does not currently have .pbp database due to variability in users' conversion methods. All .pbp games will have to be added to playlists manually.
 
 ## Saves
 
@@ -120,7 +122,8 @@ or
 
 * Memcard slot 1: Wild Arms 2 (USA).1.mcr
 
-Note that memory card behavior can be altered with any of the following core options (Memcard 0 method, Enable memory card 1, Shared memcards).
+!!! note 
+    Memory card behavior can be altered with any of the following core options (Memcard 0 method, Enable memory card 1, Shared memcards).
 
 ## Options
 
