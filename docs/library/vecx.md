@@ -2,6 +2,7 @@
 
 
 ## Background
+
 vecx is an emulator for the vector-display based Vectrex video game console.
 
 ## License
@@ -13,24 +14,31 @@ GPLv3
 bin|vec
 
 ## BIOS
+
 vecx does not support using BIOS image files.
+
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|------|--------|--------|---------|-------------------|--------|-------------|
-|   no  |   -  |  yes   |   ye   |    no   |         -         |   no   |      -      |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|   no   |   no    |   no   |     no   |    no     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |   yes       | yes    |  no     |        -          |  no    |
+
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|        -        |  no    |   no    |  no    |   no     |      no       |
 
 ## Options
+
 This core does not feature core options
+
 ## Controllers
 
 The core supports controller setting:
+
 * Joypad: Controller
 
 ![Vectrex_joypad_diagram](images\Controllers\vecx_joypad.png)

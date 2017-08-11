@@ -1,9 +1,9 @@
 # Atari Jaguar (Virtual Jaguar)
 
-
 ## Background
 
 Virtual Jaguar is a portable Jaguar emulator which is based on the source code of what used to be Potato Emulation.
+
 ## License
 
 GPLv3
@@ -20,13 +20,13 @@ The libretro port of Virtual Jaguar does not support using BIOS image files.
 
 These are libretro features, not frontend or standalone emulator features.
 
-| Saves | Save states | Rewind | Netplay | RetroAchievements | Cheats  |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:-------:|
-|  yes  |      no     |   no   |   no    |         no        |   no    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |    no       |  no    |  no     |       no          |  no    |
 
-| Controllers API | Rumble | Sensors | Camera | Location | Subsystem API |
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|       no       |   no   |    no   |   no   |    no    |       no      |
+|       no        |   no   |   no    |  no    |    no    |      no       |
 
 ## Options
 

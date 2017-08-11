@@ -1,9 +1,9 @@
 # Sega Saturn (Yabause)
 
-
 ## Background
 
 Yabause (Yet Another Buggy And Uncomplete Saturn Emulator) is the only active Sega Saturn emulator that is both open-source and written with portability in mind. The libretro port only supports the software renderer at the moment, which is more accurate but also slower than the GL renderer.
+
 ## License
 
 GPLv2
@@ -22,13 +22,13 @@ iso|cue|bin
 
 These are libretro features, not frontend or standalone emulator features.
 
-| Saves | Save states | Rewind | Netplay | RetroAchievements | Cheats  |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:-------:|
-|  yes  |      no     |   no   |   no    |         no        |   yes   |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |    no       |  no    |  no     |       no          |  yes   |
 
-| Controllers API | Rumble | Sensors | Camera | Location | Subsystem API |
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|       yes       |   no   |    no   |   no   |    no    |       no      |
+|      yes        |  no    |   no    |  no    |   no     |      no       |
 
 ## Options
 

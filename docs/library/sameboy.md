@@ -1,25 +1,30 @@
 # Game Boy/Game Boy Color (SameBoy)
 
 ## Background
+
 SameBoy is an accuracy-focused Game Boy/Game Boy Color emulator in the vein of Gambatte, which now has a libretro core. |Author:- LIJI32
 
 ## License
+
 MIT
 ## Extensions
+
 gb|gbc
+
 ## BIOS
 
 ## Feature Support
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|------|--------|--------|---------|-------------------|--------|-------------|
-|   -   |   -  |    -   |    -   |    -    |         -         |    -   |      -      |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|    -   |    -    |    -   |     -    |     -     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  -    |     -       |   -    |   -     |        -          |   -    |
+
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|        -        |   -    |    -    |   -    |    -     |       -       |
 
 ## Options
 
@@ -30,6 +35,7 @@ This core does not feature core options.
 ![Game Boy Diagram](images/Controllers/Game-Boy_joypad.png)
 
 The core supports controller setting:
+
 * Joypad: Game Boy Controller
 
 | [RetroPad](RetroPad)                                           | Joypad |

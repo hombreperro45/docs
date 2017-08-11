@@ -17,16 +17,18 @@ gb|gbc|sgb
 TGB Dual does not support using BIOS image files.
 
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save States | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|-------------|--------|---------|-------------------|--------|-------------|
-|   yes   |   yes  |    Yes   |    Yes   |    -    |         yes         |    no  |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|    no   |    no    |    no   |     no    |     no     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |   yes       | yes    | yes     |        -          | yes    |
+
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|       no        |  no    |   no    |  no    |   no     |      no       |
 
 ## Options
 

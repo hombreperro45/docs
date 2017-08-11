@@ -1,12 +1,17 @@
 # Game Boy Advance (VBA Next)
 
-
 ## Background
+
 VBA-Next is a Game Boy Advance emulator based on [VBA-M](https://wiki.libretro.com/index.php?title=VBA-M) 2011 with backported patches for performance and compatibility improvements.
+
 ## License
+
 GPLv2
+
 ## Extensions
+
 gba
+
 ## BIOS
 
 |   Filename    |    Description        |              md5sum              |
@@ -14,18 +19,21 @@ gba
 |gba_bios.bin   |Game Boy Advance Image | a860e8c0b6d573d191e4ec7db1b1e4f6 |
 
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|------|--------|--------|---------|-------------------|--------|-------------|
-| yes   |   -  |   yes  |  yes   |   no    |         -         |   yes  |      no     |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|    no  |   no    |   no   |    no    |    no     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |    yes      | yes    |  no     |        -          | yes    |
+
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|       no        | no     |   no    |  no    |   no     |      no       |
 
 ## Options
+
 |   Core Option   |         Description        | Options (Default Bolded) | Requires Restart |
 |:---------------:|:--------------------------:|:------------------------:|:-----------:|
 | Use Bios        | Will use an available Bios |   **On**/Off             |   Yes       |
@@ -36,6 +44,7 @@ These are libretro features, not frontend or standalone emulator features.
 The VBA Next core supports one controller setting:
 
 * Joypad: Controller
+
 ![Game Boy Advance_joypad_diagram](images/Controllers/Game-Boy-Advance_joypad.png)
 
 | [RetroPad](RetroPad)                                           | Joypad |

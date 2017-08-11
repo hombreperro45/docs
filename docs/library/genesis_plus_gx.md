@@ -38,13 +38,13 @@ These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
 
-| Saves | States | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|--------|--------|---------|-------------------|--------|-------------|
-| yes   | yes    |  yes   |  yes    |        no         |  yes   |    yes      |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |   yes       | yes    |  yes    |       -           | yes    |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|   no   |  no     |   no   |    no    |    no     |
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|      yes        |  no    |   no    |  no    |   no     |      no       |
 
 ## Options
 

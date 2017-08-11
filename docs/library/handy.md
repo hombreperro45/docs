@@ -1,6 +1,7 @@
 # Atari Lynx (Handy)
 
 ## Background
+
 Handy is an Atari Lynx video game system emulator that can be used as a libretro core.  Handy was the original name of the Lynx project that was started at Epyx and then finished by Atari.. Authors K. Wilkins
 
 ## License
@@ -12,22 +13,25 @@ Zlib
 lnx
 
 ## BIOS
+
 |   Filename    |    Description        |              md5sum              |
 |:-------------:|:---------------------:|:--------------------------------:|
 |lynxboot.img   |Lynx Boot Image        | fcd403db69f54290b51035d82f835e7b |
 
 
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|------|--------|--------|---------|-------------------|--------|-------------|
-| yes   |   -  |   yes  |  yes   |   no    |         -         |    no  |    no       |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|   no   |    no   |   no   |    no    |    no     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |    yes      | yes    |   no    |        -          |  no    |
+
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|       no        |   no   |   no    |  no    |   no     |      no       |
 
 ## Options
 
@@ -38,7 +42,9 @@ These are libretro features, not frontend or standalone emulator features.
 ## Controllers
 
 The core supports controller setting:
+
 * Joypad: Controller
+
 ![Atari Lynx_Gamepad_Diagram](images/Controllers/handy_joypad.png)
 
 Supported combinations

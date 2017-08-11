@@ -23,13 +23,14 @@ gba|bin
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|------|--------|--------|---------|-------------------|--------|-------------|
-| yes   |   -  |   yes  |  yes   |   no    |         -         |   no   |     no      |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|   no   |   no    |   no   |    no    |    no     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |   yes       |  yes   |  no     |        -          |  no    |
+
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|       no        |  no    |   no    |  no    |   no     |      no       |
 
 ## Options
 
@@ -40,6 +41,7 @@ This core does not feature core options.
 The core supports one controller setting:
 
 * Joypad: Controller
+
 ![Game Boy Advance_joypad_diagram](images/Controllers/Game-Boy-Advance_joypad.png)
 
 Note: Shoulder buttons are not supported

@@ -1,25 +1,34 @@
 # Game Boy/Game Boy Color (Emux)
 
 ## Background
+
 Emux is a cross-platform emulator project with a goal of emulating multiple kinds of machines related to gaming, such as consoles or arcades. Its philosophy is very much inspired by the Linux kernel (hence the name), which brilliantly manages to support multiple machines while keeping drivers entirely platform-independent. Emux is designed in the same way, keeping a code base of CPUs and controllers separate from machines. |Author:- Sebastien Ronsse
 
 ## License
+
 GPLv2
+
 ## Extensions
+
 gb|bin|rom
+
 ## BIOS
+
 Emux does not support using BIOS image files.
+
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|------|--------|--------|---------|-------------------|--------|-------------|
-| yes   |   -  |    -   |    -   |    -    |         -         |    -   |      -      |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|    -   |    -    |    -   |     -    |     -     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |     -       |   -    |   -     |        -          |   -    |
+
+| Controllers | Rumble | Sensors | Camera | Location | Subsystem |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|        -        |   -    |    -    |   -    |    -     |       -       |
 
 ## Options
 
@@ -30,6 +39,7 @@ This core does not feature core options.
 ![Game Boy Diagram](images/Controllers/Game-Boy_joypad.png)
 
 The core supports controller setting:
+
 * Joypad: Game Boy Controller
 
 | [RetroPad](RetroPad)                                           | Joypad |

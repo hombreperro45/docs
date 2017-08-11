@@ -23,13 +23,14 @@ ProSystem optionally supports using the following BIOS image file for operation:
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save States | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|-------------|--------|---------|-------------------|--------|-------------|
-|   -   |   -  |    -   |    -   |    -    |         -         |    -  |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|    -   |    -    |    -   |     -    |     -     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  -    |     -       |   -    |   -     |        -          |   -    |
+
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|        -        |   -    |    -    |   -    |    -     |       -       |
 
 ## Options
 

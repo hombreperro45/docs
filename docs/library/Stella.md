@@ -1,6 +1,5 @@
 # Atari 2600 (Stella)
 
-
 ## Background
 
 Stella is a multi-platform Atari 2600 VCS emulator.
@@ -21,13 +20,13 @@ Stella does not support using a BIOS image files
 
 These are libretro features, not frontend or standalone emulator features.
 
-| Saves | Save states | Rewind | Netplay | RetroAchievements | Cheats |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  no   |     yes      |   yes   |   no    |         no        |   no   |
+|  yes  |   yes       | yes    |  no     |        -          |  no    |
 
-| Controllers API | Rumble | Sensors | Camera | Location | Subsystem API |
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        no       |   no   |    no   |   no   |    no    |       no      |
+|        no       |  no    |   no    |  no    |   no     |      no       |
 
 ## Options
 

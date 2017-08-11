@@ -1,6 +1,7 @@
 # Atari Lynx (Beetle Handy)
 
 ## Background
+
 Beetle/Mednafen LYNX is an Atari Lynx video game system emulator that can be used as a libretro core. Specifically it's a port of Mednafen Lynx which is a fork of [Handy](https://wiki.libretro.com/index.php?title=Handy). Authors K. Wilkins|Mednafen Team
 
 ## License
@@ -18,16 +19,18 @@ lnx
 
 
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save | states | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|------|--------|--------|---------|-------------------|--------|-------------|
-| yes   |   -  |   yes  |  yes   |   no    |         -         |    no  |    yes      |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|   no   |    no   |   no   |    no    |    no     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+| yes   |   yes       |  yes   |  no     |        -          |  no    |
+
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|       yes        |  no   |   no    |  no    |   no     |      no       |
 
 ## Options
 
@@ -36,7 +39,9 @@ This core does not feature core options.
 ## Controllers
 
 The core supports controller setting:
+
 * Joypad: Controller
+
 ![Atari Lynx_Gamepad_Diagram](images/Controllers/mednafen_lynx_joypad.png)
 
 Supported combinations
