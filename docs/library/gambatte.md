@@ -20,13 +20,14 @@ Gambatte does not support using BIOS image files.
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
-| Saves | Save States | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|-------------|--------|---------|-------------------|--------|-------------|
-|   yes   |   yes  |    Yes   |    No   |    -    |         yes         |    no  |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|    no   |    no    |    no   |     no    |     no     |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |     yes     |   yes  |   no    |        -          | yes    |
+
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|       no        |  no    |   no    |  no    |   no     |      no       |
 
 ## Options
 

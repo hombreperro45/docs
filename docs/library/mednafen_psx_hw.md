@@ -4,7 +4,7 @@
 
 Enhanced port of standalone Mednafen PSX to libretro.
 
-Authors: Mednafen Team
+Author: Mednafen Team
 
 ## Contribute to this documentation
 
@@ -34,13 +34,13 @@ These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
 
-| Saves | States | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|--------|--------|---------|-------------------|--------|-------------|
-| yes   | yes    |  yes   |  yes    |        no         |  yes   |    yes      |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  yes  |   yes       | yes    | yes     |        -          | yes    |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|  yes   |    no   |  no    |    no    |    no     |
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|      yes        | yes    |   no    |  no    |   no     |      no       |
 
 ## Running
 
@@ -50,36 +50,38 @@ To run this core, The PSX BIOS must be placed in RetroArch's system directory.
 
 Beetle PSX HW needs a cue-sheet that points to an image file. A cue sheet, or cue file, is a metadata file which describes how the tracks of a CD or DVD are laid out.
 
-If you have e.g. foo.bin, you should create a text file and save it as foo.cue. Most PS1 games are single-track, so the cue file contents should look like this:
+If you have e.g. `foo.bin`, you should create a text file and save it as `foo.cue`. Most PS1 games are single-track, so the cue file contents should look like this:
 
+`foobin.cue`
 ```
  FILE "foo.bin" BINARY
   TRACK 01 MODE1/2352
    INDEX 01 00:00:00
 ```
 
-After that, you can load the foo.cue file in RetroArch with the Beetle PSX HW core.
+After that, you can load the `foo.cue` file in RetroArch with the Beetle PSX HW core.
 
 !!! warning
     Certain PS1 games are multi-track, so their .cue files might be more complicated. 
 
 ## Multiple-disk games
 
-If foo is a multiple-disk game, you should have .cue files for each one, e.g. foo (Disc 1).cue, foo (Disc 2).cue, foo (Disc 3).cue.
+If foo is a multiple-disk game, you should have .cue files for each one, e.g. `foo (Disc 1).cue`, `foo (Disc 2).cue`, `foo (Disc 3).cue`.
 
 To take advantage of Beetle PSW HW's Disk Control feature for disk swapping, an index file (a m3u file) should be made.
 
-Create a text file and save it as foo.m3u. Then enter your game's .cue files on it. The m3u file contents should look something like this:
+Create a text file and save it as `foo.m3u`. Then enter your game's .cue files on it. The m3u file contents should look something like this:
 
+`foo.m3u`
 ```
 foo (Disc 1).cue
 foo (Disc 2).cue
 foo (Disc 3).cue
 ```
 
-After that, you can load the foo.m3u file in RetroArch with the Beetle PSX HW core.
+After that, you can load the `foo.m3u` file in RetroArch with the Beetle PSX HW core.
 
-Adding multi-track games to playlists manually is recommended. (Add an entry in the playlist that points to foo.m3u)
+Adding multi-track games to playlists manually is recommended. (Add an entry in the playlist that points to `foo.m3u`)
 
 ## Game compression
 
@@ -94,33 +96,33 @@ Most conversion tools will want a single .bin file for each disk. If your game u
 
 ## Saves
 
-Memcard slot 0 is saved using libretro's standard interface (gamename.srm). You might have to rename your old memory cards brought from other emulators to gamename.srm.
+Memcard slot 0 is saved using libretro's standard interface (`gamename.srm`). You might have to rename your old memory cards brought from other emulators to `gamename.srm`.
 
-The rest of memory cards are saved using Mednafen's standard mechanism. (e.g. gamename.1.mcr). 
+The rest of memory cards are saved using Mednafen's standard mechanism. (e.g. `gamename.1.mcr`). 
 
 The game name in the Memcard filename will match the cue or m3u or pbp file's name, like this:
 
-* Loaded content: Breath of Fire III (USA).cue 
+* Loaded content: `Breath of Fire III (USA).cue` 
 
-* Memcard slot 0: Breath of Fire III (USA).srm
+* Memcard slot 0: `Breath of Fire III (USA).srm`
 
-* Memcard slot 1: Breath of Fire III (USA).1.mcr
-
-or
-
-* Loaded content: Final Fantasy VII (USA).m3u
-
-* Memcard slot 0: Final Fantasy VII (USA).srm
-
-* Memcard slot 1:Final Fantasy VII (USA).1.mcr
+* Memcard slot 1: `Breath of Fire III (USA).1.mcr`
 
 or
 
-* Loaded content: Wild Arms 2 (USA).pbp
+* Loaded content: `Final Fantasy VII (USA).m3u`
 
-* Memcard slot 0: Wild Arms 2 (USA).srm
+* Memcard slot 0: `Final Fantasy VII (USA).srm`
 
-* Memcard slot 1: Wild Arms 2 (USA).1.mcr
+* Memcard slot 1: `Final Fantasy VII (USA).1.mcr`
+
+or
+
+* Loaded content: `Wild Arms 2 (USA).pbp`
+
+* Memcard slot 0: `Wild Arms 2 (USA).srm`
+
+* Memcard slot 1: `Wild Arms 2 (USA).1.mcr`
 
 !!! note 
     Memory card behavior can be altered with any of the following core options (Memcard 0 method, Enable memory card 1, Shared memcards).
@@ -168,13 +170,13 @@ or
 
 This core supports four controllers: 
 
-* PS1 Joypad: PlayStation Controller (SCPH-1080)
+* PS1 Joypad
 
-* DualAnalog: PlayStation Dual Analog Controller (SCPH-1180)
+* DualAnalog
 
-* DualShock: DualShock (SCPH-1200)
+* DualShock
 
-* FlightStick: PlayStation Analog Joystick (SCPH-1110)
+* FlightStick
 
 For normal analog stick usage with the DualAnalog and DualShock device type, make sure the corresponding user's Analog to Digital Type is set to none.
 

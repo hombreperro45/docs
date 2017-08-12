@@ -22,11 +22,11 @@ iso|cue
 
 These are libretro features, not frontend or standalone emulator features.
 
-| Saves | Save states | Rewind | Netplay | RetroAchievements | Cheats |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |     yes     |   yes  |   yes   |         no        |   no   |
+|  yes  |     yes     |   yes  |   yes   |          -        |   no   |
 
-| Controllers API | Rumble | Sensors | Camera | Location | Subsystem API |
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
 |        no       |   no   |    no   |   no   |    no    |       no      |
 
@@ -63,6 +63,7 @@ The core supports one controller setting:
 |        ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)        |        A       |
 
 ## Compatibility
+
 * Not Platform Specific
 
 | Game                                  | Issue                          |

@@ -2,6 +2,8 @@
 
 ## Background
 
+Author(s):  
+
 ## Contribute to this documentation
 
 In order to propose improvements to this document, [visit it's corresponding source page on github](**Link to Github document**). Changes are proposed using "Pull Requests."
@@ -10,8 +12,8 @@ In order to propose improvements to this document, [visit it's corresponding sou
 
 ## Extensions
 
---If no extensions--
-Do not include this section
+--If no extensions use--
+This core does not feature extension use.
 
 ## BIOS
 
@@ -19,8 +21,8 @@ Do not include this section
 |:-------------:|:------------------:|:--------------------------------:|
 |               |                    |                                  |
 
---If no BIOS support--
-Do not include this section
+--If no BIOS use--
+This core does not feature BIOS use.
 
 ## Feature Support
 
@@ -28,13 +30,13 @@ These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
 
-| Saves | States | Rewind | Netplay | RetroAchievements | Cheats | Controllers |
-|-------|--------|--------|-------- |-------------------|--------|-------------|
-|   -   |    -   |    -   |    -    |        -          |   -    |     -       |
+| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
+|  -    |     -       |   -    |   -     |        -          |   -    |
 
-| Rumble | Sensors | Camera | Location | Subsystem |
-|--------|---------|--------|----------|-----------|
-|    -   |    -    |    -   |     -    |     -     |
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
+|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
+|        -        |   -    |    -    |   -    |    -     |       -       |
 
 ## Options
 
@@ -57,10 +59,7 @@ The core supports # controller setting(s):
 | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)                     |        |
 | ![RetroPad_Select](images/RetroPad/Retro_Select.png)                 |        |
 | ![RetroPad_Start](images/RetroPad/Retro_Start.png)                   |        |
-| ![RetroPad_Up](images/RetroPad/Retro_Up)                             |        |                      
-| ![RetroPad_Down](images/RetroPad_Down)                               |        |
-| ![RetroPad_Left](images/RetroPad_Left)                               |        |
-| ![RetroPad_Right](images/RetroPad_Right)                             |        |
+| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)                     |        |    
 | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)                     |        |
 | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)                     |        |
 | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                         |        |
@@ -69,11 +68,8 @@ The core supports # controller setting(s):
 | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                         |        |
 | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                         |        |
 | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                         |        |
-| ![RetroPad_Left_Analog_X](images/RetroPad/Retro_Left_Analog_X.png)   |        |
-| ![RetroPad_Left_Analog_Y](images/RetroPad/Retro_Left_Analog_Y.png)   |        |
-| ![RetroPad_Right_Analog_X](images/RetroPad/Retro_Right_Analog_X.png) |        |
-| ![RetroPad_Right_Analog_Y](images/RetroPad/Retro_Right_Analog_Y.png) |        |                                   |        |
-
+| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)         |        |
+| ![RetroPad_Right_Stick](images/RetroPad/Retro_Righ_Stick.png)        |        |
 
 ## Compatibility
 
@@ -82,7 +78,7 @@ The core supports # controller setting(s):
 |**Gamename**                           |                                |
 
 --If no compatibility--
-Do not include this section
+This core does not have specific compatiblity issues
 
 ## External Links
  
