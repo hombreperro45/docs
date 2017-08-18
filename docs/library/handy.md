@@ -2,7 +2,13 @@
 
 ## Background
 
-Handy is an Atari Lynx video game system emulator that can be used as a libretro core.  Handy was the original name of the Lynx project that was started at Epyx and then finished by Atari.. Authors K. Wilkins
+Handy is an Atari Lynx video game system emulator that can be used as a libretro core.  Handy was the original name of the Lynx project that was started at Epyx and then finished by Atari..
+
+Author(s): K. Wilkins
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/blob/master/docs/library/handy.md). Changes are proposed using "Pull Requests."
 
 ## License
 

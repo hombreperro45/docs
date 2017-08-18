@@ -2,7 +2,14 @@
 
 ## Background
 
-Beetle/Mednafen LYNX is an Atari Lynx video game system emulator that can be used as a libretro core. Specifically it's a port of Mednafen Lynx which is a fork of [Handy](https://wiki.libretro.com/index.php?title=Handy). Authors K. Wilkins|Mednafen Team
+Beetle/Mednafen LYNX is an Atari Lynx video game system emulator that can be used as a libretro core. Specifically it's a port of Mednafen Lynx which is a fork of [Handy](https://wiki.libretro.com/index.php?title=Handy).
+
+Author(s): K. Wilkins|Mednafen Team
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/mednafen_lynx.md). Changes are proposed using "Pull Requests."
+
 
 ## License
 

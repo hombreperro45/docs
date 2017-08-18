@@ -4,6 +4,12 @@
 
 gpSP is a Game Boy Advance emulator based on notaz' fork of gpSP with additional codebase improvements.
 
+Author(s):
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/blob/master/docs/library/gpsp.md). Changes are proposed using "Pull Requests."
+
 ## License
 
 GPLv2

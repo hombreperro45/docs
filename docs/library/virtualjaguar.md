@@ -4,6 +4,12 @@
 
 Virtual Jaguar is a portable Jaguar emulator which is based on the source code of what used to be Potato Emulation.
 
+Author(s):
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/virtualjaguar.md). Changes are proposed using "Pull Requests."
+
 ## License
 
 GPLv3

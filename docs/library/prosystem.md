@@ -2,7 +2,13 @@
 
 ## Background
 
-ProSystem is an Atari 7800 emulator.  Authors: Greg Stanton|Brian Berlin|Leonis|Greg DeMent
+ProSystem is an Atari 7800 emulator.  
+
+Author(s): Greg Stanton|Brian Berlin|Leonis|Greg DeMent
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/prosystem.md). Changes are proposed using "Pull Requests."
 
 ## License
 
@@ -14,7 +20,7 @@ a78|bin
 
 ## BIOS
 
-ProSystem optionally supports using the following BIOS image file for operation: 
+ProSystem optionally supports using the following BIOS image file for operation:
 
 - 7800 BIOS (U).rom (Atari 7800 BIOS)
 

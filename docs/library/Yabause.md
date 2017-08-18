@@ -4,6 +4,12 @@
 
 Yabause (Yet Another Buggy And Uncomplete Saturn Emulator) is the only active Sega Saturn emulator that is both open-source and written with portability in mind. The libretro port only supports the software renderer at the moment, which is more accurate but also slower than the GL renderer.
 
+Author(s):
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/Yabause.md). Changes are proposed using "Pull Requests."
+
 ## License
 
 GPLv2
