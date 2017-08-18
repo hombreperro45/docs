@@ -4,7 +4,7 @@
 
 Enhanced port of standalone Mednafen PSX to libretro.
 
-Author: Mednafen Team
+Author(s): Mednafen Team
 
 ## Contribute to this documentation
 
@@ -62,7 +62,7 @@ If you have e.g. `foo.bin`, you should create a text file and save it as `foo.cu
 After that, you can load the `foo.cue` file in RetroArch with the Beetle PSX HW core.
 
 !!! warning
-    Certain PS1 games are multi-track, so their .cue files might be more complicated. 
+    Certain PS1 games are multi-track, so their .cue files might be more complicated.
 
 ## Multiple-disk games
 
@@ -91,18 +91,18 @@ If converting a multiple-disk game, all disks should be added to the same .pbp f
 
 Most conversion tools will want a single .bin file for each disk. If your game uses multiple .bin files (tracks) per disk, you will have to mount the cue sheet to a virtual drive and re-burn the images onto a single track before conversion.
 
-!!! note 
+!!! note
     RetroArch does not currently have .pbp database due to variability in users' conversion methods. All .pbp games will have to be added to playlists manually.
 
 ## Saves
 
 Memcard slot 0 is saved using libretro's standard interface (`gamename.srm`). You might have to rename your old memory cards brought from other emulators to `gamename.srm`.
 
-The rest of memory cards are saved using Mednafen's standard mechanism. (e.g. `gamename.1.mcr`). 
+The rest of memory cards are saved using Mednafen's standard mechanism. (e.g. `gamename.1.mcr`).
 
 The game name in the Memcard filename will match the cue or m3u or pbp file's name, like this:
 
-* Loaded content: `Breath of Fire III (USA).cue` 
+* Loaded content: `Breath of Fire III (USA).cue`
 
 * Memcard slot 0: `Breath of Fire III (USA).srm`
 
@@ -124,7 +124,7 @@ or
 
 * Memcard slot 1: `Wild Arms 2 (USA).1.mcr`
 
-!!! note 
+!!! note
     Memory card behavior can be altered with any of the following core options (Memcard 0 method, Enable memory card 1, Shared memcards).
 
 ## Options
@@ -168,7 +168,7 @@ or
 
 ![ps1_joypad_diagram](images/Controllers/ps1_joypad.png)
 
-This core supports four controllers: 
+This core supports four controllers:
 
 * PS1 Joypad
 
@@ -204,4 +204,4 @@ Rumble only works when the corresponding user's device type is set to DualShock 
 
 * [Libretro Repository](https://github.com/libretro/beetle-psx-libretro)
 * [Report Issues Here](https://github.com/libretro/beetle-psx-libretro/issues)
-* [Official Website](https://mednafen.github.io/) 
+* [Official Website](https://mednafen.github.io/)

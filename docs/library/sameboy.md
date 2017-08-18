@@ -2,7 +2,13 @@
 
 ## Background
 
-SameBoy is an accuracy-focused Game Boy/Game Boy Color emulator in the vein of Gambatte, which now has a libretro core. |Author:- LIJI32
+SameBoy is an accuracy-focused Game Boy/Game Boy Color emulator in the vein of Gambatte, which now has a libretro core.
+
+Author(s):- LIJI32
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/sameboy.md). Changes are proposed using "Pull Requests."
 
 ## License
 

@@ -3,6 +3,13 @@
 ## Background
 
 VBA-M is a Game Boy Advance emulator with the goal to improve upon VisualBoyAdvance by integrating the best features from the various builds floating around.
+
+Author(s):
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/vbam.md). Changes are proposed using "Pull Requests."
+
 ## License
 
 GPLv2

@@ -6,7 +6,7 @@ Author(s):
 
 ## Contribute to this documentation
 
-In order to propose improvements to this document, [visit it's corresponding source page on github](**Link to Github document**). Changes are proposed using "Pull Requests."
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library). Changes are proposed using "Pull Requests."
 
 ## License
 
@@ -81,7 +81,7 @@ The core supports # controller setting(s):
 This core does not have specific compatiblity issues
 
 ## External Links
- 
+
 * [Libretro Repository](http://link)
 * [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://link)  

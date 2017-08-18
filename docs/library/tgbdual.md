@@ -2,7 +2,13 @@
 
 ## Background
 
-TGB Dual is an open source (GPLv2) GB/GBC emulator with game link cable support. Authors: GIGO|Hii
+TGB Dual is an open source (GPLv2) GB/GBC emulator with game link cable support.
+
+Author(s): GIGO|Hii
+
+## Contribute to this documentation
+
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/tgbdual.md). Changes are proposed using "Pull Requests."
 
 ## License
 
