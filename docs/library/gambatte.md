@@ -20,7 +20,7 @@ gb|gbc|dmg
 
 ## BIOS
 
-Gambatte does not support using BIOS image files.
+This core does not feature BIOS use.
 
 ## Feature Support
 These are libretro features, not frontend or standalone emulator features.

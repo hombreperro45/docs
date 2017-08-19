@@ -22,7 +22,9 @@ a78|bin
 
 ProSystem optionally supports using the following BIOS image file for operation:
 
-- 7800 BIOS (U).rom (Atari 7800 BIOS)
+|   Filename    |    Description     |              md5sum              |
+|:-------------:|:------------------:|:--------------------------------:|
+| 7800 BIOS (U).rom | Atari 7800 BIOS | 0763f1ffb006ddbe32e52d497ee848ae |
 
 ## Feature Support
 

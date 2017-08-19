@@ -19,6 +19,8 @@ gb|gbc
 
 ## BIOS
 
+This core does not feature BIOS use.
+
 ## Feature Support
 These are libretro features, not frontend or standalone emulator features.
 
