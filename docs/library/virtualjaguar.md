@@ -4,7 +4,7 @@
 
 Virtual Jaguar is a portable Jaguar emulator which is based on the source code of what used to be Potato Emulation.
 
-Author(s):
+Author(s): David Raingeard|Shamus
 
 ## Contribute to this documentation
 
@@ -20,7 +20,7 @@ j64|jag
 
 ## BIOS
 
-The libretro port of Virtual Jaguar does not support using BIOS image files.
+This core does not feature BIOS use.
 
 ## Feature Support
 

@@ -4,7 +4,7 @@
 
 VBA-M is a Game Boy Advance emulator with the goal to improve upon VisualBoyAdvance by integrating the best features from the various builds floating around.
 
-Author(s):
+Author(s): Forgotten|VBA-M Team
 
 ## Contribute to this documentation
 
@@ -20,7 +20,7 @@ gba
 
 ## BIOS
 
-The libretro port of VBA-M does not support using BIOS image files.
+This core does not feature BIOS use.
 
 ## Feature Support
 These are libretro features, not frontend or standalone emulator features.

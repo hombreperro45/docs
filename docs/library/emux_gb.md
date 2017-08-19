@@ -20,7 +20,7 @@ gb|bin|rom
 
 ## BIOS
 
-Emux does not support using BIOS image files.
+This core does not feature BIOS use.
 
 ## Feature Support
 

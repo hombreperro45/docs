@@ -4,7 +4,7 @@
 
 Meteor is a Nintendo Gameboy Advance emulator.
 
-Author(s):
+Author(s): Philippe Daouadi
 
 ## Contribute to this documentation
 
@@ -20,7 +20,7 @@ gba
 
 ## BIOS
 
-Meteor does not support using BIOS image files.
+This core does not feature BIOS use.
 
 ## Feature Support
 

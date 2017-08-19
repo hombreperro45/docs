@@ -4,7 +4,7 @@
 
 Stella is a multi-platform Atari 2600 VCS emulator.
 
-Author(s):
+Author(s): Stephen Anthony|Bradford Mott|Eckhard Stolberg|Brian Watson
 
 ## Contribute to this documentation
 
@@ -20,7 +20,7 @@ a26|bin
 
 ## BIOS
 
-Stella does not support using a BIOS image files
+This core does not feature BIOS use.
 
 ## Feature Support
 

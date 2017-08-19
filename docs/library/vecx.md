@@ -5,7 +5,7 @@
 
 vecx is an emulator for the vector-display based Vectrex video game console.
 
-Author(s):
+Author(s): Valavan Manohararajah|John Hawthorn|Nikita Zimin|Demeth
 
 ## Contribute to this documentation
 

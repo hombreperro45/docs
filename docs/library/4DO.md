@@ -4,7 +4,7 @@
 
 4DO is an open-source, low-level emulator for the 3DO Game Console based on the FreeDO source code.
 
-Author(s):
+Author(s): JohnnyDude|FreeDO team
 
 ## Contribute to this documentation
 

@@ -4,7 +4,7 @@
 
 mGBA is a new emulator for running Game Boy Advance games. It aims to be faster and more accurate than many existing Game Boy Advance emulators, as well as adding features that other emulators lack.
 
-Author(s):
+Author(s): Vicki Pfau
 
 ## Contribute to this documentation
 

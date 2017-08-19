@@ -4,7 +4,7 @@
 
 VBA-Next is a Game Boy Advance emulator based on [VBA-M](https://wiki.libretro.com/index.php?title=VBA-M) 2011 with backported patches for performance and compatibility improvements.
 
-Author(s):
+Author(s): Forgotten|VBA-M Team|Squarepusher
 
 ## Contribute to this documentation
 

@@ -69,7 +69,7 @@ The core supports # controller setting(s):
 | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                         |        |
 | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                         |        |
 | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)         |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Righ_Stick.png)        |        |
+| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png)       |        |
 
 ## Compatibility
 
