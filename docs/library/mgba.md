@@ -82,5 +82,5 @@ Please file bugs on the [bug tracker](https://endrift.com/mgba/bugs/).
 
 * [Libretro Repository](https://github.com/libretro/mgba)
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
-* [Official Website](http://mgba.io/)
+* [Official Website](https://mgba.io/)
 * [Official GitHub Repository](https://github.com/mgba-emu/mgba)

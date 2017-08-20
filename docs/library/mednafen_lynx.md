@@ -81,8 +81,9 @@ Supported combinations
 |**RoadBlasters**                       |Graphics glitches. Minor flickering and glitches after starting a race.|
 
 ## External Links
- 
+
 * [Libretro Repository](https://github.com/libretro/beetle-lynx-libretro)
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://mednafen.sourceforge.net/)
 * [Official Upstream Downloads](https://mednafen.github.io/releases/)
+

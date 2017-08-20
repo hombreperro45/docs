@@ -77,8 +77,9 @@ SameBoy Compatibility can be found [here](https://sameboy.github.io/features/)
 
 ## External Links
 
-* [Libretro Repository TBC](http://link)
+* [Libretro Repository](https://github.com/libretro/SameBoy)
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://sameboy.github.io/)
 * [Official Repository](https://github.com/LIJI32/SameBoy)
 * [Official Upstream Downloads](https://sameboy.github.io/downloads/)
+

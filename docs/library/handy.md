@@ -83,8 +83,9 @@ Supported combinations
 |**RoadBlasters**                       |Graphics glitches. Minor flickering and glitches after starting a race.|
 
 ## External Links
- 
+
 * [Libretro Repository](https://github.com/libretro/libretro-handy)
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://handy.sourceforge.net/)
 * [Official Upstream Downloads](http://handy.sourceforge.net/download.htm)
+
