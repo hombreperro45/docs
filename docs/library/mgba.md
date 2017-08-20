@@ -92,6 +92,6 @@ Please file bugs on the [bug tracker](https://endrift.com/mgba/bugs/).
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/mgba)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://mgba.io/)
 * [Official GitHub Repository](https://github.com/mgba-emu/mgba)

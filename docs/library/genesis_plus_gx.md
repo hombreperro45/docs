@@ -135,5 +135,5 @@ The Genesis Plus GX core supports sixteen different controller settings:
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/Genesis-Plus-GX)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://github.com/ekeeke/Genesis-Plus-GX)

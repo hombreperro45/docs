@@ -73,6 +73,6 @@ The core supports controller setting:
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/4do-libretro)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://yabause.org/)
 * [Official GitHub Repository](https://github.com/Guillaumito/yabause)

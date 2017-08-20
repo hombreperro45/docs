@@ -81,5 +81,5 @@ Supported combinations
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/beetle-lynx-libretro)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://mednafen.sourceforge.net/)

@@ -209,5 +209,5 @@ Rumble only works when the corresponding user's device type is set to DualShock 
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/beetle-psx-libretro)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://mednafen.github.io/)

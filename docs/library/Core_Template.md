@@ -82,6 +82,6 @@ This core does not have specific compatiblity issues
 
 ## External Links
 
-* [Libretro Repository](http://link)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
-* [Official Website](http://link)  
+* [Libretro Repository](https://link)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Official Website](https://link)  

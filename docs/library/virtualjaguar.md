@@ -76,5 +76,5 @@ The core supports one controller setting(s):
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/virtualjaguar-libretro)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://icculus.org/virtualjaguar/)
