@@ -36,11 +36,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-<<<<<<< HEAD
 The Virtual Jaguar core has the following options that can be tweaked from the core options menu. The default setting is bolded.
-=======
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded.
->>>>>>> c7ba3dd1e2b18a55eae4a554e61ed67f62d9fbef
 
 - **Fast Blitter** (**Off**/On): Use a faster, but less accurate blitter.
 - **Doom Res Hack** (**Off**/On): Needed for Doom to run in its correct resolution..
@@ -83,4 +79,3 @@ A compatibility table can be found on the bottom of this [page](https://icculus.
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://icculus.org/virtualjaguar/)
 * [Upstream Git Repository](http://shamusworld.gotdns.org/git/virtualjaguar)
-

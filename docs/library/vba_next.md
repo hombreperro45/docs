@@ -88,4 +88,3 @@ The VBA-Next core supports one controller setting(s):
 
 * [Libretro Repository](https://github.com/libretro/vba-next)
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
-

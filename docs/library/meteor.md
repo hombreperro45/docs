@@ -71,9 +71,7 @@ The Meteor core supports one controller setting(s):
 Unknown
 
 ## External Links
-<<<<<<< HEAD
  
 * [Libretro Repository](https://github.com/libretro/meteor-libretro)
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official GitHub Repository](https://github.com/blastrock/meteor)
-

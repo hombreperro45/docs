@@ -82,4 +82,3 @@ SameBoy Compatibility can be found [here](https://sameboy.github.io/features/)
 * [Official Website](https://sameboy.github.io/)
 * [Official Repository](https://github.com/LIJI32/SameBoy)
 * [Official Upstream Downloads](https://sameboy.github.io/downloads/)
-

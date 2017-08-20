@@ -88,4 +88,3 @@ Supported combinations
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://handy.sourceforge.net/)
 * [Official Upstream Downloads](http://handy.sourceforge.net/download.htm)
-

@@ -46,11 +46,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-<<<<<<< HEAD
 The (Core name) core has the following options that can be tweaked from the core options menu. The default setting is bolded.
-=======
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded.
->>>>>>> c7ba3dd1e2b18a55eae4a554e61ed67f62d9fbef
 
 - **Core Option** (**Setting1**/Setting2): Description.
 - **Core Option 2** (**Setting1**/Setting2): Description.
@@ -101,4 +97,3 @@ Unknown
 * [Report Libretro Issues Here](https://link)
 * [Official Website](https://link)  
 * [Official Repository](https://link)
-

@@ -80,4 +80,3 @@ Hatari compatibility can be found [here](https://hg.tuxfamily.org/mercurialroot/
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://hatari.tuxfamily.org/)
 * [Official Upstream Downloads](http://hatari.tuxfamily.org/download.html)
-

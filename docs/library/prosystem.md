@@ -78,4 +78,3 @@ Unknown
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta)
 * [Official Website](http://gstanton.github.io/ProSystem1_3/)  
 * [Official Repository](https://github.com/gstanton/ProSystem1_3) 
-
