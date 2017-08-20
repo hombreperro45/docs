@@ -36,42 +36,45 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-|   Core Option   |         Description                                                        | Options (Default Bolded) | Requires Restart |
-|:---------------:|:--------------------------------------------------------------------------:|:------------------------:|:----------------:|
-|   Fast Blitter  | Use a faster, but less accurate blitter         |        **Off**/On        |        No        |
-| Doom Res Hack  |  Needed for Doom to run in its correct resolution.|         **Off**/On       | No              |
-| Bios | Enables bios loading sequence| **Off**/On   | Yes              |
-| PAL | Awaiting Description| **Off**/On   | Yes              |
+This core has a few options that can be tweaked from the core options menu. The default setting is bolded. 
+
+- **Fast Blitter** (**Off**/On): Use a faster, but less accurate blitter.
+- **Doom Res Hack** (**Off**/On): Needed for Doom to run in its correct resolution..
+- **Bios** (**Off**/On): Enables bios loading sequence.
+- **Pal (Restart)** (**Off**/On): Awaiting Description.
 
 ## Controllers
 
-The core supports controller setting:
+The core supports one controller setting(s):
 
-* Joypad: Controller
+* RetroPad
 
 ![Atari_Jaguar_joypad_diagram](images\Controllers\Virtual-Jaguar_joypad.png)
 
-|                      [RetroPad](RetroPad)                      |   Saturn Joypad   |
-|:--------------------------------------------------------------:|:--------------:|
-|        ![RetroPad_A](images/RetroPad/Retro_A_Round.png)        |        A       |
-|        ![RetroPad_B](images/RetroPad/Retro_B_Round.png)        |        B       |
-|        ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)        |      D-pad     |
-|          ![RetroPad_L1](images/RetroPad/Retro_L1.png)          |    Numpad1     |
-|          ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)     |    Numpad3     |
-|          ![RetroPad_L3](images/RetroPad/Retro_L3.png)          |    Numpad5     |
-|  ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)  |                |
-|          ![RetroPad_R1](images/RetroPad/Retro_R1.png)          |    Numpad2     |
-|          ![RetroPad_R2](images/RetroPad/Retro_R2.png)          |    Numpad4     |
-|          ![RetroPad_R3](images/RetroPad/Retro_R3.png)          |    Numpad6     |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |                |
-|      ![RetroPad_Select](images/RetroPad/Retro_Select.png)      |     Pause      |
-|       ![RetroPad_Start](images/RetroPad/Retro_Start.png)       |     Option     |
-|        ![RetroPad_X](images/RetroPad/Retro_X_Round.png)        |    Numpad0     |
-|        ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)        |        C       |
+| [RetroPad](RetroPad)                                                 | Atari Jaguar |
+|----------------------------------------------------------------------|--------|
+| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)                     | B        |
+| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)                     | C        |
+| ![RetroPad_Select](images/RetroPad/Retro_Select.png)                 | Pause        |
+| ![RetroPad_Start](images/RetroPad/Retro_Start.png)                   | Option       |
+| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)                     | D-Pad       |    
+| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)                     | A       |
+| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)                     | Numpad 0       |
+| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                         | Numpad 1       |
+| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                         | Numpad 2       |
+| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)                    | Numpad 3       |
+| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                         | Numpad 4       |
+| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                         | Numpad 5       |
+| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                         | Numpad 6       |
+| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)         |        |
+| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png)       |        |
+
+## Compatibility
+
+[Virtual Jaguar Compatibility List](https://wiki.libretro.com/index.php?title=Atari_Jaguar_Core_Compatibility)
 
 ## External Links
 
-* [Official Website](https://icculus.org/virtualjaguar/)
-* [Official GitHub Repository](http://shamusworld.gotdns.org/git/virtualjaguar)
 * [Libretro Repository](https://github.com/libretro/virtualjaguar-libretro)
-* [Unofficial GitHub Mirror](https://github.com/mirror/virtualjaguar)
+* [Report Issues Here](https://github.com/libretro/virtualjaguar-libretro/issues)
+* [Official Website](https://icculus.org/virtualjaguar/)

@@ -30,7 +30,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |     yes     |   yes  |   yes   |          -        |   no   |
+|  yes  |     yes     |   yes  |   yes   |         no        |   no   |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -38,54 +38,42 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-|   Core Option   |         Description         | Options (Default Bolded) | Requires Restart |
-|:---------------:|:---------------------------:|:------------------------:|:----------------:|
-| High Resolution | Doubles internal resolution |        **Off**/On        |        Yes       |
+This core has a few options that can be tweaked from the core options menu. The default setting is bolded. 
+
+- **High Resolution (restart)** (**Off**/On): Doubles internal resolution.
 
 ## Controllers
 
-The core supports one controller setting:
+The core supports one controller setting(s):
 
-* Joypad: Controller
+* RetroPad
 
 ![3do_joypad_diagram](https://cloud.githubusercontent.com/assets/10035308/16599643/7f450bd6-42c0-11e6-84d7-9cc0944e7b01.png)
 
-|                      [RetroPad](RetroPad)                      |   3do Joypad   |
-|:--------------------------------------------------------------:|:--------------:|
-|        ![RetroPad_A](images/RetroPad/Retro_A_Round.png)        |        C       |
-|        ![RetroPad_B](images/RetroPad/Retro_B_Round.png)        |        B       |
-|        ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)        |      D-pad     |
-|          ![RetroPad_L1](images/RetroPad/Retro_L1.png)          |  Left Shoulder |
-|          ![RetroPad_L2](images/RetroPad/Retro_L2.png)          |                |
-|          ![RetroPad_L3](images/RetroPad/Retro_L3.png)          |                |
-|  ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)  |                |
-|          ![RetroPad_R1](images/RetroPad/Retro_R1.png)          | Right Shoulder |
-|          ![RetroPad_R2](images/RetroPad/Retro_R2.png)          |                |
-|          ![RetroPad_R3](images/RetroPad/Retro_R3.png)          |                |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |                |
-|      ![RetroPad_Select](images/RetroPad/Retro_Select.png)      |      Stop      |
-|       ![RetroPad_Start](images/RetroPad/Retro_Start.png)       |   Play/Pause   |
-|        ![RetroPad_X](images/RetroPad/Retro_X_Round.png)        |                |
-|        ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)        |        A       |
+| [RetroPad](RetroPad)                                                 | 3DO    |
+|----------------------------------------------------------------------|--------|
+| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)                     | B      |
+| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)                     | A      |
+| ![RetroPad_Select](images/RetroPad/Retro_Select.png)                 | X (Stop) |
+| ![RetroPad_Start](images/RetroPad/Retro_Start.png)                   | P (Play/Pause |
+| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)                     | D-Pad  |    
+| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)                     | C      |
+| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)                     |        |
+| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                         | L      |
+| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                         | R      |
+| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)                    |        |
+| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                         |        |
+| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                         |        |
+| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                         |        |
+| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)         |        |
+| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png)       |        |
 
 ## Compatibility
 
-* Not Platform Specific
-
-| Game                                  | Issue                          |
-|---------------------------------------|--------------------------------|
-|**Advanced Dungeons & Dragons - Deathkeep**| Random softlocks (music related?). |
-|**Alone in the Dark**|Unreadable text within books. Audio glitches. |
-|**DinoPark Tycoon**| 	Graphics glitches. |
-|**Eye of Typhoon, The**| 	Runs too fast. |
-|**Horde, The**| 	Graphics glitches. Minor graphical inaccuracy in bird's eye map. |
-|**Primal Rage**|Primal Rage|
-|**Psychic Detective**|Psychic Detective|
-|**Psychic Detective**|Psychic Detective|
-|**Tetsujin Return**| 	Graphics glitches. Missing graphics for obstacles in the driving scenes. |
-
+[4DO Compatibility List](http://wiki.fourdo.com/Compatibility_List)
 
 ## External Links
 
-* [Official Website](http://www.fourdo.com/)
 * [Libretro Repository](https://github.com/libretro/4do-libretro)
+* [Report Issues Here](https://github.com/libretro/4do-libretro/issues)
+* [Official Website](http://www.fourdo.com/)

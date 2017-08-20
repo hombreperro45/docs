@@ -33,7 +33,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |    yes      | yes    |   no    |        -          |  no    |
+|  yes  |    yes      | yes    |   no    |       no          |  no    |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -41,49 +41,45 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-|   Core Option   |         Description         | Options (Default Bolded) | Requires Restart |
-|:---------------:|:---------------------------:|:------------------------:|:----------------:|
-|    handy_rot    |    Rotates the display      |   **None**/90/240        |         -        |
+- **Display Rotation** (**None**/90/240): Rotates the display.
 
 ## Controllers
 
 The core supports controller setting:
 
-* Joypad: Controller
+* RetroPad
 
 ![Atari Lynx_Gamepad_Diagram](images/Controllers/handy_joypad.png)
+
+| [RetroPad](RetroPad)                                                 | Joypad |
+|----------------------------------------------------------------------|--------|
+| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)                     | B      |
+| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)                     |        |
+| ![RetroPad_Select](images/RetroPad/Retro_Select.png)                 |        |
+| ![RetroPad_Start](images/RetroPad/Retro_Start.png)                   | Pause  |
+| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)                     | D-pad  |    
+| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)                     | A      |
+| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)                     |        |
+| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                         | Option 1 |
+| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                         | Option 2 |
+| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)                    |        |
+| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                         |        |
+| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                         |        |
+| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                         |        |
+| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)         |        |
+| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png)       |        |
 
 Supported combinations
 
 * Option 1 + Pause = Restarts game
 * Option 2 + Pause = Flips Screen
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |A Button |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |B Button |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | D-Pad |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |Option 1 |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |Option 2|
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |Pause |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
-
 ## Compatibility
 
-| Game                                  | Issue                          |
-|---------------------------------------|--------------------------------|
-|**RoadBlasters**                       |Graphics glitches. Minor flickering and glitches after starting a race.|
+[Handy Compatibility List](https://wiki.libretro.com/index.php?title=Atari_Lynx_Core_Compatibility)
 
 ## External Links
-
-* [Official Website](http://handy.sourceforge.net/)  
+ 
 * [Libretro Repository](https://github.com/libretro/libretro-handy)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Issues Here](https://github.com/libretro/libretro-handy/issues)
+* [Official Website](http://handy.sourceforge.net/) 

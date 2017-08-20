@@ -40,9 +40,9 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-|   Core Option   |         Description         | Options (Default Bolded) | Requires Restart |
-|:---------------:|:---------------------------:|:------------------------:|:----------------:|
-|        -        |              -              |             -            |         -        |
+This core has a few options that can be tweaked from the core options menu. The default setting is bolded. 
+
+- **Core Option** (**Setting1**/Setting2): Description.
 
 --If no options use--
 This core does not feature core options.
@@ -73,9 +73,7 @@ The core supports # controller setting(s):
 
 ## Compatibility
 
-| Game                                  | Issue                          |
-|---------------------------------------|--------------------------------|
-|**Gamename**                           |                                |
+[Core Compatibility List](url to list)
 
 --If no compatibility--
 This core does not have specific compatiblity issues
