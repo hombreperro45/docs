@@ -38,7 +38,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded. 
+This core has a few options that can be tweaked from the core options menu. The default setting is bolded.
 
 - **High Resolution (restart)** (**Off**/On): Doubles internal resolution.
 
@@ -75,5 +75,5 @@ The core supports one controller setting(s):
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/4do-libretro)
-* [Report Issues Here](https://github.com/libretro/4do-libretro/issues)
+* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://www.fourdo.com/)

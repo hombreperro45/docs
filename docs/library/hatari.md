@@ -75,7 +75,7 @@ untested
 
 ## External Links
 
-* [Official Website](http://hatari.tuxfamily.org/)  
-* [Official Mercurial Repository](http://hg.tuxfamily.org/mercurialroot/hatari/hatari)
 * [Libretro Repository](https://github.com/libretro/hatari)
 * [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Official Website](http://hatari.tuxfamily.org/)  
+* [Official Mercurial Repository](http://hg.tuxfamily.org/mercurialroot/hatari/hatari)

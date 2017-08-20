@@ -70,7 +70,7 @@ untested
 
 ## External Links
 
-* [Official Website](https://sameboy.github.io/)
-* [Official Repository](https://github.com/LIJI32/SameBoy)  
 * [Libretro Repository TBC](http://link)
 * [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Official Website](https://sameboy.github.io/)
+* [Official Repository](https://github.com/LIJI32/SameBoy)  

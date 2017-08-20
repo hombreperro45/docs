@@ -71,5 +71,5 @@ This core does not have specific compatiblity issues
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/stella-libretro)
-* [Report Issues Here](https://github.com/libretro/stella-libretro/issues)
+* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://stella-emu.github.io/)

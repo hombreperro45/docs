@@ -79,7 +79,7 @@ Supported combinations
 [Beetle Handy Compatibility List](https://wiki.libretro.com/index.php?title=Atari_Lynx_Core_Compatibility)
 
 ## External Links
- 
+
 * [Libretro Repository](https://github.com/libretro/beetle-lynx-libretro)
-* [Report Issues Here](https://github.com/libretro/beetle-lynx-libretro/ssues)
-* [Official Website](http://mednafen.sourceforge.net/) 
+* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Official Website](http://mednafen.sourceforge.net/)

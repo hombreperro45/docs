@@ -72,6 +72,6 @@ untested
 
 ## External Links
 
-* [Official Repository](https://github.com/sronsse/emux)  
 * [Libretro Repository](https://github.com/libretro/emux)
 * [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Official Repository](https://github.com/sronsse/emux) 

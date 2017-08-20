@@ -4,7 +4,7 @@
 
 Genesis Plus GX is an open-source Sega 8/16 bit emulator focused on accuracy and portability. The source code, originally based on Genesis Plus 1.3 by Charles MacDonald, has been heavily modified & enhanced, with respect to initial goals and design, in order to improve the accuracy of emulation, implementing new features and adding support for extra peripherals, cartridge & systems hardware.
 
-Author(s): Charles McDonald|Eke-Eke 
+Author(s): Charles McDonald|Eke-Eke
 
 ## Contribute to this documentation
 
@@ -135,5 +135,5 @@ The Genesis Plus GX core supports sixteen different controller settings:
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/Genesis-Plus-GX)
-* [Report Issues Here](https://github.com/libretro/Genesis-Plus-GX/issues)
+* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://github.com/ekeeke/Genesis-Plus-GX)

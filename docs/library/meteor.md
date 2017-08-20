@@ -72,5 +72,6 @@ To many to list
 
 ## External Links
 
-* [Official GitHub Repository](https://github.com/blastrock/meteor)  
 * [Libretro Repository](https://github.com/libretro/meteor-libretro)
+* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Official GitHub Repository](https://github.com/blastrock/meteor)  

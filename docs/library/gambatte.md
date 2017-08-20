@@ -92,6 +92,7 @@ The core supports controller setting:
 
 ## External Links
 
-* [Official Website](https://sourceforge.net/projects/gambatte/)  
+
 * [Libretro Repository](https://github.com/libretro/gambatte-libretro)
 * [Report Issues Here](https://github.com/libretro/libretro-meta)
+* [Official Website](https://sourceforge.net/projects/gambatte/)  
