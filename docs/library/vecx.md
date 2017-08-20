@@ -1,6 +1,5 @@
 # Vectrex (vecx)
 
-
 ## Background
 
 vecx is an emulator for the vector-display based Vectrex video game console.
@@ -21,7 +20,7 @@ bin|vec
 
 ## BIOS
 
-vecx does not support using BIOS image files.
+The vecx core does not feature BIOS use.
 
 ## Feature Support
 
@@ -39,35 +38,42 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core does not feature core options
+The vecx core has the following options that can be tweaked from the core options menu. The default setting is bolded. 
+
+- **Res Multiplier** (**1**-4): -
 
 ## Controllers
 
-The core supports controller setting:
+The vecx core supports controller setting:
 
-* Joypad: Controller
+* RetroPad
 
-![Vectrex_joypad_diagram](images\Controllers\vecx_joypad.png)
+![vecx_retropad](images\Controllers\vecx_retropad.png)
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |   1    |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |   2    |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |  D-Pad |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |        |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)                   |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |        |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |        |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |    3   |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |    4   |
+| vecx      | [RetroPad](RetroPad)                                           |
+|-----------|----------------------------------------------------------------|
+| 2         | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+| 4         | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+|           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+|           | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| 1         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+| 3         | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+|           | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+|           | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+|           | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+|           | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+|           | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+|           | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+|           | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+|           | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
+
+## Compatibility
+
+Unknown
 
 ## External Links
 
-* [Official GitHub Repository of SDL Port](https://github.com/jhawthorn/vecx)
 * [Libretro Repository](https://github.com/libretro/libretro-vecx)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Official GitHub Repository of SDL Port](https://github.com/jhawthorn/vecx)

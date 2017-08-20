@@ -23,7 +23,7 @@ gba|agb|bin
 
 |   Filename    |    Description     |              md5sum              |
 |:-------------:|:------------------:|:--------------------------------:|
-|gba_bios.bin   |Game Boy Advance BIOS|a860e8c0b6d573d191e4ec7db1b1e4f6 |
+|gba_bios.bin   |Game Boy Advance BIOS - Optional |a860e8c0b6d573d191e4ec7db1b1e4f6 |
 
 ## Feature Support
 
@@ -41,40 +41,43 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-TBC
+The Beetle GBA core has the following options that can be tweaked from the core options menu. The default setting is bolded. 
+
+- **HLE bios emulation** (Off/**On**): -
 
 ## Controllers
 
-![Game Boy Advance_joypad_diagram](images/Controllers/Game-Boy-Advance_joypad.png)
+The Beetle GBA core supports one controller setting(s):
 
-The core supports controller setting:
+* RetroPad
 
-* Joypad: Controller
+![mednafen_gba_retropad](images/Controllers/mednafen_gba_retropad.png)
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |        |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |        |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |        |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |        |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |        |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |        |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
+| Beetle GBA | [RetroPad](RetroPad)                                           |
+|------------|----------------------------------------------------------------|
+| B          | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+|            | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+| Select     | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Start      | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-pad      | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| A          | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+|            | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+| L          | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+| R          | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+|            | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+|            | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+|            | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+|            | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+|            | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+|            | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 ## Compatibility
 
-TBC
+Unknown
 
 ## External Links
 
-* [Official Website](http://mednafen.sourceforge.net/)  
 * [Libretro Repository](https://github.com/libretro/beetle-gba-libretro)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Official Website](http://mednafen.sourceforge.net/)
+* [Official Upstream Downloads](https://mednafen.github.io/releases/)

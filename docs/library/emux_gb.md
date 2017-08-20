@@ -20,7 +20,7 @@ gb|bin|rom
 
 ## BIOS
 
-This core does not feature BIOS use.
+The Emux core does not feature BIOS use.
 
 ## Feature Support
 
@@ -38,40 +38,40 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core does not feature core options.
+The Emux core does not feature core options.
 
 ## Controllers
 
-![Game Boy Diagram](images/Controllers/Game-Boy_joypad.png)
+The core supports one controller setting(s):
 
-The core supports controller setting:
+* RetroPad
 
-* Joypad: Game Boy Controller
+![emux_gb_retropad](images/Controllers/emux_gb_retropad.png)
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |        |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |        |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | dpad   |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |        |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |        |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |        |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
+| Emux      | [RetroPad](RetroPad)                                           |
+|-----------|----------------------------------------------------------------|
+| B         | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+|           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+| Select    | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Start     | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| A         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+|           | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+|           | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+|           | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+|           | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+|           | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+|           | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+|           | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+|           | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+|           | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 ## Compatibility
 
-untested
+Unknown
 
 ## External Links
 
-* [Official Repository](https://github.com/sronsse/emux)  
 * [Libretro Repository](https://github.com/libretro/emux)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Official Repository](https://github.com/sronsse/emux) 

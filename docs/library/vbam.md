@@ -20,9 +20,10 @@ gba
 
 ## BIOS
 
-This core does not feature BIOS use.
+The VBA-M core does not feature BIOS use.
 
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
@@ -37,42 +38,55 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-|   Core Option   |         Description        | Options (Default Bolded) | Requires Restart |
-|:---------------:|:--------------------------:|:------------------------:|:-----------:|
-|Show Layer 1     | -                          |   **Yes**/On             |   -         |
-|Show Layer 2     | -                          |   **Yes**/On             |   -         |
-|Show Layer 3     | -                          |   **Yes**/On             |   -         |
-|Show Layer 4     | -                          |   **Yes**/On             |   -         |
-|Show sprite layer| -                          |   **Yes**/On             |   -         |
-|Show window layer 1| -                        |   **Yes**/On             |   -         |
-|Show window layer 2| -                        |   **Yes**/On             |   -         |
-|Show sprite window layer| -                   |   **Yes**/On             |   -         |
+The VBA-M core has the following options that can be tweaked from the core options menu. The default setting is bolded.
+
+- **Show layer 1** (**Yes**/On): -  
+- **Show layer 2** (**Yes**/On): -  
+- **Show layer 3** (**Yes**/On): -  
+- **Show layer 4** (**Yes**/On): - 
+- **Show sprite layer** (**Yes**/On): -  
+- **Show window layer 1** (**Yes**/On): - 
+- **Show window layer 2** (**Yes**/On): -  
+- **Show sprite window layer** (**Yes**/On): - 
 
 ## Controllers
 
-The VBA-M core supports one controller setting:
+The VBA-M core supports four controller setting(s):
 
-* Joypad: Controller
+* RetroPad
 
-![Game Boy Advance_joypad_diagram](images/Controllers/Game-Boy-Advance_joypad.png)
+![vbam_retropad](images/Controllers/vbam_retropad.png)
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |    A   |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |    B   |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | D-Pad  |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |Left Shoulder  |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |Right Shoulder |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | Select |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | Start  |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
+* GBA Joypad
+
+![vbam_gbajoypad](images/Controllers/vbam_gbajoypad.png)
+
+* Alt Joypad YB
+
+![vbam_altjoypadyb](images/Controllers/vbam_altjoypadyb.png)
+
+* Alt Joypad AB
+
+![vbam_altjoypadab](images/Controllers/vbam_altjoypadab.png)
+
+| VBA-M     | [RetroPad](RetroPad)                                           | GBA Joypad | Alt Joypad YB | Alt Joypad AB |
+|-----------|----------------------------------------------------------------|------------|---------------|---------------|
+| B         | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | -          | -             | -             |
+|           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |            |               |               |
+| Select    | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | -          | -             | -             |
+| Start     | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | -          | -             | -             |
+| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | -          | -             | -             |
+| A         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | -          | -             | -             |
+|           | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |            |               |               |
+| L         | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | -          | -             | -             |
+| R         | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | -          | -             |               |
+|           | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |            |               |               |
+|           | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |            |               |               |
+|           | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |            |               |               |
+|           | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |            |               |               |
+|           | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |            |               |               |
+|           | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |            |               |               |
+
 
 ## Compatibility
 
@@ -85,9 +99,10 @@ The VBA-M core supports one controller setting:
 |**WarioWare: Twisted!**                |  	The tilt sensor is not emulated   |
 |**Yoshi’s Universal Gravitation**      |   The tilt sensor is not emulated   |
 
-
 ## External Links
 
+
+* [Libretro Repository](https://github.com/libretro/vbam-libretro)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://vba-m.com/)
 * [Official Sourceforge Repository](http://sourceforge.net/projects/vbam/)
-* [Libretro Repository](https://github.com/libretro/vbam-libretro)

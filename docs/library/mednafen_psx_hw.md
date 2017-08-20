@@ -20,13 +20,11 @@ cue|toc|m3u|ccd|exe|pbp
 
 ## BIOS
 
-Beetle PSX HW requires the following BIOS image files for operation.
-
 |   Filename  | Description |              md5sum             |
 |:-----------:|:-----------:|:-------------------------------:|
-|scph5500.bin |PS1 JP BIOS  |8dd7d5296a650fac7319bce665a6a53c |
-|scph5501.bin |PS1 US BIOS  |490f666e1afb15b7362b406ed1cea246 |
-|scph5502.bin |PS1 EU BIOS  |32736f17079d0b2b7024407c39bd3050 |
+|scph5500.bin |PS1 JP BIOS - Required for JP  |8dd7d5296a650fac7319bce665a6a53c |
+|scph5501.bin |PS1 US BIOS - Required for US  |490f666e1afb15b7362b406ed1cea246 |
+|scph5502.bin |PS1 EU BIOS - Required for EU  |32736f17079d0b2b7024407c39bd3050 |
 
 ## Feature Support
 
@@ -129,59 +127,60 @@ or
 
 ## Options
 
-|   Core Option                     |         Description         | Options (Default Bolded)                   | Requires Restart |
-|:---------------------------------:|:---------------------------:|:------------------------------------------:|:----------------:|
-|Renderer                           | The last two options will enable and/or speedup enhancements like upscaling and texture filtering. The OpenGL and Vulkan renderers must be used with it's corresponding video driver, RetroArch's video driver can be changed in the RetroArch Driver settings. Also, Hardware Shared Context must be enabled in RetroArch's Core settings. | software/**vulkan**/opengl | yes |
-|Software framebuffer               | If off, the software renderer will skip some steps. Potential speedup. Causes bad graphics when doing framebuffer readbacks. | Off/**On** | - |
-|Adaptive smoothing                 | When upscaling, smooths out 2D elements while keeping 3D elements sharp. Vulkan renderer only at the moment. | Off/**On** | - |
-|Internal GPU Resolution            | Graphics upscaling. | **1x(native)**/2x/4x/8x/16x/32x | - |
-|Texture filtering                  | Per-texture filtering. OpenGL only at the moment. | **nearest**/SABR/xBR/bilinear/3-point/JINC2 | - |
-|Internal color depth               | PSX had 16bpp depth, beetle-psx can go up to 32bpp. OpenGL only at the moment. Vulkan always uses 32bpp. | **dithered 16bpp (native)**/32bpp | - |
-|Wireframe mode                     | For debug use. Shows only the outlines of polygons. OpenGL only. | **Off**/On | - |
-|Display full VRAM                  | Everything in VRAM is drawn on screen. | **Off**/On | - |
-|PGXP operation mode                | When not off, floating point coordinates will be used for vertex positions, to avoid the PSX polygon jitter. 'memory + cpu' mode can further reduce jitter at the cost of performance and geometry glitches. | **Off**/memory only/memory + cpu | - |
-|PGXP vertex cache                  | Maintains a cache for vertices. May result in better performance but can result in graphics glitches in most games. | **Off**/On | - |
-|PGXP perspective correct texturing | Original PSX did affine texture mapping, resulting in e.g. crooked lines across walls. This fixes it. | **Off**/On | - |
-|Widescreen mode hack               | If on, renders in 16:9. Works best on 3D games. | **Off**/On | no |
-|Frame duping (speedup)             | Redraws/reuses the last frame if there was no new data. | **Off**/On | - |
-|CPU Overclock                      | Gets rid of memory access latency and makes all GTE instructions have 1 cycle latency. | **Off**/On | - |
-|Skip BIOS                          | Self-explanatory. Some games have issues when enabled. | **Off**/On  | - |
-|Dithering pattern                  | If off, disables the dithering pattern the PSX applies to combat color banding. OpenGL only. Vulkan always disables the pattern. | **1x(native)**/internal resolution/Off | - |
-|Display internal FPS               | Shows the frame rate at which the emulated PSX is drawing at. Onscreen Notifications must be enabled in the RetroArch Onscreen Display Settings. | **Off**/On | - |
-|Initial scanline                   | Sets the first scanline to be drawn on screen. | **0** - 40 | - |
-|Last scanline                      | Sets the last scanline to be drawn on screen. | 210 - **239** | - |
-|Initial scanline PAL               | Sets the first scanline to be drawn on screen for PAL systems. | **0** - 40 | - |
-|Last scanline PAL                  | Sets the last scanline to be drawn on screen for PAL systems. | 260 - **287** | - |
-|Crop Overscan                      | Self-explanatory. | Off/**On** | - |
-|Additional Cropping                | Self-explanatory. | **Off**/1 px - 8 px | - |
-|Offset Cropped Image               | Self-explanatory. | **Off**/ -4 px - 4 px | - |
-|Analog self-calibration            | Monitors the max values reached by the input, using it as a calibration heuristic which then scales the analog coordinates sent to the emulator accordingly. For best results, rotate the sticks at max amplitude for the algorithm to get a good estimate of the scaling factor, otherwise it will adjust while playing | **Off**/On | - |
-|DualShock Analog button toggle     | Toggles the Analog button from DualShock controllers, if disabled analogs are always on, if enabled you can toggle their state by pressing and holding START+SELECT+L1+L2+R1+R2. | **Off**/On | - |
-|Port 1: Multitap enable            | Enables/Disables multitap functionality on port 1. | **Off**/On | - |
-|Port 2: Multitap enable            | Enables/Disables multitap functionality on port 2. | **Off**/On | - |
-|CD Image Cache                     | Loads the complete image in memory at startup. | **Off**/On | yes |
-|Memcard 0 method                   | Picks the format (libretro or mednafen) used for storing memcard 0 save data. | **libretro**/mednafen | - |
-|Enable memory card 1               | Specifically enables memcard slot 1. Needed for game "Codename Tenka". | Off/**On** | - |
-|Shared memcards                    | Stores everything in the same savefile. 'Memcard 0 method' needs to be set to 'libretro'. | **Off**/On | yes |
+The Beetle PSW HW core has the following options that can be tweaked from the core options menu. The default setting is bolded. 
+
+- **Renderer (restart)** (software/**vulkan**/opengl): The software renderer is the most accurate renderer. The opengl and vulkan options will enable and/or speedup enhancements like upscaling and texture filtering. The OpenGL and Vulkan renderers must be used with it's corresponding video driver, RetroArch's video driver can be changed in the RetroArch Driver settings. Also, Hardware Shared Context must be enabled in RetroArch's Core settings.
+- **Software framebuffer** (Off/**On**): If off, the software renderer will skip some steps. Potential speedup. Causes bad graphics when doing framebuffer readbacks.
+- **Adaptive smoothing** (Off/**On**): When upscaling, smooths out 2D elements while keeping 3D elements sharp. Vulkan renderer only at the moment.
+- **Internal GPU Resolution** (**1x(native)**/2x/4x/8x/16x/32x): Graphics upscaling.
+- **Texture filtering** (**nearest**/SABR/xBR/bilinear/3-point/JINC2): Per-texture filtering. OpenGL only at the moment. 
+- **Internal color depth** (**dithered 16bpp (native)**/32bpp): PSX had 16bpp depth, beetle-psx can go up to 32bpp. OpenGL only at the moment. Vulkan always uses 32bpp.
+- **Wireframe mode** (**Off**/On ): For debug use. Shows only the outlines of polygons. OpenGL only.
+- **Display full VRAM** (**Off**/On): Everything in VRAM is drawn on screen.
+- **PGXP operation mode** (**Off**/memory only/memory + cpu ): When not off, floating point coordinates will be used for vertex positions, to avoid the PSX polygon jitter. 'memory + cpu' mode can further reduce jitter at the cost of performance and geometry glitches.
+- **PGXP vertex cache** (**Off**/On): Maintains a cache for vertices. May result in better performance but can result in graphics glitches in most games.
+- **PGXP perspective correct texturing** (**Off**/On): Original PSX did affine texture mapping, resulting in e.g. crooked lines across walls. This fixes it.
+- **Widescreen mode hack** (**Off**/On): If on, renders in 16:9. Works best on 3D games. 
+- **Frame duping (speedup)** (**Off**/On): Redraws/reuses the last frame if there was no new data.
+- **CPU Overclock** (**Off**/On): Gets rid of memory access latency and makes all GTE instructions have 1 cycle latency.
+- **Skip BIOS** (**Off**/On): Self-explanatory. Some games have issues when enabled.
+- **Dithering pattern** (**1x(native)**/internal resolution/Off): If off, disables the dithering pattern the PSX applies to combat color banding. OpenGL only. Vulkan always disables the pattern.
+- **Display internal FPS** (**Off**/On): Shows the frame rate at which the emulated PSX is drawing at. Onscreen Notifications must be enabled in the RetroArch Onscreen Display Settings.
+- **Initial scanline** (**0** - 40): Sets the first scanline to be drawn on screen.
+- **Last scanline** (210 - **239**): Sets the last scanline to be drawn on screen.
+- **Initial scanline PAL** (**0** - 40): Sets the first scanline to be drawn on screen for PAL systems.
+- **Last scanline PAL** (260 - **287**): Sets the last scanline to be drawn on screen for PAL systems.
+- **Crop Overscan** (Off/**On**):  Self-explanatory.
+- **Additional Cropping** (**Off**/1 px - 8 px): Self-explanatory.
+- **Offset Cropped Image** (**Off**/ -4 px - 4 px): Self-explanatory.  
+- **Analog self-calibration** (**Off**/On): Monitors the max values reached by the input, using it as a calibration heuristic which then scales the analog coordinates sent to the emulator accordingly. For best results, rotate the sticks at max amplitude for the algorithm to get a good estimate of the scaling factor, otherwise it will adjust while playing.
+- **DualShock Analog button toggle** (**Off**/On): Toggles the Analog button from DualShock controllers, if disabled analogs are always on, if enabled you can toggle their state by pressing and holding START+SELECT+L1+L2+R1+R2.
+- **Port 1: Multitap enable** (**Off**/On): Enables/Disables multitap functionality on port 1.
+- **Port 2: Multitap enable** (**Off**/On): Enables/Disables multitap functionality on port 2.
+- **CD Image Cache (restart)** (**Off**/On): Loads the complete image in memory at startup.
+- **Memcard 0 method** (**libretro**/mednafen): Picks the format (libretro or mednafen) used for storing memcard 0 save data.
+- **Enable memory card 1** (Off/**On**): Specifically enables memcard slot 1. Needed for game "Codename Tenka".
+- **Shared memcards (restart)** (**Off**/On): Stores everything in the same savefile. 'Memcard 0 method' needs to be set to 'libretro'. 
 
 ## Controllers
 
-
-This core supports four controllers:
+The Beetle PSW HW core supports four controller(s):
 
 * PS1 Joypad
 
-![ps1_joypad_diagram](images/Controllers/ps1_joypad.png)
+![mednafen_psx_hw_ps1joypad](images/Controllers/mednafen_psx_hw_ps1joypad.png)
 
 * DualAnalog
 
-'Same diagram as PS1 Joypad'
+![mednafen_psx_hw_dualanalog](images/Controllers/mednafen_psx_hw_dualanalog)
 
 * DualShock
 
-'Same diagram as PS1 Joypad'
+![mednafen_psx_hw_dualshock](images/Controllers/mednafen_psx_hw_dualshock)
 
 * FlightStick
+
+![mednafen_psx_hw_flightstick](images/Controllers/mednafen_psx_hw_flightstick)
 
 For normal analog stick usage with the DualAnalog and DualShock device type, make sure the corresponding user's Analog to Digital Type is set to none.
 
@@ -205,9 +204,31 @@ Rumble only works when the corresponding user's device type is set to DualShock 
 | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |                                                          | ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   |                                                        
 | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |                                                          | ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) |
 
+| Beetle PSW HW                                                  | PS1 Joypad                                                     | DualAnalog                                                     | DualShock                                                      | FlightStick                                                    |
+|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
+| ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)             | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+| ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+| ![PS3_Select](images/Button_Pack/PS3/PS3_Select.png)           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| ![PS3_Start](images/Button_Pack/PS3/PS3_Start.png)             | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| ![PS3_Dpad](images/Button_Pack/PS3/PS3_Dpad.png)               | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
+| ![PS3_Circle](images/Button_Pack/PS3/PS3_Circle.png)           | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+| ![PS3_Triangle](images/Button_Pack/PS3/PS3_Triangle.png)       | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+| ![PS3_L1](images/Button_Pack/PS3/PS3_L1.png)                   | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+| ![PS3_R1](images/Button_Pack/PS3/PS3_R1.png)                   | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+| ![PS3_L2](images/Button_Pack/PS3/PS3_L2.png)                   | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+| ![PS3_R2](images/Button_Pack/PS3/PS3_R2.png)                   | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+| ![PS3_L3](images/Button_Pack/PS3/PS3_L3.png)                   |                                                                |                                                                | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |                                                                |
+| ![PS3_R3](images/Button_Pack/PS3/PS3_R3.png)                   |                                                                |                                                                | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |                                                                |
+| ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   |                                                                | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+| ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) |                                                                | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
+
+## Compatibility
+
+Unknown
 
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/beetle-psx-libretro)
-* [Report Issues Here](https://github.com/libretro/beetle-psx-libretro/issues)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://mednafen.github.io/)
+* [Official Upstream Downloads](https://mednafen.github.io/releases/)

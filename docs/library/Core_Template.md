@@ -6,14 +6,18 @@ Author(s):
 
 ## Contribute to this documentation
 
-In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library). Changes are proposed using "Pull Requests."
++In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/). Changes are proposed using "Pull Requests."
+
+(add relevent corenamed.md to end of link)
+
+## See also
 
 ## License
 
 ## Extensions
 
 --If no extensions use--
-This core does not feature extension use.
+The (Core name) core does not feature extension use.
 
 ## BIOS
 
@@ -22,7 +26,7 @@ This core does not feature extension use.
 |               |                    |                                  |
 
 --If no BIOS use--
-This core does not feature BIOS use.
+The (Core name) core does not feature BIOS use.
 
 ## Feature Support
 
@@ -40,46 +44,54 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded. 
+The (Core name) core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
 - **Core Option** (**Setting1**/Setting2): Description.
+- **Core Option 2** (**Setting1**/Setting2): Description.
 
 --If no options use--
-This core does not feature core options.
+The (Core name) core does not feature core options.
 
 ## Controllers
 
-The core supports # controller setting(s):
+The (Core name) core supports # controller setting(s):
 
-* Joypad
+* RetroPad
 
-| [RetroPad](RetroPad)                                                 | Joypad |
-|----------------------------------------------------------------------|--------|
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)                     |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)                     |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)                 |        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)                   |        |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)                     |        |    
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)                     |        |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)                     |        |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                         |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                         |        |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)                    |        |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                         |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                         |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                         |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)         |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png)       |        |
+![retropad](images/controllers/retropad.png)
+
+| Core Name | [RetroPad](RetroPad)                                           |
+|-----------|----------------------------------------------------------------|
+| Action 1  | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+| Action 2  | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+| Action 3  | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Action 4  | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| Action 5  | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| Action 6  | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+| Action 7  | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+| Action 8  | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+| Action 9  | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+| Action 10 | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+| Action 11 | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+| Action 12 | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+| Action 13 | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+| Action 14 | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+| Action 15 | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 ## Compatibility
 
-[Core Compatibility List](url to list)
+--Use [(Core name) Core Compatibility List](URL) or make a table--
 
---If no compatibility--
-This core does not have specific compatiblity issues
+--If no compatibility issues--
+The (Core name) core does not have specific compatiblity issues
+
+--If no concrete compatiblity information can be found--
+Unknown
 
 ## External Links
 
-* [Libretro Repository](http://link)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
-* [Official Website](http://link)  
+--Standard links but doesn't need to exactly match this--
+* [Libretro Repository](https://link)
+* [Report Libretro Issues Here](https://link)
+* [Official Website](https://link)  
+* [Official Repository](https://link)

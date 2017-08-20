@@ -4,7 +4,7 @@
 
 Hatari is an Atari ST/STE/TT/Falcon system emulator that can be used as a libretro core. Hatari tries to emulate the hardware as close as possible so that it is able to run most of the old Atari games and demos.
 
-Author(s):-Nicolas Pomarède
+Author(s): Nicolas Pomarède
 
 ## Contribute to this documentation
 
@@ -22,7 +22,7 @@ st|msa|zip|stx|dim|ipf
 
 |   Filename    |    Description        |              md5sum              |
 |:-------------:|:---------------------:|:--------------------------------:|
-|tos.img        |          -            | c1c57ce48e8ee4135885cee9e63a68a2 |
+|tos.img        |          TOS Boot Image - Required            | c1c57ce48e8ee4135885cee9e63a68a2 |
 
 ## Feature Support
 
@@ -32,50 +32,51 @@ These are libretro features, not frontend or standalone emulator features.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  -    |     -       |   -    |   -     |        -          |   -    |
+|  -    |     no       |   no    |   no     |        no          |   no    |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        -        |   -    |    -    |   -    |    -     |       -       |
+|        no        |   no    |    no    |   no    |    no     |       no       |
 
 ## Options
 
-|   Core Option   |         Description         | Options (Default Bolded) | Requires Restart |
-|:---------------:|:---------------------------:|:------------------------:|:----------------:|
-|Internal resolution|Sets internal resolution   |**640x480**/832x576/832x588/800x600/960x720/1024x768/1024x1024|         -        |
+The Hatari core has the following options that can be tweaked from the core options menu. The default setting is bolded. 
 
+- **Internal resolution** (**640x480**/832x576/832x588/800x600/960x720/1024x768/1024x1024): Sets internal resolution
 
 ## Controllers
 
-The core supports controller setting:
+The Hatari core supports one controller setting(s):
 
-* Joypad:
+* RetroPad
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |        |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |        |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |        |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |        |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |        |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |        |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
+[hatari_retropad](images/Controllers/hatari_retropad.png)
+
+| Hatari             | [RetroPad](RetroPad)                                           |
+|--------------------|----------------------------------------------------------------|
+|                    | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+| Enter GUI          | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+| Mouse mode toggle  | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Keyboard overlay   | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-pad              | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| Fire               | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+|                    | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+| Joystick number    | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+| Mouse speed        | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+| Toggle m/k status  | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+|                    | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+|                    | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+|                    | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+|                    | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+|                    | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 ## Compatibility
 
-untested
+Hatari compatibility can be found [here](https://hg.tuxfamily.org/mercurialroot/hatari/hatari/raw-file/tip/doc/compatibility.html)
 
 ## External Links
 
-* [Official Website](http://hatari.tuxfamily.org/)  
-* [Official Mercurial Repository](http://hg.tuxfamily.org/mercurialroot/hatari/hatari)
 * [Libretro Repository](https://github.com/libretro/hatari)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Official Website](http://hatari.tuxfamily.org/)
+* [Official Upstream Downloads](http://hatari.tuxfamily.org/download.html)
