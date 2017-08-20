@@ -79,7 +79,7 @@ Supported combinations
 [Handy Compatibility List](https://wiki.libretro.com/index.php?title=Atari_Lynx_Core_Compatibility)
 
 ## External Links
- 
+
 * [Libretro Repository](https://github.com/libretro/libretro-handy)
-* [Report Issues Here](https://github.com/libretro/libretro-handy/issues)
-* [Official Website](http://handy.sourceforge.net/) 
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Official Website](http://handy.sourceforge.net/)

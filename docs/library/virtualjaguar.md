@@ -36,7 +36,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded. 
+This core has a few options that can be tweaked from the core options menu. The default setting is bolded.
 
 - **Fast Blitter** (**Off**/On): Use a faster, but less accurate blitter.
 - **Doom Res Hack** (**Off**/On): Needed for Doom to run in its correct resolution..
@@ -76,5 +76,5 @@ The core supports one controller setting(s):
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/virtualjaguar-libretro)
-* [Report Issues Here](https://github.com/libretro/virtualjaguar-libretro/issues)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://icculus.org/virtualjaguar/)

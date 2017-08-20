@@ -76,6 +76,6 @@ This core does not have specific compatiblity issues
 
 ## External Links
 
-* [Official Website](http://gstanton.github.io/ProSystem1_3/)  
 * [Libretro Repository](https://github.com/libretro/prosystem-libretro)
 * [Report Issues Here](https://github.com/libretro/libretro-meta)
+* [Official Website](http://gstanton.github.io/ProSystem1_3/)  

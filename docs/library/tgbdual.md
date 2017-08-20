@@ -77,6 +77,6 @@ untested
 
 ## External Links
 
-* [Official Website](http://gigo.retrogames.com/download.html)  
 * [Libretro Repository](https://github.com/libretro/tgbdual-libretro)
 * [Report Issues Here](https://github.com/libretro/libretro-meta)
+* [Official Website](http://gigo.retrogames.com/download.html)  

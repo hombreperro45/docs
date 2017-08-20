@@ -102,3 +102,4 @@ Note: Shoulder buttons are not supported
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/gpsp)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)

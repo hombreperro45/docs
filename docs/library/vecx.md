@@ -69,5 +69,6 @@ The core supports controller setting:
 
 ## External Links
 
-* [Official GitHub Repository of SDL Port](https://github.com/jhawthorn/vecx)
 * [Libretro Repository](https://github.com/libretro/libretro-vecx)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Official GitHub Repository of SDL Port](https://github.com/jhawthorn/vecx)

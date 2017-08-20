@@ -6,7 +6,9 @@ Author(s):
 
 ## Contribute to this documentation
 
-In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library). Changes are proposed using "Pull Requests."
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/). Changes are proposed using "Pull Requests."
+
+(add relevent corenamed.md to end of link)
 
 ## License
 
@@ -40,7 +42,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded. 
+This core has a few options that can be tweaked from the core options menu. The default setting is bolded.
 
 - **Core Option** (**Setting1**/Setting2): Description.
 
@@ -80,6 +82,6 @@ This core does not have specific compatiblity issues
 
 ## External Links
 
-* [Libretro Repository](http://link)
-* [Report Issues Here](http://github.com/libretro/libretro-meta/issues)
-* [Official Website](http://link)  
+* [Libretro Repository](https://link)
+* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Official Website](https://link)  
