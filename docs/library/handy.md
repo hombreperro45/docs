@@ -41,33 +41,35 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
+The Handy core has the following options that can be tweaked from the core options menu. The default setting is bolded.
+
 - **Display Rotation** (**None**/90/240): Rotates the display.
 
 ## Controllers
 
-The core supports controller setting:
+The Handy core supports one controller setting(s):
 
 * RetroPad
 
-![Atari Lynx_Gamepad_Diagram](images/Controllers/handy_joypad.png)
+![handy_retropad](images/Controllers/handy_retropad.png)
 
-| [RetroPad](RetroPad)                                                 | Joypad |
-|----------------------------------------------------------------------|--------|
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)                     | B      |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)                     |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)                 |        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)                   | Pause  |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)                     | D-pad  |    
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)                     | A      |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)                     |        |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                         | Option 1 |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                         | Option 2 |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)                    |        |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                         |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                         |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                         |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)         |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png)       |        |
+| Handy     | [RetroPad](RetroPad)                                           |
+|-----------|----------------------------------------------------------------|
+| B         | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+|           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+|           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Pause     | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| A         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+|           | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+| Option 1  | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+| Option 2  | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+|           | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+|           | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+|           | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+|           | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+|           | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+|           | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 Supported combinations
 
@@ -76,10 +78,13 @@ Supported combinations
 
 ## Compatibility
 
-[Handy Compatibility List](https://wiki.libretro.com/index.php?title=Atari_Lynx_Core_Compatibility)
+| Game                                  | Issue                          |
+|---------------------------------------|--------------------------------|
+|**RoadBlasters**                       |Graphics glitches. Minor flickering and glitches after starting a race.|
 
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/libretro-handy)
-* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://handy.sourceforge.net/)
+* [Official Upstream Downloads](http://handy.sourceforge.net/download.htm)

@@ -20,7 +20,7 @@ j64|jag
 
 ## BIOS
 
-This core does not feature BIOS use.
+The Virtual Jaguar core does not feature BIOS use.
 
 ## Feature Support
 
@@ -36,7 +36,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded.
+The Virtual Jaguar core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
 - **Fast Blitter** (**Off**/On): Use a faster, but less accurate blitter.
 - **Doom Res Hack** (**Off**/On): Needed for Doom to run in its correct resolution..
@@ -45,36 +45,37 @@ This core has a few options that can be tweaked from the core options menu. The 
 
 ## Controllers
 
-The core supports one controller setting(s):
+The Virtual Jaguar core supports one controller setting(s):
 
 * RetroPad
 
-![Atari_Jaguar_joypad_diagram](images\Controllers\Virtual-Jaguar_joypad.png)
+![virtualjaguar_retropad](images\Controllers\virtualjaguar_retropad.png)
 
-| [RetroPad](RetroPad)                                                 | Atari Jaguar |
-|----------------------------------------------------------------------|--------|
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)                     | B        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)                     | C        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)                 | Pause        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)                   | Option       |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)                     | D-Pad       |    
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)                     | A       |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)                     | Numpad 0       |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                         | Numpad 1       |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                         | Numpad 2       |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)                    | Numpad 3       |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                         | Numpad 4       |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                         | Numpad 5       |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                         | Numpad 6       |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)         |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png)       |        |
+| Virtual Jaguar | [RetroPad](RetroPad)                                           |
+|----------------|----------------------------------------------------------------|
+| B              | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+| C              | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+| Pause          | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Option         | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-Pad          | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| A              | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+| Numpad 0       | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+| Numpad 1       | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+| Numpad 2       | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+| Numpad 3       | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+| Numpad 4       | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+| Numpad 5       | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+| Numpad 6       | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+|                | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+|                | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 ## Compatibility
 
-[Virtual Jaguar Compatibility List](https://wiki.libretro.com/index.php?title=Atari_Jaguar_Core_Compatibility)
+A compatibility table can be found on the bottom of this [page](https://icculus.org/virtualjaguar/)
 
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/virtualjaguar-libretro)
-* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://icculus.org/virtualjaguar/)
+* [Upstream Git Repository](http://shamusworld.gotdns.org/git/virtualjaguar)

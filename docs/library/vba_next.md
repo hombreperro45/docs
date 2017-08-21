@@ -22,7 +22,7 @@ gba
 
 |   Filename    |    Description        |              md5sum              |
 |:-------------:|:---------------------:|:--------------------------------:|
-|gba_bios.bin   |Game Boy Advance Image | a860e8c0b6d573d191e4ec7db1b1e4f6 |
+|gba_bios.bin   |Game Boy Advance Image - Required | a860e8c0b6d573d191e4ec7db1b1e4f6 |
 
 ## Feature Support
 
@@ -40,58 +40,51 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-|   Core Option   |         Description        | Options (Default Bolded) | Requires Restart |
-|:---------------:|:--------------------------:|:------------------------:|:-----------:|
-| Use Bios        | Will use an available Bios |   **On**/Off             |   Yes       |
+The VBA-Next core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
+- **Use Bios (if available)** (**On**/Off): Will use an available Bios
 
 ## Controllers
 
-The VBA Next core supports one controller setting:
+The VBA-Next core supports one controller setting(s):
 
-* Joypad: Controller
+* RetroPad
 
-![Game Boy Advance_joypad_diagram](images/Controllers/Game-Boy-Advance_joypad.png)
+![vba_next_retropad](images/Controllers/vba_next_retropad.png)
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |    A   |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |    B   |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | D-Pad  |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |Left Shoulder  |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |Right Shoulder |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | Select |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | Start  |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
+| VBA-Next  | [RetroPad](RetroPad)                                           |
+|-----------|----------------------------------------------------------------|
+| B         | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+|           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+| Select    | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Start     | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| A         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+|           | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+| L         | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+| R         | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+|           | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+|           | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+|           | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+|           | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+|           | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+|           | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 ## Compatibility
 
 | Game                                  | Issue                          |
 |---------------------------------------|--------------------------------|
-|**Boktai Trilogy**                     | The solar sensor is not emulated|
-|**Croket! 2 – Yami no Bank to Banqueen**|Heavy slowdown when approaching the snowman in the beginning|
-|**Digimon Racing (Europe)**            |Freezes during the intro. This can be avoided by enabling linking in the standalone VBA-M release  |
-|**Drome Racers**                       |Only shows a black screen after the THQ logo|
-|**Hamtaro: Ham-Ham Games**             |Locks up if the opening cinematics aren’t skipped|
-|**Hot Wheels - Stunt Track Challenge** |Resets itself when trying to go in-game|
-|**Jurassic Park III: Park Builder**    |  	Unreadable glitched text     |
-|**Koro Koro Puzzle Happy Panechu!**    |	The tilt sensor is not emulated|
-|**Moto GP**                            | Black screen, loud screeching noise|
-|**Phantasy Star Collection**           | Digital Eclipse logo sound effect is missing. Phantasy Star 1 flickers |
-|**SSX 3**                              |  	Graphics glitches. Seems pitch-related. See [Image](images/Compatibility/VBA-Next_SSX-3.png)  |
-|**Super Mario Advance 2: Super Mario World (Europe)** |The program crashes during the final fight, when Bowser approaches (zoom mode 7)  |
-|**WarioWare: Twisted!**                |  	The tilt sensor is not emulated   |
-|**Yoshi’s Universal Gravitation**      |   The tilt sensor is not emulated   |
-
+|**Advanced Dungeons & Dragons - Deathkeep**| Random softlocks (music related?). |
+|**Alone in the Dark**|Unreadable text within books. Audio glitches. |
+|**DinoPark Tycoon**| 	Graphics glitches. |
+|**Eye of Typhoon, The**| 	Runs too fast. |
+|**Horde, The**| 	Graphics glitches. Minor graphical inaccuracy in bird's eye map. |
+|**Primal Rage**|Primal Rage|
+|**Psychic Detective**|Psychic Detective|
+|**Psychic Detective**|Psychic Detective|
+|**Tetsujin Return**| 	Graphics glitches. Missing graphics for obstacles in the driving scenes. |
 
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/vba-next)
-* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)

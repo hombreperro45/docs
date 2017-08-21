@@ -20,9 +20,10 @@ gb|gbc|dmg
 
 ## BIOS
 
-This core does not feature BIOS use.
+The Gambatte core does not feature BIOS use.
 
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
@@ -37,7 +38,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded:
+The Gambatte core has the following options that can be tweaked from the core options menu. The default setting is bolded:
 
 - **GB Colorization** (**disabled**/auto/internal/custom): Colorizes Game Boy games.
 - **Internal Palette** (**GBC - Blue**/GBC - Brown/GBC - Dark Blue/GBC - Dark Brown/GBC - Dark Green/GBC - Grayscale/GBC - Green/GBC - Inverted/GBC - Orange/GBC - Pastel Mix/GBC - Red/GBC - Yellow/Special 1/Special 2/Special 3): Select which internal color palette is going to be used.
@@ -54,29 +55,29 @@ This core has a few options that can be tweaked from the core options menu. The 
 
 ## Controllers
 
-![Game Boy Diagram](images/Controllers/Game-Boy_joypad.png)
+The Gambatte core supports one controller setting(s):
 
-The core supports controller setting:
+* RetroPad
 
-* Gambatte Joypad: Game Boy Controller
+![gambatte_retropad](images/Controllers/gambatte_retropad.png)
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |A button (right)|
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |B button (down)|
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |dpad        |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |        |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |        |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |Select        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |Start        |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
+| Gambatte  | [RetroPad](RetroPad)                                           |
+|-----------|----------------------------------------------------------------|
+| B         | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+|           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+| Select    | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Start     | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| A         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+|           | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+|           | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+|           | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+|           | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+|           | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+|           | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+|           | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+|           | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+|           | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 ## Compatibility
 
@@ -92,7 +93,6 @@ The core supports controller setting:
 
 ## External Links
 
-
 * [Libretro Repository](https://github.com/libretro/gambatte-libretro)
-* [Report Issues Here](https://github.com/libretro/libretro-meta)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta)
 * [Official Website](https://sourceforge.net/projects/gambatte/)  

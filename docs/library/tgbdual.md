@@ -1,4 +1,4 @@
-# Game Boy / Game Boy Color (TBG Dual)
+# Game Boy / Game Boy Color (TGB Dual)
 
 ## Background
 
@@ -47,36 +47,36 @@ This core has a few options that can be tweaked from the core options menu. The 
 
 ## Controllers
 
-![Game Boy Diagram](images/Controllers/Game-Boy_joypad.png)
+The core supports one controller setting(s):
 
-The core supports controller setting:
+* RetroPad
 
-* TGB Dual Joypad: Game Boy Controller
+![tgbdual_retropad](images/Controllers/tgbdual_retropad.png)
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |A button (right)|
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |B button (down)|
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |dpad        |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |Prev Audio Mode        |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |Next Audio Mode        |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |Select        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |Start        |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
+| TGB Dual         | [RetroPad](RetroPad)                                           |
+|------------------|----------------------------------------------------------------|
+| B                | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+|                  | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
+| Select           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Start            | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-pad            | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| A                | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+|                  | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
+| Prev Audio Mode  | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+| Next Audio Mode  | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+|                  | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
+|                  | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
+|                  | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
+|                  | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
+|                  | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
+|                  | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 ## Compatibility
 
-untested
+Unknown
 
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/tgbdual-libretro)
-* [Report Issues Here](https://github.com/libretro/libretro-meta)
-* [Official Website](http://gigo.retrogames.com/download.html)  
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta)
+* [Official Website](http://gigo.retrogames.com/download.html) 

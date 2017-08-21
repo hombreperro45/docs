@@ -13,15 +13,17 @@ In order to propose improvements to this document, [visit it's corresponding sou
 ## License
 
 MIT
+
 ## Extensions
 
 gb|gbc
 
 ## BIOS
 
-This core does not feature BIOS use.
+The SameBoy does not feature BIOS use.
 
 ## Feature Support
+
 These are libretro features, not frontend or standalone emulator features.
 
 ##### Features:
@@ -36,41 +38,47 @@ These are libretro features, not frontend or standalone emulator features.
 
 ## Options
 
-This core does not feature core options.
+The SameBoy core does not feature core options.
 
 ## Controllers
 
-![Game Boy Diagram](images/Controllers/Game-Boy_joypad.png)
+The SameBoy core supports two controller setting(s):
 
-The core supports controller setting:
+* RetroPad
 
-* Joypad: Game Boy Controller
+![sameboy_retropad](images/Controllers/sameboy_retropad.png)
 
-| [RetroPad](RetroPad)                                           | Joypad |
-|----------------------------------------------------------------|--------|
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |        |
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |        |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | dpad   |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |        |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |        |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |        |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |        |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |        |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |        |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |        |
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |        |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |        |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |        |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |        |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |        |
+* Nintendo DS
+
+![sameboy_nintendods](images/Controllers/sameboy_nintendods.png)
+
+
+| [RetroPad](RetroPad)                                                 | RetroPad | Nintendo DS |
+|----------------------------------------------------------------------|----------|-------------|
+| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)                     |          |             |
+| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)                     |          |             |
+| ![RetroPad_Select](images/RetroPad/Retro_Select.png)                 |          |             |
+| ![RetroPad_Start](images/RetroPad/Retro_Start.png)                   |          |             |
+| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)                     | D-pad    | D-pad       |
+| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)                     |          |             |
+| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)                     |          |             |
+| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                         |          |             |
+| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                         |          |             |
+| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)                    |          |             |
+| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                         |          |             |
+| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                         |          |             |
+| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                         |          |             |
+| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)         |          |             |
+| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png)       |          |             |
 
 ## Compatibility
 
-untested
+SameBoy Compatibility can be found [here](https://sameboy.github.io/features/)
 
 ## External Links
 
-* [Libretro Repository TBC](http://link)
-* [Report Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Libretro Repository](https://github.com/libretro/SameBoy)
+* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://sameboy.github.io/)
-* [Official Repository](https://github.com/LIJI32/SameBoy)  
+* [Official Repository](https://github.com/LIJI32/SameBoy)
+* [Official Upstream Downloads](https://sameboy.github.io/downloads/)
