@@ -1,12 +1,17 @@
 # Overlays
 
-RetroArch supports overlay images for use with hardware accelerated drivers. 
-The purpose of this is to allow some kind of input interface that is mouse/touch oriented.
-The overlay images are displayed with transparency over the regular game image, and the 
+RetroArch supports overlay images for use with hardware accelerated drivers. The purpose of this is to allow some kind of input interface that is mouse/touch oriented. The overlay images are displayed with transparency over the regular game image, and the 
 user is able to trigger input by pressing on certain parts of the overlay.
 
-Since the overlay is a series of images, the user should be able to fully configure the 
-look and functionality of this overlay. This allows skinners and themers to go wild.
+Since the overlay is a series of images, the user should be able to fully configure the look and functionality of this overlay. This allows skinners and themers to go wild.
+
+### Libretro overlay repositories
+The Libretro Organization hosts a repositories on Github that contains a compilation of overlays made with the Overlay Specification. 
+
+* Interactive overlays are managed within: https://github.com/libretro/common-overlays
+* Decorative border overlays are managed within: https://github.com/libretro/overlay-borders
+
+![RetroArch dinothawr overlay example](https://wiki.libretro.com/images/5/5c/Retroarch-dinothawr-overlay.jpg "RetroArch dinothawr overlay example")
 
 ## Configuration
 
