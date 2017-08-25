@@ -93,6 +93,7 @@ pages:
          - Getting Started:
            - 'Windows': 'guides/windows.md'
          - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
+         - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
          - Input Drivers: 'guides/input-drivers.md'
          - Troubleshooting: 'guides/troubleshooting-retroarch.md'
    - Help: help.md
