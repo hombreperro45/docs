@@ -2,9 +2,9 @@
 
 The Libretro API is a lightweight C-based Application Programming Interface.
 
-Libretro is an API that exposes generic audio/video/input callbacks. A frontend for libretro (such as RetroArch) handles video output, audio output, input and application lifecycle. A libretro core written in portable C or C++ can run seamlessly on many platforms with very little/no porting effort.
+Libretro is an API that exposes generic audio/video/input callbacks. You therefore don’t have to worry about writing different video drivers for Direct3D, OpenGL or worrying about catering to all possible input APIs/sound APIs/supporting all known joypads/etc. A frontend for libretro (such as RetroArch) handles video output, audio output, input and application lifecycle. A libretro core written in portable C or C++ can run seamlessly on many platforms with very little/no porting effort.
 
-While RetroArch is the reference frontend for libretro, several other projects have used the libretro interface to include support for emulators and/or game engines. libretro is completely open and free for anyone to use.
+When you choose to use the libretro API, your program gets turned into a single library file (called a ‘libretro core’). A frontend that supports the libretro API can then load that library file and run the app. While RetroArch is the reference frontend for libretro, several other projects have used the libretro interface to include support for emulators and/or game engines. libretro is completely open and free for anyone to use.
 
 ## Implementing the API
 
@@ -15,15 +15,21 @@ static library (.a/.lib) that exports all the functions outlined in libretro.h. 
 frontend. Implementations are designed to be single-instance, so global state is allowed. Should the frontend 
 call these functions in wrong order, undefined behavior occurs.
 
-The API header is compatible with C99 and C++. From C99, the bool type and `<stdint.h>` are used.
+The API header is compatible with C99 and C++. From C99, the bool type and `<stdint.h>` are used. The latest version of this file can be found [here](https://github.com/libretro/RetroArch/blob/master/libretro-common/include/libretro.h).
 
-The latest version of this file can be found [here](https://github.com/libretro/RetroArch/blob/master/libretro-common/include/libretro.h).
+### Libretro GL
+Aside from retro-style games and emulators that depend on software rendering and where you’d typically need nothing more than the ability to render to a framebuffer, the Libretro API also allows you to target OpenGL. This subset of GL functionality (that we call libretro GL) allows you to create libretro ports that use OpenGL as part of their internal rendering. There are two subsets that can be targeted – either OpenGL 2.0 or OpenGL ES 2.0.
+
+From a portability perspective, we highly recommend that you try to target both so that your libretro GL port will work on both mobile and desktop computers.
+
+
+## Program flow
 
 The program flow of a frontend using the libretro API can be expressed as follows:
 
-## Startup
+### Startup
 
-### retro_api_version()
+#### retro_api_version()
 
 This function should return RETRO_API_VERSION, defined in libretro.h. It is used by the frontend to determine if 
 ABI/API are mismatched. The version will be bumped should there be any non- compatible changes to the API.
@@ -37,18 +43,18 @@ Popular examples of implementations for this API includes videogame system emula
 more generalized 3D programs. These programs are instantiated as dynamic libraries. We refer to these as 
 "libretro cores".
 
-### retro_init()
+#### retro_init()
 
 This function is called once, and gives the implementation a chance to initialize
 data structures. This is sometimes implemented as a no-op.
 
-### retro_set_*()
+#### retro_set_*()
 
 Libretro is callback based. The frontend will set all callbacks at this stage,
 and the implementation must store these function pointers somewhere. The
 frontend can, at a later stage, call these.
 
-## Environment callback
+### Environment callback
 
 While libretro has callbacks for video, audio and input, there's a callback type dubbed the environment callback. 
 This callback (retro_environment_t) is a generic way for the libretro implementation to access features of 
@@ -57,22 +63,22 @@ the API that are considered too obscure to deserve its own symbols. It can be ex
 The callback has a return type of bool which tells if the frontend recognized the request given to it.
 Most implementations of libretro will not use this callback at all.
 
-### retro_set_controller_port_device()
+#### retro_set_controller_port_device()
 
 By default, joypads will be assumed to be inserted into the implementation. If the engine is sensitive 
 to which type of input device is plugged in, the frontend may call this function to set the device to 
 be used for a certain player. The implementation should try to auto-detect this if possible.
 
-### retro_get_system_info()
+#### retro_get_system_info()
 
 The frontend will typically request statically known information about the core such as the name of 
 the implementation, version number, etc. The information returned should be stored statically. If 
 dynamic allocation must take place, the implementation must make sure to free this storage in 
 retro_deinit() later.
 
-## Running
+### Running
 
-### retro_run()
+#### retro_run()
 
 After a game has been loaded successfully, retro_run() will be called repeatedly as long as the 
 user desires. When called, the implementation will perform its inner functionality for one video frame. 
@@ -82,7 +88,7 @@ as well as polling input, and querying current input state. The requirements for
 video callback is called exactly once, i.e. it does not have to come last. Also, input polling 
 must be called at least once.
 
-## Video/Audio synchronization considerations
+### Video/Audio synchronization considerations
 
 Libretro is based on fixed rates. Video FPS and audio sampling rates are always assumed to be 
 constant. Frontends will have control of the speed of playing, typically using VSync to obtain 
@@ -106,7 +112,7 @@ After that, enough audio was rendered to correspond to one frames worth of
 time, 1 / fps seconds. All sleeping and timing patterns could be removed, and
 synchronization was correct.
 
-## Audio callback considerations
+### Audio callback considerations
 
 The libretro API has two different audio callbacks. Only one of these should be
 used; the implementation must choose which callback is best suited.
@@ -130,7 +136,7 @@ bytes (depends on platform), to allow accelerated SIMD operations on audio.
 RetroArch implements SSE/AltiVec optimized audio processing for conversions
 and resampling.
 
-## Input device abstraction
+### Input device abstraction
 
 Abstracting input devices is the hardest part of defining a multi-system API as
 it differs across every system. The common input devices are:
@@ -155,13 +161,13 @@ In addition, the RETRO_DEVICE_ANALOG is used for analog stick data.
 An implementation should map its idea of a joypad in terms of the RetroPad,
 which is what most users will have to use with their frontend.
 
-## State
+### State
 
-### retro_serialize_size()
+#### retro_serialize_size()
 
-### retro_serialize()
+#### retro_serialize()
 
-### retro_unserialize()
+#### retro_unserialize()
 
 Serialization is optional to implement. Serialization is better known as "save
 states" in emulators, and these functions are certainly more useful in emulators
@@ -195,15 +201,15 @@ in RetroArch to use less memory.
 Both retro_serialize() and retro_unserialize() return a boolean value to let
 the frontend know if the implementation succeeded in serializing or unserializing.
 
-## Tear-down
+### Tear-down
 
-### retro_unload_game()
+#### retro_unload_game()
 
 After the user desired to stop playing, retro_unload_game() will be called. This
 should free any internal data related to the game, and allow retro_load_game()
 to be called again.
 
-### retro_deinit()
+#### retro_deinit()
 
 This function should free all state that was initialized during retro_init(). After
 calling this function, the frontend can again call retro_init().
