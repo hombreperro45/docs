@@ -31,6 +31,14 @@ RetroArch recently got an option to use a swap/fence sync method in OpenGL drive
     
 Do note that this sync method can greatly reduce performance, and can turn smooth 60 fps into crawling 30 fps if there was not enough headroom in the performance. If you use KMS mode, using `video_hard_sync` won't help as it already does something like this.
 
+## Why isn’t my BIOS working?
+
+1. Make sure the BIOS files are placed into the correct directory
+2. Make sure they are named correctly so the core can identify them.
+3. Make sure it’s the correct version/region of a BIOS.
+4. Make sure your files are not corrupted (bad source, broken download, etc.).
+5. Make sure to check the log for any errors.
+
 # When you need help
 
 When problems arise with RetroArch, it is helpful for the developers and other volunteers to have certain standard information in order to find a solution. When requesting help with a RetroArch issue, please try to include:
