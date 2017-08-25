@@ -96,6 +96,7 @@ pages:
          - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
          - Input Drivers: 'guides/input-drivers.md'
          - Troubleshooting: 'guides/troubleshooting-retroarch.md'
+         - Creating a Theme: 'guides/themes.md'
    - Help: help.md
 extra:
   logo: 'images/invader.png'
