@@ -5,7 +5,7 @@ This page will guide you through the essential information needed to customize t
 Credit for information goes to @baxysquare from this [forum post](https://forums.libretro.com/t/guide-to-making-themes/9554)
 
 !!! tip
-    For examples of Menu Icon Themes and how to change them please read [this guide](guides/theme-examples.md)
+    For examples of Menu Icon Themes and how to change them please read [this guide](/theme-examples.md)
 
 ## Skills & Tools Needed to Make and Contribute a Theme
 
