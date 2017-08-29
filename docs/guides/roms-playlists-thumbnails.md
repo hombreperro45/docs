@@ -99,7 +99,7 @@ Each playlist is a plain text file with an extension of `.lpl`.
 2. The display name (you can use any name here)
 3. The path to the core, this libretro core will be used to launch the ROM. **You can use the word DETECT in place of the core path here and then set the core to be used via the RetroArch GUI.**
 4. The displayname of the core, not really useful, we keep it there because the history list is also using this format
-5. Link to the database entry. The fact that there is a CRC value here means that this playlist entry was originally created by the playlist scanner. In some other cases it is done by serial number. **You can omit a link to the database for a manualy playlist entry by using the word DETECT here instead.**
+5. Link to the database entry. The fact that there is a CRC value here means that this playlist entry was originally created by the playlist scanner. In some other cases it is done by serial number. ** You can omit a link to the database for a manualy created playlist entry by using the word DETECT here instead.**
 6. The name of this playlist, ending in the extension .lpl
 
 **Note:** the paths used in this example will be different from system to system. This example uses Unix-style forward slashes `/` in the paths, as with Linux, OS X, and Android systems. Windows users should use backslashes `\`.
