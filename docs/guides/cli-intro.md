@@ -1,6 +1,6 @@
 # RetroArch CLI
 
-RetroArch is composed of robust graphical interfaces as well as a powerful and a command-line interface (CLI). Getting familiar with the command-line helps you understand the design principles of RetroArch.
+RetroArch can be utilized via its robust graphical interfaces as well as a powerful command-line interface (CLI). Getting familiar with the command-line helps you understand the design principles of RetroArch.
 
 Note: please be aware of whether your system uses DOS/Windows style paths with backslashes `\` or Unix-style paths with forward slashes: `/`.
 
