@@ -22,13 +22,11 @@ j64|jag
 
 The Virtual Jaguar core does not feature BIOS use.
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |    no       |  no    |  no     |       no          |  no    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |    no       |  no    |  no     |       no          |  no              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -57,7 +55,7 @@ The Virtual Jaguar core supports one controller setting(s):
 | C              | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | Pause          | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Option         | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| D-Pad          | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| D-Pad          | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 | A              | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 | Numpad 0       | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | Numpad 1       | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |

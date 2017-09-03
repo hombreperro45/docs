@@ -2,7 +2,7 @@
 
 ## Background
 
-ProSystem is an Atari 7800 emulator.  
+ProSystem is an Atari 7800 emulator.
 
 Author(s): Greg Stanton|Brian Berlin|Leonis|Greg DeMent
 
@@ -24,15 +24,11 @@ a78|bin
 |:-------------:|:------------------:|:--------------------------------:|
 | 7800 BIOS (U).rom | Atari 7800 BIOS - Optional | 0763f1ffb006ddbe32e52d497ee848ae |
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  no   |    no       |  no    |  no     |       no          |  no    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  no   |    no       |  no    |  no     |       no          |  no              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -56,7 +52,7 @@ The ProSystem core supports one controller setting(s):
 | Action 2         | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | Console Select   | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Console Pause    | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| D-pad            | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| D-pad            | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 | 2                | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 | Console Reset    | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | Left Difficulty  | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
@@ -76,5 +72,5 @@ Unknown
  
 * [Libretro Repository](https://github.com/libretro/prosystem-libretro)
 * [Report Libretro Issues Here](https://github.com/libretro/libretro-meta)
-* [Official Website](http://gstanton.github.io/ProSystem1_3/)  
+* [Official Website](http://gstanton.github.io/ProSystem1_3/)
 * [Official Repository](https://github.com/gstanton/ProSystem1_3) 

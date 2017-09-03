@@ -2,7 +2,7 @@
 
 ## Background
 
-Author(s):  
+Author(s):
 
 ## Contribute to this documentation
 
@@ -30,15 +30,11 @@ The (Core name) core does not feature extension use.
 --If no BIOS use--
 The (Core name) core does not feature BIOS use.
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  -    |     -       |   -    |   -     |        -          |   -    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  -    |     -       |   -    |   -     |        -          |   -              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -68,7 +64,7 @@ The (Core name) core supports # controller setting(s):
 | Action 2  | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | Action 3  | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Action 4  | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| Action 5  | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| Action 5  | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | 
 | Action 6  | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 | Action 7  | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | Action 8  | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
@@ -94,6 +90,6 @@ Unknown
 
 --Standard links but doesn't need to exactly match this--
 * [Libretro Repository](https://link)
-* [Report Libretro Issues Here](https://link)
-* [Official Website](https://link)  
+* [Report Core Issues Here](https://link)
+* [Official Website](https://link)
 * [Official Repository](https://link)

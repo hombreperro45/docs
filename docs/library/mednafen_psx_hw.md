@@ -26,15 +26,11 @@ cue|toc|m3u|ccd|exe|pbp
 |scph5501.bin |PS1 US BIOS - Required for US  |490f666e1afb15b7362b406ed1cea246 |
 |scph5502.bin |PS1 EU BIOS - Required for EU  |32736f17079d0b2b7024407c39bd3050 |
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |   yes       | yes    | yes     |        -          | yes    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |   yes       | yes    | yes     |        -          | yes              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|

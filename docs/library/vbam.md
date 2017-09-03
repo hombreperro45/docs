@@ -22,15 +22,11 @@ gba
 
 The VBA-M core does not feature BIOS use.
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-| yes   |   yes       | yes    |  no     |        -          | yes    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+| yes   |   yes       | yes    |  no     |        -          | yes              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -40,13 +36,13 @@ These are libretro features, not frontend or standalone emulator features.
 
 The VBA-M core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **Show layer 1** (**Yes**/On): -  
-- **Show layer 2** (**Yes**/On): -  
-- **Show layer 3** (**Yes**/On): -  
+- **Show layer 1** (**Yes**/On): -
+- **Show layer 2** (**Yes**/On): -
+- **Show layer 3** (**Yes**/On): -
 - **Show layer 4** (**Yes**/On): - 
-- **Show sprite layer** (**Yes**/On): -  
+- **Show sprite layer** (**Yes**/On): -
 - **Show window layer 1** (**Yes**/On): - 
-- **Show window layer 2** (**Yes**/On): -  
+- **Show window layer 2** (**Yes**/On): -
 - **Show sprite window layer** (**Yes**/On): - 
 
 ## Controllers

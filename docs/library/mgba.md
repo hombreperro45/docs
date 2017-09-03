@@ -24,15 +24,11 @@ gb|gbc|gba
 |:-------------:|:--------------------:|:--------------------------------:|
 |gba_bios.bin   |Game Boy Advance BIOS - Optional | a860e8c0b6d573d191e4ec7db1b1e4f6 |
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |   yes       | yes    |  no     |        -          |   no   |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |   yes       | yes    |  no     |        -          |   no             | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -42,7 +38,7 @@ These are libretro features, not frontend or standalone emulator features.
 
 The mGBA core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- Solar sensor level (**0**-10): -               
+- Solar sensor level (**0**-10): -
 - Allow opposing directional input (**Off**/On): -
 - Use BIOS file if found (**On**/Off): -
 - Skip BIOS intro (**Off**/On): - 
@@ -62,7 +58,7 @@ The mGBA core supports one controller setting(s):
 | Turbo B               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | Select                | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Start                 | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| D-pad                 | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| D-pad                 | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 | A                     | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 | Turbo A               | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | L                     | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |

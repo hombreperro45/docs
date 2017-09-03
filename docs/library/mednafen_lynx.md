@@ -24,16 +24,11 @@ lnx
 |:-------------:|:---------------------:|:--------------------------------:|
 |lynxboot.img   |Lynx Boot Image        | fcd403db69f54290b51035d82f835e7b |
 
+## Features
 
-## Feature Support
-
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-| yes   |   yes       |  yes   |  no     |       no          |  no    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats | 
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:--------------|
+| yes   |   yes       |  yes   |  no     |       no          |  no              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -57,7 +52,7 @@ The Beetle Handy core supports one controller setting(s):
 |              | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 |              | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Pause        | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| D-pad        | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| D-pad        | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 | A            | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 |              | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | Option 1     | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |

@@ -24,15 +24,11 @@ gba|bin
 |:-------------:|:---------------------:|:--------------------------------:|
 |gba_bios.bin   |Game Boy Advance Image - Required | a860e8c0b6d573d191e4ec7db1b1e4f6 |
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |   yes       |  yes   |  no     |        -          |  no    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |   yes       |  yes   |  no     |        -          |  no              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -56,7 +52,7 @@ The core supports one controller setting:
 |           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | Select    | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Start     | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 | A         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 |           | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 |           | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |

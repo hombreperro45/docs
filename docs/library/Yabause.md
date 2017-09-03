@@ -24,13 +24,11 @@ iso|cue|bin
 |:-------------:|:------------------:|:--------------------------------:|
 |saturn_bios.bin|  Sega Saturn BIOS  | af5828fdff51384f99b3c4926be27762 |
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |    no       |  no    |  no     |       no          |  yes   |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |    no       |  no    |  no     |       no          |  yes             | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -41,8 +39,8 @@ These are libretro features, not frontend or standalone emulator features.
 The Yabause core has the following options that can be tweaked from the core options menu. The default setting is bolded. 
 
 - **8Frameskip** (**Off**/On): Frames are skipped when the CPU is unable to keep up a stable rate. 
-- **Force HLE BIOS (Restart)** (Off/**On**): HLE BIOS will be used even when a real BIOS file is present.      
-- **Addon Cartridge (Restart)** (**none**/1M_ram/4M_ram): Allows switching between the various RAM cartridges released for the system.  
+- **Force HLE BIOS (Restart)** (Off/**On**): HLE BIOS will be used even when a real BIOS file is present.
+- **Addon Cartridge (Restart)** (**none**/1M_ram/4M_ram): Allows switching between the various RAM cartridges released for the system.
 
 ## Controllers
 
@@ -66,7 +64,7 @@ The Yabause core supports four controller setting(s):
 | X           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | -             |
 |             | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | -             |
 | Start       | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | -             |
-| D-pad       | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | -             |    
+| D-pad       | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | -             |
 | B           | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | -             |
 | Y           | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | -             |
 | C           | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | -             |
