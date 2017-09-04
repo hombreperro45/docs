@@ -24,19 +24,15 @@ st|msa|zip|stx|dim|ipf
 |:-------------:|:---------------------:|:--------------------------------:|
 |tos.img        |          TOS Boot Image - Required            | c1c57ce48e8ee4135885cee9e63a68a2 |
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  -    |     no       |   no    |   no     |        no          |   no    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  -    |     no      |   no   |   no    |        no         |   no             | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        no        |   no    |    no    |   no    |    no     |       no       |
+|        no       |   no   |    no   |   no   |    no    |       no      |
 
 ## Options
 
@@ -58,7 +54,7 @@ The Hatari core supports one controller setting(s):
 | Enter GUI          | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | Mouse mode toggle  | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Keyboard overlay   | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| D-pad              | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| D-pad              | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 | Fire               | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 |                    | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | Joystick number    | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |

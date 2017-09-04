@@ -22,15 +22,11 @@ gb|gbc|sgb
 
 TGB Dual does not support using BIOS image files.
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |   yes       | yes    | yes     |        -          | yes    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |   yes       | yes    | yes     |        -          | yes              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -59,7 +55,7 @@ The core supports one controller setting(s):
 |                  | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | Select           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Start            | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| D-pad            | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| D-pad            | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 | A                | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 |                  | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | Prev Audio Mode  | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |

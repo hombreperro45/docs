@@ -26,15 +26,11 @@ cue|toc|m3u|ccd|exe|pbp
 |scph5501.bin |PS1 US BIOS - Required for US  |490f666e1afb15b7362b406ed1cea246 |
 |scph5502.bin |PS1 EU BIOS - Required for EU  |32736f17079d0b2b7024407c39bd3050 |
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |   yes       | yes    | yes     |        -          | yes    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |   yes       | yes    | yes     |        -          | yes              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -152,7 +148,7 @@ The Beetle PSW HW core has the following options that can be tweaked from the co
 - **Last scanline PAL** (260 - **287**): Sets the last scanline to be drawn on screen for PAL systems.
 - **Crop Overscan** (Off/**On**):  Self-explanatory.
 - **Additional Cropping** (**Off**/1 px - 8 px): Self-explanatory.
-- **Offset Cropped Image** (**Off**/ -4 px - 4 px): Self-explanatory.  
+- **Offset Cropped Image** (**Off**/ -4 px - 4 px): Self-explanatory.
 - **Analog self-calibration** (**Off**/On): Monitors the max values reached by the input, using it as a calibration heuristic which then scales the analog coordinates sent to the emulator accordingly. For best results, rotate the sticks at max amplitude for the algorithm to get a good estimate of the scaling factor, otherwise it will adjust while playing.
 - **DualShock Analog button toggle** (**Off**/On): Toggles the Analog button from DualShock controllers, if disabled analogs are always on, if enabled you can toggle their state by pressing and holding START+SELECT+L1+L2+R1+R2.
 - **Port 1: Multitap enable** (**Off**/On): Enables/Disables multitap functionality on port 1.
@@ -186,25 +182,7 @@ For normal analog stick usage with the DualAnalog and DualShock device type, mak
 
 Rumble only works when the corresponding user's device type is set to DualShock and the joypad input driver being used has rumble function implementation (e.g. Xinput).
 
-| [RetroPad](RetroPad)                                           | PS1 Joypad                                               | DualAnalog                                                     | DualShock                                                      | FlightStick                                                    |
-|----------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
-| ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)       | ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)             | ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)             |
-| ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)     | ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)           | ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)           |
-| ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![PS3_Select](images/Button_Pack/PS3/PS3_Select.png)     | ![PS3_Select](images/Button_Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button_Pack/PS3/PS3_Select.png)           | ![PS3_Select](images/Button_Pack/PS3/PS3_Select.png)           |
-| ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![PS3_Start](images/Button_Pack/PS3/PS3_Start.png)       | ![PS3_Start](images/Button_Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button_Pack/PS3/PS3_Start.png)             | ![PS3_Start](images/Button_Pack/PS3/PS3_Start.png)             |
-| ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![PS3_Dpad](images/Button_Pack/PS3/PS3_Dpad.png)         | ![PS3_Dpad](images/Button_Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button_Pack/PS3/PS3_Dpad.png)               | ![PS3_Dpad](images/Button_Pack/PS3/PS3_Dpad.png)               |
-| ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![PS3_Circle](images/Button_Pack/PS3/PS3_Circle.png)     | ![PS3_Circle](images/Button_Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button_Pack/PS3/PS3_Circle.png)           | ![PS3_Circle](images/Button_Pack/PS3/PS3_Circle.png)           |
-| ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | ![PS3_Triangle](images/Button_Pack/PS3/PS3_Triangle.png) | ![PS3_Triangle](images/Button_Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button_Pack/PS3/PS3_Triangle.png)       | ![PS3_Triangle](images/Button_Pack/PS3/PS3_Triangle.png)       |
-| ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![PS3_L1](images/Button_Pack/PS3/PS3_L1.png)             | ![PS3_L1](images/Button_Pack/PS3/PS3_L1.png)                   | ![PS3_L1](images/Button_Pack/PS3/PS3_L1.png)                   | ![PS3_L1](images/Button_Pack/PS3/PS3_L1.png)                   |
-| ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![PS3_R1](images/Button_Pack/PS3/PS3_R1.png)             | ![PS3_R1](images/Button_Pack/PS3/PS3_R1.png)                   | ![PS3_R1](images/Button_Pack/PS3/PS3_R1.png)                   | ![PS3_R1](images/Button_Pack/PS3/PS3_R1.png)                   |
-| ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              | ![PS3_L2](images/Button_Pack/PS3/PS3_L2.png)             | ![PS3_L2](images/Button_Pack/PS3/PS3_L2.png)                   | ![PS3_L2](images/Button_Pack/PS3/PS3_L2.png)                   | ![PS3_L2](images/Button_Pack/PS3/PS3_L2.png)                   |
-| ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   | ![PS3_R2](images/Button_Pack/PS3/PS3_R2.png)             | ![PS3_R2](images/Button_Pack/PS3/PS3_R2.png)                   | ![PS3_R2](images/Button_Pack/PS3/PS3_R2.png)                   | ![PS3_R2](images/Button_Pack/PS3/PS3_R2.png)                   |
-| ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |                                                          |                                                                | ![PS3_L3](images/Button_Pack/PS3/PS3_L3.png)                   |                                                                |
-| ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |                                                          |                                                                | ![PS3_R3](images/Button_Pack/PS3/PS3_R3.png)                   |                                                                |
-| ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |                                                          | ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   | ![PS3_Left_Stick](images/Button_Pack/PS3/PS3_Left_Stick.png)   |                                                        
-| ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |                                                          | ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) | ![PS3_Right_Stick](images/Button_Pack/PS3/PS3_Right_Stick.png) |
-
-| Beetle PSW HW                                                  | PS1 Joypad                                                     | DualAnalog                                                     | DualShock                                                      | FlightStick                                                    |
+| Beetle PSX HW                                                  | PS1 Joypad                                                     | DualAnalog                                                     | DualShock                                                      | FlightStick                                                    |
 |----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
 | ![PS3_Cross](images/Button_Pack/PS3/PS3_Cross.png)             | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
 | ![PS3_Square](images/Button_Pack/PS3/PS3_Square.png)           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
@@ -229,6 +207,6 @@ Unknown
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/beetle-psx-libretro)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://mednafen.github.io/)
 * [Official Upstream Downloads](https://mednafen.github.io/releases/)

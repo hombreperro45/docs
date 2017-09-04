@@ -92,7 +92,7 @@ pages:
       - RetroArch:
          - Getting Started:
            - 'Windows': 'guides/windows.md'
-           - 'Command-line interface (CLI): 'guides/cli-intro.md'
+           - 'Command-line interface (CLI)': 'guides/cli-intro.md'
          - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
          - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
          - Input Drivers: 'guides/input-drivers.md'

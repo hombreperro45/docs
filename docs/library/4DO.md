@@ -24,13 +24,11 @@ iso|cue
 |:------------:|:--------------------:|:--------------------------------:|
 | panafz10.bin | Panasonic FZ-10 BIOS | 51f2f43ae2f3508a14d9f56597e2d3ce |
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |     yes     |   yes  |   yes   |         no        |   no   |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |     yes     |   yes  |   yes   |         no        |   no             | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -56,7 +54,7 @@ The 4DO core supports one controller setting(s):
 | A             | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | X (Stop)      |  ![RetroPad_Select](images/RetroPad/Retro_Select.png)          |
 | P (Play/Pause | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| D-pad         |  ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)              |   
+| D-pad         |  ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)              |
 | C             | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 |               | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | L             | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |

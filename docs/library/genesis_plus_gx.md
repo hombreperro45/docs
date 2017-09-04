@@ -34,15 +34,11 @@ mdx|md|smd|gen|bin|cue|iso|sms|gg|sg
 | areplay.bin   | Action Replay ROM - Optional | - |
 | ggenie.bin    | Game Genie ROM - Optional | - |
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |   yes       | yes    |  yes    |       -           | yes    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |   yes       | yes    |  yes    |       -           | yes              | -             |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -51,20 +47,20 @@ These are libretro features, not frontend or standalone emulator features.
 ## Options
 
 - **System hardware (restart)** (**auto**/sg-1000/sg-1000 II/mark-III/master system/master system II/game gear/mega drive / genesis): Choose which system is going to be emulated.
-- **System region (restart)** (**auto**/ntsc-u/pal/ntsc-j): Choose which region the system is from.  
+- **System region (restart)** (**auto**/ntsc-u/pal/ntsc-j): Choose which region the system is from.
 - **System lookups** (**enabled**/disabled): Emulate system lockups 
 - **System bootrom** (enabled/**disabled**): -
 - **CD System BRAM** (**per bios**/per game ): -
 - **68k address error** (**enabled**/disabled): Emulate the 68k address error.
-- **Cartridge lock-on (restart)** (**disabled**/game genie/action replay (pro)/sonic & knuckles): Select lock-on cartridge.   
+- **Cartridge lock-on (restart)** (**disabled**/game genie/action replay (pro)/sonic & knuckles): Select lock-on cartridge.
 - **Master System FM** (**auto**/disabled/enabled): Enable the Master System FM chip.
 - **YM2612 DAC quantization** (enabled/**disabled**): Enable YM2612 DAC quantization
-- **8Blargg NTSC filter** (**disabled**/monochrome/composite/svidio/rgb): Enable Blargg NTSC filters.  
+- **8Blargg NTSC filter** (**disabled**/monochrome/composite/svidio/rgb): Enable Blargg NTSC filters.
 - **LCD Ghosting filter** (enabled/**disabled**): - 
-- **Borders** (**disabled**/ top/bottom/ left/right / full): Enable borders.  
+- **Borders** (**disabled**/ top/bottom/ left/right / full): Enable borders.
 - **Game Gear extended screen** (enabled/**disabled**: Extend the Game Gear screen.
 - **Core-provided aspect ratio** (**auto**/NTSC PAR/PAL PAR ): - 
-- **Interlaced mode 2 output** (**single field**/double field): Change how interlaced mode 2 output is handled.   
+- **Interlaced mode 2 output** (**single field**/double field): Change how interlaced mode 2 output is handled.
 - **Show Lightgun crosshair** (**no**/yes ): Self-explanatory. 
 - **Invert Mouse Y-axis** (**no**/yes ): Self-explanatory. 
 
@@ -109,8 +105,8 @@ The Genesis Plus GX core supports fifteen different controller setting(s):
 * MD Mouse
 
 | Genesis GX Plus | Joypad Auto                                                    | MD Joypad 3 Button | MD Joypad 6 Button | MS Joypad 2 Button | MS Light Phaser | MS Paddle Control | MS Graphic Board | MS Sports Pad | MS XE-1AP | MD Mouse | 
-|-----------------|----------------------------------------------------------------|--------------------|--------------------|--------------------|-----------------|-------------------|------------------|---------------|-----------|----------|                   
-| B               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |                                              
+|-----------------|----------------------------------------------------------------|--------------------|--------------------|--------------------|-----------------|-------------------|------------------|---------------|-----------|----------|
+| B               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
 | A               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
 | Mode            | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
 | Start           | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |

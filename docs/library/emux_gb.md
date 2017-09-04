@@ -22,15 +22,11 @@ gb|bin|rom
 
 The Emux core does not feature BIOS use.
 
-## Feature Support
+## Features
 
-These are libretro features, not frontend or standalone emulator features.
-
-##### Features:
-
-| Saves | States      | Rewind | Netplay | RetroAchievements | Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:------:|
-|  yes  |     -       |   -    |   -     |        -          |   -    |
+| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
+|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
+|  yes  |     -       |   -    |   -     |        -          |   -              | -             |
 
 | Controllers | Rumble | Sensors | Camera | Location | Subsystem |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
