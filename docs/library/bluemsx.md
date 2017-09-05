@@ -41,12 +41,12 @@ Copy the **Machines** & **Databases** folders, from an official blueMSX emulator
 
 The blueMSX core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **Machine Type** (**MSX**/MSXturboR/MSX2/MSX2+/SEGA-SG-1000/SEGA-SC-3000/SEGA-SF-7000/SVI-Spectravideo SVI-318/SVI-Spectravideo SVI-328/SVI-Spectravideo SVI-328 Mk2/ColecoVision/Coleco (SVI-Spectravideo SVI-603)):  `Select the machine type you would like the core to start in. **(Restart Core)**`
+- **Machine Type** (**MSX**/MSXturboR/MSX2/MSX2+/SEGA-SG-1000/SEGA-SC-3000/SEGA-SF-7000/SVI-Spectravideo SVI-318/SVI-Spectravideo SVI-328/SVI-Spectravideo SVI-328 Mk2/ColecoVision/Coleco (SVI-Spectravideo SVI-603)):  `Select the machine type you would like the core to start in.` **(Restart Core)**
 - **Crop Overscan** (**Off**/On/MSX2): `Awaiting Description.`
-- **VDP Sync Type** (**Auto**/50Hz/60Hz): `Match the game/machine region frequency to avoid emulated speed issues **(Resart Core)**`
-- **Sound YM2413 Enable** (**Off**/On): `Sound YM2413 enable **(Restart Core)**`
+- **VDP Sync Type** (**Auto**/50Hz/60Hz): `Match the game/machine region frequency to avoid emulated speed issues` **(Restart Core)**
+- **Sound YM2413 Enable** (**Off**/On): `Sound YM2413 enable` **(Restart Core)**
 - **Cart Mapper Type** (**Auto**/normal/mirrored/basic/0x4000/0xC000/ascii8/ascii8sram/ascii16/ascii16sram/ascii16nf/konami4/konami4nf/konami5/konamisynth/korean80/korean90/korean126/MegaFlashRomScc/MegaFlashRomSccPlus/msxdos2/scc/sccexpanded/sccmirrored/sccplus/snatcher/sdsnatcher/SegaBasic/SG1000/SG1000Castle/SG1000RamA/SG1000RamB/SC3000/)
-: `Awaiting Description **(Restart Core)**`
+: `Awaiting Description` **(Restart Core)**
 
 ## Controllers
 
