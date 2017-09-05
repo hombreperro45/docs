@@ -73,7 +73,7 @@ The blueMSX core supports 2 controller setting(s):
 |           | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 !!! note
-    Colecovision inputs for **0 & 9** are mapped to Keyboard 1 & 2 for Player 1, 3 & 4 for Player 2
+    Colecovision inputs for **0 & 9** are mapped to Keyboard 1 & 2 for Player 1, 3 & 4 for Player 2.
 
 ## Compatibility
 
