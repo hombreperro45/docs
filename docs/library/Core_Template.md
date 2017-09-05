@@ -64,7 +64,7 @@ The (Core name) core supports # controller setting(s):
 | Action 2  | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | Action 3  | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Action 4  | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| Action 5  | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | 
+| Action 5  | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 | Action 6  | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 | Action 7  | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | Action 8  | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
@@ -90,6 +90,6 @@ Unknown
 
 --Standard links but doesn't need to exactly match this--
 * [Libretro Repository](https://link)
-* [Report Core Issues Here](https://link)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta)
 * [Official Website](https://link)
 * [Official Repository](https://link)

@@ -21,6 +21,7 @@ pages:
       - 'Game Boy Advance (mGBA)': 'library/mgba.md'
       - 'Game Boy Advance (VBA-M)': 'library/vbam.md'
       - 'Game Boy Advance (VBA Next)': 'library/vba_next.md'
+      - 'MSX/SVI/ColecoVision/SG-1000 (blueMSX)': 'library/bluemsx.md'
       - 'PlayStation (Beetle PSX HW)': 'library/mednafen_psx_hw.md'
       - 'Sega MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
