@@ -114,6 +114,14 @@ RetroArch can display three types of thumbnails for games in playlists:
 
 ![An in-game snapshot displayed with a Sega - 32X playlist.](http://www.lakka.tv/doc/images/thumbnails.png "An in-game snapshot displayed with a Sega - 32X playlist.")
 
-RetroArch provides packs of thumbnails suitable for use with many emulated systems. These thumbnail packs are recommended for most users and can be installed connecting to the internet and using the built-in thumbnails updater, available from the online update menu within the RetroArch settings interface. Once your Thumbnail files are in place, go to Menu Settings, and change the Thumbnails option to reflect the type of thumbnail you prefer to display.
+RetroArch provides packs of thumbnails suitable for use with many emulated systems. These thumbnail packs are recommended for most users and can be installed connecting to the internet and using the built-in thumbnails updater, available from the online update menu within the RetroArch settings interface.
 
-Users who wish to create their own thumbnails for use with Lakka can do so by naming and locating the image files according to the RetroArch naming convention. The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename: `&*/:`<>?\|`. Images must use the PNG format and must placed in the Thumbnails directory.
+### Thumbnail file names and format
+Users who wish to use their own thumbnails for use with Lakka can do so by naming PNG image files according to the RetroArch naming convention. The thumbnail file should exactly match the game's title as listed in the playlist with an important exception. **The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename:**
+
+    &*/:`<>?\|
+
+### Thumbnail file locations
+Thumbnails should be in the RetroArch Thumbnails directory with a subfolder named either `Named_Boxarts`, `Named_Snaps`, or `Named_Titles` as appropriate for boxart/cover art, in-game snapshots, and title screens, respectively. Once your Thumbnail files are in place, go to Menu Settings, and change the Thumbnails option to reflect the type of thumbnail you prefer to display.
+
+
