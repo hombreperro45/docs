@@ -97,9 +97,9 @@ Each playlist is a plain text file with an extension of `.lpl`.
 
 1. The path to the ROM
 2. The display name (you can use any name here)
-3. The path to the core, this libretro core will be used to launch the ROM. **You can use the word DETECT in place of the core path here and then set the core to be used via the RetroArch GUI.**
+3. The path to the core, this libretro core will be used to launch the ROM. **You can use the word DETECT in place of the core path here. Once this is done you can set the core to be used for this playlist via the RetroArch GUI.**
 4. The displayname of the core, not really useful, we keep it there because the history list is also using this format
-5. Link to the database entry. The fact that there is a CRC value here means that this playlist entry was originally created by the playlist scanner. In some other cases it is done by serial number. ** You can omit a link to the database for a manualy created playlist entry by using the word DETECT here instead.**
+5. Link to the database entry. The fact that there is a CRC value here means that this playlist entry was originally created by the playlist scanner. In some other cases it is done by serial number. **You can omit a link to the database for a manualy created playlist entry by using the word DETECT here instead.**
 6. The name of this playlist, ending in the extension .lpl
 
 **Note:** the paths used in this example will be different from system to system. This example uses Unix-style forward slashes `/` in the paths, as with Linux, OS X, and Android systems. Windows users should use backslashes `\`.
@@ -114,14 +114,19 @@ RetroArch can display three types of thumbnails for games in playlists:
 
 ![An in-game snapshot displayed with a Sega - 32X playlist.](http://www.lakka.tv/doc/images/thumbnails.png "An in-game snapshot displayed with a Sega - 32X playlist.")
 
+### RetroArch Thumbnail packs
 RetroArch provides packs of thumbnails suitable for use with many emulated systems. These thumbnail packs are recommended for most users and can be installed connecting to the internet and using the built-in thumbnails updater, available from the online update menu within the RetroArch settings interface.
 
-### Thumbnail file names and format
-Users who wish to use their own thumbnails for use with Lakka can do so by naming PNG image files according to the RetroArch naming convention. The thumbnail file should exactly match the game's title as listed in the playlist with an important exception. **The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename:**
+### Custom Thumbnails
+Users who wish to use their own thumbnails can do so by naming PNG image files according to the RetroArch naming convention.
+
+#### Filenames
+The thumbnail file should exactly match the game's title as listed in the playlist with an important exception. **The following characters in playlist titles must be replaced with _ in the corresponding thumbnail filename:**
 
     &*/:`<>?\|
 
-### Thumbnail file locations
-Thumbnails should be in the RetroArch Thumbnails directory with a subfolder named either `Named_Boxarts`, `Named_Snaps`, or `Named_Titles` as appropriate for boxart/cover art, in-game snapshots, and title screens, respectively. Once your Thumbnail files are in place, go to Menu Settings, and change the Thumbnails option to reflect the type of thumbnail you prefer to display.
+#### File locations
+Thumbnails should be in the RetroArch Thumbnails directory within a subfolder named exactly the same as the playlist, except without `.lpl` at the end. Within this folder, place the correctly-named Thumbnail within a subfolder named either `Named_Boxarts`, `Named_Snaps`, or `Named_Titles` as appropriate for boxart/cover art, in-game snapshots, and title screens, respectively.
 
-
+### Changing Thumbnail type
+Regardless of whether you download the RetroArch thumbnail packs or use your own custom thumbnails, you can use the RetroArch GUI to set which type of thumbnail to display. In order to change this setting, go to `Menu Settings,` and change the `Thumbnails` option to reflect the type of thumbnail you wish to display.
