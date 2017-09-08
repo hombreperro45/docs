@@ -97,8 +97,10 @@ pages:
          - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
          - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
          - Input Drivers: 'guides/input-drivers.md'
+         - Getting Optimal Vsync Performance: 'guides/optimal-vsync.md'
          - Troubleshooting: 'guides/troubleshooting-retroarch.md'
          - Creating a Theme: 'guides/themes.md'
+         - RetroAchievements: `guides/retroachievements.md`
    - Help: help.md
 extra:
   logo: 'images/invader.png'
