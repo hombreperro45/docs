@@ -1,11 +1,27 @@
 # Shaders
 
-## Cg shader spec 
+Libretro has created its Shader Specification in order to ease the implementation of cross-platform video shaders.
 
-The Cg shader spec used in RetroArch and other libretro frontends supports both single-pass
-Cg shaders as well as multi-pass shaders. It uses a custom Cg preset format (.cgp).
+#### Available shader types:
 
-### Example Cg preset
+* **Cg shaders**: The Cg shader spec used in RetroArch and other libretro frontends supports both single-pass Cg shaders as well as multi-pass shaders. It uses a custom Cg preset format (.cgp).
+* **GLSL shaders**: GLSL support exists for platforms which do not support Cg shaders, which is the case for OpenGL ES, and EGL contexts including KMS mode in Linux.
+
+#### Shader file format:
+
+    # are treated as comments. Rest of the line is ignored.
+    Format is: key = value. There can be as many spaces as you like in-between.
+    Value can be wrapped inside "" for multiword strings. (foo = "hai u")
+    #include includes a config file in-place.
+    Path is relative to where config file was loaded unless an absolute path is chosen.
+    Key/value pairs from an #include are read-only, and cannot be modified.
+
+## Cg shader spec
+
+### Example Cg shader
+-To be written-
+
+### Cg shader presets
 
     shaders = 2
     shader0 = 4xBR-v3.9.cg
@@ -16,18 +32,12 @@ Cg shaders as well as multi-pass shaders. It uses a custom Cg preset format (.cg
     filter_linear1 = true
 
 ## GLSL shader spec
+Like Cg shaders, GLSL shaders represents a single pass, and requires a preset file to describe how multiple shaders are combined. The extension is .glsl.
 
-GLSL shader support exists to be compatible in case Cg shader cannot be supported, which is the case
-for OpenGL ES, and EGL contexts (KMS mode in Linux for one).
-
-Like Cg shaders, GLSL shaders represents a single pass, and requires a preset file
-to describe how multiple shaders are combined. The extension is .glsl.
-
-As GLSL shaders are normally placed in two different files (vertex, fragment), 
-making it very impractical to select in a menu. This is worked around by using
-compiler defines in order to be equivalent to Cg shaders.
+As GLSL shaders are normally placed in two different files (vertex, fragment), making it very impractical to select in a menu. This is worked around by using compiler defines in order to be equivalent to Cg shaders.
 
 ### Example GLSL shader
+Note: GLSL shaders must be modern style, and using ruby prefix is discouraged.
 
     varying vec2 tex_coord;
     #if defined(VERTEX)
@@ -47,17 +57,13 @@ compiler defines in order to be equivalent to Cg shaders.
     }
     #endif
 
-GLSL shaders must be modern style, and using ruby prefix is discouraged.
-
-### GLSL preset
+### GLSL presets
 
 Like Cg shaders, there is a preset format. Instead of .cgp extension, .glslp extension is used. The format is exactly the same, just replace .cg shaders with .glsl. To convert a .cgp preset, rename to .glslp and replace all references to .cg shaders with .glsl.
 
 ## Converting from Cg shaders
 
-GLSL shaders are mostly considered a compatibility format. It is possible to compile Cg shaders into GLSL shaders automatically using our [cg2glsl](https://github.com/libretro/RetroArch/blob/master/tools/cg2glsl.py) script found here. It can convert single shaders as well as batch conversion.
-
-It relies on nVidia's cgc tool found in nvidia-cg-toolkit package.
+GLSL shaders are mostly considered a compatibility format. It is possible to compile Cg shaders into GLSL shaders automatically using our [cg2glsl script](https://github.com/libretro/RetroArch/blob/master/tools/cg2glsl.py). It can convert single shaders as well as batch conversion. Shader converstion relies on nVidia's cgc tool found in the `nvidia-cg-toolkit` package.
 
 ## Common Shaders Repository
 
