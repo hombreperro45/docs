@@ -51,6 +51,7 @@ pages:
             - 'PlayStation Vita/TV': 'compilation/psvita.md'
    - Specifications:
       - 'Libretro': 'specs/api.md'
+      - 'RetroPad': specs/retropad.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
    - Technical:
