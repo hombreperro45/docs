@@ -4,6 +4,10 @@ The **RetroPad** is a joypad abstraction interface defined by the Libretro API. 
 
 In terms of button layout and functionality, the RetroPad is based on a PlayStation/Super Nintendo joypad.
 
+![RetroPad mapping for an XBox 360 gamepad](https://wiki.libretro.com/images/6/68/Retropad_360pad.png)
+
+Above: An example of the RetroPad joypad abstraction mapped to the Xbox 360 gamepad.
+
 ## Definition/Criteria
 A joypad must fulfill the following criteria to meet the requirements of the RetroPad joypad abstraction:
 
