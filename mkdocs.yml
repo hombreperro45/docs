@@ -57,6 +57,7 @@ pages:
    - Technical:
       - RetroArch:
          - 'Netplay': 'tech/netplay.md'
+         - 'Network Control Interface': 'tech/network-control-interface.md'
    - Shader Previews:
       - 'Introduction': 'shader/introduction.md'
       - '3dfx': 'shader/3dfx.md'
