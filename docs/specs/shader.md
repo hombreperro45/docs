@@ -1,6 +1,5 @@
 # Shaders
-
-Libretro has created its Shader Specification in order to ease the implementation of cross-platform video shaders.
+Libretro has created this Shader Specification in order to facilitate the implementation of cross-platform video shaders.
 
 #### Available shader types:
 
@@ -17,12 +16,31 @@ Libretro has created its Shader Specification in order to ease the implementatio
     Key/value pairs from an #include are read-only, and cannot be modified.
 
 ## Cg shader spec
+Cg is a shader specification from nVidia. It has the advantage that shaders written in Cg are compatible with both OpenGL and Direct3D, as well as PlayStation3. They are also compatible with basic HLSL if some considerations are taken into account. They can even be automatically compiled into GLSL shaders, which makes Cg shaders a true “write once, run everywhere” shader format. We encourage new shaders targeting Libretro frontends to be written in this format.
 
 ### Example Cg shader
--To be written-
+
+    void main_vertex
+    (
+       float4 position : POSITION,
+       out float4 oPosition : POSITION,
+       uniform float4x4 modelViewProj,
+       float2 tex : TEXCOORD,
+       out float2 oTex : TEXCOORD
+    )
+    {
+       oPosition = mul(modelViewProj, position);
+       oTex = tex;
+    }
+    
+    float4 main_fragment (float2 tex : TEXCOORD, uniform sampler2D s0 : TEXUNIT0) : COLOR
+    {
+       return tex2D(s0, tex);
+    }
 
 ### Cg shader presets
 
+#### Example Cg preset
     shaders = 2
     shader0 = 4xBR-v3.9.cg
     scale_type0 = source
