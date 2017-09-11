@@ -8,7 +8,7 @@ There are various and comprehensive ways to save customized settings within the 
 - A standalone file also saves the Option settings for all cores that support them. The settings is this file can be overridden on a per game basis.
 
 !!! tip
-    Please read the [Getting Started](guides/windows.md) guide.
+    Please read the [Getting Started](/windows.md) guide.
 
 ## Hierarchy
 
