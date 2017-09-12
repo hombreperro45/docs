@@ -10,7 +10,7 @@ Prerequisites:
 
 [Windows XP Service Pack 3](https://support.microsoft.com/en-us/help/936929/information-about-windows-xp-service-pack-3) (requires SP1 or SP2 installed first)
 
-[DirectX SDK August 2010](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
+[DirectX SDK June 2010](https://www.microsoft.com/en-us/download/details.aspx?id=6812)
 
 [Visual Studio 2010 Express](http://web.archive.org/web/20161014172355/http://download.microsoft.com/download/1/E/5/1E5F1C0A-0D5B-426A-A603-1798B951DDAE/VS2010Express1.iso) (or Pro)
 
