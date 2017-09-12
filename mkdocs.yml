@@ -52,7 +52,7 @@ pages:
             - 'PlayStation Vita/TV': 'compilation/psvita.md'
    - Specifications:
       - 'Libretro': 'specs/api.md'
-      - 'RetroPad': specs/retropad.md'
+      - 'RetroPad': 'specs/retropad.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
    - Technical:
@@ -104,7 +104,7 @@ pages:
          - Getting Optimal Vsync Performance: 'guides/optimal-vsync.md'
          - Troubleshooting: 'guides/troubleshooting-retroarch.md'
          - Creating a Theme: 'guides/themes.md'
-         - RetroAchievements: `guides/retroachievements.md`
+         - RetroAchievements: 'guides/retroachievements.md'
 extra:
   logo: 'images/invader.png'
   version: '0.0.5'
