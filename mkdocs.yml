@@ -105,7 +105,6 @@ pages:
          - Troubleshooting: 'guides/troubleshooting-retroarch.md'
          - Creating a Theme: 'guides/themes.md'
          - RetroAchievements: `guides/retroachievements.md`
-   - Help: help.md
 extra:
   logo: 'images/invader.png'
   version: '0.0.5'
