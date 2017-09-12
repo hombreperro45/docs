@@ -97,6 +97,7 @@ pages:
          - Getting Started:
            - 'Windows': 'guides/windows.md'
            - 'Command-line interface (CLI)': 'guides/cli-intro.md'
+         - Linux KMS Mode: 'guides/kms-mode.md'
          - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
          - RGUI Interface: 'guides/RGUI.md'
          - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
