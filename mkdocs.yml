@@ -98,6 +98,7 @@ pages:
            - 'Windows': 'guides/windows.md'
            - 'Command-line interface (CLI)': 'guides/cli-intro.md'
          - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
+         - RGUI Interface: 'guides/RGUI.md'
          - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
          - Input Drivers: 'guides/input-drivers.md'
          - Getting Optimal Vsync Performance: 'guides/optimal-vsync.md'
