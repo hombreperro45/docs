@@ -1,14 +1,14 @@
 # Windows (Vista and later) Compilation / Development Guide
 
 !!! Warning
-    The MinGW toolchain we use in this guide no longer supports targeting Windows XP. Programs compiled with it will fail to   start with it.
+    The MinGW toolchain we use in this guide no longer supports targeting Windows XP. Programs compiled with it will fail to start with it.
     Please refer to one of the MSVC guides for how to target older Windows versions with Visual Studio.
 
 ## Environment configuration
 
-We recommend MinGW-W64 from MSYS2. You can download MSYS2 installer from [here](http://msys2.github.io/)
+We recommend MinGW-W64 from MSYS2. You can download MSYS2 installer from [here](http://msys2.github.io/).
 
-Follow the installation instructions and once finished start MSYS2 shell.
+Follow the installation instructions and once finished start the MSYS2 shell.
 
 MSYS2 shell is a maintenance shell. We are going to use this shell to install the toolchain and other packages. First order of business is to update MSYS2:
 
