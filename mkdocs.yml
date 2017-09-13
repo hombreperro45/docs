@@ -36,16 +36,8 @@ pages:
             - 'Ubuntu': 'compilation/ubuntu.md'
          - Microsoft:
             - 'DOS': 'compilation/dos.md'
-            - Windows NT3.51:
-              - 'MSVC Cmdline': 'compilation/windowsNT351-msvc-cmdline.md'
-            - Windows 95/NT4:
-              - 'MSVC Cmdline': 'compilation/windows95-msvc-cmdline.md'
-            - Windows 98/2000:
-              - 'MSVC Cmdline': 'compilation/windows98-msvc-cmdline.md'
-              - 'MSVC IDE': 'compilation/windows98.md'
-            - Windows XP and later:
-              - 'MSVC Cmdline': 'compilation/windowsXP-msvc-cmdline.md'
-              - 'MSVC IDE': 'compilation/windowsXP.md'
+            - 'Windows 98/2000 (MSVC)': 'compilation/windows98.md'
+            - 'Windows XP and later (MSVC)': 'compilation/windowsXP.md'
             - 'Windows Vista and later (MSYS2)': 'compilation/windows.md'
             - 'Xbox': 'compilation/xbox.md'
             - 'Xbox 360': 'compilation/xbox360.md'
@@ -60,7 +52,7 @@ pages:
             - 'PlayStation Vita/TV': 'compilation/psvita.md'
    - Specifications:
       - 'Libretro': 'specs/api.md'
-      - 'RetroPad': 'specs/retropad.md'
+      - 'RetroPad': specs/retropad.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
    - Technical:
@@ -105,15 +97,18 @@ pages:
          - Getting Started:
            - 'Windows': 'guides/windows.md'
            - 'Command-line interface (CLI)': 'guides/cli-intro.md'
-         - Linux KMS Mode: 'guides/kms-mode.md'
+         - Creating a Theme: 'guides/themes.md' 
+         - Input Drivers: 'guides/input-drivers.md'
+         - Linux KMS Mode: 'guides/kms-mode.md'		 
          - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
          - RGUI Interface: 'guides/RGUI.md'
          - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
-         - Input Drivers: 'guides/input-drivers.md'
-         - Getting Optimal Vsync Performance: 'guides/optimal-vsync.md'
+         - Optimal Vsync Performance: 'guides/optimal-vsync.md'
+         - RetroAchievements: `guides/retroachievements.md`    
+         - Softpatching ROMs: `guides/softpatching.md'
          - Troubleshooting: 'guides/troubleshooting-retroarch.md'
-         - Creating a Theme: 'guides/themes.md'
-         - RetroAchievements: 'guides/retroachievements.md'
+		 - Video Recording and Streaming: `guides/recording-and-streaming.md`
+  extra:		  extra:
 extra:
   logo: 'images/invader.png'
   version: '0.0.5'
