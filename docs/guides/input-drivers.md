@@ -4,14 +4,23 @@
 **Note for Linux**: When not in Xorg, using input devices can be more finicky than in X. The main way to access input directly is using the evdev interface found in /dev/input, and optionally the legacy joystick interface in /dev/input/js\*. To discover devices and support hotplugging, libudev is used. When using udev driver, you have to set the keyboard layout/variant yourself. Set the input_keyboard_layout setting for this. See default retroarch.cfg for syntax.
 
 ### udev/evdev input drivers
-udev is the newest input driver and uses the recent evdev joypad API. It supports hotplugging and force feedback (if supported by device). udev reads evdev events directly and supports keyboard callback, mice, and touchpads. 
+udev is the newest input driver and uses the evdev joypad API. It supports hotplugging and force feedback (if supported by device). udev reads evdev events directly and supports keyboard callback, mice, and touchpads. 
 
 udev is currently the only Linux input driver with support for multiple simultaneous mouse devices.
 
 To use udev/evdev drivers, RetroArch depends on the libudev package. To support keyboard callback interface in udev, the libxkbcommon package (version 0.3 and up) is required. It is used to translate raw evdev events to printable characters. It does not depend on Xorg, but it depends on X11 keyboard layout files being installed.
 
 #### Setting up udev permissions
-By default in most distros, /dev/input nodes are root-only (mode 600). You can set up a udev rule which makes these accessible to non-root.
+
+Most Linux distributions prevent users from capturing keyboard/mouse information by default. Only root and users in the group "input" are able to access raw input. This is a security feature in case the system is used by multiple users.
+
+The easiest way to gain access to this input is to:
+
+Step 1. Add your user to the group "input" with the command: ``sudo usermod -a -G input `whoami` ``
+
+Step 2. Log out, and then log back in
+
+If adding your user to the input group does not succeed, you may also set up a udev rule which makes this input accessible to non-root users.
 
 **Add to `/etc/udev/rules.d/99-evdev.rules`:** `KERNEL=="event*", NAME="input/%k", MODE="666"`
 
