@@ -89,11 +89,6 @@ The Libretro organization hosts a [repository](https://github.com/libretro/commo
 
 ## Detailed Cg Shader Specification
 
-~~~~Known implementations of this spec are currently:
-- RetroArch (on PC, mobile, PS3, partly XBox 360)
-- SNES9x (Win32 port)
-- OpenEmu
-
 Entry points:
    Vertex: main_vertex
    Fragment: main_fragment
