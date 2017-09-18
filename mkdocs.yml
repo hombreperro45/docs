@@ -52,7 +52,7 @@ pages:
             - 'PlayStation Vita/TV': 'compilation/psvita.md'
    - Specifications:
       - 'Libretro': 'specs/api.md'
-      - 'RetroPad': specs/retropad.md'
+      - 'RetroPad': 'specs/retropad.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
    - Technical:
@@ -95,19 +95,19 @@ pages:
    - User Guides:
       - RetroArch:
          - Getting Started:
-           - 'Windows': 'guides/windows.md'
-           - 'Command-line interface (CLI)': 'guides/cli-intro.md'
-         - Creating a Theme: 'guides/themes.md' 
+            - 'Windows': 'guides/windows.md'
+            - 'Command-line interface (CLI)': 'guides/cli-intro.md'
+         - Creating a Theme: 'guides/themes.md'
          - Input Drivers: 'guides/input-drivers.md'
-         - Linux KMS Mode: 'guides/kms-mode.md'		 
+         - Linux KMS Mode: 'guides/kms-mode.md'
          - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
          - RGUI Interface: 'guides/RGUI.md'
          - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
          - Optimal Vsync Performance: 'guides/optimal-vsync.md'
-         - RetroAchievements: `guides/retroachievements.md`    
-         - Softpatching ROMs: `guides/softpatching.md'
-         - Troubleshooting: 'guides/troubleshooting-retroarch.md
-         - Video Recording and Streaming: `guides/recording-and-streaming.md`
+         - RetroAchievements: 'guides/retroachievements.md'
+         - Softpatching ROMs: 'guides/softpatching.md'
+         - Troubleshooting: 'guides/troubleshooting-retroarch.md'
+         - Video Recording and Streaming: 'guides/recording-and-streaming.md'
 extra:
   logo: 'images/invader.png'
   version: '0.0.5'
