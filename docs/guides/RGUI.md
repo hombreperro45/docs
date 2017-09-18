@@ -4,7 +4,7 @@ RGUI is a simple built-in GUI for RetroArch. It was originally introduced in the
 
 RGUI is currently only supported on hardware accelerated video drivers (OpenGL / D3D).
 
-![RGUI startup screen](rgui/rgui.png)
+![RGUI startup screen](images/rgui/rgui.png)
 
 ## Features
 
@@ -21,7 +21,7 @@ While RGUI cannot configure absolutely everything, it can do the most common thi
 - Toggle fullscreen
 - Swap disk images (needed for PlayStation, see notes below!)
 - Take screenshots
-- Enable/disable real-time rewind 
+- Enable/disable real-time rewind
 - Simple input configuration
 - Mute/unmute audio
 - Exit RetroArch (yes, sadly :p)
