@@ -163,9 +163,7 @@ Pre-filtering:
    Some shaders, like scanline will most likely 
    prefer bilinear texture filtering.
 
-=============================
- -- Cg meta-shader format --
-=============================
+## Cg meta-shader format
 
 Rationale:
 The .cg files themselves contain no metadata necessary to perform advanced
@@ -339,9 +337,8 @@ Multi-pass uniforms:
    This allows up to 8-tap motion blur.
 
 For backend implementers:
-===================================
- -- Rendering the shader chain: --
-===================================
+
+## Rendering the shader chain
 
 With all these options, the rendering pipeline can become somewhat complex.
 The meta-shader format greatly utilizes the possibility of offscreen
