@@ -16,7 +16,7 @@ GPLv2
 
 ## Extensions
 
-iso|cue|bin
+bin|cue|iso
 
 ## BIOS
 
@@ -83,6 +83,6 @@ The Yabause core supports four controller setting(s):
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/yabause)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://yabause.org/)
 * [Official GitHub Repository](https://github.com/Guillaumito/yabause)

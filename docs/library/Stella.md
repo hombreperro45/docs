@@ -26,7 +26,7 @@ The Stella core does not feature BIOS use.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |   yes       | yes    |  no     |       no          |  no              | -             |
+|  yes  |   yes       | yes    |  no     |       no          |  no              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -69,6 +69,6 @@ Any game specific issues that are reproducible on upstream standalone can be rep
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/stella-libretro)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://stella-emu.github.io/)
 * [Official Repository](https://github.com/stella-emu/stella)

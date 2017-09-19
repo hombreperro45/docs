@@ -16,7 +16,7 @@ GPLv3
 
 ## Extensions
 
-j64|jag
+j64|jag|rom|abs|cof|bin|prg
 
 ## BIOS
 
@@ -26,7 +26,7 @@ The Virtual Jaguar core does not feature BIOS use.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |    no       |  no    |  no     |       no          |  no              | -             |
+|  yes  |    no       |  no    |  no     |       no          |  no              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -74,6 +74,6 @@ A compatibility table can be found on the bottom of this [page](https://icculus.
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/virtualjaguar-libretro)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://icculus.org/virtualjaguar/)
 * [Upstream Git Repository](http://shamusworld.gotdns.org/git/virtualjaguar)

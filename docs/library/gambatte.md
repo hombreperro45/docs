@@ -26,7 +26,7 @@ The Gambatte core does not feature BIOS use.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |     yes     |   yes  |   no    |        -          | yes              | -             |
+|  yes  |     yes     |   yes  |   no    |        -          | yes              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -90,5 +90,5 @@ The Gambatte core supports one controller setting(s):
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/gambatte-libretro)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta)
-* [Official Website](https://sourceforge.net/projects/gambatte/)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta)
+* [Official Repository](https://github.com/sinamas/gambatte)

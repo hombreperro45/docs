@@ -4,7 +4,7 @@
 
 mGBA is a new emulator for running Game Boy Advance games. It aims to be faster and more accurate than many existing Game Boy Advance emulators, as well as adding features that other emulators lack.
 
-Author(s): Vicki Pfau
+Author(s): endrift
 
 ## Contribute to this documentation
 
@@ -72,11 +72,11 @@ The mGBA core supports one controller setting(s):
 
 ## Compatibility
 
-Please file bugs on the [bug tracker](https://endrift.com/mgba/bugs/).
+Please file bugs that are reproducible on upstream standalone on the [bug tracker](https://endrift.com/mgba/bugs/).
 
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/mgba)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://mgba.io/)
 * [Official GitHub Repository](https://github.com/mgba-emu/mgba)

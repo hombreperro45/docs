@@ -28,9 +28,9 @@ The Emux core does not feature BIOS use.
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
 |  yes  |     -       |   -    |   -     |        -          |   -              | -             |
 
-| Controllers | Rumble | Sensors | Camera | Location | Subsystem |
+| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        -        |   -    |    -    |   -    |    -     |       -       |
+|        -        |   -    |    -    |  no    |   no     |       -       |
 
 ## Options
 
@@ -50,7 +50,7 @@ The core supports one controller setting(s):
 |           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
 | Select    | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
 | Start     | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
-| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |    
+| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 | A         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
 |           | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 |           | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
@@ -69,5 +69,5 @@ Unknown
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/emux)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Repository](https://github.com/sronsse/emux) 

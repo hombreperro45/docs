@@ -2,13 +2,13 @@
 
 ## Background
 
-Beetle/Mednafen LYNX is an Atari Lynx video game system emulator that can be used as a libretro core. Specifically it's a port of Mednafen Lynx which is a fork of [Handy](https://wiki.libretro.com/index.php?title=Handy).
+Beetle/Mednafen Lynx is an Atari Lynx video game system emulator that can be used as a libretro core. Specifically it's a port of Mednafen Lynx which is a fork of Handy.
 
 Author(s): K. Wilkins|Mednafen Team
 
 ## Contribute to this documentation
 
-In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/mednafen_lynx.md). Changes are proposed using "Pull Requests."
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/beetle_lynx.md). Changes are proposed using "Pull Requests."
 
 ## License
 
@@ -28,7 +28,7 @@ lnx
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats | 
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:--------------|
-| yes   |   yes       |  yes   |  no     |       no          |  no              | -             |
+| yes   |   yes       |  yes   |  no     |       no          |  no              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -44,7 +44,7 @@ The Beetle Handy core supports one controller setting(s):
 
 * RetroPad
 
-![mednafen_lynx_retropad](images/Controllers/mednafen_lynx_retropad.png)
+![beetle_lynx_retropad](images/Controllers/beetle_lynx_retropad.png)
 
 | Beetle Handy | [RetroPad](RetroPad)                                           |
 |--------------|----------------------------------------------------------------|
@@ -78,6 +78,6 @@ Supported combinations
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/beetle-lynx-libretro)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://mednafen.sourceforge.net/)
 * [Official Upstream Downloads](https://mednafen.github.io/releases/)

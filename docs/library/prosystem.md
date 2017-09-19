@@ -28,7 +28,7 @@ a78|bin
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  no   |    no       |  no    |  no     |       no          |  no              | -             |
+|  no   |    no       |  no    |  no     |       no          |  no              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -71,6 +71,6 @@ Unknown
 ## External Links
  
 * [Libretro Repository](https://github.com/libretro/prosystem-libretro)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta)
 * [Official Website](http://gstanton.github.io/ProSystem1_3/)
 * [Official Repository](https://github.com/gstanton/ProSystem1_3) 

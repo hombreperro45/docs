@@ -28,7 +28,7 @@ lnx
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |    yes      | yes    |   no    |       no          |  no              | -             |
+|  yes  |    yes      | yes    |   no    |       no          |  no              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -80,6 +80,6 @@ Supported combinations
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/libretro-handy)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://handy.sourceforge.net/)
 * [Official Upstream Downloads](http://handy.sourceforge.net/download.htm)

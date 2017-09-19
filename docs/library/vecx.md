@@ -71,5 +71,5 @@ Unknown
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/libretro-vecx)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official GitHub Repository of SDL Port](https://github.com/jhawthorn/vecx)

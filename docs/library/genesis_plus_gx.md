@@ -16,7 +16,7 @@ Non-commercial
 
 ## Extensions
 
-mdx|md|smd|gen|bin|cue|iso|sms|gg|sg
+mdx|md|smd|gen|bin|cue|iso|sms|gg|sg|68k|chd
 
 ## BIOS
 
@@ -38,7 +38,7 @@ mdx|md|smd|gen|bin|cue|iso|sms|gg|sg
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |   yes       | yes    |  yes    |       -           | yes              | -             |
+|  yes  |   yes       | yes    |  yes    |       -           | yes              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -130,5 +130,5 @@ The Genesis Plus GX core supports fifteen different controller setting(s):
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/Genesis-Plus-GX)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://github.com/ekeeke/Genesis-Plus-GX)

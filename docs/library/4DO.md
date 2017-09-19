@@ -20,15 +20,15 @@ iso|cue
 
 ## BIOS
 
-|   Filename   |      Description     |              md5sum              |
-|:------------:|:--------------------:|:--------------------------------:|
-| panafz10.bin | Panasonic FZ-10 BIOS | 51f2f43ae2f3508a14d9f56597e2d3ce |
+|   Filename   |      Description                |              md5sum              |
+|:------------:|:-------------------------------:|:--------------------------------:|
+| panafz10.bin | Panasonic FZ-10 BIOS - Required | 51f2f43ae2f3508a14d9f56597e2d3ce |
 
 ## Features
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |     yes     |   yes  |   yes   |         no        |   no             | -             |
+|  yes  |     yes     |   yes  |   yes   |         no        |   no             | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -73,6 +73,6 @@ The 4DO core supports one controller setting(s):
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/4do-libretro)
-* [Report Libretro Issues Here]([Report Issues Here](https://github.com/libretro/libretro-meta/issues))
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://www.fourdo.com/)
 * [Official Repository](https://sourceforge.net/projects/fourdo/)
