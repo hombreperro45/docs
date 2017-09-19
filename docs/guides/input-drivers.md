@@ -3,32 +3,36 @@
 ## Input drivers for Linux and Lakka
 **Note for Linux**: When not in Xorg, using input devices can be more finicky than in X. The main way to access input directly is using the evdev interface found in /dev/input, and optionally the legacy joystick interface in /dev/input/js\*. To discover devices and support hotplugging, libudev is used. When using udev driver, you have to set the keyboard layout/variant yourself. Set the input_keyboard_layout setting for this. See default retroarch.cfg for syntax.
 
-### udev/evdev input drivers
+### udev input driver
 udev is the newest input driver and uses the evdev joypad API. It supports hotplugging and force feedback (if supported by device). udev reads evdev events directly and supports keyboard callback, mice, and touchpads. 
 
-udev is currently the only Linux input driver with support for multiple simultaneous mouse devices.
+Supports:
+* Multiple simultaneous mice: Yes
+* Absolute coordinate mouse devices (Wiimotes, lightguns, etc): Yes
 
-To use udev/evdev drivers, RetroArch depends on the libudev package. To support keyboard callback interface in udev, the libxkbcommon package (version 0.3 and up) is required. It is used to translate raw evdev events to printable characters. It does not depend on Xorg, but it depends on X11 keyboard layout files being installed.
+#### Required packages
+To use udev, makde sure the libudev and libxkbdcommon are installed. the udev does not depend on Xorg, but it does also depend on X11 keyboard layout files being installed.
 
 #### Setting up udev permissions
-
 Most Linux distributions prevent users from capturing keyboard/mouse information by default. Only root and users in the group "input" are able to access raw input. This is a security feature in case the system is used by multiple users.
 
 The easiest way to gain access to this input is to:
 
-Step 1. Add your user to the group "input" with the command: ``sudo usermod -a -G input `whoami` ``
+**Step 1:** Add your user to the group "input" with the command: ``sudo usermod -a -G input `whoami` ``
+**Step 2:** Log out, and then log back in
 
-Step 2. Log out, and then log back in
+If adding your user to the input group does not succeed, you may also set up a udev rule which makes this input accessible to non-root users:
 
-If adding your user to the input group does not succeed, you may also set up a udev rule which makes this input accessible to non-root users.
-
-**Add to `/etc/udev/rules.d/99-evdev.rules`:** `KERNEL=="event*", NAME="input/%k", MODE="666"`
-
-Then reload rules with `sudo udevadm control --reload-rules`.
-Until next reboot (or replugging devices), you can force permissions with `sudo chmod 666 /dev/input/event*`.
+**Step 1:** Add to `/etc/udev/rules.d/99-evdev.rules`:** `KERNEL=="event*", NAME="input/%k", MODE="666"`
+**Step 2:** Reload the rules with `sudo udevadm control --reload-rules`.
+**Step 3:** Reboot
 
 ### linuxraw input driver
-An older linuxraw driver is available which uses the older joystick API (/dev/input/js*). The  linuxraw driver requires an active TTY. Keyboard events are read directly from the TTY which makes it simpler, but not as flexible. Mice, etc, are not supported.
+An older linuxraw driver is available which uses the older joystick API (/dev/input/js*). The  linuxraw driver requires an active TTY in order to read keyboard events.
+
+Supports:
+* Multiple simultaneous mice: Unknown
+* Absolute coordinate mouse devices (Wiimotes, lightguns, etc): Yes
 
 ### sdl input driver
 -To be written-
@@ -36,12 +40,21 @@ An older linuxraw driver is available which uses the older joystick API (/dev/in
 ## Input drivers for Windows
 
 ### raw input driver
-The `raw` input driver is currently the only Windows input driver with support for multiple simultaneous mice. It is also the only Windows input driver with support for 'absolute coordinate' mouse devices, such as the Wiimote/Dolphinbar and non-CRT lightguns.
+
+Supports:
+* Multiple simultaneous mice: Yes
+* Absolute coordinate mouse devices (Wiimotes, lightguns, etc): Yes
 
 ### dinput input driver
--To be written-
+
+Supports:
+* Multiple simultaneous mice: No
+* Absolute coordinate mouse devices (Wiimotes, lightguns, etc): No
 
 ### sdl2 input driver
+-To be written-
+
+## Input drivers for Android
 -To be written-
 
 ## Input drivers for OS X
