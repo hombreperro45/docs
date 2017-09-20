@@ -8,7 +8,7 @@ Author(s):- Forgotten|Mednafen Team
 
 ## Contribute to this documentation
 
-In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/mednafen_gba.md). Changes are proposed using "Pull Requests."
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/beetle_gba.md). Changes are proposed using "Pull Requests."
 
 
 ## License
@@ -29,11 +29,11 @@ gba|agb|bin
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  -    |     -       |   -    |   -     |        -          |   -              | -             |
+| yes   |   yes       | yes    |   no    |        -          |   -              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        -        |   -    |    -    |   -    |    -     |       -       |
+|       no        |  no    |   no    |   no   |    no    |      no       |
 
 ## Options
 
@@ -47,7 +47,7 @@ The Beetle GBA core supports one controller setting(s):
 
 * RetroPad
 
-![mednafen_gba_retropad](images/Controllers/mednafen_gba_retropad.png)
+![beetle_gba_retropad](images/Controllers/beetle_gba_retropad.png)
 
 | Beetle GBA | [RetroPad](RetroPad)                                           |
 |------------|----------------------------------------------------------------|
@@ -74,6 +74,6 @@ Unknown
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/beetle-gba-libretro)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://mednafen.sourceforge.net/)
 * [Official Upstream Downloads](https://mednafen.github.io/releases/)

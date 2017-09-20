@@ -16,7 +16,7 @@ GPLv2
 
 ## Extensions
 
-cue|toc|m3u|ccd|exe|pbp
+cue|toc|m3u|ccd|exe|pbp|chd
 
 ## BIOS
 
@@ -30,7 +30,7 @@ cue|toc|m3u|ccd|exe|pbp
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |   yes       | yes    | yes     |        -          | yes              | -             |
+|  yes  |   yes       | yes    | yes     |       no          | yes              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -164,19 +164,19 @@ The Beetle PSW HW core supports four controller(s):
 
 * PS1 Joypad
 
-![mednafen_psx_hw_ps1joypad](images/Controllers/mednafen_psx_hw_ps1joypad.png)
+![beetle_psx_hw_ps1joypad](images/Controllers/beetle_psx_hw_ps1joypad.png)
 
 * DualAnalog
 
-![mednafen_psx_hw_dualanalog](images/Controllers/mednafen_psx_hw_dualanalog)
+![beetle_psx_hw_dualanalog](images/Controllers/beetle_psx_hw_dualanalog)
 
 * DualShock
 
-![mednafen_psx_hw_dualshock](images/Controllers/mednafen_psx_hw_dualshock)
+![beetle_psx_hw_dualshock](images/Controllers/beetle_psx_hw_dualshock)
 
 * FlightStick
 
-![mednafen_psx_hw_flightstick](images/Controllers/mednafen_psx_hw_flightstick)
+![beetle_psx_hw_flightstick](images/Controllers/beetle_psx_hw_flightstick)
 
 For normal analog stick usage with the DualAnalog and DualShock device type, make sure the corresponding user's Analog to Digital Type is set to none.
 
@@ -202,7 +202,7 @@ Rumble only works when the corresponding user's device type is set to DualShock 
 
 ## Compatibility
 
-Unknown
+Please file bugs that are reproducible on upstream standalone on the [official forums](https://forum.fobby.net/index.php?t=msg&th=1114&start=0&).
 
 ## External Links
 

@@ -20,7 +20,7 @@ gb|gbc|sgb
 
 ## BIOS
 
-TGB Dual does not support using BIOS image files.
+The TGB Dual core does not support using BIOS image files.
 
 ## Features
 
@@ -34,7 +34,7 @@ TGB Dual does not support using BIOS image files.
 
 ## Options
 
-This core has a few options that can be tweaked from the core options menu. The default setting is bolded:
+The TBG Dual core has a few options that can be tweaked from the core options menu. The default setting is bolded:
 
 - **GB Link Enable** (**disabled**/enabled) (restart): Emulates two Game Boy units side by side for multiplayer support.
 - **Screen placement** (**horizontal**/vertical): Switches the screen layout for multiplayer support.
@@ -43,7 +43,7 @@ This core has a few options that can be tweaked from the core options menu. The 
 
 ## Controllers
 
-The core supports one controller setting(s):
+The TGB Dual core supports one controller setting(s):
 
 * RetroPad
 
@@ -74,5 +74,5 @@ Unknown
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/tgbdual-libretro)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta)
 * [Official Website](http://gigo.retrogames.com/download.html) 

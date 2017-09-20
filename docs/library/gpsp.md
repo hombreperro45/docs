@@ -96,5 +96,5 @@ The core supports one controller setting:
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/gpsp)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://github.com/notaz/gpsp)

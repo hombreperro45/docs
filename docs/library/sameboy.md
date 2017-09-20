@@ -20,17 +20,17 @@ gb|gbc
 
 ## BIOS
 
-The SameBoy does not feature BIOS use.
+The SameBoy core does not feature BIOS use.
 
 ## Features
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  -    |     -       |   -    |   -     |        -          |   -              | -             |
+|  -    |    no       |  no    |  no     |        -          |   -              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        -        |   -    |    -    |   -    |    -     |       -       |
+|       no        |  no    |   no    |  no    |    no     |       -      |
 
 ## Options
 
@@ -74,7 +74,7 @@ SameBoy Compatibility can be found [here](https://sameboy.github.io/features/)
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/SameBoy)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](https://sameboy.github.io/)
 * [Official Repository](https://github.com/LIJI32/SameBoy)
 * [Official Upstream Downloads](https://sameboy.github.io/downloads/)

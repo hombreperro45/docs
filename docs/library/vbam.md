@@ -98,6 +98,6 @@ The VBA-M core supports four controller setting(s):
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/vbam-libretro)
-* [Report Libretro Issues Here](https://github.com/libretro/libretro-meta/issues)
+* [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
 * [Official Website](http://vba-m.com/)
 * [Official Sourceforge Repository](http://sourceforge.net/projects/vbam/)
