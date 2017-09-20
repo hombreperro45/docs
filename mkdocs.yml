@@ -22,6 +22,8 @@ pages:
       - 'Game Boy Advance (VBA-M)': 'library/vbam.md'
       - 'Game Boy Advance (VBA Next)': 'library/vba_next.md'
       - 'MSX/SVI/ColecoVision/SG-1000 (blueMSX)': 'library/bluemsx.md'
+      - 'Neo Geo Pocket/Color (Beetle NeoPop)': 'library/beetle_ngp.md'
+      - 'PC Engine/PCE-CD (Beetle PCE FAST)': 'library/beetle_pce_fast.md'
       - 'PlayStation (Beetle PSX HW)': 'library/beetle_psx_hw.md'
       - 'Sega MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
