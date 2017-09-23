@@ -22,10 +22,13 @@ pce|cue|ccd|iso|img|bin|chd
 ## BIOS
 
 **Required**
+
 |   Filename    |    Description     |              md5sum              |
 |:-------------:|:------------------:|:--------------------------------:|
 | syscard3.pce  |     PCE-CD BIOS    | 38179df8f4ac870017db21ebcbf53114 |
+
 **Optional**
+
 |   Filename    |    Description     |              md5sum              |
 |:-------------:|:------------------:|:--------------------------------:|
 | syscard1.pce  |     PCE-CD BIOS    |                                  |
