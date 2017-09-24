@@ -9,10 +9,10 @@ udev is the newest input driver and uses the evdev joypad API. It supports hotpl
 #### Features
 
 | Multi-mouse | Absolute mice* | Rumble | 
-|:---------- :|:--------------:|:------:|
-| Yes         |  No            |   -    |
+|---|---|---|
+| Yes |  No | - |
 
-\*Absolute mouse devices include Wiimotes, lightguns, etc.
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
 #### Required packages
 TThe `libudev` and `libxkbdcommon` packages are required. udev does not require X, but udev does depend on X11 keyboard layout files being installed.
@@ -37,10 +37,10 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 #### Features
 
 | Multi-mouse | Absolute mice* | Rumble | 
-|:---------- :|:--------------:|:------:|
+|---|---|---|
 | -           |  Yes           |   -    |
 
-\*Absolute mouse devices include Wiimotes, lightguns, etc.
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
 ### sdl input driver
 -To be written-
@@ -48,10 +48,10 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 #### Features
 
 | Multi-mouse | Absolute mice* | Rumble | 
-|:---------- :|:--------------:|:------:|
+|---|---|---|
 | -           |  -             |   -    |
 
-\*Absolute mouse devices include Wiimotes, lightguns, etc.
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
 ## Input drivers for Windows
 
@@ -60,20 +60,20 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 #### Features
 
 | Multi-mouse | Absolute mice* | Rumble | 
-|:---------- :|:--------------:|:------:|
+|---|---|---|
 | Yes         |  Yes           |   -    |
 
-\*Absolute mouse devices include Wiimotes, lightguns, etc.
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
 ### dinput input driver
 
 #### Features
 
 | Multi-mouse | Absolute mice* | Rumble | 
-|:---------- :|:--------------:|:------:|
+|---|---|---|
 | No          |  No            |   -    |
 
-\*Absolute mouse devices include Wiimotes, lightguns, etc.
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
 ### sdl2 input driver
 -To be written-
@@ -81,10 +81,10 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 #### Features
 
 | Multi-mouse | Absolute mice* | Rumble | 
-|:---------- :|:--------------:|:------:|
+|---|---|---|
 | -           |  -             |   -    |
 
-\*Absolute mouse devices include Wiimotes, lightguns, etc.
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
 ## Input drivers for Android
 -To be written-
@@ -92,10 +92,10 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 #### Features
 
 | Multi-mouse | Absolute mice* | Rumble | 
-|:---------- :|:--------------:|:------:|
+|---|---|---|
 | -           |  -             |   -    |
 
-\*Absolute mouse devices include Wiimotes, lightguns, etc.
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
 ## Input drivers for OS X
 -To be written-
@@ -103,7 +103,7 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 #### Features
 
 | Multi-mouse | Absolute mice* | Rumble | 
-|:---------- :|:--------------:|:------:|
+|---|---|---|
 | -           |  -             |   -    |
 
-\*Absolute mouse devices include Wiimotes, lightguns, etc.
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
