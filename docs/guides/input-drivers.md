@@ -63,6 +63,8 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 
 \*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
+---
+
 ## Input drivers for Windows
 
 ### raw input driver
@@ -96,6 +98,8 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 
 \*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
+---
+
 ## android input driver
 -To be written-
 
@@ -121,6 +125,8 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 
 \*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
+---
+
 ## DOS input driver
 -To be written-
 
@@ -131,4 +137,3 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 | -           |  -             |   -    |
 
 \*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
-
