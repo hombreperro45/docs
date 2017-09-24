@@ -42,6 +42,16 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 
 \*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
+### wayland input driver
+-To be written-
+
+#### Features
+
+| Multi-mouse | Absolute mice* | Rumble | 
+|---|---|---|
+| -           |  -             |   -    |
+
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 ### sdl input driver
 -To be written-
 
@@ -86,7 +96,7 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 
 \*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
 
-## Input drivers for Android
+## android input driver
 -To be written-
 
 #### Features
@@ -100,6 +110,9 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 ## Input drivers for OS X
 -To be written-
 
+### cocoa input driver
+-To be written-
+
 #### Features
 
 | Multi-mouse | Absolute mice* | Rumble | 
@@ -107,3 +120,15 @@ The older linuxraw driver is available which uses the legacy joystick API at `/d
 | -           |  -             |   -    |
 
 \*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
+
+## DOS input driver
+-To be written-
+
+#### Features
+
+| Multi-mouse | Absolute mice* | Rumble | 
+|---|---|---|
+| -           |  -             |   -    |
+
+\*Absolute mouse devices include modern lightguns, air mice, Wiimotes, etc.
+
