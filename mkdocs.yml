@@ -110,7 +110,7 @@ pages:
             - 'Windows': 'guides/windows.md'
             - 'Command-line interface (CLI)': 'guides/cli-intro.md'
          - Creating a Theme: 'guides/themes.md'
-         - Input Drivers: 'guides/input-drivers.md'
+         - Input and Joypad Drivers: 'guides/input-joypad-drivers.md'
          - Linux KMS Mode: 'guides/kms-mode.md'
          - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
          - RGUI Interface: 'guides/RGUI.md'
