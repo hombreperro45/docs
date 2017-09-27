@@ -35,6 +35,7 @@ pages:
             - 'OSX/PowerPC': 'compilation/osxppc.md'
             - 'OSX/macOS': 'compilation/osx.md'
             - 'iOS': 'compilation/ios.md'
+         - 'Android': 'compilation/android.md'
          - Linux and BSD:
             - 'Overview for Linux/BSD': 'compilation/linux-and-bsd.md'
             - 'Ubuntu': 'compilation/ubuntu.md'
