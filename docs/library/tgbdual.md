@@ -26,7 +26,7 @@ The TGB Dual core does not support using BIOS image files.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |   yes       | yes    | yes     |        -          | yes              | -             |
+|  yes  |   yes       | yes    | yes     |        -          | yes              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -36,8 +36,19 @@ The TGB Dual core does not support using BIOS image files.
 
 The TBG Dual core has a few options that can be tweaked from the core options menu. The default setting is bolded:
 
-- **GB Link Enable** (**disabled**/enabled) (restart): Emulates two Game Boy units side by side for multiplayer support.
+- **GB Link Enable (Restart)** (**Off**/On) (restart): Emulates two Game Boy units side by side for multiplayer support.
+
+??? note "*GB Link Enable - Enabled*"
+    ![gb_link_enable](images\Cores\tgbdual\gb_link_enable.png)
+
 - **Screen placement** (**horizontal**/vertical): Switches the screen layout for multiplayer support.
+
+??? note "*Horizontal*"
+    ![screen_placement_horizontal](images\Cores\tgbdual\screen_placement_horizontal.png)
+
+??? note "*Vertical*"
+    ![screen_placement_vertical](images\Cores\tgbdual\screen_placement_vertical.png)
+
 - **Switch player screens** (**normal**/switched): Switches the player screens for multiplayer support.
 - **Show player screens** (**both players**/player 1 only/player 2 only): Displays the selected player screens for multiplayer support.
 
@@ -75,4 +86,4 @@ Unknown
 
 * [Libretro Repository](https://github.com/libretro/tgbdual-libretro)
 * [Report Core Issues Here](https://github.com/libretro/libretro-meta)
-* [Official Website](http://gigo.retrogames.com/download.html) 
+* [Official Website](http://gigo.retrogames.com/download.html#tgb-dual)

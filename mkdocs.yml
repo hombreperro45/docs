@@ -125,3 +125,4 @@ markdown_extensions:
   - admonition
   - codehilite(linenums=true)
   - toc(permalink=Link)
+  - pymdownx.details

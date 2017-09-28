@@ -36,10 +36,21 @@ The Virtual Jaguar core does not feature BIOS use.
 
 The Virtual Jaguar core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **Fast Blitter** (**Off**/On): Use a faster, but less accurate blitter.
-- **Doom Res Hack** (**Off**/On): Needed for Doom to run in its correct resolution..
-- **Bios** (**Off**/On): Enables bios loading sequence.
-- **Pal (Restart)** (**Off**/On): Awaiting Description.
+- **Fast Blitter** (**Off**/On): this option will force Virtual Jaguar to use the older, less compatible yet faster blitter. Some games will not work properly with this option checked.
+- **Doom Res Hack** (**Off**/On): Needed for Doom to run in its correct resolution.
+
+??? note "*Doom Res Hack - Disabled*"
+    ![doom_res_hack_disabled](images\Cores\virtualjaguar\doom_res_hack_disabled.png)
+
+??? note "*Doom Res Hack - Enabled*"
+    ![doom_res_hack_disabled](images\Cores\virtualjaguar\doom_res_hack_enabled.png)
+
+- **Bios (Restart)** (**Off**/On): Enables bios loading sequence.
+
+??? note "*Bios - Enabled*"
+    ![Bios_enabled](images\Cores\virtualjaguar\Bios_enabled.png)
+
+- **Pal (Restart)** (**Off**/On): NTSC to PAL switch. Setting this to on switches to PAL mode.
 
 ## Controllers
 

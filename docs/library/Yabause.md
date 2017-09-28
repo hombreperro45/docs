@@ -18,17 +18,19 @@ GPLv2
 
 bin|cue|iso
 
+Yabause does not support cue files that point to multiple bin files. Convert multi-bin tracks to single-bin tracks for proper operation.
+
 ## BIOS
 
-|   Filename    |    Description     |              md5sum              |
-|:-------------:|:------------------:|:--------------------------------:|
-|saturn_bios.bin|  Sega Saturn BIOS  | af5828fdff51384f99b3c4926be27762 |
+|   Filename      |    Description     |              md5sum             |
+|:---------------:|:------------------:|:--------------------------------:|
+| saturn_bios.bin |  Sega Saturn BIOS  | af5828fdff51384f99b3c4926be27762 |
 
 ## Features
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |    no       |  no    |  no     |       no          |  yes             | -             |
+|  yes  |    no       |  no    |  no     |       no          |  yes             | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -38,7 +40,7 @@ bin|cue|iso
 
 The Yabause core has the following options that can be tweaked from the core options menu. The default setting is bolded. 
 
-- **8Frameskip** (**Off**/On): Frames are skipped when the CPU is unable to keep up a stable rate. 
+- **Frameskip** (**Off**/On): Frames are skipped when the CPU is unable to keep up a stable rate. 
 - **Force HLE BIOS (Restart)** (Off/**On**): HLE BIOS will be used even when a real BIOS file is present.
 - **Addon Cartridge (Restart)** (**none**/1M_ram/4M_ram): Allows switching between the various RAM cartridges released for the system.
 
@@ -56,7 +58,11 @@ The Yabause core supports four controller setting(s):
 
 * Multitap + Pad
 
+![yabause_multitap_pad](images\Controllers\yabause_multitap_pad.png)
+
 * Multitap + 3D Pad
+
+![yabause_multitap_3dpad](images\Controllers\yabause_yabause_multitap_3dpad.png)
 
 | Yabause     | Saturn Pad                                                     | Saturn 3D Pad |
 |-------------|----------------------------------------------------------------|---------------|

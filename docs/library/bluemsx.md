@@ -10,7 +10,6 @@ Author(s): Daniel Vik
 
 In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/bluemsx.md). Changes are proposed using "Pull Requests."
 
-
 ## License
 
 GPLv2
@@ -31,23 +30,32 @@ Copy the **Machines** & **Databases** folders, from an official blueMSX emulator
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|   -   |     -       |   -    |   -     |       no          |   no             | -             |
+|   -   |    no       |   no   |  no     |       no          |   no             | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        -        |   -    |    -    |   -    |    -     |       -       |
+|       yes        |  no   |   no    |  no    |   no     |      no       |
 
 ## Options
 
 The blueMSX core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **Machine Type** (**MSX**/MSXturboR/MSX2/MSX2+/SEGA-SG-1000/SEGA-SC-3000/SEGA-SF-7000/SVI-Spectravideo SVI-318/SVI-Spectravideo SVI-328/SVI-Spectravideo SVI-328 Mk2/ColecoVision/Coleco (SVI-Spectravideo SVI-603)):  `Select the machine type you would like the core to start in.` **(Restart Core)**
-- **Crop Overscan** (**Off**/On/MSX2): `Awaiting Description.`
-- **VDP Sync Type** (**Auto**/50Hz/60Hz): `Match the game/machine region frequency to avoid emulated speed issues` **(Restart Core)**
-- **Sound YM2413 Enable** (**Off**/On): `Sound YM2413 enable` **(Restart Core)**
-- **Cart Mapper Type** (**Auto**/normal/mirrored/basic/0x4000/0xC000/ascii8/ascii8sram/ascii16/ascii16sram/ascii16nf/konami4/konami4nf/konami5/konamisynth/korean80/korean90/korean126/MegaFlashRomScc/MegaFlashRomSccPlus/msxdos2/scc/sccexpanded/sccmirrored/sccplus/snatcher/sdsnatcher/SegaBasic/SG1000/SG1000Castle/SG1000RamA/SG1000RamB/SC3000/)
-: `Awaiting Description` **(Restart Core)**
+- **Machine Type (Restart)** (**MSX**/MSXturboR/MSX2/MSX2+/SEGA-SG-1000/SEGA-SC-3000/SEGA-SF-7000/SVI-Spectravideo SVI-318/SVI-Spectravideo SVI-328/SVI-Spectravideo SVI-328 Mk2/ColecoVision/Coleco (SVI-Spectravideo SVI-603)): Select the machine type you would like the core to start in. 
+- **Crop Overscan** (**Off**/On/MSX2): Forces cropping of overscanned frames
 
+??? note "*Crop Overscan Off*"
+    ![crop_overscan_off](images\Cores\bluemsx\crop_overscan_off.png)
+
+??? note "*Crop Overscan On*"
+    ![crop_overscan_on](images\Cores\bluemsx\crop_overscan_on.png)
+
+??? note "*Crop Overscan MSX2*"
+    ![crop_overscan_msx2](images\Cores\bluemsx\crop_overscan_msx2.png)
+
+- **VDP Sync Type (Restart)** (**Auto**/50Hz/60Hz): Match the game/machine region frequency to avoid emulated speed issues
+- **Sound YM2413 Enable (Restart)** (**Off**/On): Sound YM2413 enable
+- **Cart Mapper Type (Restart)** (**Auto**/normal/mirrored/basic/0x4000/0xC000/ascii8/ascii8sram/ascii16/ascii16sram/ascii16nf/konami4/konami4nf/konami5/konamisynth/korean80/korean90/korean126/MegaFlashRomScc/MegaFlashRomSccPlus/msxdos2/scc/sccexpanded/sccmirrored/sccplus/snatcher/sdsnatcher/SegaBasic/SG1000/SG1000Castle/SG1000RamA/SG1000RamB/SC3000/)
+: 
 ## Controllers
 
 The blueMSX core supports 3 controller setting(s):

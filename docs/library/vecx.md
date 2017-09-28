@@ -26,21 +26,27 @@ The vecx core does not feature BIOS use.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |   yes       | yes    |  no     |        -          |  no              | -             |
+|  yes  |   yes       | yes    |  no     |       no          |  no              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        -        |  no    |   no    |  no    |   no     |      no       |
+|      yes        |  no    |   no    |  no    |   no     |      no       |
 
 ## Options
 
 The vecx core has the following options that can be tweaked from the core options menu. The default setting is bolded. 
 
-- **Res Multiplier** (**1**-4): -
+- **Res Multiplier** (**1**-4)
+
+??? note "*Res Multiplier - 1*"
+    ![res_multiplier_1](images\Cores\vecx\res_multiplier_1.png)
+
+??? note "*Res Multiplier - 4*"
+    ![res_multiplier_4](images\Cores\vecx\res_multiplier_4.png)
 
 ## Controllers
 
-The vecx core supports controller setting:
+The vecx core supports one controller setting:
 
 * RetroPad
 
@@ -72,4 +78,4 @@ Unknown
 
 * [Libretro Repository](https://github.com/libretro/libretro-vecx)
 * [Report Core Issues Here](https://github.com/libretro/libretro-meta/issues)
-* [Official GitHub Repository of SDL Port](https://github.com/jhawthorn/vecx)
+* [Official GitHub Repository of the SDL port](https://github.com/jhawthorn/vecx)

@@ -20,17 +20,19 @@ gb|bin|rom
 
 ## BIOS
 
-The Emux core does not feature BIOS use.
+|   Filename    |    Description                 |              md5sum              |
+|:-------------:|:------------------------------:|:--------------------------------:|
+| DMG_ROM.bin   | Game Boy Boot ROM - Required       | 32fbbd84168d3482956eb3c5051637f5 |
 
 ## Features
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |     -       |   -    |   -     |        -          |   -              | -             |
+|  yes  |     no      |   no   |  no     |        -          |   -              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        -        |   -    |    -    |  no    |   no     |       -       |
+|      yes        |  no    |   no    |  no    |   no     |      no       |
 
 ## Options
 

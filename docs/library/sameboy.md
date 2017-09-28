@@ -20,17 +20,22 @@ gb|gbc
 
 ## BIOS
 
-The SameBoy core does not feature BIOS use.
+ The SameBoy core has reverse engineered Game Boy/Game Boy Color boot ROMs baked into the core itself so real BIOS files aren't required. If you’d like to override this, you can place the following BIOS files in RetroArch's system directory.
+
+|   Filename   |      Description                |              md5sum              |
+|:------------:|:-------------------------------:|:--------------------------------:|
+| dmg_boot.bin | Game Boy boot ROM - Optional       | 32fbbd84168d3482956eb3c5051637f5         |
+| cgb_boot.bin | Game Boy Color boot ROM - Optional | dbfce9db9deaa2567f6a84fde55f9680         |
 
 ## Features
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  -    |    no       |  no    |  no     |        -          |   -              | no            |
+|  no   |    no       |  no    |  no     |        -          |   no             | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|       no        |  no    |   no    |  no    |    no     |       -      |
+|       no        |  no    |   no    |  no    |    no     |      no      |
 
 ## Options
 
