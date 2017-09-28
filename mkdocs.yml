@@ -22,6 +22,10 @@ pages:
       - 'Game Boy Advance (VBA-M)': 'library/vbam.md'
       - 'Game Boy Advance (VBA Next)': 'library/vba_next.md'
       - 'MSX/SVI/ColecoVision/SG-1000 (blueMSX)': 'library/bluemsx.md'
+      - 'Neo Geo Pocket/Color (Beetle NeoPop)': 'library/beetle_ngp.md'
+      - 'PC Engine/PCE-CD (Beetle PCE FAST)': 'library/beetle_pce_fast.md'
+      - 'PC-FX (Beetle PC-FX)': 'library/beetle_pcfx.md'
+      - 'PlayStation (Beetle PSX)': 'library/beetle_psx.md'
       - 'PlayStation (Beetle PSX HW)': 'library/beetle_psx_hw.md'
       - 'Sega MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
@@ -31,13 +35,22 @@ pages:
             - 'OSX/PowerPC': 'compilation/osxppc.md'
             - 'OSX/macOS': 'compilation/osx.md'
             - 'iOS': 'compilation/ios.md'
+         - 'Android': 'compilation/android.md'
          - Linux and BSD:
             - 'Overview for Linux/BSD': 'compilation/linux-and-bsd.md'
             - 'Ubuntu': 'compilation/ubuntu.md'
          - Microsoft:
             - 'DOS': 'compilation/dos.md'
-            - 'Windows 98/2000 (MSVC)': 'compilation/windows98.md'
-            - 'Windows XP and later (MSVC)': 'compilation/windowsXP.md'
+            - Windows NT3.51:
+              - 'MSVC Commandline': 'compilation/windowsNT351-msvc-cmdline.md'
+            - Windows 95/NT4:
+              - 'MSVC Commandline': 'compilation/windows95-msvc-cmdline.md'
+            - Windows 98/2000:
+              - 'MSVC Commandline': 'compilation/windows98-msvc-cmdline.md'
+              - 'MSVC IDE': 'compilation/windows98.md'
+            - Windows XP and later:
+              - 'MSVC Commandline': 'compilation/windowsXP-msvc-cmdline.md'
+              - 'MSVC IDE': 'compilation/windowsXP.md'
             - 'Windows Vista and later (MSYS2)': 'compilation/windows.md'
             - 'Xbox': 'compilation/xbox.md'
             - 'Xbox 360': 'compilation/xbox360.md'
@@ -98,7 +111,7 @@ pages:
             - 'Windows': 'guides/windows.md'
             - 'Command-line interface (CLI)': 'guides/cli-intro.md'
          - Creating a Theme: 'guides/themes.md'
-         - Input Drivers: 'guides/input-drivers.md'
+         - Input and Joypad Drivers: 'guides/input-joypad-drivers.md'
          - Linux KMS Mode: 'guides/kms-mode.md'
          - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
          - RGUI Interface: 'guides/RGUI.md'
