@@ -1,11 +1,11 @@
 # Understanding RetroArch Settings Systems
 
-There are various and comprehensive ways to save customized settings within the RetroArch menus. All the settings files are plain text and can be adjusted manually with a text editor.
+There are various and comprehensive ways to save customized settings within the RetroArch menus. 99% of settings can be adjusted and saved from the menu but are only plain text files and can be adjusted manually with a text editor.
 
 - Global settings can be overridden on a per core or per game basis, with the config override system.
 - Input settings are handled separately with the input core and game Remap system.
-- Likewise Shader Preset settings are also their own entity for per core and per game settings
-- A standalone file also saves the Option settings for all cores that support them. The settings is this file can be overridden on a per game basis.
+- Likewise Shader Preset settings are also their own entity for per core and game settings
+- A standalone file also saves the Option settings for all cores that support them. The settings in this file can be overridden on a per game basis.
 
 !!! tip
     Please read the [Getting Started](windows.md) guide.
@@ -18,11 +18,13 @@ There are various and comprehensive ways to save customized settings within the 
 
 ## Logic
 
-### Overrides (.cfg) & Remaps (.rmp)
+### Overrides *(.cfg)* & Remaps *(.rmp)*
 
-Overrides and Remaps are designed to be a lightweight easily maintained configuration method. They save only the settings that differ from the preceding settings files. For example if only one setting differs between your `retroarch.cfg` and a `"core".cfg`, then the `"core.cfg"` file will only contain one setting.
+Overrides and Remaps are designed to be a lightweight easily maintained configuration method. They save only settings that differ from the preceding settings files.
 
-The process RetroArch loads configurations is:-
+For example if only one setting differs between your `retroarch.cfg` and a `"core".cfg`, then the `"core.cfg"` file will only contain one setting.
+
+The RetroArch loading process is:-
 
 - Load `retroarch.cfg`
     - Apply `"name-of-core".cfg` & `"name-of-core".rmp` override
@@ -31,9 +33,9 @@ The process RetroArch loads configurations is:-
 !!! note
     Core specific overrides that are not in game specific overrides persist and will be loaded.
 
-### Options (.opt) & Shader Presets (.cgp|.glslp|.slangp)
+### Options *(.opt)* & Shader Presets *(.cgp|.glslp|.slangp)*
 
-Custom per game core options and shader presets work slightly different. These are a full configuration and are loaded instead of the base settings.
+Custom per game core options and shader presets work slightly different. These are full configurations and are loaded instead of the base settings.
 
 ## Configuartion Files & Location
 
@@ -41,25 +43,25 @@ Custom per game core options and shader presets work slightly different. These a
     Depending on your chosen platform the location of these files after installation may vary.
 
 !!! warning
-    Some settings cannot be saved in an override file from the menu. Full details found below. You can manually add settings to the override file to workaround most situations.
+    Some settings cannot be saved in an override file from the menu. You can manually add settings to the override file to workaround most situations.
 
 
 **The default and global settings file**
 
-- `retroarch.cfg`  (located in the base install path)
+- `retroarch.cfg`  *(located in the base install path)*
 
 **The global file for core option settings, for cores that support options**
 
-- `retroarch-core-options.cfg` (located with the `retroarch.cfg`)
+- `retroarch-core-options.cfg` *(located with the `retroarch.cfg`)*
 
 ### Core options
 
-- "name-of-game.opt" **If not found load**
-    - retroarch-core-options.cfg
+- `"name-of-game.opt"` **If not found load**
+    - `retroarch-core-options.cfg`
 
-The options files list the settings found under `Quick Menu->Options`. The `retroarch-core-options.cfg` is created automatically on loading a core that supports Options.
+The options files list the settings found under `Quick Menu -> Options`. The `retroarch-core-options.cfg` is created automatically on loading a core that supports Options.
 
-A game specific options file is created when you select `Quick Menu->Options->Game-options file`. (located in "/config/"corename"/"name-of-game.opt". The path is set under `Settings->Directory->Config`)
+A game specific options file is created when you select `Quick Menu -> Options -> Game-options file`. *(located in "/config/"corename"/"name-of-game.opt". The path is set under `Settings->Directory->Config`)*
 
 ### Override Configs
 
@@ -73,44 +75,31 @@ The override system activates on loading of content. RetroArch looks for configs
 
 **Per Core Override**
 
-- `"name-of-core".cfg` (located in "/config/"corename"/"name-of-core.cfg". This path is set under `Settings->Directory->Config`)
+- `"name-of-core".cfg` *(located in "/config/"corename"/"name-of-core.cfg". This path is set under `Settings->Directory->Config`)*
 
-These settings files are created from the `Quick Menu->Save Core Overrides` option and contain ANY (supported) settings you have changed since loading content. These settings will be loaded every time you load content with that core.   
+These settings files are created from the `Quick Menu -> Save Core Overrides` option and contain ANY (supported) settings you have changed since loading content. These settings will be loaded every time you load content with that core.   
 
 **Per Game Override**
 
-- `"name-of-game".cfg` (located with per core override file)
+- `"name-of-game".cfg` *(located with per core override file)*
 
-These settings files are created as above with the `Quick Menu->Save Game Overrides`. The settings will take precedence over `"name-of-core".cfg`
+These settings files are created as above with the `Quick Menu -> Save Game Overrides`. The settings will take precedence over `"name-of-core".cfg`
 
 ### Input Remaps
 
-Input remaps use the same logic as core/game overrides and use the `.rmp` extension. They can be adjusted and saved from `Quick Menu->Controls->Save Game or Core Remap`. Set the save directory in `Settings->Directory->Input Remapping` (by default they will save to /config/remaps/"name-of-core"/"name-of-core/game".rmp) 
+Input remaps use the same logic as core/game overrides and use the `.rmp` extension. They can be adjusted and saved from `Quick Menu -> Controls -> Save Game or Core Remap`. Set the save directory in `Settings -> Directory -> Input Remapping` *(by default they will save to /config/remaps/"name-of-core"/"name-of-core/game".rmp)*
 
 
 ### Shader Presets
 
-To be written
+Shader Presets are combinations of one or more shaders. They can be adjusted and saved from `Quick Menu -> Shaders -> Save Core/Game Preset`. Set the save directory in `Settings -> Directory -> Video Shader` *(by default they will save to /shaders/presets/"name-of-core"/"name-of-core/game".cgp|glslp|slangp)*
 
+In addition to this you can save custom non core/game specific shader presets from `Quick Menu -> Shaders -> Save Shader Preset As`*(by default this will save to the shader directory set in* `Settings -> Directory -> Video Shader` *under "name-you-assigned .cgp|glslp|slangp)*
 
-### Options
+So if you create your "perfect" combination of shaders you can recall this with `Quick Menu -> Shaders -> Load Shader Preset` then continue on to save it as a core or game preset. This will save time if using the same preset for multiple games or cores.
 
-1. Game options
-2. Core options
+There are plenty of user created default presets that come bundled with the RetroArch installation and these can be updated from `Main Menu -> Online Updater -> Update Cg|Glsl|Slang Shaders`
 
-### Configurations
+[Example Screenshots](https://buildbot.libretro.com/docs/shader/introduction.md)
 
-1. Game Overrides
-2. Core Overrides
-3. Main Configurations
-
-### Inputs
-
-1. Game Remap
-2. Core Remap
-3. Main User Binds
-
-### Shaders
-
-1. Game Preset
-2. Core Preset
+Explore the navigation bar
