@@ -9,9 +9,23 @@ It has been integrated into RetroArch.
 !!! warning
     The service is not maintained by RetroArch or the Libretro team.
 
+
 ## Get Set Up
 
 Follow this [Quick Guide](http://www.retroarch.com/index.php?page=achievements) to get them activated in RetroArch.
+
+
+## Recommended Cores
+
+* **NES:** FCEUmm and QuickNES
+* **Mega Drive / Genesis:** Genesis Plus GX and picodrive
+* **SNES:** Snes9x 2010
+* **Game Boy / Game Boy Color:** gambatte
+* **Game Boy Advance:** mGBA and VBA-M
+* **PC Engine:** Beetle PCE Fast
+* **Master System:** Genesis Plus GX and picodrive
+* **Nintendo 64:** Mupen 64 plus and Parallel N64
+
 
 ## Compatible Cores
 
@@ -26,7 +40,6 @@ This is an attempt to make a compatibility list of libretro cores and RetroAchie
 
 * QuickNES
 * FCEUmm
-* Nestopia
 
 ### MegaDrive / Genesis
 
@@ -43,12 +56,10 @@ This is an attempt to make a compatibility list of libretro cores and RetroAchie
 ### Game Boy / Game Boy Color
 
 * gambatte
-* mGBA
 
 ### Game Boy Advance
 
 * mGBA
-* VBA Next
 * VBA-M
 
 ### PC Engine
@@ -65,124 +76,85 @@ This is an attempt to make a compatibility list of libretro cores and RetroAchie
 * Mupen 64 plus
 * Parallel N64
 
-## Recommended Cores
-
-
-* **NES:** FCEUmm and QuickNES
-* **Mega Drive / Genesis:** Genesis Plus GX and picodrive
-* **SNES:** Snes9x 2010
-* **Game Boy / Game Boy Color:** gambatte
-* **Game Boy Advance:** mGBA and VBA-M
-* **PC Engine:** Beetle PCE Fast
-* **Master System:** Genesis Plus GX and picodrive
-* **Nintendo 64:** Mupen 64 plus and Parallel N64
 
 ## Core Specific details
 
 ### NES
 
-#### QuickNES
-
-[from this repository](https://github.com/libretro/QuickNES_Core)
+#### [QuickNES](https://github.com/libretro/QuickNES_Core)
 
 **Works.**
 
 !!! note
     There's a [known issue](https://github.com/libretro/RetroArch/issues/3973) with QuickNES on Android (not related to RetroAchievements); in the impossibility of using QuickNES it is recommended to use FCEUmm).
 
-#### FCEUmm
-
-[from this repository](https://github.com/libretro/libretro-fceumm)
+#### [FCEUmm](https://github.com/libretro/libretro-fceumm)
 
 **Works.**
 
-#### Nestopia
-
-[from this repository](https://github.com/libretro/nestopia)
+#### [Nestopia](https://github.com/libretro/nestopia)
 
 **Doesn't work.**
 
 ### MegaDrive/Genesis
 
-#### picodrive
-
-[from this repository](https://github.com/libretro/picodrive)
+#### [picodrive](https://github.com/libretro/picodrive)
 
 **Works.**
 
-#### Genesis Plus GX
-
-[from this repository](https://github.com/libretro/Genesis-Plus-GX)
+#### [Genesis Plus GX](https://github.com/libretro/Genesis-Plus-GX)
 
 **Works.**
 
 ### SNES
 
-#### Snes9x 2010
-
-previously called SNES9x Next, [from this repository](https://github.com/libretro/snes9x2010)
+#### [Snes9x 2010](https://github.com/libretro/snes9x2010) *(previously called SNES9x Next)*
 
 **Works.**
 
-#### Snes9x 2005
-
-previously called CAT SFC, [from this repository](https://github.com/libretro/snes9x2005)
+#### [Snes9x 2005](https://github.com/libretro/snes9x2005) *(previously called CAT SFC)*
 
 **Untested.**
 
-#### Snes9x 2002
-
-previously called PocketSNES, [from this repository](https://github.com/libretro/snes9x2002)
+#### [Snes9x 2002](https://github.com/libretro/snes9x2002) *(previously called PocketSNES)*
 
 **Works.**
 
-#### Snes9x
-
-[from this repository](https://github.com/libretro/snes9x)
+#### [Snes9x](https://github.com/libretro/snes9x)
 
 **Partially Supported**
 
 ### Game Boy/Game Boy Color
 
-#### gambatte
-
-[from this repository](https://github.com/libretro/gambatte-libretro)
+#### [gambatte](https://github.com/libretro/gambatte-libretro)
 
 **Works.**
 
-#### mGBA
+#### [mGBA](https://github.com/libretro/mgba)
 
-[from this repository](https://github.com/libretro/mgba)
+**Doesn't work.**
 
-Although mGBA can play Game Boy/Game Boy Color ROMs, it does NOT support cheevos for these systems (only for Game Boy Advance).
+Although mGBA can emulate Game Boy/Game Boy Color, it does NOT support cheevos for these systems (only for Game Boy Advance).
 
 ### Game Boy Advance
 
-#### mGBA
-
-[from this repository](https://github.com/libretro/mgba)
+#### [mGBA](https://github.com/libretro/mgba)
 
 **Works.**
 
-#### VBA next
-
-[from this repository](https://github.com/libretro/vba-next)
+#### [VBA next](https://github.com/libretro/vba-next)
 
 **Doesn't work OK.**
 
 "vba-next doesn't support the memory map interface, so achievements won't work ok with it." - @leiradel
 
-#### VBA-M
-
-[from this repository](https://github.com/libretro/vbam-libretro)
+#### [VBA-M](https://github.com/libretro/vbam-libretro)
 
 **Seems to be working fine, but need more tests.**
 
 ### PC Engine
 
-#### Beetle PCE Fast
-
-[from this repositor](https://github.com/libretro/beetle-pce-fast-libretro)
+#### [Beetle PCE Fast](https://github.com/libretro/beetle-pce-fast-libretro)
 
 **Works.**
 
@@ -190,17 +162,13 @@ Although mGBA can play Game Boy/Game Boy Color ROMs, it does NOT support cheevos
 
 In April 2017 RetroAchievements.org people started to add some cheevos for Sega Master System.
 
-#### picodrive
-
-[from this repository](https://github.com/libretro/picodrive)
+#### [picodrive](https://github.com/libretro/picodrive)
 
 It seems to be working fine after the fix picodrive received in 18-April-2017.
 
 **Works.**
 
-#### Genesis Plus GX
-
-[from this repository](https://github.com/libretro/Genesis-Plus-GX)
+#### [Genesis Plus GX](https://github.com/libretro/Genesis-Plus-GX)
 
 **Works.**
 
@@ -208,17 +176,13 @@ It seems to be working fine after the fix picodrive received in 18-April-2017.
 
 In April 2017 RetroAchievements.org people started to add some cheevos for Nintendo 64.
 
-#### Mupen 64 plus
-
-[from this repository](https://github.com/libretro/mupen64plus-libretro)
+#### [Mupen 64 plus](https://github.com/libretro/mupen64plus-libretro)
 
 This core got a fix in 8-July-2017 and seems to be working fine with cheevos.
 
 **Works.**
 
-#### Parallel N64
-
-[from this repository](https://github.com/libretro/parallel-n64)
+#### [Parallel N64](https://github.com/libretro/parallel-n64)
 
 This core got a fix in 8-July-2017 and seems to be working fine with cheevos.
 
