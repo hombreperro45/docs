@@ -1,4 +1,7 @@
 site_name: Libretro Docs
+repo_name: 'libretro/docs'
+repo_url: 'https://github.com/libretro/docs'
+edit_uri: 'tree/master/docs'
 pages:
    - About: 'index.md'
    - Core Library:
