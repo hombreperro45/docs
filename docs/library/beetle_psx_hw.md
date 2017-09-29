@@ -38,7 +38,7 @@ cue|toc|m3u|ccd|exe|pbp|chd
 
 ## Running
 
-To run this core, The PSX BIOS must be placed in RetroArch's system directory.
+To run this core, The appropriate PSX BIOS must be placed in RetroArch's system directory.
 
 ## Loading content
 
@@ -129,75 +129,58 @@ The Beetle PSW HW core has the following options that can be tweaked from the co
 - **Software framebuffer** (Off/**On**): If off, the software renderer will skip some steps. Potential speedup. Causes bad graphics when doing framebuffer readbacks.
 - **Adaptive smoothing** (Off/**On**): When upscaling, smooths out 2D elements while keeping 3D elements sharp. Vulkan renderer only at the moment.
 
-Adapative smoothing - Off
+??? note "*Adapative smoothing - Off*"
+    ![adaptive_smoothing_off]((images\Cores\beetle_psx_hw\adaptive_smoothing_off.png)
 
-Adaptive smoothing - On
+??? note "*Adaptive smoothing - On*"
+    ![adaptive_smoothing_on]((images\Cores\beetle_psx_hw\adaptive_smoothing_on.png)
 
 - **Internal GPU Resolution** (**1x(native)**/2x/4x/8x/16x/32x): Graphics upscaling.
 
 ??? note "*Internal GPU Resolution - 1x*"
     ![internal_gpu_resolution_1](images\Cores\beetle_psx_hw\internal_gpu_resolution_1.png)
 
-??? note"*Internal GPU Resolution - 2x*"
+??? note "*Internal GPU Resolution - 2x*"
     ![internal_gpu_resolution_2](images\Cores\beetle_psx_hw\internal_gpu_resolution_2.png)
 
 - **Texture filtering** (**nearest**/SABR/xBR/bilinear/3-point/JINC2): Per-texture filtering. OpenGL only at the moment. 
 
-Texture filtering -
+??? note "*nearest*"
+    ![nearest](images\Cores\beetle_psx_hw\nearest.png)
+
+??? note "*SABR*"
+    ![nearest](images\Cores\beetle_psx_hw\SABR.png)
+
+??? note "*xBR*"
+    ![nearest](images\Cores\beetle_psx_hw\xBR.png)
+
+??? note "*bilinear*"
+    ![nearest](images\Cores\beetle_psx_hw\bilinear.png)
+
+??? note "*3-point*"
+    ![nearest](images\Cores\beetle_psx_hw\3-point.png)
+
+??? note "*JINC2*"
+    ![nearest](images\Cores\beetle_psx_hw\JINC2.png)
 
 - **Internal color depth** (**dithered 16bpp (native)**/32bpp): PSX had 16bpp depth, beetle-psx can go up to 32bpp. OpenGL only at the moment. Vulkan always uses 32bpp.
-
-Internal color depth - 
-
-- **Wireframe mode** (**Off**/On ): For debug use. Shows only the outlines of polygons. OpenGL only.
-- **Display full VRAM** (**Off**/On): Everything in VRAM is drawn on screen.
+- **Wireframe mode** (**Off**/On ): Shows only the outlines of polygons. OpenGL only. For debug use.
+- **Display full VRAM** (**Off**/On): Everything in VRAM is drawn on screen. For debug use.
 - **PGXP operation mode** (**Off**/memory only/memory + cpu ): When not off, floating point coordinates will be used for vertex positions, to avoid the PSX polygon jitter. 'memory + cpu' mode can further reduce jitter at the cost of performance and geometry glitches.
-
--
-
 - **PGXP vertex cache** (**Off**/On): Maintains a cache for vertices. May result in better performance but can result in graphics glitches in most games.
-
--
-
 - **PGXP perspective correct texturing** (**Off**/On): Original PSX did affine texture mapping, resulting in e.g. crooked lines across walls. This fixes it.
-
--
-
 - **Widescreen mode hack** (**Off**/On): If on, renders in 16:9. Works best on 3D games. 
-
--
-
 - **Frame duping (speedup)** (**Off**/On): Redraws/reuses the last frame if there was no new data.
 - **CPU Overclock** (**Off**/On): Gets rid of memory access latency and makes all GTE instructions have 1 cycle latency.
 - **Skip BIOS** (**Off**/On): Self-explanatory. Some games have issues when enabled.
-
--
-
 - **Dithering pattern** (**1x(native)**/internal resolution/Off): If off, disables the dithering pattern the PSX applies to combat color banding. OpenGL only. Vulkan always disables the pattern.
-
--
-
 - **Display internal FPS** (**Off**/On): Shows the frame rate at which the emulated PSX is drawing at. Onscreen Notifications must be enabled in the RetroArch Onscreen Display Settings.- **Initial scanline** (**0** - 40): Sets the first scanline to be drawn on screen.
 - **Last scanline** (210 - **239**): Sets the last scanline to be drawn on screen.
 - **Initial scanline PAL** (**0** - 40): Sets the first scanline to be drawn on screen for PAL systems.
--
-
 - **Last scanline PAL** (260 - **287**): Sets the last scanline to be drawn on screen for PAL systems.
-
--
-
 - **Crop Overscan** (Off/**On**):  Self-explanatory.
-
--
-
 - **Additional Cropping** (**Off**/1 px - 8 px): Self-explanatory.
-
--
-
 - **Offset Cropped Image** (**Off**/ -4 px - 4 px): Self-explanatory.
-
--
-
 - **Analog self-calibration** (**Off**/On): Monitors the max values reached by the input, using it as a calibration heuristic which then scales the analog coordinates sent to the emulator accordingly. For best results, rotate the sticks at max amplitude for the algorithm to get a good estimate of the scaling factor, otherwise it will adjust while playing.
 - **DualShock Analog button toggle** (**Off**/On): Toggles the Analog button from DualShock controllers, if disabled analogs are always on, if enabled you can toggle their state by pressing and holding START+SELECT+L1+L2+R1+R2.
 - **Port 1: Multitap enable** (**Off**/On): Enables/Disables multitap functionality on port 1.

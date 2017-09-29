@@ -30,37 +30,34 @@ cue|ccd|toc
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-| Yes   |    Yes      |  Yes   |  Yes    |        -          |   No             | -             |
+| yes   |    yes      |  yes   |  yes    |       no          |   no             | no            |
 
 | Controllers     | Multi Mouse | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:-----------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|      Yes        |      -      |   No   |   No    |   No   |   No     |     No        |
+|      yes        |      -      |   no   |   no    |   no   |   no     |     no        |
 
 ## Options
 
 The (Beetle PC-FX) core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **High Dotclock Width** (**1024**/256/341): Description. **Restart**
-- **Suppress Channel Reset Clicks** (**On**/Off): Description. **Restart**
-- **Emulate Buggy Codec** (**Off**/On): Description. **Restart**
-- **Sound Quality** (**3**/1-5): Description. **Restart**
-- **Chroma channel bilinear interpolation** (**Off**/On): Description. **Restart**
-- **No Sprite Limit** (**Off**/On): Description. **Restart**
-- **Initial Scanline** (**4**/0-40): Set initial scanline position.
-- **Last Scanline** (**235**/208-239): Set last scanline position.
+- **High Dotclock Width (Restart)** (**1024**/256/341): Emulated width for 7.16MHz dot-clock mode. Lower values are faster, but will cause some degree of pixel distortion.
+- **Suppress Channel Reset Clicks (Restart)** (**On**/Off): Hack to suppress clicks caused by forced channel resets.
+- **Emulate Buggy Codec (Restart)** (**Off**/On): 	Hack that emulates the codec a buggy ADPCM encoder used for some games' ADPCM..
+- **Sound Quality (Restart)** (**3**/1-5): Higher values correspond to better SNR and better preservation of higher frequencies("brightness"), at the cost of increased computational complexity and a negligible increase in latency.
+- **Chroma channel bilinear interpolation (Restart)** (**Off**/On): Enable bilinear interpolation on the chroma channel of RAINBOW YUV output. Enabling it may cause graphical glitches with some games.
+- **No Sprite Limit (Restart)** (**Off**/On): Remove 16-sprites-per-scanline hardware limit. 
+- **Initial Scanline** (**4**/0-40): Set initial rendered scanline position.
+- **Last Scanline** (208-**235**-239): Set last rendered scanline position.
 
 ## Controllers
 
 The (Beetle PC-FX) core supports 2 controller setting(s):
 
 * PC-FX Controller
+
 * PC-FX Mouse
 
-* RetroPad
-
-![retropad](images/controllers/retropad.png)
-
-| Core Name | [RetroPad](RetroPad)                                           |
+| Beetle PC-FX | [RetroPad](RetroPad)                                        |
 |-----------|----------------------------------------------------------------|
 |    II     | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
 |    IV     | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |

@@ -18,7 +18,8 @@ GPLv2
 
 bin|cue|iso
 
-Yabause does not support cue files that point to multiple bin files. Convert multi-bin tracks to single-bin tracks for proper operation.
+!!! note
+    Yabause does not support cue files that point to multiple bin files. Convert multi-bin tracks to single-bin tracks for proper operation.
 
 ## BIOS
 
