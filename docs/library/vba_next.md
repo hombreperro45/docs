@@ -22,13 +22,13 @@ gba
 
 |   Filename    |    Description        |              md5sum              |
 |:-------------:|:---------------------:|:--------------------------------:|
-|gba_bios.bin   |Game Boy Advance Image - Required | a860e8c0b6d573d191e4ec7db1b1e4f6 |
+|gba_bios.bin   |Game Boy Advance Image - Optional | a860e8c0b6d573d191e4ec7db1b1e4f6 |
 
 ## Features
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |    yes      | yes    |  no     |        -          | yes              | -             |
+|  yes  |    yes      | yes    |  no     |       no          | yes              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -38,7 +38,7 @@ gba
 
 The VBA-Next core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **Use Bios (if available)** (**On**/Off): Will use an available Bios
+- **Use Bios (if available) (Restart required)** (**On**/Off): Will use gba.bios.bin in the system directory if available
 
 ## Controllers
 

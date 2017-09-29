@@ -38,7 +38,7 @@ lnx
 
 The Handy core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **Display Rotation** (**None**/90/240): Rotates the display.
+- **Display Rotation (Restart required)** (**None**/90/240): Rotates the display.
 
 ## Controllers
 

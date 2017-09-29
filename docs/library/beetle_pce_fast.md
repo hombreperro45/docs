@@ -21,19 +21,12 @@ pce|cue|ccd|iso|img|bin|chd
 
 ## BIOS
 
-**Required**
-
 |   Filename    |    Description     |              md5sum              |
 |:-------------:|:------------------:|:--------------------------------:|
-| syscard3.pce  |     PCE-CD BIOS    | 38179df8f4ac870017db21ebcbf53114 |
-
-**Optional**
-
-|   Filename    |    Description     |              md5sum              |
-|:-------------:|:------------------:|:--------------------------------:|
-| syscard1.pce  |     PCE-CD BIOS    |                                  |
-| syscard2.pce  |     PCE-CD BIOS    |                                  |
-| gexpress.pce  |     PCE-CD BIOS    |                                  |
+| syscard3.pce  |     PCE-CD BIOS - Required    | 38179df8f4ac870017db21ebcbf53114 |
+| syscard1.pce  |     PCE-CD BIOS - Optional    |                                  |
+| syscard2.pce  |     PCE-CD BIOS - Optional    |                                  |
+| gexpress.pce  |     PCE-CD BIOS - Optional    |                                  |
 
 !!! note
     Any CD-ROM System BIOS will work, but some them are known to be incompatible with certain games.
@@ -42,23 +35,23 @@ pce|cue|ccd|iso|img|bin|chd
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-| Yes   |    Yes      |  Yes   |  Yes    |        -          |   No             | -             |
+| yes   |    yes      |  yes   |  yes    |        -          |   no             | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|      Yes        |  No    |   No    |  No    |   No     |       No      |
+|      yes        |  no    |   no    |  no    |   no     |       no      |
 
 ## Options
 
 The (Beetle PCE Fast) core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **CD Image Cache** (**On**/Off): **Restart** Caches the entire CD image. Can potentially decrease loading times at the cost of increased startup time.
-- **CD Bios** (**System Card 3**/System Card 2/System Card 1/Game Express): **Restart** Select required BIOS
-- **No Sprite Limit** (**Off**/On): **Restart** Disables the sprite limit.
-- **CPU Overclock Multiplier** (**1**/1-50): **Restart** Description.
+- **CD Image Cache (Restart)** (**On**/Off): Caches the entire CD image. Can potentially decrease loading times at the cost of increased startup time.
+- **CD Bios (Restart)** (**System Card 3**/System Card 2/System Card 1/Game Express): Select required BIOS
+- **No Sprite Limit (Restart)** (**Off**/On): Disables the sprite limit.
+- **CPU Overclock Multiplier (Restart)** (**1**/1-50): Description.
 - **Horizontal Overscan (352 Width Mode Only)** (**352**/300-352): Description.
-- **Initial scanline** (**3**/0-40): Position of the initial scanline.
-- **Last scanline** (**242**/208-242): Position of the last scanline.
+- **Initial scanline** (**3**/0-40): Position of the rendered initial scanline.
+- **Last scanline** (**242**/208-242): Position of the rendered last scanline.
 - **(CD) CDDA Volume %** (**100**/0-200): Volume of the CDDA.
 - **(CD) ADPCM Volume %** (**100**/0-200): Volume of the ADPCM.
 - **(CD) PSG Volume %** (**100**/0-200): Volume of the CD PSG.
@@ -71,10 +64,8 @@ The (Beetle PCE Fast) core has the following options that can be tweaked from th
 
 The (Beetle PCE Fast) core supports 2 controller setting(s):
 
-- PC-Engine Joypad: PC-Engine Controller
-- Mouse: PCE Mouse
-
-* RetroPad
+* PCE Joypad
+* Mouse
 
 ![retropad](images/controllers/retropad.png)
 
