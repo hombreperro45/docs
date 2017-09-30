@@ -111,7 +111,7 @@ pages:
       - 'xsal': 'shader/xsal.md'
       - 'xsoft': 'shader/xsoft.md'
     - User Guides:
-       - RetroArch:
+      - RetroArch:
           - Getting Started:
              - 'Windows': 'guides/windows.md'
              - 'Command-line interface (CLI)': 'guides/cli-intro.md'
