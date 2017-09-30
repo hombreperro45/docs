@@ -3,8 +3,8 @@ repo_name: 'libretro/docs'
 repo_url: 'https://github.com/libretro/docs'
 edit_uri: 'tree/master/docs'
 pages:
-   - About: 'index.md'
-   - Core Library:
+    - About: 'index.md'
+    - Core Library:
       - '2048': 'library/2048.md'
       - '3DO (4DO)': 'library/4DO.md'
       - 'Arcade (MAME 2003)': 'library/mame2003.md'
@@ -35,7 +35,7 @@ pages:
       - 'Sega MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
       - 'Vectrex (vecx)': 'library/vecx.md'
-   - Build RetroArch & Cores:
+    - Build RetroArch & Cores:
          - Apple:
             - 'OSX/PowerPC': 'compilation/osxppc.md'
             - 'OSX/macOS': 'compilation/osx.md'
@@ -68,16 +68,16 @@ pages:
             - 'PlayStation3': 'compilation/ps3.md'
             - 'PlayStation Portable': 'compilation/psp.md'
             - 'PlayStation Vita/TV': 'compilation/psvita.md'
-   - Specifications:
+    - Specifications:
       - 'Libretro': 'specs/api.md'
       - 'RetroPad': 'specs/retropad.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
-   - Technical:
+    - Technical:
       - RetroArch:
          - 'Netplay': 'tech/netplay.md'
          - 'Network Control Interface': 'tech/network-control-interface.md'
-   - Shader Previews:
+    - Shader Previews:
       - 'Introduction': 'shader/introduction.md'
       - '3dfx': 'shader/3dfx.md'
       - 'antialiasing': 'shader/antialiasing.md'
