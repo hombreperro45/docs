@@ -112,23 +112,23 @@ pages:
       - 'xsoft': 'shader/xsoft.md'
     - User Guides:
       - RetroArch:
-          - Getting Started:
-             - 'Windows': 'guides/windows.md'
-             - 'Command-line interface (CLI)': 'guides/cli-intro.md'
-             - 'Custom Settings': 'guides/overrides.md'
-          - Interface:
-             - Creating a Theme: 'guides/themes.md'
-             - RGUI Interface: 'guides/RGUI.md'
-          - Feature Specific:
-             - Input and Joypad Drivers: 'guides/input-joypad-drivers.md'
-             - Linux KMS Mode: 'guides/kms-mode.md'
-             - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
-             - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
-             - RetroAchievements: 'guides/retroachievements.md'
-             - Video Recording and Streaming: 'guides/recording-and-streaming.md'
-          - Topics:
-              - Optimal Vsync Performance: 'guides/optimal-vsync.md'
-              - Softpatching ROMs: 'guides/softpatching.md'
+        - Getting Started:
+          - 'Windows': 'guides/windows.md'
+          - 'Command-line interface (CLI)': 'guides/cli-intro.md'
+          - 'Custom Settings': 'guides/overrides.md'
+         - Interface:
+           - Creating a Theme: 'guides/themes.md'
+           - RGUI Interface: 'guides/RGUI.md'
+         - Feature Specific:
+           - Input and Joypad Drivers: 'guides/input-joypad-drivers.md'
+           - Linux KMS Mode: 'guides/kms-mode.md'
+           - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
+           - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
+           - RetroAchievements: 'guides/retroachievements.md'
+           - Video Recording and Streaming: 'guides/recording-and-streaming.md'
+         - Topics:
+            - Optimal Vsync Performance: 'guides/optimal-vsync.md'
+            - Softpatching ROMs: 'guides/softpatching.md'
          - Troubleshooting: 'guides/troubleshooting-retroarch.md'
 extra:
   logo: 'images/invader.png'
