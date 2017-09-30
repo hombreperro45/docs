@@ -110,7 +110,7 @@ pages:
       - 'xbrz': 'shader/xbrz.md'
       - 'xsal': 'shader/xsal.md'
       - 'xsoft': 'shader/xsoft.md'
-    - User Guides:
+    - Guides:
       - RetroArch:
         - Getting Started:
           - 'Windows': 'guides/windows.md'
