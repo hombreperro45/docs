@@ -32,6 +32,7 @@ The RetroArch loading process is:-
 
 !!! note
     Core specific overrides that are not in game specific overrides persist and will be loaded.
+    Also once you have created an override any future changes will need to be saved via the Quick Menu.
 
 ### Options *(.opt)* & Shader Presets *(.cgp|.glslp|.slangp)*
 
