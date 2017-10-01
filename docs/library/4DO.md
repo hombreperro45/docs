@@ -40,6 +40,12 @@ The 4DO core has the following options that can be tweaked from the core options
 
 - **High Resolution (restart)** (**Off**/On): Doubles internal resolution.
 
+??? note "*Disabled*"
+    ![high_resolution_disabled](images/Cores/4DO/high_resolution_disabled.png)
+
+??? note "*Enabled*"
+    ![high_resolution_enabled](images/Cores/4DO/high_resolution_enabled.png)
+
 ## Controllers
 
 The 4DO core supports one controller setting(s):

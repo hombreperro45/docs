@@ -27,17 +27,17 @@ The (Beetle NeoPop) core does not feature BIOS use.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  Yes  |     Yes     |  Yes   |   No    |        -          |   No             | -             |
+|  yes |     yes      |  yes   |   no    |       no          |   no             | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|       Yes       |   No   |   No    |  No    |   No     |      No       |
+|       yes       |   no   |   no    |  no    |   no     |      no       |
 
 ## Options
 
 The (Beetle NeoPop) core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **Language** (**english**/japenese)(Restart Core): Choose selected language of the BIOS.
+- **Language (restart)** (**english**/japenese): Choose selected language of the BIOS.
 
 ## Controllers
 

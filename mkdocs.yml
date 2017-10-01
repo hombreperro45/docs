@@ -1,7 +1,10 @@
 site_name: Libretro Docs
+repo_name: 'libretro/docs'
+repo_url: 'https://github.com/libretro/docs'
+edit_uri: 'tree/master/docs'
 pages:
-   - About: 'index.md'
-   - Core Library:
+    - About: 'index.md'
+    - Core Library:
       - '2048': 'library/2048.md'
       - '3DO (4DO)': 'library/4DO.md'
       - 'Arcade (MAME 2003)': 'library/mame2003.md'
@@ -11,6 +14,7 @@ pages:
       - 'Atari Lynx (Beetle Handy)': 'library/beetle_lynx.md'
       - 'Atari Lynx (Handy)': 'library/handy.md'
       - 'Atari ST/STE/TT/Falcon (Hatari)': 'library/hatari.md'
+      - 'FFmpeg': 'library/ffmpeg.md'
       - 'Game Boy / Game Boy Color (Emux)': 'library/emux_gb.md'
       - 'Game Boy / Game Boy Color (Gambatte)': 'library/gambatte.md'
       - 'Game Boy / Game Boy Color (SameBoy)': 'library/sameboy.md'
@@ -21,6 +25,7 @@ pages:
       - 'Game Boy Advance (mGBA)': 'library/mgba.md'
       - 'Game Boy Advance (VBA-M)': 'library/vbam.md'
       - 'Game Boy Advance (VBA Next)': 'library/vba_next.md'
+      - 'Imageviewer': 'library/imageviewer.md'
       - 'MSX/SVI/ColecoVision/SG-1000 (blueMSX)': 'library/bluemsx.md'
       - 'Neo Geo Pocket/Color (Beetle NeoPop)': 'library/beetle_ngp.md'
       - 'PC Engine/PCE-CD (Beetle PCE FAST)': 'library/beetle_pce_fast.md'
@@ -30,7 +35,7 @@ pages:
       - 'Sega MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
       - 'Vectrex (vecx)': 'library/vecx.md'
-   - Build RetroArch & Cores:
+    - Build RetroArch & Cores:
          - Apple:
             - 'OSX/PowerPC': 'compilation/osxppc.md'
             - 'OSX/macOS': 'compilation/osx.md'
@@ -63,16 +68,16 @@ pages:
             - 'PlayStation3': 'compilation/ps3.md'
             - 'PlayStation Portable': 'compilation/psp.md'
             - 'PlayStation Vita/TV': 'compilation/psvita.md'
-   - Specifications:
+    - Specifications:
       - 'Libretro': 'specs/api.md'
       - 'RetroPad': 'specs/retropad.md'
       - 'Shaders': 'specs/shader.md'
       - 'Overlays': 'specs/overlay.md'
-   - Technical:
+    - Technical:
       - RetroArch:
          - 'Netplay': 'tech/netplay.md'
          - 'Network Control Interface': 'tech/network-control-interface.md'
-   - Shader Previews:
+    - Shader Previews:
       - 'Introduction': 'shader/introduction.md'
       - '3dfx': 'shader/3dfx.md'
       - 'antialiasing': 'shader/antialiasing.md'
@@ -105,22 +110,25 @@ pages:
       - 'xbrz': 'shader/xbrz.md'
       - 'xsal': 'shader/xsal.md'
       - 'xsoft': 'shader/xsoft.md'
-   - User Guides:
-      - RetroArch:
-         - Getting Started:
-            - 'Windows': 'guides/windows.md'
-            - 'Command-line interface (CLI)': 'guides/cli-intro.md'
-         - Creating a Theme: 'guides/themes.md'
-         - Input and Joypad Drivers: 'guides/input-joypad-drivers.md'
-         - Linux KMS Mode: 'guides/kms-mode.md'
-         - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
-         - RGUI Interface: 'guides/RGUI.md'
-         - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
-         - Optimal Vsync Performance: 'guides/optimal-vsync.md'
-         - RetroAchievements: 'guides/retroachievements.md'
-         - Softpatching ROMs: 'guides/softpatching.md'
-         - Troubleshooting: 'guides/troubleshooting-retroarch.md'
-         - Video Recording and Streaming: 'guides/recording-and-streaming.md'
+    - Guides:
+      - Getting Started:
+        - 'Windows': 'guides/windows.md'
+        - 'Command-line interface (CLI)': 'guides/cli-intro.md'
+        - 'Custom Settings': 'guides/overrides.md'
+      - Interface:
+        - Creating a Theme: 'guides/themes.md'
+        - RGUI Interface: 'guides/RGUI.md'
+      - Feature Specific:
+        - Input and Joypad Drivers: 'guides/input-joypad-drivers.md'
+        - Linux KMS Mode: 'guides/kms-mode.md'
+        - Netplay Getting Started / FAQ: 'guides/netplay-faq.md'
+        - ROMs, Playlists, and Thumbnails: 'guides/roms-playlists-thumbnails.md'
+        - RetroAchievements: 'guides/retroachievements.md'
+        - Video Recording and Streaming: 'guides/recording-and-streaming.md'
+      - Topics:
+        - Optimal Vsync Performance: 'guides/optimal-vsync.md'
+        - Softpatching ROMs: 'guides/softpatching.md'
+        - Troubleshooting: 'guides/troubleshooting-retroarch.md'
 extra:
   logo: 'images/invader.png'
   version: '0.0.5'
@@ -138,3 +146,4 @@ markdown_extensions:
   - admonition
   - codehilite(linenums=true)
   - toc(permalink=Link)
+  - pymdownx.details

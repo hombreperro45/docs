@@ -39,7 +39,7 @@ gba|agb|bin
 
 The Beetle GBA core has the following options that can be tweaked from the core options menu. The default setting is bolded. 
 
-- **HLE bios emulation** (Off/**On**): -
+- **HLE bios emulation** (Off/**On**): Enables Built-in high-level BIOS emulation.
 
 ## Controllers
 

@@ -28,7 +28,7 @@ gb|gbc|gba
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |   yes       | yes    |  no     |        -          |   no             | -             |
+|  yes  |   yes       | yes    |  no     |     yes - only for GBA          |   no             | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -38,11 +38,15 @@ gb|gbc|gba
 
 The mGBA core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- Solar sensor level (**0**-10): -
-- Allow opposing directional input (**Off**/On): -
-- Use BIOS file if found (**On**/Off): -
-- Skip BIOS intro (**Off**/On): - 
-- Idle loop removal (**Remove Known**/Detect and Remove/Don't Remove): - 
+- Solar sensor level (**0**-10): Can be used for games that employed the use of a solar sensor on their cartridges.
+- Allow opposing directional input (**Off**/On)
+- Use BIOS file if found (**On**/Off)
+- Skip BIOS intro (**Off**/On)
+
+??? note "*BIOS intro*"
+    ![use_bios_file_if_found_enabled](images\Cores\mgba\use_bios_file_if_found_enabled.png)
+
+- Idle loop removal (**Remove Known**/Detect and Remove/Don't Remove): Customizes idle loop removal. Improve game performance by optimizing their idle loops.
 
 ## Controllers
 

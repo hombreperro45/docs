@@ -26,7 +26,7 @@ The VBA-M core does not feature BIOS use.
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-| yes   |   yes       | yes    |  no     |        -          | yes              | -             |
+| yes   |   yes       | yes    |  no     |      yes          | yes              | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
@@ -36,14 +36,14 @@ The VBA-M core does not feature BIOS use.
 
 The VBA-M core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **Show layer 1** (**Yes**/On): -
-- **Show layer 2** (**Yes**/On): -
-- **Show layer 3** (**Yes**/On): -
-- **Show layer 4** (**Yes**/On): - 
-- **Show sprite layer** (**Yes**/On): -
-- **Show window layer 1** (**Yes**/On): - 
-- **Show window layer 2** (**Yes**/On): -
-- **Show sprite window layer** (**Yes**/On): - 
+- **Show layer 1** (**Yes**/On)
+- **Show layer 2** (**Yes**/On)
+- **Show layer 3** (**Yes**/On)
+- **Show layer 4** (**Yes**/On)
+- **Show sprite layer** (**Yes**/On)
+- **Show window layer 1** (**Yes**/On)
+- **Show window layer 2** (**Yes**/On)
+- **Show sprite window layer** (**Yes**/On)
 
 ## Controllers
 
@@ -65,23 +65,23 @@ The VBA-M core supports four controller setting(s):
 
 ![vbam_altjoypadab](images/Controllers/vbam_altjoypadab.png)
 
-| VBA-M     | [RetroPad](RetroPad)                                           | GBA Joypad | Alt Joypad YB | Alt Joypad AB |
-|-----------|----------------------------------------------------------------|------------|---------------|---------------|
-| B         | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | -          | -             | -             |
-|           | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |            |               |               |
-| Select    | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | -          | -             | -             |
-| Start     | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | -          | -             | -             |
-| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | -          | -             | -             |
-| A         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | -          | -             | -             |
-|           | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |            |               |               |
-| L         | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | -          | -             | -             |
-| R         | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | -          | -             |               |
-|           | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |            |               |               |
-|           | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |            |               |               |
-|           | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |            |               |               |
-|           | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |            |               |               |
-|           | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |            |               |               |
-|           | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |            |               |               |
+| VBA-M     | [RetroPad](RetroPad)                                           | GBA Joypad                                                     | Alt Joypad YB                                                  | Alt Joypad AB                                                  |
+|-----------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------|
+| B         | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               |
+|           |                                                                |                                                                |                                                                |                                                                |
+| Select    | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |
+| Start     | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             |
+| D-pad     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
+| A         | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
+|           |                                                                |                                                                |                                                                |                                                                |
+| L         | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
+| R         | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
+|           |                                                                |                                                                |                                                                |                                                                |
+|           |                                                                |                                                                |                                                                |                                                                |
+|           |                                                                |                                                                |                                                                |                                                                |
+|           |                                                                |                                                                |                                                                |                                                                |
+|           |                                                                |                                                                |                                                                |                                                                |
+|           |                                                                |                                                                |                                                                |                                                                |
 
 
 ## Compatibility

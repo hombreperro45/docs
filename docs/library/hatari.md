@@ -20,15 +20,15 @@ st|msa|zip|stx|dim|ipf
 
 ## BIOS
 
-|   Filename    |    Description        |              md5sum              |
-|:-------------:|:---------------------:|:--------------------------------:|
-|tos.img        |          TOS Boot Image - Required            | c1c57ce48e8ee4135885cee9e63a68a2 |
+|   Filename    |    Description        |
+|:-------------:|:---------------------:|
+|tos.img        |          TOS Boot Image - Required - The plain ST mode only works with TOS 1.00, 1.02, 1.04, or 2.06. STE mode requires any of the TOS versions 1.xx or 2.xx. TOS 3.0x is for TT, and TOS 4.0x is for Falcon |
 
 ## Features
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  -    |     no      |   no   |   no    |        no         |   no             | -             |
+|  -    |     no      |   no   |   no    |        no         |   no             | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
