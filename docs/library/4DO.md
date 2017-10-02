@@ -77,7 +77,7 @@ The 4DO core supports one controller setting(s):
 [4DO Compatibility List](http://wiki.fourdo.com/Compatibility_List)
 
 | Game                                      | Issue                                                                  |
-|-------------------------------------------|------------------------------------------------------------------------|
+|:-----------------------------------------:|:----------------------------------------------------------------------:|
 |**Advanced Dungeons & Dragons - Deathkeep**|Random softlocks (music related?).                                      |
 |**Alone in the Dark**                      |Unreadable text within books. Audio glitches.                           |
 |**DinoPark Tycoon**                        |Graphics glitches.                                                      |

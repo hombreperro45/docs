@@ -2,7 +2,7 @@
 
 ## Background
 
-The Beetle Cygne Libretro core is a WonderSwan (Color) handheld video game system emulator. Its a port of Mednafen Wonderswan which is a modified version of Cygnem, with bug fixes and added sound emulation.  
+The Beetle Cygne Libretro core is a WonderSwan (Color) handheld video game system emulator. Its a port of Mednafen Wonderswan which is a modified version of Cygne, with bug fixes and added sound emulation.  
 
 Author(s): Dox|Mednafen Team
 
@@ -45,10 +45,10 @@ The (Beetle Cygne) core supports 1 controller setting(s):
 ![retropad](images/controllers/retropad.png)
 
 | Core Name    | [RetroPad](RetroPad)                                        |
-|--------------|-------------------------------------------------------------|
+|:------------:|:-----------------------------------------------------------:|
 | B (down)     | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)            |
 | Start        | ![RetroPad_Start](images/RetroPad/Retro_Start.png)          |
-|X Cursor Up   | ![RetroPad_Dpad_Up](images/RetroPad/RetroPad_Dpad_Up.png)   |
+|X Cursor Up   | ![RetroPad_Dpad_Up](images/RetroPad/Retro_Dpad_Up.png)   |
 |X Cursor Down | ![RetroPad_Dpad_Down](images/RetroPad/Retro_Dpad_Down.png)  |
 |X Cursor Left | ![RetroPad_Dpad_Left](images/RetroPad/Retro_Dpad_Left.png)  |
 |X Cursor Right| ![RetroPad_Dpad_Right](images/RetroPad/Retro_Dpad_Right.png)|
@@ -60,8 +60,8 @@ The (Beetle Cygne) core supports 1 controller setting(s):
 
 ## Compatibility
 
-| Game               | Issue                                                 |
-|--------------------|-------------------------------------------------------|
+| Game               | Issue                                                                      |
+|:------------------:|:--------------------------------------------------------------------------:|
 |**Tonpuusou**       |Title screen announcer voice missing. Softlocks after picking a menu option.|
 
 ## External Links
