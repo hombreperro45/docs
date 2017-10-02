@@ -98,7 +98,7 @@ A reference compatibility table can be found on the bottom of this [page](https:
     ![Fault](images\Compatibility\virtualjaguar-Cybermorph.png)
 
 ??? note "*(2)*"
-    ![Fault](images\Compatibility\virtualjaguar-Kasumi_Ninja)
+    ![Fault](images\Compatibility\virtualjaguar-Kasumi_Ninja.png)
 
 ## External Links
 
