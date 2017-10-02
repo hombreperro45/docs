@@ -76,6 +76,18 @@ The 4DO core supports one controller setting(s):
 
 [4DO Compatibility List](http://wiki.fourdo.com/Compatibility_List)
 
+| Game                                      | Issue                                                                  |
+|:-----------------------------------------:|:----------------------------------------------------------------------:|
+|**Advanced Dungeons & Dragons - Deathkeep**|Random softlocks (music related?).                                      |
+|**Alone in the Dark**                      |Unreadable text within books. Audio glitches.                           |
+|**DinoPark Tycoon**                        |Graphics glitches.                                                      |
+|**Eye of Typhoon, The**                    |Runs too fast.                                                          |
+|**Horde, The**                             |Graphics glitches. Minor graphical inaccuracy in bird's eye map.        |
+|**Primal Rage**                            |Audio glitches.                                                         |
+|**Psychic Detective**                      |Audio glitches. Sound is sometimes static during videos.                |
+|**Shadow - War of Succession**             |Runs too fast.                                                          |
+|**Tetsujin Return**                        |Graphics glitches. Missing graphics for obstacles in the driving scenes.|
+
 ## External Links
 
 * [Libretro Repository](https://github.com/libretro/4do-libretro)
