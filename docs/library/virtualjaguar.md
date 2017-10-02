@@ -80,7 +80,25 @@ The Virtual Jaguar core supports one controller setting(s):
 
 ## Compatibility
 
-A compatibility table can be found on the bottom of this [page](https://icculus.org/virtualjaguar/)
+A reference compatibility table can be found on the bottom of this [page](https://icculus.org/virtualjaguar/)
+
+| Game               | Issue                                                 |
+|--------------------|-------------------------------------------------------|
+|**Cybermorph**      |Graphics glitches. (1)                                 |
+|**Doom**            |Enable Doom core option hack for proper graphics pitch.|
+|**Iron Soldier**    |Hangs after selecting a stage.                         |
+|**Iron Soldier 2**  |Hangs after selecting a stage. Audio glitches.         |
+|**Kasumi Ninja**    |Graphics glitches. Missing background layers (2)       |
+|**Ruiner Pinball**  |Doesn't boot.                                          |
+|**Super Burnout**   |Hangs after selecting a track.                         |
+|**Towers II**       |Heavy flickering.                                      |
+|**Wolfenstein 3D**  |Doesn't boot.                                          |
+
+??? note "*(1)*"
+    ![Fault](images\Compatibility\virtualjaguar-Cybermorph.png)
+
+??? note "*(2)*"
+    ![Fault](images\Compatibility\virtualjaguar-Kasumi_Ninja)
 
 ## External Links
 
