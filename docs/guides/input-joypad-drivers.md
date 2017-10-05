@@ -32,7 +32,7 @@ udev is the newest input driver and uses the evdev joypad interface at `/dev/inp
 
 | Multi-mouse | Absolute mice |
 |-------------|---------------|
-| Yes         |  No           |
+| Yes         |  Yes          |
 
 #### Required packages
 TThe `libudev` and `libxkbdcommon` packages are required. udev does not require X, but udev does depend on X11 keyboard layout files being installed.
