@@ -24,13 +24,21 @@ The Stella core does not feature BIOS use.
 
 ## Features
 
-| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |   yes       | yes    |  no     |       no          |  no              | no            |
-
-| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
-|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|        no       |  no    |   no    |  no    |   no     |      no       |
+| Feature           | Supported |
+|-------------------|:---------:|
+| Saves             | ✔         |
+| States            | ✔         |
+| Rewind            | ✔         |
+| Netplay           | ✕         |
+| RetroAchievements | ✕         |
+| RetroArch Cheats  | ✕         |
+| Native Cheats     | ✕         |
+| Controllers       | ✕         |
+| Rumble            | ✕         |
+| Sensors           | ✕         |
+| Camera            | ✕         |
+| Location          | ✕         |
+| Subsystem         | ✕         |
 
 ## Options
 

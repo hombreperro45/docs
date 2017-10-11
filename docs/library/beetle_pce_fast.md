@@ -33,13 +33,21 @@ pce|cue|ccd|iso|img|bin|chd
 
 ## Features
 
-| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-| yes   |    yes      |  yes   |  yes    |        -          |   no             | no            |
-
-| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
-|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|      yes        |  no    |   no    |  no    |   no     |       no      |
+| Feature           | Supported |
+|-------------------|:---------:|
+| Saves             | ✔         |
+| States            | ✔         |
+| Rewind            | ✔         |
+| Netplay           | ✔         |
+| RetroAchievements | ✕         |
+| RetroArch Cheats  | ✕         |
+| Native Cheats     | ✕         |
+| Controllers       | ✔         |
+| Rumble            | ✕         |
+| Sensors           | ✕         |
+| Camera            | ✕         |
+| Location          | ✕         |
+| Subsystem         | ✕         |
 
 ## Options
 

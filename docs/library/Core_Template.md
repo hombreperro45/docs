@@ -42,6 +42,7 @@ The (Core name) core does not feature BIOS use.
 | RetroArch Cheats  | ✕         |
 | Native Cheats     | ✕         |
 | Controllers       | ✕         |
+| Multi-Mouse       | ✕         |
 | Rumble            | ✕         |
 | Sensors           | ✕         |
 | Camera            | ✕         |

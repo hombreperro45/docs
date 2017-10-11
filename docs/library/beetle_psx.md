@@ -34,13 +34,22 @@ Beetle PSX requires the following BIOS image files for operation. **Case Sensiti
 
 ## Features
 
-| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-| Yes   |   Yes*      | Yes*   |   No    |        -          |   -              | -             |
-
-| Controllers     | Multi-Mouse | Rumble | Sensors | Camera | Location | Subsystem     |
-|:---------------:|:-----------:|:------:|:-------:|:------:|:--------:|:--------------|
-|       No        |      -      |   Yes  |   No    |   No   |   No     |       No      |
+| Feature           | Supported |
+|-------------------|:---------:|
+| Saves             | ✔         |
+| States            | ✔*        |
+| Rewind            | ✔*        |
+| Netplay           | ✔         |
+| RetroAchievements | ✕         |
+| RetroArch Cheats  | ✕         |
+| Native Cheats     | ✕         |
+| Controllers       | ✕         |
+| Multi-Mouse       | -         |
+| Rumble            | ✔         |
+| Sensors           | ✕         |
+| Camera            | ✕         |
+| Location          | ✕         |
+| Subsystem         | ✕         |
 
 ## Usage
 

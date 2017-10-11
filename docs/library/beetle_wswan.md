@@ -24,13 +24,22 @@ The (Beetle Cygne) core does not feature BIOS use.
 
 ## Features
 
-| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-| Yes   |   Yes       |  Yes   |   -     |        -          |   -              | -             |
-
-| Controllers     | Multi-Mouse | Rumble | Sensors | Camera | Location | Subsystem     |
-|:---------------:|:-----------:|:------:|:-------:|:------:|:--------:|:--------------|
-|      Yes        |      -      |    No  |  No     |   No   |   No     |      No       |
+| Feature           | Supported |
+|-------------------|:---------:|
+| Saves             | ✔         |
+| States            | ✔         |
+| Rewind            | ✔         |
+| Netplay           | -         |
+| RetroAchievements | -         |
+| RetroArch Cheats  | -         |
+| Native Cheats     | -         |
+| Controllers       | ✔         |
+| Multi-Mouse       | -         |
+| Rumble            | ✕         |
+| Sensors           | ✕         |
+| Camera            | ✕         |
+| Location          | ✕         |
+| Subsystem         | ✕         |
 
 ## Options
 

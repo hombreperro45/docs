@@ -28,13 +28,21 @@ cue|ccd|toc
 
 ## Features
 
-| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-| yes   |    yes      |  yes   |  yes    |       no          |   no             | no            |
-
-| Controllers     | Multi Mouse | Rumble | Sensors | Camera | Location | Subsystem     |
-|:---------------:|:-----------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|      yes        |      -      |   no   |   no    |   no   |   no     |     no        |
+| Feature           | Supported |
+|-------------------|:---------:|
+| Saves             | ✔         |
+| States            | ✔         |
+| Rewind            | ✔         |
+| Netplay           | ✔         |
+| RetroAchievements | ✕         |
+| RetroArch Cheats  | ✕         |
+| Native Cheats     | ✕         |
+| Controllers       | ✔         |
+| Rumble            | ✕         |
+| Sensors           | ✕         |
+| Camera            | ✕         |
+| Location          | ✕         |
+| Subsystem         | ✕         |
 
 ## Options
 
