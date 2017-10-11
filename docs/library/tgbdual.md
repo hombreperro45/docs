@@ -24,13 +24,22 @@ The TGB Dual core does not support using BIOS image files.
 
 ## Features
 
-| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |   yes       | yes    | yes     |        -          | yes              | no            |
-
-| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
-|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|       no        |  no    |   no    |  no    |   no     |      no       |
+| Feature           | Supported |
+|-------------------|:---------:|
+| Saves             | ✔         |
+| States            | ✔         |
+| Rewind            | ✔         |
+| Netplay           | ✔         |
+| RetroAchievements | -         |
+| RetroArch Cheats  | ✔         |
+| Native Cheats     | ✕         |
+| Controllers       | ✕         |
+| Multi-Mouse       | ✕         |
+| Rumble            | ✕         |
+| Sensors           | ✕         |
+| Camera            | ✕         |
+| Location          | ✕         |
+| Subsystem         | ✕         |
 
 ## Options
 
