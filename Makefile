@@ -1,4 +1,4 @@
-MKDOCS_AVAILABLE := $(shell command -v mkdocss 2> /dev/null)
+MKDOCS_AVAILABLE := $(shell command -v mkdocs 2> /dev/null)
 
 build: dependencies
 	@mkdocs build
