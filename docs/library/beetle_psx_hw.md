@@ -65,6 +65,15 @@ After that, you can load the `foo.cue` file in RetroArch with the Beetle PSX HW 
 
 !!! warning
     Certain PS1 games are multi-track, so their .cue files might be more complicated.
+	
+## PAL copy protected games
+
+PAL copy protected games need a SBI Subchannel file next to the bin/cue files in order to get past the copy protection. Also the skip BIOS core option should be set to off.
+
+* Parasite Eve II (S) (Disc 1).bin
+* Parasite Eve II (S) (Disc 1).cue
+* **Parasite Eve II (S) (Disc 1).sbi**
+
 
 ## Multiple-disk games
 
@@ -82,6 +91,10 @@ foo (Disc 3).cue
 ```
 
 After that, you can load the `foo.m3u` file in RetroArch with the Beetle PSX HW core.
+
+Here's another m3u example done with Valkryie Profile
+
+![m3u_example](images\Cores\beetle_psx_hw\m3u_example.png)
 
 Adding multi-track games to playlists manually is recommended. (Add an entry in the playlist that points to `foo.m3u`)
 
@@ -106,25 +119,25 @@ The game name in the Memcard filename will match the cue or m3u or pbp file's na
 
 * Loaded content: `Breath of Fire III (USA).cue`
 
-* Memcard slot 0: `Breath of Fire III (USA).srm`
+* **Memcard slot 0: `Breath of Fire III (USA).srm`**
 
-* Memcard slot 1: `Breath of Fire III (USA).1.mcr`
+* **Memcard slot 1: `Breath of Fire III (USA).1.mcr`**
 
 or
 
 * Loaded content: `Final Fantasy VII (USA).m3u`
 
-* Memcard slot 0: `Final Fantasy VII (USA).srm`
+* **Memcard slot 0: `Final Fantasy VII (USA).srm`**
 
-* Memcard slot 1: `Final Fantasy VII (USA).1.mcr`
+* **Memcard slot 1: `Final Fantasy VII (USA).1.mcr`**
 
 or
 
 * Loaded content: `Wild Arms 2 (USA).pbp`
 
-* Memcard slot 0: `Wild Arms 2 (USA).srm`
+* **Memcard slot 0: `Wild Arms 2 (USA).srm`**
 
-* Memcard slot 1: `Wild Arms 2 (USA).1.mcr`
+* **Memcard slot 1: `Wild Arms 2 (USA).1.mcr`**
 
 !!! note
     Memory card behavior can be altered with any of the following core options (Memcard 0 method, Enable memory card 1, Shared memcards).
@@ -138,10 +151,10 @@ The Beetle PSW HW core has the following options that can be tweaked from the co
 - **Adaptive smoothing** (Off/**On**): When upscaling, smooths out 2D elements while keeping 3D elements sharp. Vulkan renderer only at the moment.
 
 ??? note "*Adapative smoothing - Off*"
-    ![adaptive_smoothing_off]((images\Cores\beetle_psx_hw\adaptive_smoothing_off.png)
+    ![adaptive_smoothing_off](images\Cores\beetle_psx_hw\adaptive_smoothing_off.png)
 
 ??? note "*Adaptive smoothing - On*"
-    ![adaptive_smoothing_on]((images\Cores\beetle_psx_hw\adaptive_smoothing_on.png)
+    ![adaptive_smoothing_on](images\Cores\beetle_psx_hw\adaptive_smoothing_on.png)
 
 - **Internal GPU Resolution** (**1x(native)**/2x/4x/8x/16x/32x): Graphics upscaling.
 
@@ -180,7 +193,7 @@ The Beetle PSW HW core has the following options that can be tweaked from the co
 - **Widescreen mode hack** (**Off**/On): If on, renders in 16:9. Works best on 3D games. 
 - **Frame duping (speedup)** (**Off**/On): Redraws/reuses the last frame if there was no new data.
 - **CPU Overclock** (**Off**/On): Gets rid of memory access latency and makes all GTE instructions have 1 cycle latency.
-- **Skip BIOS** (**Off**/On): Self-explanatory. Some games have issues when enabled.
+- **Skip BIOS** (**Off**/On): Self-explanatory. Some games have issues when enabled (Saga Frontier, PAL copy protected games, etc). 
 - **Dithering pattern** (**1x(native)**/internal resolution/Off): If off, disables the dithering pattern the PSX applies to combat color banding. OpenGL only. Vulkan always disables the pattern.
 - **Display internal FPS** (**Off**/On): Shows the frame rate at which the emulated PSX is drawing at. Onscreen Notifications must be enabled in the RetroArch Onscreen Display Settings.- **Initial scanline** (**0** - 40): Sets the first scanline to be drawn on screen.
 - **Last scanline** (210 - **239**): Sets the last scanline to be drawn on screen.
