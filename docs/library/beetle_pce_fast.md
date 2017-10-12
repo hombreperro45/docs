@@ -35,7 +35,7 @@ pce|cue|ccd|iso|img|bin|chd
 
 | Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
 |:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-| yes   |    yes      |  yes   |  yes    |        -          |   no             | no            |
+| yes   |    yes      |  yes   |  yes    |      yes          |   no             | no            |
 
 | Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
 |:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|

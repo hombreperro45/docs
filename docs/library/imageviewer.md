@@ -46,8 +46,8 @@ The Imageviewer core supports 1 controller setting(s):
 
 | Imageviewer | [RetroPad](RetroPad)                                         |
 |---------------------|----------------------------------------------------------------|
-| Automatic slideshow | ![RetroPad_B](images/RetroPad/Retro_Y_Round.png)               |
-| Go up or down 1 or 5 files            | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
+| Automatic slideshow - Go to the next file every 2 seconds | ![RetroPad_B](images/RetroPad/Retro_Y_Round.png)               |
+| Go forward or backward 1 or 5 files | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               |
 
 
 ## Compatibility
