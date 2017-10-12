@@ -60,6 +60,7 @@ This is an attempt to make a compatibility list of libretro cores and RetroAchie
 ### Game Boy Advance
 
 * mGBA
+* VBA Next
 * VBA-M
 
 ### PC Engine
@@ -86,7 +87,7 @@ This is an attempt to make a compatibility list of libretro cores and RetroAchie
 **Works.**
 
 !!! note
-    There's a [known issue](https://github.com/libretro/RetroArch/issues/3973) with QuickNES on Android (not related to RetroAchievements); in the impossibility of using QuickNES it is recommended to use FCEUmm).
+    There's a [known issue](https://github.com/libretro/RetroArch/issues/3973) with QuickNES on Android (not related to RetroAchievements); the best alternative to it is FCEUmm).
 
 #### [FCEUmm](https://github.com/libretro/libretro-fceumm)
 
@@ -144,13 +145,13 @@ Although mGBA can emulate Game Boy/Game Boy Color, it does NOT support cheevos f
 
 #### [VBA next](https://github.com/libretro/vba-next)
 
-**Doesn't work OK.**
+RetroAchievements support was implemented in VBA Next in [30/September/2017](https://github.com/libretro/vba-next/pull/88) and **seems to be working fine**.
 
-"vba-next doesn't support the memory map interface, so achievements won't work ok with it." - @leiradel
 
 #### [VBA-M](https://github.com/libretro/vbam-libretro)
 
 **Seems to be working fine, but need more tests.**
+
 
 ### PC Engine
 
@@ -164,8 +165,6 @@ In April 2017 RetroAchievements.org people started to add some cheevos for Sega 
 
 #### [picodrive](https://github.com/libretro/picodrive)
 
-It seems to be working fine after the fix picodrive received in 18-April-2017.
-
 **Works.**
 
 #### [Genesis Plus GX](https://github.com/libretro/Genesis-Plus-GX)
@@ -178,12 +177,9 @@ In April 2017 RetroAchievements.org people started to add some cheevos for Ninte
 
 #### [Mupen 64 plus](https://github.com/libretro/mupen64plus-libretro)
 
-This core got a fix in 8-July-2017 and seems to be working fine with cheevos.
+**Seems to be working fine, but need more tests.**
 
-**Works.**
 
 #### [Parallel N64](https://github.com/libretro/parallel-n64)
 
-This core got a fix in 8-July-2017 and seems to be working fine with cheevos.
-
-**Works.**
+**Seems to be working fine, but need more tests.**

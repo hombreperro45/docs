@@ -36,13 +36,22 @@ mdx|md|smd|gen|bin|cue|iso|sms|gg|sg|68k|chd
 
 ## Features
 
-| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  yes  |   yes       | yes    |  yes    |     yes           | yes              | no            |
-
-| Controllers     | Rumble | Sensors | Camera | Location | Subsystem     |
-|:---------------:|:------:|:-------:|:------:|:--------:|:-------------:|
-|      yes        |  no    |   no    |  no    |   no     |      no       |
+| Feature           | Supported |
+|-------------------|:---------:|
+| Saves             | ✔         |
+| States            | ✔         |
+| Rewind            | ✔         |
+| Netplay           | ✔         |
+| RetroAchievements | ✔         |
+| RetroArch Cheats  | ✔         |
+| Native Cheats     | ✕         |
+| Controllers       | ✔         |
+| Multi-Mouse       | ✕         |
+| Rumble            | ✕         |
+| Sensors           | ✕         |
+| Camera            | ✕         |
+| Location          | ✕         |
+| Subsystem         | ✕         |
 
 ## Options
 

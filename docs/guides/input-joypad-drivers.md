@@ -32,7 +32,7 @@ udev is the newest input driver and uses the evdev joypad interface at `/dev/inp
 
 | Multi-mouse | Absolute mice |
 |-------------|---------------|
-| Yes         |  No           |
+| Yes         |  Yes          |
 
 #### Required packages
 TThe `libudev` and `libxkbdcommon` packages are required. udev does not require X, but udev does depend on X11 keyboard layout files being installed.
@@ -47,7 +47,7 @@ The easiest way to gain access to this input is to:
 
 If adding your user to the input group does not succeed, you may also set up a udev rule which makes this input accessible to non-root users:
 
-* **Step 1:** Add to `/etc/udev/rules.d/99-evdev.rules`:** `KERNEL=="event*", NAME="input/%k", MODE="666"`
+* **Step 1:** Add to `/etc/udev/rules.d/99-evdev.rules` the following text: `KERNEL=="event*", NAME="input/%k", MODE="666"`
 * **Step 2:** Reload the rules with `sudo udevadm control --reload-rules`.
 * **Step 3:** Reboot
 

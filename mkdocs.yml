@@ -35,6 +35,7 @@ pages:
       - 'Sega MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
       - 'Vectrex (vecx)': 'library/vecx.md'
+      - 'Wonderswan (Color)': 'library/beetle_wswan.md'
     - Build RetroArch & Cores:
          - Apple:
             - 'OSX/PowerPC': 'compilation/osxppc.md'

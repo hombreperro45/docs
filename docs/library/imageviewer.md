@@ -24,13 +24,22 @@ The Imageviewer core does not feature BIOS use.
 
 ## Features
 
-| Saves | States      | Rewind | Netplay | RetroAchievements | RetroArch Cheats | Native Cheats |
-|:-----:|:-----------:|:------:|:-------:|:-----------------:|:----------------:|:-------------:|
-|  no   |    no       |  no    |   no    |       no          |   no             | no            |
-
-| Controllers     | Multi-Mouse | Rumble | Sensors | Camera | Location | Subsystem     |
-|:---------------:|:-----------:|:------:|:-------:|:------:|:--------:|:--------------|
-|       yes        |     no      |   no   |  no     |   no   |   no     |      no      |
+| Feature           | Supported |
+|-------------------|:---------:|
+| Saves             | ✕         |
+| States            | ✕         |
+| Rewind            | ✕         |
+| Netplay           | ✕         |
+| RetroAchievements | ✕         |
+| RetroArch Cheats  | ✕         |
+| Native Cheats     | ✕         |
+| Controllers       | ✔         |
+| Multi-Mouse       | ✕         |
+| Rumble            | ✕         |
+| Sensors           | ✕         |
+| Camera            | ✕         |
+| Location          | ✕         |
+| Subsystem         | ✕         |
 
 ## Options
 
