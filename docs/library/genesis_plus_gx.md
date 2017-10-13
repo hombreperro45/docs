@@ -114,70 +114,75 @@ mdx|md|smd|gen|bin|cue|iso|sms|gg|sg|68k|chd
 ??? note "*Lightgun crosshair*"
     ![lightgun_crosshair](images\Cores\genesis_plus_gx\lightgun_crosshair.png)
 
-- **Invert Mouse Y-axis** (**Off**/On ): Self-explanatory. 
+- **Invert Mouse Y-axis** (**Off**/On ): For the MD Mouse Device Type
 
 ## Controllers
 
 The Genesis Plus GX core supports seventeen different controller setting(s):
 
-* Joypad Auto
+## User 1 and 2 Device Types
 
-![genesis_plus_gx_joypadauto](images/Controllers/genesis_plus_gx_joypad_auto.png)
+* **Joypad Auto** - Default [Joypad] *Depending on the loaded content, the core will automatically emulate a MD Joypad 3 Button controller, or a MD Joypad 6 Button controller or a MS Joypad 2 Button controller*
 
-* MD Joypad 3 Button
+* **MD Joypad 3 Button** - [Joypad] 
 
-![genesis_plus_gx_mdjoypad3button](images/Controllers/genesis_plus_gx_mdjoypad3button.png)
+* **MD Joypad 6 Button** - [Joypad] 
 
-* MD Joypad 6 Button
+* **MS Joypad 2 Button** - [Joypad] *also used for Game Gear*
 
-![genesis_plus_gx_mdjoypad6button](images/Controllers/genesis_plus_gx_mdjoybutton6button.png)
+* **MD Joypad 3 Button + 4-WayPlay** - [Joypad] *allows for up to four players to play together in certain games*
 
-* MS Joypad 2 Button (also used for Game Gear)
+* **MD Joypad 6 Button + 4-WayPlay** - [Joypad] *allows for up to four players to play together in certain games*
 
-* MD Joypad 3 Button + 4-WayPlay
+* **MD Joypad 3 Button + Teamplayer** - [Joypad] *allows for up to four players to play together in certain games*
 
-* MD Joypad 6 Button + 4-WayPlay
+* **MD Joypad 6 Button + Teamplayer** - [Joypad] *allows for up to four players to play together in certain games*
 
-* MD Joypad 3 Button + Teamplayer
+* **MS Joypad 2 Button + Master Tap** - [Joypad] *allows for up to four players to play together in certain games*
 
-* MD Joypad 6 Button + Teamplayer
+* **MS Light Phaser** - [Lightgun]
 
-* MS Joypad 2 Button + Master Tap
+* **MS Paddle Control** - [Analog]
 
-* MD Menancer (used for the User 2 Device Type)
+* **MS Graphic Board** - [Pointer]
 
-* MD Justifiers (used for the User 2 Device Type)
+* **MS Sports Pad** - [Analog]
 
-* MS Light Phaser
+* **MD XE-1AP** - [Analog]
 
-* MS Paddle Control
+* **MD Mouse** - [Mouse]
 
-* MS Graphic Board
+## User 2 Device Types
 
-* MS Sports Pad
+* **MD Menancer** - [Lightgun]
 
-* MD XE-1AP
+* **MD Justifiers**  - [Lightgun]
 
-* MD Mouse
+| Genesis Plus GX  | RetroPad                                                       | MD Joypad 3 Button | MD Joypad 6 Button | MS Joypad 2 Button | MS Paddle Control | MS Sports Pad | MD XE-1AP   |
+|------------------|----------------------------------------------------------------|--------------------|--------------------|--------------------|-------------------|-------------- |-------------|
+| B                | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | B                  | B                  | 1                  | 1                 | 1             | E2          |
+| A                | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | A                  | A                  |                    |                   |               | E1          |
+| Mode             | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           |                    | Mode               |                    |                   |               | Select      |
+| Start            | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | Start              | Start              | Start              | Start             | Start         | Start       |
+| D-pad            | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | D-pad              | D-pad              | D-pad              |                   |               |             |
+| C                | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | C                  | C                  | 2                  |                   | 2             |             |
+| Y                | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |                    | Y                  |                    |                   |               |             |
+| X                | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |                    | X                  |                    |                   |               | C           |
+| Y                | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |                    | Z                  |                    |                   |               | A           |
+|                  | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |                    |                    |                    |                   |               | D           |
+|                  | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |                    |                    |                    |                   |               | B           |
+|                  | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |                    |                    |                    | Paddle            | Trackball     | Thumb-stick |
+|                  | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |                    |                    |                    |                   |               | Slider      |
 
-| Genesis GX Plus | Joypad Auto                                                    | MD Joypad 3 Button | MD Joypad 6 Button | MS Joypad 2 Button | MS Light Phaser | MS Paddle Control | MS Graphic Board | MS Sports Pad | MS XE-1AP | MD Mouse | 
-|-----------------|----------------------------------------------------------------|--------------------|--------------------|--------------------|-----------------|-------------------|------------------|---------------|-----------|----------|
-| B               | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-| A               | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-| Mode            | ![RetroPad_Select](images/RetroPad/Retro_Select.png)           | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-| Start           | ![RetroPad_Start](images/RetroPad/Retro_Start.png)             | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-| D-pad           | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad.png)               | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-| C               | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)               | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-| Y               | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-| X               | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-| Z               | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-|                 | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-|                 | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-|                 | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-|                 | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-|                 | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-|                 | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) | -                  | -                  | -                  | -               | -                 | -                | -             | -         | -        |
-
+| RetroMouse                                                    | Menacer | Justifiers | Light Phaser | Graphic Board | MD Mouse |
+|---------------------------------------------------------------|---------|------------|--------------|---------------|----------|
+| ![Retro_Mouse](images/RetroMouse/Retro_Mouse.png)               | Pointer | Pointer    | Pointer      | Pointer       | Pointer  |
+| ![RetroP_Left](images/RetroMouse/Retro_Left.png)                | A       | A          | A            | Pen           | Left     |
+| Mouse wheel down                                              |         |            |              |               | Center   |
+| ![Retro_Middle](images/RetroMouse/Retro_Middle.png)             |         |            |              | Do            | Start    |
+| ![Retro_Right](images/RetroMouse/Retro_Right.png)               | B       | B          | B            | Menu          | Right    |
+| ![Retro_Left+Middle](images/RetroMouse/Retro_Left+Middle.png)   | C       | C          | C            |               |          |
+| ![Retro_Right+Middle](images/RetroMouse/Retro_Right+Middle.png) | Start   | Start      | Start        |               |          |
 
 ## Compatibility
 

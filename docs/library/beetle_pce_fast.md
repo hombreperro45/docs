@@ -39,7 +39,7 @@ pce|cue|ccd|iso|img|bin|chd
 | States            | ✔         |
 | Rewind            | ✔         |
 | Netplay           | ✔         |
-| RetroAchievements | ✕         |
+| RetroAchievements | ✔         |
 | RetroArch Cheats  | ✕         |
 | Native Cheats     | ✕         |
 | Controllers       | ✔         |
