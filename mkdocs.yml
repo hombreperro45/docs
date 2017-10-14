@@ -37,6 +37,7 @@ pages:
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
       - 'Vectrex (vecx)': 'library/vecx.md'
       - 'Wonderswan (Color)': 'library/beetle_wswan.md'
+      - 'ZX81 (EightyOne)': 'library/eightyone.md'
     - Build RetroArch & Cores:
          - Apple:
             - 'OSX/PowerPC': 'compilation/osxppc.md'
