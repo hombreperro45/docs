@@ -38,7 +38,8 @@ Follow this [Quick Guide](http://www.retroarch.com/index.php?page=achievements) 
 | [QuickNES](https://github.com/libretro/QuickNES_Core)             		| ✔         | Android has a [known issue](https://github.com/libretro/RetroArch/issues/3973)|
 | [FCEUmm](https://github.com/libretro/libretro-fceumm)             		| ✔         |		|
 | [Nestopia UE](https://github.com/libretro/nestopia)						| ✕         |		|
-
+| [bnes](https://github.com/libretro/bnes-libretro)							| ✕         |		|
+| [Emux](https://github.com/libretro/emux)									| ✕         |		|
 
 ### Master System / MegaDrive - Genesis
 
@@ -46,6 +47,7 @@ Follow this [Quick Guide](http://www.retroarch.com/index.php?page=achievements) 
 |---------------------------------------------------------------------------|:---------:|
 | [Genesis Plus GX](https://github.com/libretro/Genesis-Plus-GX)			| ✔         |
 | [picodrive](https://github.com/libretro/picodrive)						| ✔         |
+| [Emux](https://github.com/libretro/emux)									| ✕         |
 
 ### SNES
 
@@ -55,6 +57,9 @@ Follow this [Quick Guide](http://www.retroarch.com/index.php?page=achievements) 
 | [Snes9x 2005](https://github.com/libretro/snes9x2005)						| ✔         | *Previously called CAT SFC*		|
 | [Snes9x 2002](https://github.com/libretro/snes9x2002)						| ✔         | *Previously called PocketSNES*	|
 | [Snes9x](https://github.com/libretro/snes9x)								| ✔         | **Partially Supported**			|
+| [bsnes](https://github.com/libretro/bsnes-libretro)						| ✔         |		|
+| [bsnes-mercury](https://github.com/libretro/bsnes-mercury)				| ✔         |		|
+| [Beetle bsnes](https://github.com/libretro/beetle-bsnes-libretro)			| ?         |		|
 
 ### Game Boy / Game Boy Color
 
@@ -62,6 +67,9 @@ Follow this [Quick Guide](http://www.retroarch.com/index.php?page=achievements) 
 |---------------------------------------------------------------------------|:---------:|-------|
 | [gambatte](https://github.com/libretro/gambatte-libretro)					| ✔         |		|
 | [mGBA](https://github.com/libretro/mgba)									| ✕         | Achievements only work for Game boy Advance |
+| [Emux](https://github.com/libretro/emux)									| ✕         |		|
+| [SameBoy](https://github.com/libretro/SameBoy)							| ✕         |		|
+| [TGB Dual](https://github.com/libretro/tgbdual-libretro)					| ✕         |		|
 
 ### Game Boy Advance
 
@@ -70,6 +78,9 @@ Follow this [Quick Guide](http://www.retroarch.com/index.php?page=achievements) 
 | [mGBA](https://github.com/libretro/mgba)									| ✔         |
 | [VBA next](https://github.com/libretro/vba-next)							| ✔         |
 | [VBA-M](https://github.com/libretro/vbam-libretro)						| ✔         |
+| [Beetle GBA](https://github.com/libretro/beetle-gba-libretro)				| ✕         |
+| [gpSP](https://github.com/libretro/gpsp)									| ✕         |
+| [Meteor](https://github.com/libretro/meteor-libretro)						| ✕         |
 
 ### PC Engine
 
