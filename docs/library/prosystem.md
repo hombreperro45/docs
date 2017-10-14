@@ -51,7 +51,7 @@ The ProSystem core does not feature core options.
 
 The ProSystem core supports one controller setting(s):
 
-* RetroPad
+* **RetroPad** - [Joypad]
 
 ![prosystem_retropad](images/Controllers/prosystem_retropad.png)
 
@@ -66,12 +66,6 @@ The ProSystem core supports one controller setting(s):
 | Console Reset    | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)               |
 | Left Difficulty  | ![RetroPad_L1](images/RetroPad/Retro_L1.png)                   |
 | Right Difficulty | ![RetroPad_R1](images/RetroPad/Retro_R1.png)                   |
-|                  | ![RetroPad_L2](images/RetroPad/Retro_L2_Temp.png)              |
-|                  | ![RetroPad_R2](images/RetroPad/Retro_R2.png)                   |
-|                  | ![RetroPad_L3](images/RetroPad/Retro_L3.png)                   |
-|                  | ![RetroPad_R3](images/RetroPad/Retro_R3.png)                   |
-|                  | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
-|                  | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
 ## Compatibility
 
