@@ -8,34 +8,18 @@ http://retroachievements.org is a service to provide a trophies unlocking mechan
     The service is not maintained by RetroArch or the Libretro team.
 
 
-## Get Set Up
+## Set Up
 
 Follow this [Quick Guide](http://www.retroarch.com/index.php?page=achievements) to get them activated in RetroArch.
 
 
-## Recommended Cores
-
-* **NES:** FCEUmm and QuickNES
-* **Mega Drive / Genesis:** Genesis Plus GX and picodrive
-* **SNES:** Snes9x 2010
-* **Game Boy / Game Boy Color:** gambatte
-* **Game Boy Advance:** mGBA and VBA-M
-* **PC Engine:** Beetle PCE Fast
-* **Master System:** Genesis Plus GX and picodrive
-* **Nintendo 64:** Mupen 64 plus and Parallel N64
-
-!!! Note
-	If you want to contribute, please update RetroArch and cores to get the latest fixes on the RetroAchievements feature;
-    then in order to propose improvements to this document, [do it via github](https://github.com/libretro/docs/tree/master/docs/guides/retroachievements.md) using "Pull Requests"
-
-
-## Cores Compatibility
+## Cores Compatibility (15 of october 2017)
 
 ### NES
 
 | Core				                                                		| Supported | Notes |
 |---------------------------------------------------------------------------|:---------:|-------|
-| [QuickNES](https://github.com/libretro/QuickNES_Core)             		| ✔         | Android has a [known issue](https://github.com/libretro/RetroArch/issues/3973)|
+| [QuickNES](https://github.com/libretro/QuickNES_Core)             		| ✔         | On Android has a [known issue](https://github.com/libretro/RetroArch/issues/3973)|
 | [FCEUmm](https://github.com/libretro/libretro-fceumm)             		| ✔         |		|
 | [Nestopia UE](https://github.com/libretro/nestopia)						| ✕         |		|
 | [bnes](https://github.com/libretro/bnes-libretro)							| ✕         |		|
@@ -97,5 +81,8 @@ Follow this [Quick Guide](http://www.retroarch.com/index.php?page=achievements) 
 | [Parallel N64](https://github.com/libretro/parallel-n64)					| ✔         |
 
 
+!!! Note
+	If you want to contribute, please update RetroArch and cores to get the latest fixes on the RetroAchievements feature;
+    then in order to propose improvements to this document, [do it via github](https://github.com/libretro/docs/tree/master/docs/guides/retroachievements.md) using "Pull Requests"
 
 
