@@ -1,19 +1,51 @@
 # RetroAchievements In RetroArch
 
-## What are RetroAchievements?
+## **What are RetroAchievements?**
 
-http://retroachievements.org is a service to provide a trophies unlocking mechanism similar to modern web consoles for Retro games.
+[retroachievements.org](http://www.retroachievements.org/) is a service that provides a trophies unlocking mechanism similar to modern consoles, for Retro games.
 
 !!! Warning
     The service is not maintained by RetroArch or the Libretro team.
 
 
-## Set Up
+## **How to setup achievements**
 
-Follow this [Quick Guide](http://www.retroarch.com/index.php?page=achievements) to get them activated in RetroArch.
+1. Register an account on [retroachievements.org](http://www.retroachievements.org/)
+2. Enable the functionality and fill your retroachievements credentials in Settings->Achievements.
+
+!!! note 
+	The hardcore mode prevents you from using emulation features like slow motion, fast forwarding, cheats and savestates.
+	**BUT** gives you double points.
+
+![Settings](../guides/images/retroachievements/achievements-settings.png)
+
+## **Check your connection to the service**
+
+**You need an active Internet connection.**
+
+In this example, we are using the game Chrono Trigger (USA) with the core snes9x.
+
+Launch the game and trigger the Quick Menu.
+
+Go to Achievements and you should see a list of the unlockable trophies for this game.
+
+![List](../guides/images/retroachievements/achievements-list.png)
 
 
-## Cores Compatibility (15 of october 2017)
+## **Check your progress**
+
+On the retroachievements website, you can login and access your account page.
+
+You should be able to check your progress in the games and see which trophies you unlocked.
+
+Trophies unlocked in hardcore mode are marked with a special color.
+
+You can also check the progress of your friends and add comments on their trophies.
+
+![Progress](../guides/images/retroachievements/achievements-progress.png)
+
+
+## **Cores Compatibility** (15 of october 2017)
 
 ### NES
 
