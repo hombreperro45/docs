@@ -1,38 +1,38 @@
 # Title
 
-(Check the display name entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info))
+--Check the display name entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
 
 ## Background
 
 Author(s):
 
-(Use internet aliases whenever possible)
+--Check the authors entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
+--Use internet aliases whenever possible--
 
 ## Contribute to this documentation
 
 In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/). Changes are proposed using "Pull Requests."
 
-(add relevent corenamed.md to end of link) 
-
-(There's already an edit button on all the documentation pages but having another contribution link doesn't hurt.)
+--add relevent corenamed.md to end of link-- 
+--There's already an edit button on all the documentation pages but having another contribution link doesn't hurt.--
 
 ## See also
 
 [Other Core](https://buildbot.libretro.com/docs/library/)
 
-(OPTIONAL SECTION, add related cores url endings to end of link)
+--OPTIONAL SECTION, add related cores url endings to end of link--
 
 ## License
 
-(Check the license entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info) or check the core's repository for license information)
+--Check the license entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info) or check the core's repository for license information--
 
 ## Extensions
 
+--Check the supported extensions entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
+--Extensions such as cue or m3u will eventually have a hyperlink for their respective guides--
+
 --If no extensions use--
 The (Core name) core does not feature extension use.
-
-(Check the supported extensions entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info))
-(Extensions such as cue or m3u will eventually have a hyperlink for their respective guides)
 
 ## BIOS
 
@@ -43,16 +43,18 @@ Required or optional firmware files go in RetroArch's system directory.
 | optional.bin  | Description - Optional |                                  |
 | required.bin  | Description - Required |                                  |
 
-(Check the firmware information in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info))
+--Check the firmware information in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
 
 --If no BIOS use--
 The (Core name) core does not feature BIOS use.
 
 ## Features
 
+-- Use ✔ or ✕ or - --
+
 | Feature           | Supported |
 |-------------------|:---------:|
-| Saves             | ✔         |
+| Saves             | ✕         |
 | States            | ✕         |
 | Rewind            | ✕         |
 | Netplay           | ✕         |
@@ -67,12 +69,12 @@ The (Core name) core does not feature BIOS use.
 | Location          | ✕         |
 | Subsystem         | ✕         |
 
-(State support can be tested by attempting to save and load a state in the core)
-(If States are supported, that means Rewind and Netplay are supported too)
+--State support can be tested by attempting to save and load a state in the core--
+--If States are supported, that means Rewind and Netplay are supported too--
 
-The (Core name) creates directories named (Folder name) in RetroArch's save and state directories 
+The (Core name) core creates directories named '(Folder name)' in RetroArch's save and state directories
 
-(Describe what the core reads/writes to and from the save and state directories)
+--Describe what the core reads/writes to and from the save and state directories--
 
 ## Options
 
@@ -86,9 +88,16 @@ The (Core name) core does not feature core options.
 
 ## Controllers
 
+--Controllers can be a potentially complex section (e.g. Genesis Plus GX core doc). Unforunately RetroArch's control menu may not have every input so filling out this section may require looking at the core's source code or libretro API documentation (e.g. libretro.cpp, libretro.c and libretro.h) to find what the buttons are bound to.--
+--The first columns of the controller graph can be ripped straight from RetroArch's control menu--
+
 The (Core name) core supports # controller setting(s), the bolded controller setting is default:
 
-* **RetroPad** - [Joypad]
+The (Core name) supports a max of # users.
+
+### Device Types available to all users
+
+* **RetroPad** - [Joypad without analog or Joypad with Analog or Keyboard or Mouse or Lightgun or Pointer] - Optional Description
 
 | Core Name | RetroPad                                                       |
 |-----------|----------------------------------------------------------------|
@@ -111,22 +120,29 @@ The (Core name) core supports # controller setting(s), the bolded controller set
 | Action 14 | ![RetroPad_Left_Stick](images/RetroPad/Retro_Left_Stick.png)   |
 | Action 15 | ![RetroPad_Right_Stick](images/RetroPad/Retro_Right_Stick.png) |
 
+| RetroKeyboard|
+|--------------|
+
+--RetroKeyboard table is optinal, the table is for cores that have keyboard driven device types--
+
 | RetroMouse                                                      |
 |-----------------------------------------------------------------|
 | ![Retro_Mouse](images/RetroMouse/Retro_Mouse.png)               | 
-| ![RetroP_Left](images/RetroMouse/Retro_Left.png)                |
+| ![Retro_Left](images/RetroMouse/Retro_Left.png)                 |
 | ![Retro_Middle](images/RetroMouse/Retro_Middle.png)             | 
 | ![Retro_Right](images/RetroMouse/Retro_Right.png)               | 
 | ![Retro_Left+Middle](images/RetroMouse/Retro_Left+Middle.png)   | 
 | ![Retro_Right+Middle](images/RetroMouse/Retro_Right+Middle.png) |
 
-(Controllers is a potentially complex section (e.g. Genesis Plus GX core doc), filling out this section may require looking at the core's source code (e.g. libretro.c) to find what the buttons are bound to.) 
-
-(RETROMOUSE TABLE IS OPTIONAL, the table is for cores that have mouse driven device types)
+--RetroMouse Table is optional, the table is for cores that have mouse driven device types--
 
 ## Compatibility
 
 --Use [(Core name) Core Compatibility List](URL) or make a table--
+
+| Game | Issue |
+|------|-------|
+|      |       |
 
 --If no compatibility issues--
 The (Core name) core does not have specific compatiblity issues
