@@ -72,7 +72,7 @@ The (Core name) core does not feature BIOS use.
 --State support can be tested by attempting to save and load a state in the core--
 --If States are supported, that means Rewind and Netplay are supported too--
 
---The (Core name) core creates directories named (Folder name) in RetroArch's save and state directories--
+The (Core name) core creates directories named '(Folder name)' in RetroArch's save and state directories
 
 --Describe what the core reads/writes to and from the save and state directories--
 
@@ -89,8 +89,13 @@ The (Core name) core does not feature core options.
 ## Controllers
 
 --Controllers can be a potentially complex section (e.g. Genesis Plus GX core doc). Unforunately RetroArch's control menu may not have every input so filling out this section may require looking at the core's source code or libretro API documentation (e.g. libretro.cpp, libretro.c and libretro.h) to find what the buttons are bound to.--
+--The first columns of the controller graph can be ripped straight from RetroArch's control menu--
 
 The (Core name) core supports # controller setting(s), the bolded controller setting is default:
+
+The (Core name) supports a max of # users.
+
+### Device Types available to all users
 
 * **RetroPad** - [Joypad without analog or Joypad with Analog or Keyboard or Mouse or Lightgun or Pointer] - Optional Description
 
@@ -134,6 +139,10 @@ The (Core name) core supports # controller setting(s), the bolded controller set
 ## Compatibility
 
 --Use [(Core name) Core Compatibility List](URL) or make a table--
+
+| Game | Issue |
+|------|-------|
+|      |       |
 
 --If no compatibility issues--
 The (Core name) core does not have specific compatiblity issues

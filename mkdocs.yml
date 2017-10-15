@@ -6,6 +6,7 @@ pages:
     - About: 'index.md'
     - Core Library:
       - '2048': 'library/2048.md'
+      - '3D Engine': 'library/3d_engine.md'
       - '3DO (4DO)': 'library/4DO.md'
       - 'Arcade (MAME 2003)': 'library/mame2003.md'
       - 'Atari 2600 (Stella)': 'library/Stella.md'
@@ -28,6 +29,7 @@ pages:
       - 'Imageviewer': 'library/imageviewer.md'
       - 'MSX/SVI/ColecoVision/SG-1000 (blueMSX)': 'library/bluemsx.md'
       - 'Neo Geo Pocket/Color (Beetle NeoPop)': 'library/beetle_ngp.md'
+      - 'NES / Famicom (bnes)': 'library/bnes.md'
       - 'PC Engine/PCE-CD (Beetle PCE FAST)': 'library/beetle_pce_fast.md'
       - 'PC-FX (Beetle PC-FX)': 'library/beetle_pcfx.md'
       - 'PlayStation (Beetle PSX)': 'library/beetle_psx.md'
