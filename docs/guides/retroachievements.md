@@ -11,7 +11,8 @@
 ## **How to setup achievements**
 
 1. Register an account on [retroachievements.org](http://www.retroachievements.org/)
-2. Enable the functionality and fill your retroachievements credentials in Settings->Achievements.
+2. Open Retroarch and go to Settings->Achievements
+3. Enable the functionality and fill your retroachievements credentials
 
 !!! note 
 	The hardcore mode prevents you from using emulation features like slow motion, fast forwarding, cheats and savestates.
