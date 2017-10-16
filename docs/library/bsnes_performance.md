@@ -1,10 +1,10 @@
-# SNES / Super Famicom (bsnes Accuracy)
+# SNES / Super Famicom (bsnes Performance)
 
 ## Background
 
 bsnes is a Super Nintendo emulator that began development on 2004-10-14. It focuses on accuracy and clean code above all else. It never uses speed or compatibilty hacks. As a result, the minimum system requirements are greater than with other emulators. bsnes comes in three different profiles (accuracy, balanced and performance) which contain minor differences in the PPU (graphics) emulation. 
 
-This core has been compiled with the Accuracy profile.
+This core has been compiled with the Performance profile.
 
 Author(s):
 
@@ -12,13 +12,13 @@ byuu
 
 ## Contribute to this documentation
 
-In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/bsnes_accuracy.md). Changes are proposed using "Pull Requests."
+In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/bsnes_performance.md). Changes are proposed using "Pull Requests."
 
 ## See also
 
-[bsnes_balanced](https://buildbot.libretro.com/docs/library/bsnes_balanced/)
+[bsnes_accuracy](https://buildbot.libretro.com/docs/library/bsnes_accuracy/)
 
-[bsnes_performance](https://buildbot.libretro.com/docs/library/bsnes_performance/)
+[bsnes_balanced](https://buildbot.libretro.com/docs/library/bsnes_balanced/)
 
 ## License
 
@@ -32,7 +32,7 @@ sfc|smc|bml
 
 Required or optional firmware files go in RetroArch's system directory.
 
-The bsnes Accuracy core uses split ROMS for [special chip games](https://en.wikipedia.org/wiki/List_of_Super_NES_enhancement_chips#List_of_Super_NES_games_that_use_enhancement_chips).
+The bsnes Performance core uses split ROMS for [special chip games](https://en.wikipedia.org/wiki/List_of_Super_NES_enhancement_chips#List_of_Super_NES_games_that_use_enhancement_chips).
 
 Notable DSP1/DSP1B Games: Super Mario Kart, Pilotwings
 
@@ -84,7 +84,7 @@ Notable Cx4 Games: Mega Man X2, Mega Man X3
 | Location          | ✕         |
 | Subsystem         | ✔         |
 
-The bsnes Accuracy core creates directories named 'bsnes' in RetroArch's save and state directories
+The bsnes Peformance core creates directories named 'bsnes' in RetroArch's save and state directories
 
 Game data is saved/loaded to and from the core's save directory.
 
@@ -92,13 +92,13 @@ Save states are saved/loaded to and from the core's state directory.
 
 ## Options
 
-The bsnes Accuracy core does not feature core options.
+The bsnes Peformance core does not feature core options.
 
 ## Controllers
 
-The bsnes Accuracy core supports 6 controller setting(s), the bolded controller setting is default:
+The bsnes Peformance core supports 6 controller setting(s), the bolded controller setting is default:
 
-The bsnes Accuracy core supports a max of 5 users.
+The bsnes Performance core supports a max of 5 users.
 
 ### User 1 and 2 exclusive Device Types
 
@@ -116,20 +116,20 @@ The bsnes Accuracy core supports a max of 5 users.
 
 * [Justifiers](https://en.wikipedia.org/wiki/Konami_Justifier) - [Lightgun]
 
-| bsnes Accuracy | RetroPad                                               | SNES Joypad                                             |
-|----------------|--------------------------------------------------------|---------------------------------------------------------|
-| B              | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)       | ![SNES_B](images/Button_Pack/SNES/SNES_B.png)           |
-| Y              | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)       | ![SNES_Y](images/Button_Pack/SNES/SNES_Y.png)           |
-| Select         | ![RetroPad_Select](images/RetroPad/Retro_Select.png)   | ![SNES_Select](images/Button_Pack/SNES/SNES_Select.png) |
-| Start          | ![RetroPad_Start](images/RetroPad/Retro_Start.png)     | ![SNES_Start](images/Button_Pack/SNES/SNES_Start.png)   |
-| D-Pad Up       | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad_Up.png)    | ![SNES_Dpad](images/Button_Pack/SNES/SNES_Dpad.png)     |
-| D-Pad Down     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad_Down.png)  | ![SNES_Dpad](images/Button_Pack/SNES/SNES_Dpad.png)     |
-| D-Pad Left     | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad_Left.png)  | ![SNES_Dpad](images/Button_Pack/SNES/SNES_Dpad.png)     |
-| D-Pad Right    | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad_Right.png) | ![SNES_Dpad](images/Button_Pack/SNES/SNES_Dpad.png)     |
-| A              | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)       | ![SNES_A](images/Button_Pack/SNES/SNES_A.png)           |
-| X              | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)       | ![SNES_X](images/Button_Pack/SNES/SNES_X.png)           |
-| L              | ![RetroPad_L1](images/RetroPad/Retro_L1.png)           | ![SNES_L](images/Button_Pack/SNES/SNES_L.png)           |
-| R              | ![RetroPad_R1](images/RetroPad/Retro_R1.png)           | ![SNES_R](images/Button_Pack/SNES/SNES_R.png)           |
+| bsnes Performance | RetroPad                                               | SNES Joypad                                             |
+|-------------------|--------------------------------------------------------|---------------------------------------------------------|
+| B                 | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)       | ![SNES_B](images/Button_Pack/SNES/SNES_B.png)           |
+| Y                 | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)       | ![SNES_Y](images/Button_Pack/SNES/SNES_Y.png)           |
+| Select            | ![RetroPad_Select](images/RetroPad/Retro_Select.png)   | ![SNES_Select](images/Button_Pack/SNES/SNES_Select.png) |
+| Start             | ![RetroPad_Start](images/RetroPad/Retro_Start.png)     | ![SNES_Start](images/Button_Pack/SNES/SNES_Start.png)   |
+| D-Pad Up          | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad_Up.png)    | ![SNES_Dpad](images/Button_Pack/SNES/SNES_Dpad.png)     |
+| D-Pad Down        | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad_Down.png)  | ![SNES_Dpad](images/Button_Pack/SNES/SNES_Dpad.png)     |
+| D-Pad Left        | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad_Left.png)  | ![SNES_Dpad](images/Button_Pack/SNES/SNES_Dpad.png)     |
+| D-Pad Right       | ![RetroPad_Dpad](images/RetroPad/Retro_Dpad_Right.png) | ![SNES_Dpad](images/Button_Pack/SNES/SNES_Dpad.png)     |
+| A                 | ![RetroPad_A](images/RetroPad/Retro_A_Round.png)       | ![SNES_A](images/Button_Pack/SNES/SNES_A.png)           |
+| X                 | ![RetroPad_X](images/RetroPad/Retro_X_Round.png)       | ![SNES_X](images/Button_Pack/SNES/SNES_X.png)           |
+| L                 | ![RetroPad_L1](images/RetroPad/Retro_L1.png)           | ![SNES_L](images/Button_Pack/SNES/SNES_L.png)           |
+| R                 | ![RetroPad_R1](images/RetroPad/Retro_R1.png)           | ![SNES_R](images/Button_Pack/SNES/SNES_R.png)           |
 
 | RetroMouse                                                                                                      | SNES Mouse   | SuperScope | Justifier(s) |
 |-----------------------------------------------------------------------------------------------------------------|--------------|------------|--------------|
@@ -143,7 +143,16 @@ The bsnes Accuracy core supports a max of 5 users.
 
 ## Compatibility
 
-The bsnes Accuracy core fully emulates all SNES games that have ever been officially released. 
+| Game                                             | Issue                                                                          |                                                                       
+|--------------------------------------------------|--------------------------------------------------------------------------------|
+| A.S.P. Air Strike Patrol                         | Black lines show up during gameplay. The shadow below the aircraft is missing. |
+| Funaki Masakatsu Hybrid Wrestler – Tougi Denshou | Corrupted graphics on the Pancrase logo screen.                                |
+| Mecarobot Golf                                   | The ground "wobbles" during gameplay.                                          |
+| Mega Man X2                                      | Only displays a black screen.                                                  |
+| Mega Man X3                                      | Only displays a black screen.                                                  |
+| Mortal Kombat II                                 | Various glitched graphics.                                                     |
+| NHL ’94                                          | Corrupted line on the NHL logo screen.                                         |
+| Tetris Attack                                    | Lots of flickering on the VS. CPU mode map screen.                             |
 
 ### Super Gameboy Support
 
