@@ -1,8 +1,8 @@
-![travis](https://www.travis-ci.org/libretro/docs.svg?branch=master)
-
 # Libretro Documentation
 
 This is the source for the [libretro documentation](https://buildbot.libretro.com/docs/), powered by [MkDocs](http://www.mkdocs.org/).
+
+![travis](https://www.travis-ci.org/libretro/docs.svg?branch=master)
 
 ## Building
 
