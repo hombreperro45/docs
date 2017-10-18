@@ -34,6 +34,7 @@ pages:
       - 'PC-FX (Beetle PC-FX)': 'library/beetle_pcfx.md'
       - 'PlayStation (Beetle PSX)': 'library/beetle_psx.md'
       - 'PlayStation (Beetle PSX HW)': 'library/beetle_psx_hw.md'
+      - 'PlayStation Portable (PPSSPP)': 'library/ppsspp.md'
       - 'Sega MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
       - 'Sega Saturn (Beetle Saturn)': 'library/beetle_saturn.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
