@@ -38,6 +38,7 @@ pages:
       - 'Sega MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
       - 'Sega Saturn (Beetle Saturn)': 'library/beetle_saturn.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
+      - 'SNES / Super Famicom (Beetle bsnes)': 'library/beetle_snes.md'
       - 'SNES / Super Famicom (bsnes Accuracy)': 'library/bsnes_accuracy.md'
       - 'SNES / Super Famicom (bsnes Balanced)': 'library/bsnes_balanced.md'
       - 'SNES / Super Famicom (bsnes C++98 (v085))': 'library/bsnes_cplusplus98.md'
