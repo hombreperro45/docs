@@ -4,7 +4,11 @@
 
 Standalone port of Mednafen GBA to libretro, itself a fork of VBA-M, itself a fork of Visual Boy Advance.
 
-Author(s):- Forgotten|Mednafen Team
+*[This core currently doesn't start](https://github.com/libretro/libretro-meta/issues/103) so this documentation will remain incomplete until it is fixed.*
+
+### Author(s): 
+
+Forgotten|Mednafen Team
 
 ## Contribute to this documentation
 
