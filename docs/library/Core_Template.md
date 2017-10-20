@@ -4,7 +4,9 @@
 
 ## Background
 
-Author(s):
+--Use Google, Wikipedia, Github repository README's and descriptions for information--
+
+### Author(s):
 
 --Check the authors entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
 --Use internet aliases whenever possible--
@@ -14,13 +16,12 @@ Author(s):
 In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/). Changes are proposed using "Pull Requests."
 
 --add relevent corenamed.md to end of link-- 
---There's already an edit button on all the documentation pages but having another contribution link doesn't hurt.--
 
 ## See also
 
 [Other Core](https://buildbot.libretro.com/docs/library/)
 
---OPTIONAL SECTION, add related cores url endings to end of link--
+--OPTIONAL SECTION, add all related cores url endings to end of link--
 
 ## License
 
@@ -28,11 +29,19 @@ In order to propose improvements to this document, [visit it's corresponding sou
 
 ## Extensions
 
+Content that can be loaded by the (Core name) core.
+
 --Check the supported extensions entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
 --Extensions such as cue or m3u will eventually have a hyperlink for their respective guides--
 
 --If no extensions use--
 The (Core name) core does not feature extension use.
+
+## Database(s)
+
+RetroArch databases that are associated with the (Core name) core
+
+--Check the database entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
 
 ## BIOS
 
@@ -83,7 +92,7 @@ The (Core name) core has the following options that can be tweaked from the core
 - **Core Option** (**Setting1**/Setting2): Description.
 - **Core Option 2** (**Setting1**/Setting2): Description.
 
---If no options use--
+--If no option use--
 The (Core name) core does not feature core options.
 
 ## Controllers
@@ -95,11 +104,11 @@ The (Core name) core supports # controller setting(s), the bolded controller set
 
 The (Core name) supports a max of # users.
 
-### Device Types available to all users
+### User # exclusive device types
 
 * **RetroPad** - [Joypad without analog or Joypad with Analog or Keyboard or Mouse or Lightgun or Pointer] - Optional Description
 
-| Core Name | RetroPad                                                       |
+| Core Name Input Descriptors | RetroPad                                                       |
 |-----------|----------------------------------------------------------------|
 | Action 1  | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)               |
 | Action 2  | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)               |
