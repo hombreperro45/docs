@@ -16,9 +16,13 @@ In order to propose improvements to this document, [visit it's corresponding sou
 
 ## See also
 
-[bsnes_accuracy](https://buildbot.libretro.com/docs/library/bsnes_accuracy/)
+[bsnes Accuracy](https://buildbot.libretro.com/docs/library/bsnes_accuracy/)
 
-[bsnes_balanced](https://buildbot.libretro.com/docs/library/bsnes_balanced/)
+[bsnes Balanced](https://buildbot.libretro.com/docs/library/bsnes_balanced/)
+
+[Beetle bsnes](https://buildbot.libretro.com/docs/library/beetle_snes/)
+
+[bsnes C++98 (v085)](https://buildbot.libretro.com/docs/library/bsnes_cplusplus98/)
 
 ## License
 

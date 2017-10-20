@@ -2,7 +2,7 @@
 
 ## Background
 
-bsnes c++98 is a special fork from around v085 that's been backported to work with older compilers. Many platforms LibRetro supports such as various consoles (PlayStation 3) are stuck with super-old compilers that don't support the latest c++ features that are in the newer bsnes v094 ports.
+bsnes c++98 is a special fork from around v085 that's been backported to work with older compilers. Many platforms Libretro supports such as various consoles (PlayStation 3) are stuck with super-old compilers that don't support the latest c++ features that are in the newer bsnes v094 ports.
 
 Author(s):
 
@@ -14,11 +14,13 @@ In order to propose improvements to this document, [visit it's corresponding sou
 
 ## See also
 
-[bsnes_accuracy](https://buildbot.libretro.com/docs/library/bsnes_accuracy/)
+[bsnes Accuracy](https://buildbot.libretro.com/docs/library/bsnes_accuracy/)
 
-[bsnes_balanced](https://buildbot.libretro.com/docs/library/bsnes_balanced/)
+[bsnes Balanced](https://buildbot.libretro.com/docs/library/bsnes_balanced/)
 
-[bsnes_performance](https://buildbot.libretro.com/docs/library/bsnes_performance/)
+[bsnes Performance](https://buildbot.libretro.com/docs/library/bsnes_performance/)
+
+[Beetle bsnes](https://buildbot.libretro.com/docs/library/beetle_snes/)
 
 ## License
 
