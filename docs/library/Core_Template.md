@@ -4,7 +4,9 @@
 
 ## Background
 
-Author(s):
+--Use Google, Wikipedia, Github repository README's and descriptions for information--
+
+### Author(s):
 
 --Check the authors entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
 --Use internet aliases whenever possible--
@@ -14,13 +16,12 @@ Author(s):
 In order to propose improvements to this document, [visit it's corresponding source page on github](https://github.com/libretro/docs/tree/master/docs/library/). Changes are proposed using "Pull Requests."
 
 --add relevent corenamed.md to end of link-- 
---There's already an edit button on all the documentation pages but having another contribution link doesn't hurt.--
 
 ## See also
 
 [Other Core](https://buildbot.libretro.com/docs/library/)
 
---OPTIONAL SECTION, add related cores url endings to end of link--
+--OPTIONAL SECTION, add all related cores url endings to end of link--
 
 ## License
 
@@ -28,15 +29,23 @@ In order to propose improvements to this document, [visit it's corresponding sou
 
 ## Extensions
 
+*Content that can be loaded by the (Core name) core.*
+
 --Check the supported extensions entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
 --Extensions such as cue or m3u will eventually have a hyperlink for their respective guides--
 
 --If no extensions use--
 The (Core name) core does not feature extension use.
 
+## Database(s)
+
+*RetroArch databases that are associated with the (Core name) core*
+
+--Check the database entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
+
 ## BIOS
 
-Required or optional firmware files go in RetroArch's system directory.
+*Required or optional firmware files go in RetroArch's system directory.*
 
 |   Filename    |    Description         |              md5sum              |
 |:-------------:|:----------------------:|:--------------------------------:|
@@ -72,18 +81,26 @@ The (Core name) core does not feature BIOS use.
 --State support can be tested by attempting to save and load a state in the core--
 --If States are supported, that means Rewind and Netplay are supported too--
 
-The (Core name) core creates directories named '(Folder name)' in RetroArch's save and state directories
+The (Core name) core creates directories named '(name)' in RetroArch's...
 
---Describe what the core reads/writes to and from the save and state directories--
+* Savefile directory when the core is loaded.
+* Statestate directory when the core is loaded.
+* Config directory when a Core Override or a Game Override or a Game-options file is saved.
+* Input Remapping directory when a Core Remap or a Game Remap is saved.
+* Shaders Presets directory when a Core Preset or a Game Preset is saved.
+
+Core Overrides/Remaps/Presets that are saved will be named '(name)' while Game Overrides/Remaps/Presets and Game-option files will have the same name as the loaded content.
+
+--Describe what the core reads/writes to and from directories.--
 
 ## Options
 
-The (Core name) core has the following options that can be tweaked from the core options menu. The default setting is bolded.
+*The (Core name) core has the following options that can be tweaked from the core options menu. The default setting is bolded.*
 
 - **Core Option** (**Setting1**/Setting2): Description.
 - **Core Option 2** (**Setting1**/Setting2): Description.
 
---If no options use--
+--If no option use--
 The (Core name) core does not feature core options.
 
 ## Controllers
@@ -91,11 +108,11 @@ The (Core name) core does not feature core options.
 --Controllers can be a potentially complex section (e.g. Genesis Plus GX core doc). Unforunately RetroArch's control menu may not have every input so filling out this section may require looking at the core's source code or libretro API documentation (e.g. libretro.cpp, libretro.c and libretro.h) to find what the buttons are bound to.--
 --The first columns of the controller graph can be ripped straight from RetroArch's control menu--
 
-The (Core name) core supports # controller setting(s), the bolded controller setting is default:
+*The (Core name) supports a max of # users.*
 
-The (Core name) supports a max of # users.
+*The (Core name) core supports # controller setting(s), the bolded controller setting is default:*
 
-### Device Types available to all users
+### User # exclusive device types
 
 * **RetroPad** - [Joypad without analog or Joypad with Analog or Keyboard or Mouse or Lightgun or Pointer] - Optional Description
 
