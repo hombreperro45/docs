@@ -20,6 +20,12 @@ In order to propose improvements to this document, [visit it's corresponding sou
 
 [bsnes Balanced](https://buildbot.libretro.com/docs/library/bsnes_balanced/)
 
+[bsnes-mercury Accuracy](https://buildbot.libretro.com/docs/library/bsnes_mercury_accuracy/)
+
+[bsnes-mercury Balanced](https://buildbot.libretro.com/docs/library/bsnes_mercury_balanced/)
+
+[bsnes-Mercury Performance](https://buildbot.libretro.com/docs/library/bsnes_performance/)
+
 [Beetle bsnes](https://buildbot.libretro.com/docs/library/beetle_snes/)
 
 [bsnes C++98 (v085)](https://buildbot.libretro.com/docs/library/bsnes_cplusplus98/)
