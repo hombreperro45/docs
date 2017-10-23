@@ -10,13 +10,13 @@
 
 ## **How to setup achievements**
 
-1. Register an account on [retroachievements.org](http://www.retroachievements.org/)
+1. Register an account on [retroachievements.org](http://www.retroachievements.org/) (don't forget to confirm your account creation with the email they send to you).
 2. Open Retroarch and go to Settings->Achievements
 3. Enable the functionality and fill your retroachievements credentials
 
 !!! note 
-	The hardcore mode prevents you from using emulation features like slow motion, fast forwarding, cheats and savestates.
-	**BUT** gives you double points.
+    The hardcore mode prevents you from using emulation features like slow motion, cheats and savestates.
+    **BUT** gives you double points.
 
 ![Settings](../guides/images/retroachievements/achievements-settings.png)
 
@@ -50,72 +50,80 @@ You can also check the progress of your friends and add comments on their trophi
 
 ### NES
 
-| Core				                                                		| Supported | Notes |
-|---------------------------------------------------------------------------|:---------:|-------|
-| [QuickNES](https://github.com/libretro/QuickNES_Core)             		| ✔         | On Android has a [known issue](https://github.com/libretro/RetroArch/issues/3973)|
-| [FCEUmm](https://github.com/libretro/libretro-fceumm)             		| ✔         |		|
-| [Nestopia UE](https://github.com/libretro/nestopia)						| ✕         |		|
-| [bnes](https://github.com/libretro/bnes-libretro)							| ✕         |		|
-| [Emux](https://github.com/libretro/emux)									| ✕         |		|
+| Core                                                  | Supported | Notes |
+|-------------------------------------------------------|:---------:|-------|
+| [QuickNES](https://github.com/libretro/QuickNES_Core) | ✔ | On Android has a [known issue](https://github.com/libretro/RetroArch/issues/3973)|
+| [FCEUmm](https://github.com/libretro/libretro-fceumm) | ✔ | |
+| [Nestopia UE](https://github.com/libretro/nestopia)   | ✕ | |
+| [bnes](https://github.com/libretro/bnes-libretro)     | ✕ | |
+| [Emux](https://github.com/libretro/emux)              | ✕ | |
 
 ### Master System / MegaDrive - Genesis
 
-| Core				                                                		| Supported |
-|---------------------------------------------------------------------------|:---------:|
-| [Genesis Plus GX](https://github.com/libretro/Genesis-Plus-GX)			| ✔         |
-| [picodrive](https://github.com/libretro/picodrive)						| ✔         |
-| [Emux](https://github.com/libretro/emux)									| ✕         |
+| Core                                                           | Supported |
+|----------------------------------------------------------------|:---------:|
+| [Genesis Plus GX](https://github.com/libretro/Genesis-Plus-GX) | ✔ |
+| [picodrive](https://github.com/libretro/picodrive)             | ✔ |
+| [Emux](https://github.com/libretro/emux)                       | ✕ |
 
 ### SNES
 
-| Core				                                                		| Supported | Notes |
-|---------------------------------------------------------------------------|:---------:|-------|
-| [Snes9x 2010](https://github.com/libretro/snes9x2010)						| ✔         | *Previously called SNES9x Next*	|
-| [Snes9x 2005](https://github.com/libretro/snes9x2005)						| ✔         | *Previously called CAT SFC*		|
-| [Snes9x 2002](https://github.com/libretro/snes9x2002)						| ✔         | *Previously called PocketSNES*	|
-| [Snes9x](https://github.com/libretro/snes9x)								| ✔         | **Partially Supported**			|
-| [bsnes](https://github.com/libretro/bsnes-libretro)						| ✔         |		|
-| [bsnes-mercury](https://github.com/libretro/bsnes-mercury)				| ✔         |		|
-| [Beetle bsnes](https://github.com/libretro/beetle-bsnes-libretro)			| ?         |		|
+| Core                                                              | Supported | Notes |
+|-------------------------------------------------------------------|:---------:|-------|
+| [Snes9x 2010](https://github.com/libretro/snes9x2010)             | ✔         | *Previously called SNES9x Next* |
+| [Snes9x 2005](https://github.com/libretro/snes9x2005)             | ✔         | *Previously called CAT SFC*     |
+| [Snes9x 2002](https://github.com/libretro/snes9x2002)             | ✔         | *Previously called PocketSNES*  |
+| [Snes9x](https://github.com/libretro/snes9x)                      | ✔         | **Partially Supported**         |
+| [bsnes](https://github.com/libretro/bsnes-libretro)               | ✔         | |
+| [bsnes-mercury](https://github.com/libretro/bsnes-mercury)        | ✔         | |
+| [Beetle bsnes](https://github.com/libretro/beetle-bsnes-libretro) | ?         | |
 
 ### Game Boy / Game Boy Color
 
-| Core					                                                	| Supported | Notes |
-|---------------------------------------------------------------------------|:---------:|-------|
-| [gambatte](https://github.com/libretro/gambatte-libretro)					| ✔         |		|
-| [mGBA](https://github.com/libretro/mgba)									| ✕         | Achievements only work for Game boy Advance |
-| [Emux](https://github.com/libretro/emux)									| ✕         |		|
-| [SameBoy](https://github.com/libretro/SameBoy)							| ✕         |		|
-| [TGB Dual](https://github.com/libretro/tgbdual-libretro)					| ✕         |		|
+| Core                                                      | Supported | Notes |
+|-----------------------------------------------------------|:---------:|-------|
+| [gambatte](https://github.com/libretro/gambatte-libretro) | ✔         | |
+| [mGBA](https://github.com/libretro/mgba)                  | ✕         | Achievements only work for Game boy Advance |
+| [Emux](https://github.com/libretro/emux)                  | ✕         | |
+| [SameBoy](https://github.com/libretro/SameBoy)            | ✕         | |
+| [TGB Dual](https://github.com/libretro/tgbdual-libretro)  | ✕         | |
 
 ### Game Boy Advance
 
-| Core					                                                	| Supported |
-|---------------------------------------------------------------------------|:---------:|
-| [mGBA](https://github.com/libretro/mgba)									| ✔         |
-| [VBA next](https://github.com/libretro/vba-next)							| ✔         |
-| [VBA-M](https://github.com/libretro/vbam-libretro)						| ✔         |
-| [Beetle GBA](https://github.com/libretro/beetle-gba-libretro)				| ✕         |
-| [gpSP](https://github.com/libretro/gpsp)									| ✕         |
-| [Meteor](https://github.com/libretro/meteor-libretro)						| ✕         |
+| Core                                                          | Supported |
+|---------------------------------------------------------------|:---------:|
+| [mGBA](https://github.com/libretro/mgba)                      | ✔         |
+| [VBA next](https://github.com/libretro/vba-next)              | ✔         |
+| [VBA-M](https://github.com/libretro/vbam-libretro)            | ✔         |
+| [Beetle GBA](https://github.com/libretro/beetle-gba-libretro) | ✕         |
+| [gpSP](https://github.com/libretro/gpsp)                      | ✕         |
+| [Meteor](https://github.com/libretro/meteor-libretro)         | ✕         |
 
 ### PC Engine
 
-| Core					                                                	| Supported |
-|---------------------------------------------------------------------------|:---------:|
-| [Beetle PCE Fast](https://github.com/libretro/beetle-pce-fast-libretro)	| ✔         |
+| Core                                                                    | Supported |
+|-------------------------------------------------------------------------|:---------:|
+| [Beetle PCE Fast](https://github.com/libretro/beetle-pce-fast-libretro) | ✔         |
 
 
 ### Nintendo 64
 
-| Core					                                                	| Supported |
-|---------------------------------------------------------------------------|:---------:|
-| [Mupen 64 plus](https://github.com/libretro/mupen64plus-libretro)			| ✔         |
-| [Parallel N64](https://github.com/libretro/parallel-n64)					| ✔         |
+| Core                                                              | Supported |
+|-------------------------------------------------------------------|:---------:|
+| [Mupen 64 plus](https://github.com/libretro/mupen64plus-libretro) | ✔         |
+| [Parallel N64](https://github.com/libretro/parallel-n64)          | ✔         |
+
+
+### Atari Lynx
+
+| Core                                                | Supported | Notes |
+|-----------------------------------------------------|:---------:|:-----:|
+| [Handy](https://github.com/libretro/libretro-handy) | ✔ | *Support added in 22-October-2017. In order to work needs to update RetroArch too.* |
 
 
 !!! Note
-	If you want to contribute, please update RetroArch and cores to get the latest fixes on the RetroAchievements feature;
+    If you want to contribute, please update RetroArch and cores to get the latest fixes on the RetroAchievements feature;
     then in order to propose improvements to this document, [do it via github](https://github.com/libretro/docs/tree/master/docs/guides/retroachievements.md) using "Pull Requests"
+
 
 
