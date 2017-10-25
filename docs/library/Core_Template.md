@@ -4,7 +4,12 @@
 
 ## Background
 
---Use Google, Wikipedia, Github repository README's and descriptions for information--
+--Use Google, Wikipedia, Emulation wikis, Github repository README's and descriptions for information--
+
+### Why use this core?
+
+--Explain why this core is or not suitable for use--
+--OPTIONAL SECTION; this is for platforms that have multiple libretro cores e.g. SNES--
 
 ### Author(s):
 
@@ -29,7 +34,7 @@ In order to propose improvements to this document, [visit it's corresponding sou
 
 ## Extensions
 
-*Content that can be loaded by the (Core name) core.*
+*Content that can be loaded by the (Core name) core have the following file extensions.*
 
 --Check the supported extensions entry in the relevant core info file (https://github.com/libretro/libretro-super/tree/master/dist/info)--
 --Extensions such as cue or m3u will eventually have a hyperlink for their respective guides--
@@ -89,7 +94,9 @@ The (Core name) core creates directories named '(name)' in RetroArch's...
 * Input Remapping directory when a Core Remap or a Game Remap is saved.
 * Shaders Presets directory when a Core Preset or a Game Preset is saved.
 
-Core Overrides/Remaps/Presets that are saved will be named '(name)' while Game Overrides/Remaps/Presets and Game-option files will have the same name as the loaded content.
+Core Overrides/Remaps/Presets that are saved will be named '(name)'.
+
+Game Overrides/Remaps/Presets and Game-option files will have the same name as the loaded content.
 
 --Describe what the core reads/writes to and from directories.--
 
@@ -108,13 +115,13 @@ The (Core name) core does not feature core options.
 --Controllers can be a potentially complex section (e.g. Genesis Plus GX core doc). Unforunately RetroArch's control menu may not have every input so filling out this section may require looking at the core's source code or libretro API documentation (e.g. libretro.cpp, libretro.c and libretro.h) to find what the buttons are bound to.--
 --The first columns of the controller graph can be ripped straight from RetroArch's control menu--
 
-*The (Core name) supports a max of # users.*
+*The (Core name) core supports the following controller setting(s), bolded controller settings are the default for the specified user(s):*
 
-*The (Core name) core supports # controller setting(s), the bolded controller setting is default:*
+### User # Device Type(s)
 
-### User # exclusive device types
+* **RetroPad** - Joypad without analog or Joypad with Analog or Keyboard or Mouse or Lightgun or Pointer - Optional Description
 
-* **RetroPad** - [Joypad without analog or Joypad with Analog or Keyboard or Mouse or Lightgun or Pointer] - Optional Description
+### Controllers graph
 
 | Core Name | RetroPad                                                       |
 |-----------|----------------------------------------------------------------|
