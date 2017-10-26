@@ -177,7 +177,7 @@ Save states are saved/loaded to and from the core's state directory.
 
 ### User 1 Device Type(s)
 
-* **Joypad Auto** - Joypad without analog - Depending on the loaded content, the core will automatically emulate a MD Joypad 3 Button controller, or a MD Joypad 6 Button controller or a MS Joypad 2 Button controller*
+* **Joypad Auto** - Joypad without analog - Depending on the loaded content, the core will automatically emulate a MD Joypad 3 Button controller, or a MD Joypad 6 Button controller or a MS Joypad 2 Button controller
 
 * MD Joypad 3 Button - Joypad without analog 
 
@@ -209,7 +209,7 @@ Save states are saved/loaded to and from the core's state directory.
 
 ### User 2 Device Type(s)
 
-* **Joypad Auto** - Joypad without analog - Depending on the loaded content, the core will automatically emulate a MD Joypad 3 Button controller, or a MD Joypad 6 Button controller or a MS Joypad 2 Button controller*
+* **Joypad Auto** - Joypad without analog - Depending on the loaded content, the core will automatically emulate a MD Joypad 3 Button controller, or a MD Joypad 6 Button controller or a MS Joypad 2 Button controller
 
 * MD Joypad 3 Button - Joypad without analog
 
