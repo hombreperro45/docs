@@ -87,7 +87,7 @@ The bnes core supports a max of 4 users.
 | Skull & Crossbones           | Crashes on start.                              |
 
 ??? note "(1)"
-    ![crisiscore_graphicalglitches](images/cores/bnes/crisiscore_graphicalglitches.png)
+    ![crisiscore_graphicalglitches](images/Cores/bnes/crisiscore_graphicalglitches.png)
 
 ## External Links
 
