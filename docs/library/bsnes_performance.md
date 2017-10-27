@@ -6,6 +6,10 @@ bsnes is a Super Nintendo emulator that began development on 2004-10-14. It focu
 
 This core has been compiled with the Performance profile.
 
+### Why use this core?
+
+Highly accurate SNES emulation but at the cost of CPU power. Whether to use the Accuracy, or Balanced or Performance core depends on how much accuracy you want to give up for game performance. Please check the [compatibility section](https://buildbot.libretro.com/docs/library/bsnes_performance/#compatibility) for more information.
+
 Author(s):
 
 byuu
@@ -16,19 +20,31 @@ In order to propose improvements to this document, [visit it's corresponding sou
 
 ## See also
 
-[bsnes Accuracy](https://buildbot.libretro.com/docs/library/bsnes_accuracy/)
+[Beetle bsnes](https://buildbot.libretro.com/docs/library/beetle_bsnes)
 
-[bsnes Balanced](https://buildbot.libretro.com/docs/library/bsnes_balanced/)
+[bsnes Accuracy](https://buildbot.libretro.com/docs/library/bsnes_accuracy)
 
-[bsnes-mercury Accuracy](https://buildbot.libretro.com/docs/library/bsnes_mercury_accuracy/)
+[bsnes Balanced](https://buildbot.libretro.com/docs/library/bsnes_balanced)
 
-[bsnes-mercury Balanced](https://buildbot.libretro.com/docs/library/bsnes_mercury_balanced/)
+[bsnes C++98 (v085)](https://buildbot.libretro.com/docs/library/bsnes_cplusplus98)
 
-[bsnes-Mercury Performance](https://buildbot.libretro.com/docs/library/bsnes_performance/)
+[bsnes-mercury Accuracy](https://buildbot.libretro.com/docs/library/bsnes_mercury_accuracy)
 
-[Beetle bsnes](https://buildbot.libretro.com/docs/library/beetle_snes/)
+[bsnes-mercury Balanced](https://buildbot.libretro.com/docs/library/bsnes_mercury_balanced)
 
-[bsnes C++98 (v085)](https://buildbot.libretro.com/docs/library/bsnes_cplusplus98/)
+[bsnes-mercury Performance](https://buildbot.libretro.com/docs/library/bsnes_mercury_performance)
+
+[higan Accuracy](https://buildbot.libretro.com/docs/library/higan_accuracy)
+
+[Snes9x 2002](https://buildbot.libretro.com/docs/library/snes9x_2002)
+
+[Snes9x 2005 Plus](https://buildbot.libretro.com/docs/library/snes9x_2005_plus)
+
+[Snes9x 2005](https://buildbot.libretro.com/docs/library/snes9x_2005)
+
+[Snes9x 2010](https://buildbot.libretro.com/docs/library/snes9x_2010)
+
+[Snes9x](https://buildbot.libretro.com/docs/library/snes9x)
 
 ## License
 
@@ -36,11 +52,23 @@ GPLv3
 
 ## Extensions
 
+*Content that can be loaded by the bsnes Performance core have the following file extensions.*
+
 sfc|smc|bml
+
+## Database(s)
+
+*RetroArch databases that are associated with the bsnes Performance core*
+
+* Nintendo - Super Nintendo Entertainment System
+
+* Nintendo - Super Nintendo Entertainment System Hacks
+
+* Nintendo - Sufami Turbo
 
 ## BIOS
 
-Required or optional firmware files go in RetroArch's system directory.
+*Required or optional firmware files go in RetroArch's system directory.*
 
 The bsnes Performance core uses split ROMS for [special chip games](https://en.wikipedia.org/wiki/List_of_Super_NES_enhancement_chips#List_of_Super_NES_games_that_use_enhancement_chips).
 
@@ -53,6 +81,8 @@ Notable DSP3 Games: SD Gundam GX
 Notable DSP4 Games: Top Gear 3000
 
 Notable Cx4 Games: Mega Man X2, Mega Man X3
+
+**The co-processor firmware files are required for special chip games**
 
 |   Filename        |    Description              |              md5sum              |
 |:-----------------:|:---------------------------:|:--------------------------------:|
@@ -94,7 +124,17 @@ Notable Cx4 Games: Mega Man X2, Mega Man X3
 | Location          | ✕         |
 | Subsystem         | ✔         |
 
-The bsnes Peformance core creates directories named 'bsnes' in RetroArch's save and state directories
+The bsnes Performance core creates directories named 'bsnes' in RetroArch's...
+
+* Savefile directory when the core is loaded.
+* Statestate directory when the core is loaded.
+* Config directory when a Core Override or a Game Override or a Game-options file is saved.
+* Input Remapping directory when a Core Remap or a Game Remap is saved.
+* Shaders Presets directory when a Core Preset or a Game Preset is saved.
+
+Core Overrides/Remaps/Presets that are saved will be named 'bsnes'. 
+
+Game Overrides/Remaps/Presets and Game-option files will have the same name as the loaded content.
 
 Game data is saved/loaded to and from the core's save directory.
 
@@ -106,27 +146,35 @@ The bsnes Peformance core does not feature core options.
 
 ## Controllers
 
-The bsnes Peformance core supports 6 controller setting(s), the bolded controller setting is default:
+*The bsnes Performance core supports the following controller setting(s), bolded controller settings are the default for the specified user(s):*
 
-The bsnes Performance core supports a max of 5 users.
+### User 1 Device Type(s)
 
-### User 1 and 2 exclusive Device Types
+* **[SNES Joypad](http://nintendo.wikia.com/wiki/Super_Nintendo_Entertainment_System_controller)** - Joypad without analog
 
-* **[SNES Joypad](http://nintendo.wikia.com/wiki/Super_Nintendo_Entertainment_System_controller)** - [Joypad without analog]
+* [SNES Mouse](https://en.wikipedia.org/wiki/Super_NES_Mouse) - Mouse
 
-* [SNES Mouse](https://en.wikipedia.org/wiki/Super_NES_Mouse) - [Mouse]
+### User 2 Device Type(s)
 
-### User 2 exclusive Device Types
+* **[SNES Joypad](http://nintendo.wikia.com/wiki/Super_Nintendo_Entertainment_System_controller)** - Joypad without analog
 
-* [Multitap](http://nintendo.wikia.com/wiki/Super_Multitap) - [Joypad] - allows for up to five players to play together in certain games.
+* [SNES Mouse](https://en.wikipedia.org/wiki/Super_NES_Mouse) - Mouse
 
-* [SuperScope](https://en.wikipedia.org/wiki/Super_Scope) - [Lightgun]
+* [Multitap](http://nintendo.wikia.com/wiki/Super_Multitap) - Joypad without analog - allows for up to five players to play together in certain games.
 
-* [Justifier](https://en.wikipedia.org/wiki/Konami_Justifier) - [Lightgun]
+* [SuperScope](https://en.wikipedia.org/wiki/Super_Scope) - Lightgun
 
-* [Justifiers](https://en.wikipedia.org/wiki/Konami_Justifier) - [Lightgun]
+* [Justifier](https://en.wikipedia.org/wiki/Konami_Justifier) - Lightgun
 
-| bsnes Performance | RetroPad                                               | SNES Joypad                                             |
+* [Justifiers](https://en.wikipedia.org/wiki/Konami_Justifier) - Lightgun - Two Justifiers are plugged in, for two-player Justifier games.
+
+### User 3 - 16 Device Type(s)
+
+* **RetroPad** - Joypad without analog
+
+### Controllers graph
+
+| bsnes Performance | RetroPad                                               | *SNES Joypad / Multitap*                                |
 |-------------------|--------------------------------------------------------|---------------------------------------------------------|
 | B                 | ![RetroPad_B](images/RetroPad/Retro_B_Round.png)       | ![SNES_B](images/Button_Pack/SNES/SNES_B.png)           |
 | Y                 | ![RetroPad_Y](images/RetroPad/Retro_Y_Round.png)       | ![SNES_Y](images/Button_Pack/SNES/SNES_Y.png)           |
@@ -141,15 +189,15 @@ The bsnes Performance core supports a max of 5 users.
 | L                 | ![RetroPad_L1](images/RetroPad/Retro_L1.png)           | ![SNES_L](images/Button_Pack/SNES/SNES_L.png)           |
 | R                 | ![RetroPad_R1](images/RetroPad/Retro_R1.png)           | ![SNES_R](images/Button_Pack/SNES/SNES_R.png)           |
 
-| RetroMouse                                                                                                      | SNES Mouse   | SuperScope | Justifier(s) |
-|-----------------------------------------------------------------------------------------------------------------|--------------|------------|--------------|
-| ![Retro_Mouse](images/RetroMouse/Retro_Mouse.png)                                                               | Pointer      | Pointer    | Pointer      |
-| ![Retro_Left](images/RetroMouse/Retro_Left.png)                                                                 | Left Button  | Trigger    | Trigger      |
-| ![Retro_Middle](images/RetroMouse/Retro_Middle.png)                                                             |              | ???        |              |
-| ![Retro_Right](images/RetroMouse/Retro_Right.png)                                                               | Right Button | Turbo      | Turbo        |
-| ![Retro_Left+Middle](images/RetroMouse/Retro_Left+Middle.png)                                                   |              | Pause      | Pause        |
-| ![Retro_Right+Middle](images/RetroMouse/Retro_Right+Middle.png)                                                 |              | Start      | Start        |
-| ![Retro_Left+Middle](images/RetroMouse/Retro_Left+Middle.png) + ![Retro_Left](images/RetroMouse/Retro_Left.png) |              | Reset      | Reset        |
+| RetroMouse                                                                                                      | *SNES Mouse*   | *SuperScope* | *Justifier(s)* |
+|-----------------------------------------------------------------------------------------------------------------|----------------|--------------|----------------|
+| ![Retro_Mouse](images/RetroMouse/Retro_Mouse.png)                                                               | Pointer        | Pointer      | Pointer        |
+| ![Retro_Left](images/RetroMouse/Retro_Left.png)                                                                 | Left Button    | Trigger      | Trigger        |
+| ![Retro_Middle](images/RetroMouse/Retro_Middle.png)                                                             |                | ???          |                |
+| ![Retro_Right](images/RetroMouse/Retro_Right.png)                                                               | Right Button   | Turbo        | Turbo          |
+| ![Retro_Left+Middle](images/RetroMouse/Retro_Left+Middle.png)                                                   |                | Pause        | Pause          |
+| ![Retro_Right+Middle](images/RetroMouse/Retro_Right+Middle.png)                                                 |                | Start        | Start          |
+| ![Retro_Left+Middle](images/RetroMouse/Retro_Left+Middle.png) + ![Retro_Left](images/RetroMouse/Retro_Left.png) |                | Reset        | Reset          |
 
 ## Compatibility
 
@@ -166,11 +214,21 @@ The bsnes Performance core supports a max of 5 users.
 
 ### Super Gameboy Support
 
-Super Gameboy is supported via the Subsystem API. In RetroArch the Subsystem API is only available via [CLI](https://buildbot.libretro.com/docs/guides/cli-intro/).
-For SGB support you need both sgb.boot.rom and the SGB rom.
+!!! warning
+	Super Gameboy support in this core is command-line only, Windows only and has buggy save state support and visual glitches. **Use the [higan Accuracy](https://buildbot.libretro.com/docs/library/higan_accuracy) core for simplified, more functional, and easily accessible Super Gameboy support.**
 
-#### To launch SGB games, launch RetroArch like this:
-    retroarch -L {path to bsnes core} {path to snes rom} --subsystem sgb {path to gb rom}
+Super Gameboy is supported via the Subsystem API. In RetroArch the Subsystem API is only available via [CLI](https://buildbot.libretro.com/docs/guides/cli-intro/).
+
+For SGB support, you need both the sgb.boot.rom (in RetroArch's system directory) and a SNES Super Game Boy ROM.
+
+To launch SGB games, launch RetroArch like this:
+    retroarch -L {path to bsnes core} {path to SNES Super Game Boy ROM} --subsystem sgb {path to GB rom}
+	
+**Super Game Boy ROM and GB roms must be unzipped**
+	
+### MSU-1 Support
+
+-	
 
 ## External Links
 
