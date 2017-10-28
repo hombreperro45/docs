@@ -7,6 +7,10 @@
 !!! Warning
     The service is not maintained by RetroArch or the Libretro team.
 
+!!! Note
+    If you want to contribute, please update RetroArch and cores to get the latest fixes on the RetroAchievements feature;
+    then in order to propose improvements to this document, [do it via github](https://github.com/libretro/docs/tree/master/docs/guides/retroachievements.md) using "Pull Requests"
+
 
 ## **How to setup achievements**
 
@@ -46,7 +50,7 @@ You can also check the progress of your friends and add comments on their trophi
 ![Progress](../guides/images/retroachievements/achievements-progress.png)
 
 
-## **Cores Compatibility** (15 of october 2017)
+## **Cores Compatibility**
 
 ### NES
 
@@ -119,11 +123,3 @@ You can also check the progress of your friends and add comments on their trophi
 | Core                                                | Supported | Notes |
 |-----------------------------------------------------|:---------:|:-----:|
 | [Handy](https://github.com/libretro/libretro-handy) | ✔ | *Support added in 22-October-2017. In order to work needs to update RetroArch too.* |
-
-
-!!! Note
-    If you want to contribute, please update RetroArch and cores to get the latest fixes on the RetroAchievements feature;
-    then in order to propose improvements to this document, [do it via github](https://github.com/libretro/docs/tree/master/docs/guides/retroachievements.md) using "Pull Requests"
-
-
-
