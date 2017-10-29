@@ -8,8 +8,14 @@
 
 ### Why use this core?
 
---Explain why this core is or not suitable for use--
 --OPTIONAL SECTION; this is for platforms that have multiple libretro cores e.g. SNES--
+
+--Possible topics to talk about--
+
+--Does the core have notable enhancements or differences compared to standalone or other cores?--
+--Recommended for Netplay?--
+--Is the core for underpowered hardware?--
+--Is the core designed to run on specific platforms?--
 
 ### Author(s):
 
@@ -102,12 +108,19 @@ Game Overrides/Remaps/Presets and Game-option files will have the same name as t
 
 ## Options
 
-*The (Core name) core has the following options that can be tweaked from the core options menu. The default setting is bolded.*
+--If the core has options--
+--Core option screenshots are OPTIONAL**
+--If a core option description isn't obvious, just put Awaiting description as a placeholder--
+
+*The (Core name) core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded.*
 
 - **Core Option** (**Setting1**/Setting2): Description.
-- **Core Option 2** (**Setting1**/Setting2): Description.
 
---If no option use--
+??? note "*Core Option - Setting"
+	![screenshot_name](images\Cores\folder\screenshot_name.png)
+	
+--If the core does not have options--
+
 The (Core name) core does not feature core options.
 
 ## Controllers
@@ -119,7 +132,7 @@ The (Core name) core does not feature core options.
 
 ### User # Device Type(s)
 
-* **RetroPad** - Joypad without analog or Joypad with Analog or Keyboard or Mouse or Lightgun or Pointer - Optional Description
+* **RetroPad** - Joypad without analog or Joypad with Analog or Keyboard or Mouse or Lightgun or Pointer - *Optional Description*
 
 ### Controllers graph
 

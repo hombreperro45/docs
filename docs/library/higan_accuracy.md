@@ -152,38 +152,38 @@ Save states are saved/loaded to and from the core's state directory.
 - **Internal resolution** (**512x480**/512x448/512x240/512x224/256x240/256x224): Self-explanatory.
 
 ??? note "512x480"
-    ![512x480](images/cores/higan_accuracy/512x480.png)
+    ![512x480](images/Cores/higan_accuracy/512x480.png)
 
 ??? note "512x448"
-    ![512x448](images/cores/higan_accuracy/512x448.png)
+    ![512x448](images/Cores/higan_accuracy/512x448.png)
 
 ??? note "512x240"
-    ![512x240](images/cores/higan_accuracy/512x240.png)
+    ![512x240](images/Cores/higan_accuracy/512x240.png)
 
 ??? note "512x224"
-    ![512x224](images/cores/higan_accuracy/512x224.png)
+    ![512x224](images/Cores/higan_accuracy/512x224.png)
 
 ??? note "256x240"
-    ![256x240](images/cores/higan_accuracy/256x240.png)
+    ![256x240](images/Cores/higan_accuracy/256x240.png)
 
 ??? note "256x224"
-    ![256x224](images/cores/higan_accuracy/256x224.png)
+    ![256x224](images/Cores/higan_accuracy/256x224.png)
 
 - **Color emulation** (**Off**/On): Simulates the way a console’s display device differs from modern computer monitor’s colour reproduction. In particular, it simulates the slightly-different gamma correction used by the Super Famicom.
 
 ??? note "Color emulation - Disabled"
-    ![color_emulation_disabled](images/cores/higan_accuracy/color_emulation_disabled.png)
+    ![color_emulation_disabled](images/Cores/higan_accuracy/color_emulation_disabled.png)
 
 ??? note "Color emulation - Enabled"
-    ![color_emulation_enabled](images/cores/higan_accuracy/color_emulation_enabled.png)
+    ![color_emulation_enabled](images/Cores/higan_accuracy/color_emulation_enabled.png)
 
 - **Blur emulation**  (**Off**/On):  Simulates the limited horizontal resolution of standard-definition TVs by blurring together horizontally-adjacent pixels. Games like Jurassic Park for the Super Famicom depend on this to emulate a transparency effect.
 
 ??? note "Blur emulation - Disabled"
-    ![blur_emulation_disabled](images/cores/higan_accuracy/blur_emulation_disabled.png)
+    ![blur_emulation_disabled](images/Cores/higan_accuracy/blur_emulation_disabled.png)
 
 ??? note "Blur emulation - Enabled"
-    ![blur_emulation_enabled](images/cores/higan_accuracy/blur_emulation_enabled.png)
+    ![blur_emulation_enabled](images/Cores/higan_accuracy/blur_emulation_enabled.png)
 
 - **Scanline emulation** (**Off**/On): **Currently does not function properly**
 - **Preferred Super GameBoy BIOS (restart)** (**SGB1.sfc/**/SGB2.sfc/) Choose what Super GameBoy BIOS you want to use.
@@ -275,7 +275,7 @@ Load a SGB-supported GB/GBC rom.
 
 **Done**
 
-![sgb](images/cores/higan_accuracy/sgb.png)
+![sgb](images/Cores/higan_accuracy/sgb.png)
 
 ### MSU-1 Support
 
