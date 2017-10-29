@@ -18,7 +18,7 @@ In order to propose improvements to this document, [visit it's corresponding sou
 
 ## See also
 
--
+[Picodrive](https://buildbot.libretro.com/docs/library/picodrive)
 
 ## License
 
@@ -109,7 +109,7 @@ Save states are saved/loaded to and from the core's state directory.
 - **System hardware (restart)** (**auto**/sg-1000/sg-1000 II/mark-III/master system/master system II/game gear/mega drive / genesis): Choose which system is going to be emulated.
 - **System region (restart)** (**auto**/ntsc-u/pal/ntsc-j): Choose which region the system is from.
 - **System lockups** (**On**/Off): Emulate system lockups that occur on real hardware.
-- **System bootrom** (On/**Off**): - Runs BIOS if available and then starts loaded content after the boot sequence. The appropriate bootrom files must be in RetroArch's system directory.
+- **System bootrom** (On/**Off**): - Runs bootrom if available and then starts loaded content after the boot sequence. The appropriate bootrom files must be in RetroArch's system directory.
 - **CD System BRAM** (**per bios**/per game): The Sega CD's internal memory cannot hold a lot of saves. Setting this option to per game allows each game to have its own one brm file, thus negating any lack of available space issues.
 - **68k address error** (**On**/Off): Emulate the [68k](http://segaretro.org/M68000) address error that occurs on real hardware. Set this to off when playing rom hacks since most emulators used to develop rom hacks don't emulate the error.
 - **Cartridge lock-on (restart)** (**Off**/game genie/action replay (pro)/sonic & knuckles): Select lock-on cartridge. The appropriate lock-on cartride files must be in RetroArch's system directory.
@@ -177,23 +177,23 @@ Save states are saved/loaded to and from the core's state directory.
 
 ### User 1 Device Type(s)
 
-* **Joypad Auto** - Joypad without analog - Depending on the loaded content, the core will automatically emulate a MD Joypad 3 Button controller, or a MD Joypad 6 Button controller or a MS Joypad 2 Button controller
+* **Joypad Auto** - Joypad without analog - *Depending on the loaded content, the core will automatically emulate a MD Joypad 3 Button controller, or a MD Joypad 6 Button controller or a MS Joypad 2 Button controller*
 
 * MD Joypad 3 Button - Joypad without analog 
 
 * MD Joypad 6 Button - Joypad without analog
 
-* MS Joypad 2 Button - Joypad without analog - also used for Game Gear
+* MS Joypad 2 Button - Joypad without analog - *also used for Game Gear*
 
-* MD Joypad 3 Button + 4-WayPlay - Joypad without analog - allows for up to four players to play together in certain games
+* MD Joypad 3 Button + 4-WayPlay - Joypad without analog - *allows for up to four players to play together in certain games*
 
-* MD Joypad 6 Button + 4-WayPlay - Joypad without analog - allows for up to four players to play together in certain games
+* MD Joypad 6 Button + 4-WayPlay - Joypad without analog - *allows for up to four players to play together in certain games*
 
-* MD Joypad 3 Button + Teamplayer - Joypad without analog - allows for up to four players to play together in certain games
+* MD Joypad 3 Button + Teamplayer - Joypad without analog - *allows for up to four players to play together in certain games*
 
-* MD Joypad 6 Button + Teamplayer - Joypad without analog - allows for up to four players to play together in certain games
+* MD Joypad 6 Button + Teamplayer - Joypad without analog - *allows for up to four players to play together in certain games*
 
-* MS Joypad 2 Button + Master Tap - Joypad without analog - allows for up to four players to play together in certain games
+* MS Joypad 2 Button + Master Tap - Joypad without analog - *allows for up to four players to play together in certain games*
 
 * MS Light Phaser - Lightgun
 
@@ -209,23 +209,23 @@ Save states are saved/loaded to and from the core's state directory.
 
 ### User 2 Device Type(s)
 
-* **Joypad Auto** - Joypad without analog - Depending on the loaded content, the core will automatically emulate a MD Joypad 3 Button controller, or a MD Joypad 6 Button controller or a MS Joypad 2 Button controller
+* **Joypad Auto** - Joypad without analog - *Depending on the loaded content, the core will automatically emulate a MD Joypad 3 Button controller, or a MD Joypad 6 Button controller or a MS Joypad 2 Button controller*
 
 * MD Joypad 3 Button - Joypad without analog
 
 * MD Joypad 6 Button - Joypad without analog
 
-* MS Joypad 2 Button - Joypad without analog - also used for Game Gear
+* MS Joypad 2 Button - Joypad without analog - *also used for Game Gear*
 
-* MD Joypad 3 Button + 4-WayPlay - Joypad without analog - allows for up to four players to play together in certain games
+* MD Joypad 3 Button + 4-WayPlay - Joypad without analog - *allows for up to four players to play together in certain games*
 
-* MD Joypad 6 Button + 4-WayPlay - Joypad without analog - allows for up to four players to play together in certain games
+* MD Joypad 6 Button + 4-WayPlay - Joypad without analog - *allows for up to four players to play together in certain games*
 
-* MD Joypad 3 Button + Teamplayer - Joypad without analog - allows for up to four players to play together in certain games
+* MD Joypad 3 Button + Teamplayer - Joypad without analog - *allows for up to four players to play together in certain games*
 
-* MD Joypad 6 Button + Teamplayer - Joypad without analog - allows for up to four players to play together in certain games
+* MD Joypad 6 Button + Teamplayer - Joypad without analog - *allows for up to four players to play together in certain games*
 
-* MS Joypad 2 Button + Master Tap - Joypad without analog - allows for up to four players to play together in certain games
+* MS Joypad 2 Button + Master Tap - Joypad without analog - *allows for up to four players to play together in certain games*
 
 * MD Menancer - Lightgun
 

@@ -39,6 +39,7 @@ pages:
       - 'Rick Dangerous (XRick)': 'library/xrick.md'
       - 'Sega Dreamcast (Redream)': 'library/redream.md'
       - 'Sega MS/GG/MD/CD (Genesis Plus GX)': 'library/genesis_plus_gx.md'
+      - 'Sega MS/MD/CD/32X (PicoDrive)': 'library/picodrive.md'
       - 'Sega Saturn (Beetle Saturn)': 'library/beetle_saturn.md'
       - 'Sega Saturn (Yabause)': 'library/Yabause.md'
       - 'SNES / Super Famicom (Beetle bsnes)': 'library/beetle_snes.md'
@@ -56,6 +57,7 @@ pages:
       - 'SNES / Super Famicom (Snes9x 2010)': 'library/snes9x_2010.md'
       - 'SNES / Super Famicom (Snes9x)': 'library/snes9x.md'
       - 'Vectrex (vecx)': 'library/vecx.md'
+      - 'Virtual Boy (Beetle VB)': 'library/beetle_vb.md'
       - 'Wonderswan (Color)': 'library/beetle_wswan.md'
       - 'ZX81 (EightyOne)': 'library/eightyone.md'
     - Build RetroArch & Cores:

@@ -70,7 +70,7 @@ The (Core name) core does not feature BIOS use.
 
 ## Features
 
--- Use ✔ or ✕ or - --
+-- Use ✔ or ✕ (or use - when unknown)--
 
 | Feature           | Supported |
 |-------------------|:---------:|
@@ -116,7 +116,7 @@ Game Overrides/Remaps/Presets and Game-option files will have the same name as t
 
 - **Core Option** (**Setting1**/Setting2): Description.
 
-??? note "*Core Option - Setting"
+??? note "Core Option - Setting"
 	![screenshot_name](images\Cores\folder\screenshot_name.png)
 	
 --If the core does not have options--

@@ -113,7 +113,7 @@ Save states are saved/loaded to and from the core's state directory.
 
 *The Snes9x core has the following options that can be tweaked from the core options menu. The default setting is bolded.*
 
-- **SuperFX Frequency** (**10MHz**/20MHz/40MHz/60MHz/80MHz/100MHz): Overclock the [SuperFX chip](https://en.wikipedia.org/wiki/Super_FX).
+- **SuperFX Frequency** (**10MHz**/20MHz/40MHz/60MHz/80MHz/100MHz): Overclock the [SuperFX chip](https://en.wikipedia.org/wiki/Super_FX). 10Mhz is stock clockspeed.
 - **Show layer 1** (**On**/Off): Self-explanatory.
 - **Show layer 2** (**On**/Off): Self-explanatory.
 - **Show layer 3** (**On**/Off): Self-explanatory.

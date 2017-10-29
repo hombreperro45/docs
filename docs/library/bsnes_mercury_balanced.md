@@ -156,7 +156,7 @@ Save states are saved/loaded to and from the core's state directory.
 
 - **Allow settings to reduce accuracy** (**Off**/On): Respect accuracy-impacting settings.
 - **Special chip accuracy** (**LLE**/HLE): Choose whether to use LLE (real BIOS) or HLE (emulated BIOS) for enhancement chips. HLE is less accurate but also less demanding for the special chips. The Allow settings to reduce accuracy core option must be enabled in order for this to function properly. The ST-0011 and ST-0018 co-processors cannot be HLE'd.
-- **SuperFX speed** (**100%**/150%/200%/300%/400%/500%/1000%): Overclock the [SuperFX chip](https://en.wikipedia.org/wiki/Super_FX). The Allow settings to reduce accuracy core option must be enabled in order for this to function properly.
+- **SuperFX speed** (**100%**/150%/200%/300%/400%/500%/1000%): Overclock the [SuperFX chip](https://en.wikipedia.org/wiki/Super_FX). 100% is stock clockspeed. The Allow settings to reduce accuracy core option must be enabled in order for this to function properly.
 - **System region** (**auto**/ntsc/pal): Choose which region the system is from.
 - **Preferred aspect ratio** (**auto**/ntsc/pal): Choose the preferred aspect ratio. RetroArch's aspect ratio must be set to Core provided in the Video seetings. 
 - **Crop overscan** (**Off**/On):  Crop out the potentially random glitchy video output that would have been hidden by the bezel around the edge of a standard-definition television screen.
