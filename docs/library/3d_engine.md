@@ -2,9 +2,11 @@
 
 ## Background
 
-3D Engine for libretro GL with additional features (camera/location/etc); a tech demo.
+A tech demo.
 
-Author(s):
+3D Engine for libretro GL with additional features (camera/location/etc).
+
+### Author(s):
 
 Team Libretro
 
@@ -18,11 +20,9 @@ GPLv3
 
 ## Extensions
 
+*Content that can be loaded by the 3D Engine core have the following file extensions.*
+
 png|jpg|mtl|obj
-
-## BIOS
-
-The 3D Engine core does not feature BIOS use.
 
 ## Features
 
@@ -35,7 +35,7 @@ The 3D Engine core does not feature BIOS use.
 | RetroAchievements | ✕         |
 | RetroArch Cheats  | ✕         |
 | Native Cheats     | ✕         |
-| Controllers       | ✕         |
+| Controllers       | -         |
 | Multi-Mouse       | ✕         |
 | Rumble            | ✕         |
 | Sensors           | ✔         |
@@ -43,34 +43,34 @@ The 3D Engine core does not feature BIOS use.
 | Location          | ✔         |
 | Subsystem         | ✕         |
 
-The 3D Engine core creates directories named 'Libretro 3DEngine' in RetroArch's save and state directories
+The 3D Engine core's directory name is 'Libretro 3DEngine'
 
-## Options
+## Core options
 
-The 3D Engine core has the following options that can be tweaked from the core options menu. The default setting is bolded.
 
-- **Internal resolution** (**320x240**/360x480/480x272/512x384/512x512/640x240/640x448/640x480/720x576/800x600/960x720/1024x768): Self-explanatory.
-- **Cube size** (**0**/1/2/4/8/16/32/64/128): Awaiting description.
-- **Cube stride** (2.0/3.0/4.0/5.0/6.0/7.0/8.0): Awaiting description.
-- **Camera enable** (**Off**/On): Awaiting description.
-- **Camera FB Type** (**texture**/raw framebuffer): Awaiting description.
-- **Sensor enable** (**Off**/On): Awaiting description.
-- **Location enable** (**Off**/On): Awaiting description.
-- **Location camera control** (**Off**/On): Awaiting description.
-- **Discard hack enable** (**Off**/On): Awaiting description.
-- **Location position OSD** (**Off**/On): Awaiting description.
+*The 3D Engine core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded.*
+
+- Internal resolution (**320x240**/360x480/480x272/512x384/512x512/640x240/640x448/640x480/720x576/800x600/960x720/1024x768): Self-explanatory.
+- Cube size (**0**/1/2/4/8/16/32/64/128): Awaiting description.
+- Cube stride (**2.0**/3.0/4.0/5.0/6.0/7.0/8.0): Awaiting description.
+- Camera enable (**Off**/On): Awaiting description.
+- Camera FB Type (**texture**/raw framebuffer): Awaiting description.
+- Sensor enable (**Off**/On): Awaiting description.
+- Location enable (**Off**/On): Awaiting description.
+- Location camera control (**Off**/On): Awaiting description.
+- Discard hack enable (**Off**/On): Awaiting description.
+- Location position OSD (**Off**/On): Awaiting description.
+
 
 ## Controllers
 
-The 3D Engine core supports 2 controller setting(s), the bolded controller setting is default:
+*The 3D Engine core supports the following controller setting(s), bolded controller settings are the default for the specified user(s):*
 
-* **RetroPad** - [Joypad without analog]
+### User 1 - 16 Device Type(s)
 
-* **RetroPad w/Analog** - [Joypad with analog]
+* **RetroPad** - Joypad with analog
 
-## Compatibility
-
-The 3D Engine core does not have specific compatiblity issues
+* RetroPad w/Analog - **No reason to switch to this**
 
 ## External Links
 
