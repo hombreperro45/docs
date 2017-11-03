@@ -378,4 +378,33 @@ tiny fraction of this texture.
 
 With "viewport" scale it might be necessary to reallocate the FBO in run-time
 if the user resizes the window.
+
+
+## Compatibility of shader types with context drivers
+
+In RetroArch, the following table specifies which shader types work with what video contexts:
+
+CONTEXT DRIVER         |    GLSL    |    CG   |    HLSL        |     SLANG
+-----------------------|------------|---------|----------------|--------------
+Android                |    Y       |    N    |    N           |  Y (Possible)
+CGL                    |    Y       |    N    |    N           |  N
+D3D                    |    N       |    Y    |    N (Possible)| N
+DRM                    |    Y       |    N    |    N           | N
+Emscripten             |    Y       |    N    |    N           | N
+GDI                    |    N       |    N    |    N           | N
+KHR                    |    N       |    N    |    N           | Y
+Mali                   |    Y       |    N    |    N           | N
+Opendingux             |    Y       |    N    |    N           | N
+OSMesa                 |    Y       |    N    |    N           | N
+PS3                    |    N       |    Y    |    N           | N
+QNX                    |    Y       |    N    |    N           | N
+SDL                    |    N       |    N    |    N           | N
+VC                     |    Y       |    N    |    N           | N
+Vivante                |    Y       |    N    |    N           | N
+Wayland                |    Y       |    N    |    N           | Y
+WGL                    |    Y       |    N    |    N           | Y
+X                      |    Y       |    Y    |    N           | Y
+XEGL                   |    Y       |    N    |    N           | N
+
+Attempting to load unsupported shader types may result in segmentation faults because the context drivers currently do not have the behavior to declare which types of shaders it supports
 ~~~~
