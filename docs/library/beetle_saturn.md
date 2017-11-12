@@ -38,7 +38,7 @@ Required or optional firmware files go in RetroArch's system directory.
 | Feature           | Supported |
 |-------------------|:---------:|
 | Saves             | ✔         |
-| States            | ✕         |
+| States            | ✔         |
 | Rewind            | ✕         |
 | Netplay           | ✕         |
 | RetroAchievements | ✕         |
